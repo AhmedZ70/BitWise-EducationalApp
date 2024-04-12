@@ -10,17 +10,17 @@ private:
 public:
     Circuit();
 
-    void notGate(unsigned char input);
+    unsigned char notGate(unsigned char input);
 
-    void andGate(unsigned char input);
+    unsigned char andGate(unsigned char input1, unsigned char input2);
 
-    void orGate(unsigned char input);
+    unsigned char orGate(unsigned char input1, unsigned char input2);
 
-    void nand(unsigned char input);
+    unsigned char nandGate(unsigned char input1, unsigned char input2);
 
-    void nor(unsigned char input);
+    unsigned char norGate(unsigned char input1, unsigned char input2);
 
-    void xorGate(unsigned char input);
+    unsigned char xorGate(unsigned char input, unsigned char input2);
 
 };
 
