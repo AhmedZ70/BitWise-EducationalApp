@@ -15,8 +15,16 @@ public:
     explicit levels(QWidget *parent = nullptr);
     ~levels();
 
+private slots:
+    void on_pushButton_clicked();
+
+    void on_homeButton_clicked();
+
 private:
     Ui::levels *ui;
+
+signals:
+    void homeClicked();
 };
 
 #endif // LEVELS_H

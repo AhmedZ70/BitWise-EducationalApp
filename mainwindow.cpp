@@ -10,6 +10,8 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     ui->stackedWidget->addWidget(levelsUi);
+
+    connect(levelsUi, SIGNAL(homeClicked()), this, SLOT(moveHome()));
 }
 
 MainWindow::~MainWindow()
@@ -20,7 +22,12 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_playButton_clicked()
 {
-    ui->stackedWidget->setCurrentIndex(1);
-    levelsUi->show();
+    ui->stackedWidget->setCurrentIndex(ui->stackedWidget->indexOf(levelsUi));
+    //auto index = ui->stackedWidget->currentIndex();   // for debugging
+}
+
+void MainWindow::moveHome()
+{
+    ui->stackedWidget->setCurrentIndex(0);
 }
 

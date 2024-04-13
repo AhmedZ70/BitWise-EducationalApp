@@ -22,11 +22,8 @@ private:
     Ui::MainWindow *ui;
     levels * levelsUi;
 
-public slots:
-
-
-
 private slots:
     void on_playButton_clicked();
+    void moveHome();
 };
 #endif // MAINWINDOW_H
