@@ -11,15 +11,20 @@ CONFIG += c++17
 SOURCES += \
     circuit.cpp \
     gameModel.cpp \
+    levelonewidget.cpp \
+    levels.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
     circuit.h \
     gameModel.h \
+    levelonewidget.h \
+    levels.h \
     mainwindow.h
 
 FORMS += \
+    levels.ui \
     mainwindow.ui
 
 # Default rules for deployment.
