@@ -13,6 +13,10 @@ SOURCES += \
     circuit.cpp \
     events.cpp \
     gameModel.cpp \
+    levelFive.cpp \
+    levelFour.cpp \
+    levelThree.cpp \
+    levelTwo.cpp \
     levelone.cpp \
     levels.cpp \
     main.cpp \
@@ -28,6 +32,10 @@ HEADERS += \
     circuit.h \
     events.h \
     gameModel.h \
+    levelFive.h \
+    levelFour.h \
+    levelThree.h \
+    levelTwo.h \
     levelone.h \
     levels.h \
     mainwindow.h \
