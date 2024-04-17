@@ -16,6 +16,7 @@ levels::levels(QWidget *parent) :
     QPixmap pix3(":/icons/nandGate.png");
     QPixmap pix4(":/icons/norGate.png");
 
+
     ui->andGateLabel->setPixmap(pix.scaled(100, 100, Qt::KeepAspectRatio));
     ui->orGateLabel->setPixmap(pix2.scaled(100, 100, Qt::KeepAspectRatio));
     ui->nandGateLabel->setPixmap(pix3.scaled(100, 100, Qt::KeepAspectRatio));
