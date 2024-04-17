@@ -21,7 +21,9 @@ public:
 private:
     Ui::MainWindow *ui;
     levels * levelsUi;
+    // void dragEnterEvent(QDragEnterEvent *event) override;
 
+    // void dropEvent(QDropEvent *event) override;
 private slots:
     void on_playButton_clicked();
     void moveHome();

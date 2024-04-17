@@ -2,6 +2,12 @@
 #define LEVELS_H
 
 #include <QWidget>
+#include <QMainWindow>
+#include <QPixmap>
+#include <QDebug>
+#include <QString>
+#include <QCoreApplication>
+#include <QGraphicsScene>
 
 namespace Ui {
 class levels;
@@ -20,8 +26,12 @@ private slots:
 
     void on_homeButton_clicked();
 
+    void Image_View_Image_Enter(QPixmap pixmap);
+
 private:
     Ui::levels *ui;
+    //DropGraphicsView *graphicsView;
+    QGraphicsScene *scene;
 
 signals:
     void homeClicked();

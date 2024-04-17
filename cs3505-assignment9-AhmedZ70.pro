@@ -10,6 +10,7 @@ CONFIG += c++17
 
 SOURCES += \
     circuit.cpp \
+    events.cpp \
     gameModel.cpp \
     levelonewidget.cpp \
     levels.cpp \
@@ -18,6 +19,7 @@ SOURCES += \
 
 HEADERS += \
     circuit.h \
+    events.h \
     gameModel.h \
     levelonewidget.h \
     levels.h \
