@@ -297,8 +297,8 @@
     <rect>
      <x>80</x>
      <y>10</y>
-     <width>611</width>
-     <height>91</height>
+     <width>621</width>
+     <height>121</height>
     </rect>
    </property>
    <property name="title">
@@ -309,8 +309,8 @@
      <rect>
       <x>0</x>
       <y>20</y>
-      <width>71</width>
-      <height>71</height>
+      <width>101</width>
+      <height>101</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -323,10 +323,10 @@
    <widget class="Custom_Label" name="andGateLabel">
     <property name="geometry">
      <rect>
-      <x>80</x>
+      <x>120</x>
       <y>20</y>
-      <width>71</width>
-      <height>71</height>
+      <width>101</width>
+      <height>101</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -339,10 +339,10 @@
    <widget class="Custom_Label" name="nandGateLabel">
     <property name="geometry">
      <rect>
-      <x>170</x>
+      <x>240</x>
       <y>20</y>
-      <width>71</width>
-      <height>71</height>
+      <width>101</width>
+      <height>101</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -355,10 +355,10 @@
    <widget class="Custom_Label" name="norGateLabel">
     <property name="geometry">
      <rect>
-      <x>260</x>
+      <x>360</x>
       <y>20</y>
-      <width>71</width>
-      <height>71</height>
+      <width>101</width>
+      <height>101</height>
      </rect>
     </property>
     <property name="frameShape">
