@@ -9,19 +9,33 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    andGate.cpp \
     circuit.cpp \
     events.cpp \
     gameModel.cpp \
+    levelone.cpp \
     levels.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    nandGate.cpp \
+    norGate.cpp \
+    notGate.cpp \
+    orGate.cpp \
+    xorGate.cpp
 
 HEADERS += \
+    andGate.h \
     circuit.h \
     events.h \
     gameModel.h \
+    levelone.h \
     levels.h \
-    mainwindow.h
+    mainwindow.h \
+    nandGate.h \
+    norGate.h \
+    notGate.h \
+    orGate.h \
+    xorGate.h
 
 FORMS += \
     levels.ui \
