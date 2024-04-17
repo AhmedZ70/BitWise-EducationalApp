@@ -32,7 +32,7 @@ void Custom_GraphicsView::dropEvent(QDropEvent *event) {
             scene = new QGraphicsScene(this);
             this->setScene(scene);
         }
-        scene->clear(); // Consider if you really want to clear the scene every time
+        scene->clear();
         scene->addPixmap(pixmap);
     }
     event->acceptProposedAction();

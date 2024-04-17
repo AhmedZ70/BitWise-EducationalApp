@@ -15,6 +15,8 @@
 #include <QDrag>
 #include <QMimeData>
 #include <QBuffer>
+#include <QGraphicsPixmapItem>
+
 
 class events
 {
