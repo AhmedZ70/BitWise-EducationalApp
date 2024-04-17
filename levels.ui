@@ -295,9 +295,9 @@
   <widget class="QGroupBox" name="groupBox">
    <property name="geometry">
     <rect>
-     <x>80</x>
+     <x>50</x>
      <y>10</y>
-     <width>621</width>
+     <width>701</width>
      <height>121</height>
     </rect>
    </property>
@@ -366,6 +366,38 @@
     </property>
     <property name="text">
      <string>NOR_Gate</string>
+    </property>
+   </widget>
+   <widget class="Custom_Label" name="orGateLabel_2">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>20</y>
+      <width>101</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string>OR_GATE</string>
+    </property>
+   </widget>
+   <widget class="Custom_Label" name="orGateLabel_3">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>20</y>
+      <width>101</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string>OR_GATE</string>
     </property>
    </widget>
   </widget>
