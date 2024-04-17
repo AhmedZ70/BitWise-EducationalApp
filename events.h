@@ -14,6 +14,7 @@
 #include <QByteArray>
 #include <QDrag>
 #include <QMimeData>
+#include <QBuffer>
 
 class events
 {
@@ -26,7 +27,7 @@ class Custom_Label : public QLabel{
 public:
     explicit Custom_Label(QWidget *widget= nullptr);
 private:
-    void Create_Drag(const QPoint &pos, QWidget *widget);
+    void Create_Drag(const QPoint &pos);
 protected:
     void mousePressEvent(QMouseEvent *event) override;
     using QLabel::QLabel;
@@ -42,6 +43,7 @@ protected:
     void dragLeaveEvent(QDragLeaveEvent *event) override;
     void dragMoveEvent(QDragMoveEvent *event) override;
     void dropEvent(QDropEvent *event) override;
+    void addPixmap(const QPixmap &pixmap);
     using QGraphicsView::QGraphicsView;
 };
 

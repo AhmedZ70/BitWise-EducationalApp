@@ -31,18 +31,5 @@ void MainWindow::moveHome()
     ui->stackedWidget->setCurrentIndex(0);
 }
 
-// void MainWidget::dragEnterEvent(QDragEnterEvent *event) {
-//     if (event->mimeData()->hasFormat("application/x-dnditemdata")) {
-//         event->acceptProposedAction();
-//     }
-// }
 
-// void MainWidget::dropEvent(QDropEvent *event) {
-//     if (event->mimeData()->hasFormat("application/x-dnditemdata")) {
-//         // Perform the action needed to simulate the gate between input and output
-//         // This could involve changing the state of the widget to reflect that
-//         // a gate has been placed and is ready to compute the logic operation
-//         event->acceptProposedAction();
-//     }
-// }
 

@@ -30,12 +30,9 @@ private slots:
 
     void on_backToLevel1_clicked();
 
-    void Image_View_Image_Enter(QPixmap pixmap);
 
 private:
     Ui::levels *ui;
-    //DropGraphicsView *graphicsView;
-    QGraphicsScene *scene;
 
 signals:
     void homeClicked();
