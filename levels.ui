@@ -17,14 +17,6 @@
    <property name="geometry">
     <rect>
      <x>0</x>
-<<<<<<< Updated upstream
-     <y>0</y>
-     <width>800</width>
-     <height>600</height>
-    </rect>
-   </property>
-   <widget class="QWidget" name="page_2">
-=======
      <y>110</y>
      <width>800</width>
      <height>431</height>
@@ -34,7 +26,6 @@
     <number>0</number>
    </property>
    <widget class="QWidget" name="level1">
->>>>>>> Stashed changes
     <widget class="QLabel" name="label_2">
      <property name="geometry">
       <rect>
@@ -172,8 +163,6 @@
       <string>Home</string>
      </property>
     </widget>
-<<<<<<< Updated upstream
-=======
     <widget class="QPushButton" name="skipButton">
      <property name="geometry">
       <rect>
@@ -344,7 +333,6 @@
     <property name="text">
      <string>NOR_Gate</string>
     </property>
->>>>>>> Stashed changes
    </widget>
   </widget>
  </widget>

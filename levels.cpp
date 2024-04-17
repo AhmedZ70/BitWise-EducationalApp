@@ -7,8 +7,6 @@ levels::levels(QWidget *parent) :
     ui(new Ui::levels)
 {
     ui->setupUi(this);
-<<<<<<< Updated upstream
-=======
 
     connect (ui->homeButton, &QPushButton::clicked, this, &levels::onHomeButtonClicked);
 
@@ -43,18 +41,15 @@ void levels::Image_View_Image_Enter(QPixmap pixmap){
     ui->graphicsView->viewport()->update();
     ui->graphicsView->update();
     ui->graphicsView->show();
->>>>>>> Stashed changes
+
 }
 
 levels::~levels()
 {
     delete ui;
-<<<<<<< Updated upstream
-=======
     delete scene;
 
 
->>>>>>> Stashed changes
 }
 
 void levels::on_pushButton_clicked()
@@ -63,8 +58,20 @@ void levels::on_pushButton_clicked()
 }
 
 
-void levels::on_homeButton_clicked()
+void levels::onHomeButtonClicked()
 {
     emit homeClicked();
 }
 
+
+
+void levels::on_skipButton_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(1);
+}
+
+
+void levels::on_backToLevel1_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(0);
+}

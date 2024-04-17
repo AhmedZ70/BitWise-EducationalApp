@@ -24,7 +24,11 @@ public:
 private slots:
     void on_pushButton_clicked();
 
-    void on_homeButton_clicked();
+    void onHomeButtonClicked();
+
+    void on_skipButton_clicked();
+
+    void on_backToLevel1_clicked();
 
     void Image_View_Image_Enter(QPixmap pixmap);
 
