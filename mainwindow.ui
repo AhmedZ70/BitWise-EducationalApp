@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/icons/wallpaper1.png);</string>
+     <string notr="true"/>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QLabel" name="label">
