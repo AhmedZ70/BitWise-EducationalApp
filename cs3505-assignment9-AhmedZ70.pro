@@ -12,7 +12,6 @@ SOURCES += \
     circuit.cpp \
     events.cpp \
     gameModel.cpp \
-    levelonewidget.cpp \
     levels.cpp \
     main.cpp \
     mainwindow.cpp
@@ -21,7 +20,6 @@ HEADERS += \
     circuit.h \
     events.h \
     gameModel.h \
-    levelonewidget.h \
     levels.h \
     mainwindow.h
 
