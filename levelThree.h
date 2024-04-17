@@ -2,9 +2,10 @@
 #ifndef LEVELTHREE_H
 #define LEVELTHREE_H
 
+#include "circuitLevel.h"
 #include "nandGate.h"
 
-class LevelThree {
+class LevelThree: public CircuitLevel {
 private:
     NandGate nandGate; // Used for calculating the carry
 
@@ -14,9 +15,9 @@ private:
 
 public:
     LevelThree();
-    void setInput(bool a, bool b);
-    void computeOutput();
-    bool getResult() const;
+    void setInput(bool a, bool b)override;
+    void computeOutput()override;
+    bool getResult() const override;
 };
 
 #endif // LEVELTHREE_H

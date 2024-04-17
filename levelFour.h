@@ -3,8 +3,8 @@
 #define LEVELFOUR_H
 
 #include "norGate.h"
-
-class LevelFour {
+#include "circuitLevel.h"
+class LevelFour: public CircuitLevel{
 private:
     NorGate norGate; // Used for calculating the carry
 
@@ -14,9 +14,9 @@ private:
 
 public:
     LevelFour();
-    void setInput(bool a, bool b);
-    void computeOutput();
-    bool getResult() const;
+    void setInput(bool a, bool b)override;
+    void computeOutput()override;
+    bool getResult() const override;
 };
 
 #endif // LEVELFOUR_H

@@ -15,6 +15,7 @@ SOURCES += \
     gameModel.cpp \
     levelFive.cpp \
     levelFour.cpp \
+    levelSix.cpp \
     levelThree.cpp \
     levelTwo.cpp \
     levelone.cpp \
@@ -30,14 +31,17 @@ SOURCES += \
 HEADERS += \
     andGate.h \
     circuit.h \
+    circuitLevel.h \
     events.h \
     gameModel.h \
     levelFive.h \
     levelFour.h \
+    levelSix.h \
     levelThree.h \
     levelTwo.h \
     levelone.h \
     levels.h \
+    logicgate.h \
     mainwindow.h \
     nandGate.h \
     norGate.h \

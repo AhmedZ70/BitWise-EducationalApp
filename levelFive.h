@@ -3,8 +3,9 @@
 #define LEVELFIVE_H
 
 #include "xorGate.h"
+#include "circuitLevel.h"
 
-class LevelFive {
+class LevelFive: public CircuitLevel {
 private:
     XorGate xorGate; // Used for calculating the carry
 
@@ -14,9 +15,9 @@ private:
 
 public:
     LevelFive();
-    void setInput(bool a, bool b);
-    void computeOutput();
-    bool getResult() const;
+    void setInput(bool a, bool b) override;
+    void computeOutput() override;
+    bool getResult() const override;
 };
 
 #endif // LEVELFIVE_H

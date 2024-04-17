@@ -10,7 +10,6 @@ void LevelOne::setInput(bool a, bool b) {
 void LevelOne::computeOutput() {
 
     andGate.setInput(inputA, inputB);
-
     result = andGate.computeOutput();
 }
 

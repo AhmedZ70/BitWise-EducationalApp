@@ -2,9 +2,10 @@
 #ifndef LEVELONE_H
 #define LEVELONE_H
 
+#include "circuitLevel.h"
 #include "andGate.h"
 
-class LevelOne {
+class LevelOne : public CircuitLevel {
 private:
     AndGate andGate; // Used for calculating the carry
 
@@ -14,9 +15,9 @@ private:
 
 public:
     LevelOne();
-    void setInput(bool a, bool b);
-    void computeOutput();
-    bool getResult() const;
+    void setInput(bool a, bool b)override;
+    void computeOutput()override;
+    bool getResult() const override;
 };
 
 #endif // LEVELONE_H
