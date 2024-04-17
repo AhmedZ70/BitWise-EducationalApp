@@ -15,17 +15,23 @@ levels::levels(QWidget *parent) :
     QPixmap pix2(":/icons/orGate.png");
     QPixmap pix3(":/icons/nandGate.png");
     QPixmap pix4(":/icons/norGate.png");
+    QPixmap pix5(":/icons/xorGate.png");
+    QPixmap pix6(":/icons/notGate.png");
 
 
     ui->andGateLabel->setPixmap(pix.scaled(100, 100, Qt::KeepAspectRatio));
     ui->orGateLabel->setPixmap(pix2.scaled(100, 100, Qt::KeepAspectRatio));
     ui->nandGateLabel->setPixmap(pix3.scaled(100, 100, Qt::KeepAspectRatio));
     ui->norGateLabel->setPixmap(pix4.scaled(100, 100, Qt::KeepAspectRatio));
+    ui->xorGateLabel->setPixmap(pix5.scaled(100,100, Qt::KeepAspectRatio));
+    ui->notGateLabel->setPixmap(pix6.scaled(100, 100, Qt::KeepAspectRatio));
 
     ui->andGateLabel->setParent(ui->groupBox);
     ui->orGateLabel->setParent(ui->groupBox);
     ui->nandGateLabel->setParent(ui->groupBox);
     ui->norGateLabel->setParent(ui->groupBox);
+    ui->xorGateLabel->setParent(ui->groupBox);
+    ui->notGateLabel->setParent(ui->groupBox);
 }
 
 levels::~levels()

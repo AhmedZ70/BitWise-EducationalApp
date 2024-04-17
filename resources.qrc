@@ -5,5 +5,7 @@
         <file>orGate.png</file>
         <file>andGate.png</file>
         <file>wallpaper1.png</file>
+        <file>notGate.png</file>
+        <file>xorGate.png</file>
     </qresource>
 </RCC>

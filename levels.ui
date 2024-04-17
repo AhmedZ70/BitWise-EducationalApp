@@ -23,7 +23,7 @@
     </rect>
    </property>
    <property name="currentIndex">
-    <number>1</number>
+    <number>0</number>
    </property>
    <widget class="QWidget" name="level1">
     <widget class="QLabel" name="label_2">
@@ -227,8 +227,8 @@
     <widget class="QPushButton" name="backToLevel1">
      <property name="geometry">
       <rect>
-       <x>550</x>
-       <y>10</y>
+       <x>520</x>
+       <y>40</y>
        <width>131</width>
        <height>31</height>
       </rect>
@@ -245,8 +245,8 @@
     <widget class="QLabel" name="label_4">
      <property name="geometry">
       <rect>
-       <x>270</x>
-       <y>10</y>
+       <x>230</x>
+       <y>30</y>
        <width>261</width>
        <height>51</height>
       </rect>
@@ -273,8 +273,8 @@
     <widget class="Custom_GraphicsView" name="graphicsView_2">
      <property name="geometry">
       <rect>
-       <x>300</x>
-       <y>90</y>
+       <x>120</x>
+       <y>160</y>
        <width>171</width>
        <height>141</height>
       </rect>
@@ -283,8 +283,8 @@
     <widget class="Custom_GraphicsView" name="graphicsView_3">
      <property name="geometry">
       <rect>
-       <x>300</x>
-       <y>250</y>
+       <x>380</x>
+       <y>160</y>
        <width>171</width>
        <height>141</height>
       </rect>
@@ -368,7 +368,7 @@
      <string>NOR_Gate</string>
     </property>
    </widget>
-   <widget class="Custom_Label" name="orGateLabel_2">
+   <widget class="Custom_Label" name="xorGateLabel">
     <property name="geometry">
      <rect>
       <x>480</x>
@@ -381,10 +381,10 @@
      <enum>QFrame::Box</enum>
     </property>
     <property name="text">
-     <string>OR_GATE</string>
+     <string>XOR_GATE</string>
     </property>
    </widget>
-   <widget class="Custom_Label" name="orGateLabel_3">
+   <widget class="Custom_Label" name="notGateLabel">
     <property name="geometry">
      <rect>
       <x>600</x>
@@ -397,7 +397,7 @@
      <enum>QFrame::Box</enum>
     </property>
     <property name="text">
-     <string>OR_GATE</string>
+     <string>NOT_GATE</string>
     </property>
    </widget>
   </widget>
