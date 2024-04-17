@@ -17,3 +17,9 @@ GameModel:: GameModel(){
 
     currentLevel = 0;
 }
+
+bool GameModel::computeLevelCiruit(int currentLevel){
+    levels[currentLevel]->computeOutput();
+
+    return levels[currentLevel]->getResult();
+}
