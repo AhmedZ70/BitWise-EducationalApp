@@ -12,6 +12,7 @@ bool CircuitLevel::getResult() const {
 Gate CircuitLevel::setGate(string gateType)
 {
     function<bool(bool, bool)> gateFunction;
+    function<bool(bool)> notGateFunction;
 
     if (gateType == "XOR") {
         gateFunction = [](bool a, bool b) { return a ^ b; };
@@ -29,9 +30,14 @@ Gate CircuitLevel::setGate(string gateType)
         gateFunction = [](bool a, bool b) { return !(a && b); };
         return Gate(gateFunction);
     }
-    else {
+    else if (gateType == "OR"){
         gateFunction = [](bool a, bool b) { return a || b; };
         return Gate(gateFunction);
+    }
+    else
+    {
+        notGateFunction = [](bool a) { return !a; };
+        return Gate(notGateFunction);
     }
 }
 

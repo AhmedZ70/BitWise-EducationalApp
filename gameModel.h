@@ -10,7 +10,6 @@ class GameModel : public QObject {
     Q_OBJECT
 
 private:
-
     int currentLevel;
     std::vector<std::unique_ptr<CircuitLevel>> levels;
 

@@ -1,6 +1,6 @@
 #include "levelFour.h"
 
-LevelFour::LevelFour() : inputA(false), inputB(false), result(false) {}
+LevelFour::LevelFour() : inputA(false), inputB(false){}
 
 void LevelFour::setInput(std:: vector<bool> inputs) {
     inputA = inputs.at(0);
@@ -8,9 +8,8 @@ void LevelFour::setInput(std:: vector<bool> inputs) {
 }
 
 void LevelFour::computeOutput() {
-
+    Gate norGate = setGate("NOR");
     norGate.setInput(inputA, inputB);
-
     result = norGate.computeOutput();
 }
 

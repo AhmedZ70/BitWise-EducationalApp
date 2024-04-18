@@ -1,6 +1,6 @@
 #include "levelFive.h"
 
-LevelFive::LevelFive() : inputA(false), inputB(false), result(false) {}
+LevelFive::LevelFive() : inputA(false), inputB(false){}
 
 void LevelFive::setInput(std:: vector<bool> inputs) {
     inputA = inputs.at(0);
@@ -8,9 +8,8 @@ void LevelFive::setInput(std:: vector<bool> inputs) {
 }
 
 void LevelFive::computeOutput() {
-
+    Gate xorGate = setGate("XOR");
     xorGate.setInput(inputA, inputB);
-
     result = xorGate.computeOutput();
 }
 
