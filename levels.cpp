@@ -7,7 +7,8 @@ levels::levels(QWidget *parent) :
     ui(new Ui::levels)
 {
     ui->setupUi(this);
-
+    gameModel = new GameModel();
+    ui->stackedWidget->setCurrentIndex(0);
     connect (ui->homeButton, &QPushButton::clicked, this, &levels::onHomeButtonClicked);
 
 
@@ -45,6 +46,25 @@ void levels::on_pushButton_clicked()
     cout << "go clicked" << endl;
 }
 
+void levels::on_pushButton_2_clicked(){
+    cout<< "go clicked" << endl;
+}
+
+void levels::on_pushButton_3_clicked(){
+    cout<< "go clicked" << endl;
+}
+
+void levels::on_pushButton_4_clicked(){
+    cout<< "go clicked" << endl;
+}
+
+void levels::on_pushButton_5_clicked(){
+    cout<< "go clicked" << endl;
+}
+
+void levels::on_pushButton_6_clicked(){
+    cout<< "go clicked" << endl;
+}
 
 void levels::onHomeButtonClicked()
 {
@@ -54,6 +74,23 @@ void levels::onHomeButtonClicked()
 void levels::on_homeButton_2_clicked(){
     emit homeClicked();
 }
+
+void levels::on_homeButton_3_clicked(){
+    emit homeClicked();
+}
+
+void levels::on_homeButton_4_clicked(){
+    emit homeClicked();
+}
+
+void levels::on_homeButton_5_clicked(){
+    emit homeClicked();
+}
+
+void levels::on_homeButton_6_clicked(){
+    emit homeClicked();
+}
+//Go to next level functions
 
 void levels::on_skipButton_clicked()
 {
@@ -65,15 +102,55 @@ void levels::on_skipButton_2_clicked()
     ui->stackedWidget->setCurrentIndex(2);
 }
 
-void levels::on_homeButton_3_clicked(){
-    emit homeClicked();
+void levels::on_skipButton_3_clicked(){
+    ui->stackedWidget->setCurrentIndex(3);
+}
+
+void levels::on_skipButton_4_clicked(){
+    ui->stackedWidget->setCurrentIndex(4);
+}
+
+void levels::on_skipButton_5_clicked(){
+    ui->stackedWidget->setCurrentIndex(5);
+}
+
+
+//Go back to previous level functions
+void levels::on_backToLevel1_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(0);
 }
 
 void levels::on_backToLevel1_2_clicked(){
     ui->stackedWidget->setCurrentIndex(1);
 }
 
-void levels::on_backToLevel1_clicked()
-{
-    ui->stackedWidget->setCurrentIndex(0);
+void levels::on_backToLevel1_3_clicked(){
+    ui->stackedWidget->setCurrentIndex(2);
 }
+
+void levels::on_backToLevel1_4_clicked(){
+    ui->stackedWidget->setCurrentIndex(3);
+}
+
+void levels::on_backToLevel1_5_clicked(){
+    ui->stackedWidget->setCurrentIndex(4);
+}
+
+void levels::on_backToLevel1_6_clicked(){
+    ui->stackedWidget->setCurrentIndex(5);
+}
+void levels::on_goButtonLevelOne_clicked()
+{
+    bool inputValue1 = (ui->levelOneInput1->text() == "1");
+    bool inputValue2 = (ui->levelOneInput2->text() == "1");
+    gameModel->setLevelInput(inputValue1, inputValue2);
+    bool successful = gameModel->computeLevelCiruit(0);
+
+    if (successful) {
+        ui->stackedWidget->setCurrentIndex(1);
+    } else {
+        std::cout << "Try again" << std::endl;
+    }
+}
+

@@ -16,7 +16,7 @@ private:
 public:
 
     GameModel();
-
+    void setLevelInput(bool a , bool b);
     bool computeLevelCiruit(int currentLevel);
 
 signals:
