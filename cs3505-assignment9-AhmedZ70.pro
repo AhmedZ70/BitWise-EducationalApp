@@ -11,10 +11,13 @@ CONFIG += c++17
 SOURCES += \
     andGate.cpp \
     circuit.cpp \
+    circuitLevel.cpp \
     events.cpp \
     gameModel.cpp \
+    gate.cpp \
     levelFive.cpp \
     levelFour.cpp \
+    levelSeven.cpp \
     levelSix.cpp \
     levelThree.cpp \
     levelTwo.cpp \
@@ -34,8 +37,10 @@ HEADERS += \
     circuitLevel.h \
     events.h \
     gameModel.h \
+    gate.h \
     levelFive.h \
     levelFour.h \
+    levelSeven.h \
     levelSix.h \
     levelThree.h \
     levelTwo.h \

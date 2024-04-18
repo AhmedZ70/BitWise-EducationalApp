@@ -2,9 +2,9 @@
 
 LevelThree::LevelThree() : inputA(false), inputB(false), result(false) {}
 
-void LevelThree::setInput(bool a, bool b) {
-    inputA = a;
-    inputB = b;
+void LevelThree::setInput(std:: vector<bool> inputs) {
+    inputA = inputs.at(0);
+    inputB = inputs.at(1);
 }
 
 void LevelThree::computeOutput() {
@@ -14,7 +14,4 @@ void LevelThree::computeOutput() {
     result = nandGate.computeOutput();
 }
 
-bool LevelThree::getResult() const {
-    return result;
-}
 

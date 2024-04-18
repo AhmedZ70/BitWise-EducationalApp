@@ -2,9 +2,9 @@
 
 LevelFour::LevelFour() : inputA(false), inputB(false), result(false) {}
 
-void LevelFour::setInput(bool a, bool b) {
-    inputA = a;
-    inputB = b;
+void LevelFour::setInput(std:: vector<bool> inputs) {
+    inputA = inputs.at(0);
+    inputB = inputs.at(1);
 }
 
 void LevelFour::computeOutput() {
@@ -14,7 +14,4 @@ void LevelFour::computeOutput() {
     result = norGate.computeOutput();
 }
 
-bool LevelFour::getResult() const {
-    return result;
-}
 

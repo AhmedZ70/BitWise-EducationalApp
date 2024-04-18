@@ -1,12 +1,21 @@
 #ifndef CIRCUITLEVEL_H
 #define CIRCUITLEVEL_H
-
+#include <vector>
+#include <string>
+#include "gate.h"
+using namespace std;
 class CircuitLevel {
+
+protected:
+    int result;
+    Gate setGate(string gate);
+
 public:
-    virtual void setInput(bool a, bool b) = 0;
-    virtual void computeOutput() = 0;
-    virtual bool getResult() const = 0;
-    virtual ~CircuitLevel() {}
+    virtual void setInput(std:: vector<bool> inputs);
+    virtual void computeOutput();
+    bool getResult() const;
+    ~CircuitLevel();
+
 };
 
 #endif // CIRCUITLEVEL_H

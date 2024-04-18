@@ -2,9 +2,9 @@
 
 LevelTwo::LevelTwo() : inputA(false), inputB(false), result(false) {}
 
-void LevelTwo::setInput(bool a, bool b) {
-    inputA = a;
-    inputB = b;
+void LevelTwo::setInput(std:: vector<bool> inputs) {
+    inputA = inputs.at(0);
+    inputB = inputs.at(1);
 }
 
 void LevelTwo::computeOutput() {
@@ -14,7 +14,5 @@ void LevelTwo::computeOutput() {
     result = orGate.computeOutput();
 }
 
-bool LevelTwo::getResult() const {
-    return result;
-}
+
 

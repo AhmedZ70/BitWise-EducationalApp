@@ -2,9 +2,9 @@
 
 LevelOne::LevelOne() : inputA(false), inputB(false), result(false) {}
 
-void LevelOne::setInput(bool a, bool b) {
-    inputA = a;
-    inputB = b;
+void LevelOne::setInput(std:: vector<bool> inputs) {
+    inputA = inputs.at(0);
+    inputB = inputs.at(1);
 }
 
 void LevelOne::computeOutput() {
@@ -13,7 +13,4 @@ void LevelOne::computeOutput() {
     result = andGate.computeOutput();
 }
 
-bool LevelOne::getResult() const {
-    return result;
-}
 

@@ -1,7 +1,6 @@
 // LevelThreeNand
 #ifndef LEVELTHREE_H
 #define LEVELTHREE_H
-
 #include "circuitLevel.h"
 #include "nandGate.h"
 
@@ -15,9 +14,8 @@ private:
 
 public:
     LevelThree();
-    void setInput(bool a, bool b)override;
+    void setInput(std:: vector<bool> inputs)override;
     void computeOutput()override;
-    bool getResult() const override;
 };
 
 #endif // LEVELTHREE_H

@@ -15,9 +15,8 @@ private:
 
 public:
     LevelTwo();
-    void setInput(bool a, bool b) override;
+    void setInput(std:: vector<bool> inputs) override;
     void computeOutput()override ;
-    bool getResult() const override;
 };
 
 #endif // LEVELTWO_H
