@@ -6,7 +6,8 @@
 #include <vector>
 #include <QObject>
 #include <memory>
-class GameModel: public QObject {
+class GameModel : public QObject {
+    Q_OBJECT
 
 private:
 
@@ -14,14 +15,14 @@ private:
     std::vector<std::unique_ptr<CircuitLevel>> levels;
 
 public:
-
-    GameModel();
-    void setLevelInput(bool a , bool b);
-    bool computeLevelCiruit(int currentLevel);
+    explicit GameModel(QObject *parent = nullptr);
 
 signals:
+    void circuitCompleted(bool completed);
 
 public slots:
+    void onInputReceived(std::vector<bool>inputs);
+    void computeLevelCircuit(int currentLevel);
 
 
 

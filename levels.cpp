@@ -1,6 +1,7 @@
 #include "levels.h"
 #include "ui_levels.h"
 #include <iostream>
+#include <vector>
 using namespace std;
 levels::levels(QWidget *parent) :
     QWidget(parent),
@@ -10,7 +11,9 @@ levels::levels(QWidget *parent) :
     gameModel = new GameModel();
     ui->stackedWidget->setCurrentIndex(0);
     connect (ui->homeButton, &QPushButton::clicked, this, &levels::onHomeButtonClicked);
-
+    connect(gameModel,&GameModel::circuitCompleted,this, &levels::onResultReceived);
+    connect(this, &levels::gotUserInput,gameModel,&GameModel::onInputReceived);
+    connect(this, &levels::calculateLevel,gameModel,&GameModel::computeLevelCircuit);
 
     QPixmap pix(":/icons/andGate.png");
     QPixmap pix2(":/icons/orGate.png");
@@ -150,13 +153,21 @@ void levels::on_goButtonLevelOne_clicked()
 {
     bool inputValue1 = (ui->levelOneInput1->text() == "1");
     bool inputValue2 = (ui->levelOneInput2->text() == "1");
-    gameModel->setLevelInput(inputValue1, inputValue2);
-    bool successful = gameModel->computeLevelCiruit(0);
+    std::vector<bool> inputs;
+    inputs.push_back(inputValue1);
+    inputs.push_back(inputValue2);
 
+    emit gotUserInput(inputs);
+    emit calculateLevel(0);
+
+}
+
+void levels::onResultReceived(bool successful) {
     if (successful) {
         ui->stackedWidget->setCurrentIndex(1);
     } else {
         std::cout << "Try again" << std::endl;
     }
+
 }
 

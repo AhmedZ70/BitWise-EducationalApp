@@ -7,7 +7,7 @@ using namespace std;
 class CircuitLevel {
 
 protected:
-    int result;
+    bool result;
     Gate setGate(string gate);
 
 public:

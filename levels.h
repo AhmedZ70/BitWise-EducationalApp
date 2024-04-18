@@ -9,6 +9,7 @@
 #include <QCoreApplication>
 #include <QGraphicsScene>
 #include "gameModel.h"
+#include <vector>
 
 
 namespace Ui {
@@ -84,6 +85,11 @@ private:
 
 signals:
     void homeClicked();
+    void gotUserInput(std::vector<bool>);
+    void calculateLevel(int level);
+
+public slots:
+    void onResultReceived(bool successful);
 };
 
 #endif // LEVELS_H

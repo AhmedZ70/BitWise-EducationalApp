@@ -5,8 +5,12 @@
 #include "levelFour.h"
 #include "levelFive.h"
 #include "levelSix.h"
+#include "levelSeven.h"
+#include "levelEight.h"
+#include "levelNine.h"
+#include <iostream>
 
-GameModel:: GameModel(){
+GameModel::GameModel(QObject *parent) : QObject(parent), currentLevel(0){
 
     levels.push_back(std::make_unique<LevelOne>());
     levels.push_back(std::make_unique<LevelTwo>());
@@ -14,14 +18,20 @@ GameModel:: GameModel(){
     levels.push_back(std::make_unique<LevelFour>());
     levels.push_back(std::make_unique<LevelFive>());
     levels.push_back(std::make_unique<LevelSix>());
+    levels.push_back(std::make_unique<LevelSeven>());
+    levels.push_back(std::make_unique<LevelEight>());
+    levels.push_back(std::make_unique<LevelNine>());
+}
 
-    currentLevel = 0;
-}
-void GameModel::setLevelInput(bool a , bool b){
-    //levels[currentLevel]->setInput(a, b);
-}
-bool GameModel::computeLevelCiruit(int currentLevel){
+void GameModel::computeLevelCircuit(int currentLevel){
     levels[currentLevel]->computeOutput();
 
-    return levels[currentLevel]->getResult();
+    bool result = levels[currentLevel]->getResult();
+
+    emit circuitCompleted(result);
 }
+void GameModel:: onInputReceived(std::vector<bool>inputs)
+{
+    levels[currentLevel]->setInput(inputs);
+}
+

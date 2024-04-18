@@ -8,11 +8,8 @@
 class LevelOne : public CircuitLevel {
 private:
     AndGate andGate; // Used for calculating the carry
-
     bool inputA;
     bool inputB;
-    bool result;
-
 public:
     LevelOne();
     void setInput(std:: vector<bool> inputs)override;

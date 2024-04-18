@@ -2,7 +2,6 @@
 #define LEVELSEVEN_H
 #include "circuitLevel.h"
 #include <vector>
-#include <functional>
 #include <string>
 using namespace std;
 class LevelSeven: public CircuitLevel {
@@ -15,7 +14,6 @@ public:
     LevelSeven();
     void setInput(std::vector<bool> inputs) override;
     void computeOutput() override;
-    void setFunction(string gate);
     void setUserGateSelected(string gateSelected);
 };
 

@@ -1,12 +1,12 @@
 #include "circuitLevel.h"
 #include <functional>
-
 void CircuitLevel::setInput(vector<bool>inputs) {}
 
 void CircuitLevel::computeOutput() {}
 
 bool CircuitLevel::getResult() const {
-    return result;}
+    return result;
+}
 
 
 Gate CircuitLevel::setGate(string gateType)
