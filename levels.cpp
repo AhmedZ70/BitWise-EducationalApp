@@ -7,7 +7,7 @@ levels::levels(QWidget *parent) :
     ui(new Ui::levels)
 {
     ui->setupUi(this);
-
+    ui->stackedWidget->setCurrentIndex(0);
     connect (ui->homeButton, &QPushButton::clicked, this, &levels::onHomeButtonClicked);
 
 
@@ -55,6 +55,8 @@ void levels::on_homeButton_2_clicked(){
     emit homeClicked();
 }
 
+//Go to next level functions
+
 void levels::on_skipButton_clicked()
 {
     ui->stackedWidget->setCurrentIndex(1);
@@ -69,11 +71,17 @@ void levels::on_homeButton_3_clicked(){
     emit homeClicked();
 }
 
+
+//Go back to previous level functions
+void levels::on_backToLevel1_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(0);
+}
+
 void levels::on_backToLevel1_2_clicked(){
     ui->stackedWidget->setCurrentIndex(1);
 }
 
-void levels::on_backToLevel1_clicked()
-{
-    ui->stackedWidget->setCurrentIndex(0);
+void levels::on_backToLevel1_3_clicked(){
+    ui->stackedWidget->setCurrentIndex(2);
 }

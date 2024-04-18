@@ -36,6 +36,8 @@ private slots:
 
     void on_backToLevel1_2_clicked();
 
+    void on_backToLevel1_3_clicked();
+
     void on_homeButton_2_clicked();
 
 
