@@ -50,6 +50,10 @@ private slots:
 
     void on_homeButton_6_clicked();
 
+    void on_homeButton_7_clicked();
+
+    void on_homeButton_8_clicked();
+
     void on_skipButton_clicked();
 
     void on_skipButton_2_clicked();
@@ -79,6 +83,10 @@ private slots:
     void on_backToLevel1_5_clicked();
 
     void on_backToLevel1_6_clicked();
+
+    void on_backToLevel1_7_clicked();
+
+    void on_backToLevel1_8_clicked();
 
     void on_goButtonLevelOne_clicked();
 

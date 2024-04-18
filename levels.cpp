@@ -93,6 +93,15 @@ void levels::on_homeButton_5_clicked(){
 void levels::on_homeButton_6_clicked(){
     emit homeClicked();
 }
+
+void levels::on_homeButton_7_clicked(){
+    emit homeClicked();
+}
+
+void levels::on_homeButton_8_clicked(){
+    emit homeClicked();
+}
+
 //Go to next level functions
 
 void levels::on_skipButton_clicked()
@@ -157,6 +166,15 @@ void levels::on_backToLevel1_5_clicked(){
 void levels::on_backToLevel1_6_clicked(){
     ui->stackedWidget->setCurrentIndex(5);
 }
+
+void levels::on_backToLevel1_7_clicked(){
+    ui->stackedWidget->setCurrentIndex(5);
+}
+
+void levels::on_backToLevel1_8_clicked(){
+    ui->stackedWidget->setCurrentIndex(5);
+}
+
 void levels::on_goButtonLevelOne_clicked()
 {
     bool inputValue1 = (ui->levelOneInput1->text() == "1");
