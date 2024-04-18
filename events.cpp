@@ -1,12 +1,14 @@
 #include "events.h"
-
+#include <iostream>
 events::events() {}
 
 Custom_GraphicsView::Custom_GraphicsView(QWidget *widget) : QGraphicsView(widget){
     setAcceptDrops(true);
-    connect(this, &Custom_GraphicsView::itemdrop, this, &Custom_GraphicsView::addPixmap);
+    connect(this, &Custom_GraphicsView::itemdrop, this, &Custom_GraphicsView::mydebuglines);
 }
-
+QString Custom_GraphicsView::lastDroppedGateName() const {
+    return gateNames.isEmpty() ? QString() : gateNames.top();
+}
 void Custom_GraphicsView::dragEnterEvent(QDragEnterEvent *event){
     event->accept();
     event->acceptProposedAction();
@@ -20,7 +22,12 @@ void Custom_GraphicsView::dragMoveEvent(QDragMoveEvent *event){
     event->accept();
     event->acceptProposedAction();
 }
-
+void Custom_GraphicsView::mydebuglines(){
+    QString lastGate = lastDroppedGateName();
+    if (!lastGate.isEmpty()) {
+        qDebug() << "Last dropped gate was:" << lastGate;
+    }
+}
 void Custom_GraphicsView::dropEvent(QDropEvent *event) {
     if (event->mimeData()->hasFormat("image/png")) {
         QByteArray pixmapData = event->mimeData()->data("image/png");
@@ -30,12 +37,17 @@ void Custom_GraphicsView::dropEvent(QDropEvent *event) {
         QGraphicsScene *scene = this->scene();
         if (!scene) {
             scene = new QGraphicsScene(this);
-            this->setScene(scene);
+            setScene(scene);
         }
         scene->clear();
         scene->addPixmap(pixmap);
+
+        if (event->mimeData()->hasText()) {
+            gateNames.push(event->mimeData()->text());  // Store the gate name
+        }
     }
     event->acceptProposedAction();
+    emit itemdrop();
 }
 
 void Custom_GraphicsView::addPixmap(const QPixmap &pixmap) {
@@ -51,41 +63,30 @@ void Custom_GraphicsView::addPixmap(const QPixmap &pixmap) {
 Custom_Label::Custom_Label(QWidget *widget){
 
 }
+void Custom_Label::setGateName(const QString &name) {
+    gateName = name;
+}
 
+QString Custom_Label::getGateName() const {
+    return gateName;
+}
 void Custom_Label::Create_Drag(const QPoint &pos) {
     QDrag *drag = new QDrag(this);
     QMimeData *mimeData = new QMimeData;
 
-    // Here you need to serialize the pixmap data, or store a reference to it
     QByteArray pixmapData;
     QBuffer buffer(&pixmapData);
     buffer.open(QIODevice::WriteOnly);
-    this->pixmap().save(&buffer, "PNG"); // PNG format for transparency
+    this->pixmap().save(&buffer, "PNG");
+
+    mimeData->setText(gateName);  // Use the gate name
     mimeData->setData("image/png", pixmapData);
 
     drag->setMimeData(mimeData);
-    drag->setPixmap(this->pixmap().scaled(100, 100, Qt::KeepAspectRatio, Qt::SmoothTransformation)); // Scale the pixmap for the drag preview
-    drag->setHotSpot(pos);
+    drag->setPixmap(this->pixmap().scaled(100, 100, Qt::KeepAspectRatio, Qt::SmoothTransformation));
+    drag->setHotSpot(pos - this->rect().topLeft());
     drag->exec(Qt::CopyAction | Qt::MoveAction);
 }
-
-// void Custom_Label::Create_Drag(const QPoint &pos, QWidget *widget){
-//     if(widget == nullptr) return;
-//     QByteArray byteArray(reinterpret_cast<char*>(&widget),sizeof(widget));
-//     QMimeData *mimedata = new QMimeData();
-//     mimedata->setData("Label",byteArray);
-
-//     QDrag *drag = new QDrag(this);
-//     drag->setMimeData(mimedata);
-
-//     QPoint globalpos = mapToGlobal(pos);
-//     QPoint p= widget->mapFromGlobal(globalpos);
-
-//     drag->setHotSpot(p);
-//     drag->setPixmap(widget->grab());
-//     //drag->exec();
-//     drag->exec(Qt::CopyAction | Qt::MoveAction);
-// }
 
 
 void Custom_Label::mousePressEvent(QMouseEvent *event){
