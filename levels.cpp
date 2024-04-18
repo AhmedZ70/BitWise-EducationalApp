@@ -56,6 +56,14 @@ void levels::on_homeButton_2_clicked(){
     emit homeClicked();
 }
 
+void levels::on_homeButton_3_clicked(){
+    emit homeClicked();
+}
+
+void levels::on_homeButton_4_clicked(){
+    emit homeClicked();
+}
+
 //Go to next level functions
 
 void levels::on_skipButton_clicked()
@@ -68,8 +76,8 @@ void levels::on_skipButton_2_clicked()
     ui->stackedWidget->setCurrentIndex(2);
 }
 
-void levels::on_homeButton_3_clicked(){
-    emit homeClicked();
+void levels::on_skipButton_3_clicked(){
+    ui->stackedWidget->setCurrentIndex(3);
 }
 
 

@@ -32,9 +32,13 @@ private slots:
 
     void on_skipButton_2_clicked();
 
+    void on_skipButton_3_clicked();
+
     void on_backToLevel1_clicked();
 
     void on_homeButton_3_clicked();
+
+    void on_homeButton_4_clicked();
 
     void on_backToLevel1_2_clicked();
 
