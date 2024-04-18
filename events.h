@@ -16,6 +16,7 @@
 #include <QMimeData>
 #include <QBuffer>
 #include <QGraphicsPixmapItem>
+#include <QStack>
 
 
 class events
@@ -28,24 +29,34 @@ class Custom_Label : public QLabel{
     Q_OBJECT
 public:
     explicit Custom_Label(QWidget *widget= nullptr);
+    void setGateName(const QString &name);
+
+    QString getGateName() const;
 private:
     void Create_Drag(const QPoint &pos);
+    QString gateName;
 protected:
     void mousePressEvent(QMouseEvent *event) override;
     using QLabel::QLabel;
 };
+
 class Custom_GraphicsView : public QGraphicsView{
     Q_OBJECT
+private:
+    QStack<QString> gateNames;
 public:
     explicit Custom_GraphicsView(QWidget *widget = nullptr);
+    QString lastDroppedGateName() const;
+
 signals:
-    void itemdrop(QPixmap);
+    void itemdrop();
 protected:
     void dragEnterEvent(QDragEnterEvent *event) override;
     void dragLeaveEvent(QDragLeaveEvent *event) override;
     void dragMoveEvent(QDragMoveEvent *event) override;
     void dropEvent(QDropEvent *event) override;
     void addPixmap(const QPixmap &pixmap);
+    void mydebuglines();
     using QGraphicsView::QGraphicsView;
 };
 
