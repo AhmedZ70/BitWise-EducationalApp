@@ -1622,8 +1622,8 @@
     <widget class="Custom_GraphicsView" name="graphicsView_10">
      <property name="geometry">
       <rect>
-       <x>110</x>
-       <y>110</y>
+       <x>180</x>
+       <y>83</y>
        <width>140</width>
        <height>140</height>
       </rect>
@@ -1638,8 +1638,8 @@
     <widget class="Line" name="line_29">
      <property name="geometry">
       <rect>
-       <x>60</x>
-       <y>148</y>
+       <x>130</x>
+       <y>121</y>
        <width>78</width>
        <height>16</height>
       </rect>
@@ -1657,14 +1657,14 @@
     <widget class="Line" name="line_30">
      <property name="geometry">
       <rect>
-       <x>230</x>
-       <y>170</y>
+       <x>300</x>
+       <y>143</y>
        <width>71</width>
        <height>16</height>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Raised</enum>
+      <enum>QFrame::Plain</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -1676,8 +1676,8 @@
     <widget class="QLineEdit" name="lineEdit_16">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>180</y>
+       <x>90</x>
+       <y>153</y>
        <width>41</width>
        <height>41</height>
       </rect>
@@ -1730,8 +1730,8 @@
     <widget class="QLabel" name="label_16">
      <property name="geometry">
       <rect>
-       <x>480</x>
-       <y>160</y>
+       <x>680</x>
+       <y>203</y>
        <width>41</width>
        <height>41</height>
       </rect>
@@ -1796,8 +1796,8 @@
     <widget class="Line" name="line_32">
      <property name="geometry">
       <rect>
-       <x>61</x>
-       <y>191</y>
+       <x>131</x>
+       <y>164</y>
        <width>78</width>
        <height>16</height>
       </rect>
@@ -1815,8 +1815,8 @@
     <widget class="QLineEdit" name="lineEdit_17">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>130</y>
+       <x>90</x>
+       <y>103</y>
        <width>41</width>
        <height>41</height>
       </rect>
@@ -1825,8 +1825,8 @@
     <widget class="QLineEdit" name="lineEdit_18">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>320</y>
+       <x>90</x>
+       <y>293</y>
        <width>41</width>
        <height>41</height>
       </rect>
@@ -1835,8 +1835,8 @@
     <widget class="Custom_GraphicsView" name="graphicsView_11">
      <property name="geometry">
       <rect>
-       <x>110</x>
-       <y>250</y>
+       <x>180</x>
+       <y>223</y>
        <width>140</width>
        <height>140</height>
       </rect>
@@ -1851,8 +1851,8 @@
     <widget class="QLineEdit" name="lineEdit_19">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>270</y>
+       <x>90</x>
+       <y>243</y>
        <width>41</width>
        <height>41</height>
       </rect>
@@ -1861,8 +1861,8 @@
     <widget class="Line" name="line_31">
      <property name="geometry">
       <rect>
-       <x>60</x>
-       <y>288</y>
+       <x>130</x>
+       <y>261</y>
        <width>78</width>
        <height>16</height>
       </rect>
@@ -1880,14 +1880,14 @@
     <widget class="Line" name="line_34">
      <property name="geometry">
       <rect>
-       <x>230</x>
-       <y>310</y>
+       <x>300</x>
+       <y>283</y>
        <width>71</width>
        <height>16</height>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Raised</enum>
+      <enum>QFrame::Plain</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -1899,8 +1899,8 @@
     <widget class="Line" name="line_33">
      <property name="geometry">
       <rect>
-       <x>61</x>
-       <y>331</y>
+       <x>131</x>
+       <y>304</y>
        <width>78</width>
        <height>16</height>
       </rect>
@@ -1918,11 +1918,14 @@
     <widget class="Line" name="line_18">
      <property name="geometry">
       <rect>
-       <x>298</x>
-       <y>180</y>
+       <x>369</x>
+       <y>152</y>
        <width>3</width>
-       <height>51</height>
+       <height>48</height>
       </rect>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -1934,11 +1937,14 @@
     <widget class="Line" name="line_35">
      <property name="geometry">
       <rect>
-       <x>298</x>
-       <y>270</y>
+       <x>369</x>
+       <y>242</y>
        <width>3</width>
        <height>50</height>
       </rect>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -1950,8 +1956,8 @@
     <widget class="Custom_GraphicsView" name="graphicsView_12">
      <property name="geometry">
       <rect>
-       <x>350</x>
-       <y>180</y>
+       <x>420</x>
+       <y>153</y>
        <width>140</width>
        <height>140</height>
       </rect>
@@ -1966,14 +1972,14 @@
     <widget class="Line" name="line_36">
      <property name="geometry">
       <rect>
-       <x>300</x>
-       <y>220</y>
+       <x>370</x>
+       <y>191</y>
        <width>71</width>
        <height>16</height>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Raised</enum>
+      <enum>QFrame::Plain</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -1985,14 +1991,33 @@
     <widget class="Line" name="line_37">
      <property name="geometry">
       <rect>
-       <x>300</x>
-       <y>260</y>
+       <x>370</x>
+       <y>234</y>
        <width>71</width>
        <height>16</height>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Raised</enum>
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="lineWidth">
+      <number>2</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="line_38">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>220</y>
+       <width>125</width>
+       <height>3</height>
+      </rect>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
