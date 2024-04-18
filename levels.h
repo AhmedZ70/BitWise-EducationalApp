@@ -64,6 +64,10 @@ private slots:
 
     void on_skipButton_7_clicked();
 
+    void on_skipButton_8_clicked();
+
+    void on_skipButton_9_clicked();
+
     void on_backToLevel1_clicked();
 
     void on_backToLevel1_2_clicked();

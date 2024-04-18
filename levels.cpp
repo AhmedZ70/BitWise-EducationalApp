@@ -124,6 +124,14 @@ void levels::on_skipButton_6_clicked(){
 void levels::on_skipButton_7_clicked(){
     ui->stackedWidget->setCurrentIndex(7);
 }
+
+void levels::on_skipButton_8_clicked(){
+    ui->stackedWidget->setCurrentIndex(8);
+}
+
+void levels::on_skipButton_9_clicked(){
+    ui->stackedWidget->setCurrentIndex(9);
+}
 //Go back to previous level functions
 void levels::on_backToLevel1_clicked()
 {
