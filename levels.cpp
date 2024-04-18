@@ -51,12 +51,27 @@ void levels::onHomeButtonClicked()
     emit homeClicked();
 }
 
+void levels::on_homeButton_2_clicked(){
+    emit homeClicked();
+}
 
 void levels::on_skipButton_clicked()
 {
     ui->stackedWidget->setCurrentIndex(1);
 }
 
+void levels::on_skipButton_2_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(2);
+}
+
+void levels::on_homeButton_3_clicked(){
+    emit homeClicked();
+}
+
+void levels::on_backToLevel1_2_clicked(){
+    ui->stackedWidget->setCurrentIndex(1);
+}
 
 void levels::on_backToLevel1_clicked()
 {
