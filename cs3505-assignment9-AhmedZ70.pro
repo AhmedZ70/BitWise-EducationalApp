@@ -15,6 +15,7 @@ SOURCES += \
     events.cpp \
     gameModel.cpp \
     gate.cpp \
+    levelEight.cpp \
     levelFive.cpp \
     levelFour.cpp \
     levelSeven.cpp \
@@ -38,6 +39,7 @@ HEADERS += \
     events.h \
     gameModel.h \
     gate.h \
+    levelEight.h \
     levelFive.h \
     levelFour.h \
     levelSeven.h \
