@@ -18,7 +18,7 @@ GameModel:: GameModel(){
     currentLevel = 0;
 }
 void GameModel::setLevelInput(bool a , bool b){
-    levels[currentLevel]->setInput(a, b);
+    //levels[currentLevel]->setInput(a, b);
 }
 bool GameModel::computeLevelCiruit(int currentLevel){
     levels[currentLevel]->computeOutput();
