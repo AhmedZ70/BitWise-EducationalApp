@@ -8,6 +8,8 @@
 #include <QString>
 #include <QCoreApplication>
 #include <QGraphicsScene>
+#include "gameModel.h"
+
 
 namespace Ui {
 class levels;
@@ -41,8 +43,12 @@ private slots:
     void on_homeButton_2_clicked();
 
 
+    void on_goButtonLevelOne_clicked();
+
 private:
     Ui::levels *ui;
+
+    GameModel * gameModel;
 
 signals:
     void homeClicked();

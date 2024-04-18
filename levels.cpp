@@ -7,6 +7,7 @@ levels::levels(QWidget *parent) :
     ui(new Ui::levels)
 {
     ui->setupUi(this);
+    gameModel = new GameModel();
     ui->stackedWidget->setCurrentIndex(0);
     connect (ui->homeButton, &QPushButton::clicked, this, &levels::onHomeButtonClicked);
 
@@ -85,3 +86,18 @@ void levels::on_backToLevel1_2_clicked(){
 void levels::on_backToLevel1_3_clicked(){
     ui->stackedWidget->setCurrentIndex(2);
 }
+
+void levels::on_goButtonLevelOne_clicked()
+{
+    bool inputValue1 = (ui->levelOneInput1->text() == "1");
+    bool inputValue2 = (ui->levelOneInput2->text() == "1");
+    gameModel->setLevelInput(inputValue1, inputValue2);
+    bool successful = gameModel->computeLevelCiruit(0);
+
+    if (successful) {
+        ui->stackedWidget->setCurrentIndex(1);
+    } else {
+        std::cout << "Try again" << std::endl;
+    }
+}
+
