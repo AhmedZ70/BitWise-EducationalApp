@@ -29,7 +29,7 @@
     <string notr="true">background-image: url(:/icons/wallpaper5.png);</string>
    </property>
    <property name="currentIndex">
-    <number>5</number>
+    <number>1</number>
    </property>
    <widget class="QWidget" name="level1">
     <widget class="QLabel" name="label_2">
@@ -1107,7 +1107,7 @@
       </font>
      </property>
      <property name="text">
-      <string>Go Back To Level 4</string>
+      <string>Go Back To Level 5</string>
      </property>
     </widget>
     <widget class="Custom_GraphicsView" name="graphicsView_6">

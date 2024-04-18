@@ -26,7 +26,28 @@ public:
 private slots:
     void on_pushButton_clicked();
 
+    void on_pushButton_2_clicked();
+
+    void on_pushButton_3_clicked();
+
+    void on_pushButton_4_clicked();
+
+    void on_pushButton_5_clicked();
+
+    void on_pushButton_6_clicked();
+
+
     void onHomeButtonClicked();
+
+    void on_homeButton_2_clicked();
+
+    void on_homeButton_3_clicked();
+
+    void on_homeButton_4_clicked();
+
+    void on_homeButton_5_clicked();
+
+    void on_homeButton_6_clicked();
 
     void on_skipButton_clicked();
 
@@ -40,15 +61,18 @@ private slots:
 
     void on_backToLevel1_clicked();
 
-    void on_homeButton_3_clicked();
-
-    void on_homeButton_4_clicked();
 
     void on_backToLevel1_2_clicked();
 
     void on_backToLevel1_3_clicked();
 
-    void on_homeButton_2_clicked();
+    void on_backToLevel1_4_clicked();
+
+    void on_backToLevel1_5_clicked();
+
+    void on_backToLevel1_6_clicked();
+
+
 
 
     void on_goButtonLevelOne_clicked();
