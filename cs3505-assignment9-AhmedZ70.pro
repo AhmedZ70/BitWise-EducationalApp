@@ -18,6 +18,7 @@ SOURCES += \
     levelEight.cpp \
     levelFive.cpp \
     levelFour.cpp \
+    levelNine.cpp \
     levelSeven.cpp \
     levelSix.cpp \
     levelThree.cpp \
@@ -42,6 +43,7 @@ HEADERS += \
     levelEight.h \
     levelFive.h \
     levelFour.h \
+    levelNine.h \
     levelSeven.h \
     levelSix.h \
     levelThree.h \
