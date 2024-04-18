@@ -80,6 +80,10 @@ void levels::on_skipButton_3_clicked(){
     ui->stackedWidget->setCurrentIndex(3);
 }
 
+void levels::on_skipButton_4_clicked(){
+    ui->stackedWidget->setCurrentIndex(4);
+}
+
 
 //Go back to previous level functions
 void levels::on_backToLevel1_clicked()

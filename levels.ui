@@ -29,7 +29,7 @@
     <string notr="true">background-image: url(:/icons/wallpaper5.png);</string>
    </property>
    <property name="currentIndex">
-    <number>0</number>
+    <number>4</number>
    </property>
    <widget class="QWidget" name="level1">
     <widget class="QLabel" name="label_2">
@@ -845,25 +845,6 @@
     </widget>
    </widget>
    <widget class="QWidget" name="level5">
-    <widget class="Line" name="line_13">
-     <property name="geometry">
-      <rect>
-       <x>71</x>
-       <y>261</y>
-       <width>78</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
-     </property>
-     <property name="lineWidth">
-      <number>2</number>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-    </widget>
     <widget class="QPushButton" name="skipButton_5">
      <property name="geometry">
       <rect>
@@ -892,7 +873,7 @@
       </font>
      </property>
      <property name="text">
-      <string>Go Back To Level 3 </string>
+      <string>Go Back To Level 4</string>
      </property>
     </widget>
     <widget class="Line" name="line_14">
@@ -949,7 +930,7 @@
       <enum>QFrame::Raised</enum>
      </property>
      <property name="text">
-      <string>Level Four</string>
+      <string>Level Five</string>
      </property>
      <property name="textFormat">
       <enum>Qt::MarkdownText</enum>
@@ -982,25 +963,6 @@
      </property>
      <property name="lineWidth">
       <number>1</number>
-     </property>
-    </widget>
-    <widget class="Line" name="line_15">
-     <property name="geometry">
-      <rect>
-       <x>70</x>
-       <y>218</y>
-       <width>78</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
-     </property>
-     <property name="lineWidth">
-      <number>2</number>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
      </property>
     </widget>
     <widget class="QLabel" name="label_11">
@@ -1086,12 +1048,12 @@
       <enum>Qt::Horizontal</enum>
      </property>
     </widget>
-    <widget class="Line" name="line_18">
+    <widget class="Line" name="line_19">
      <property name="geometry">
       <rect>
        <x>300</x>
        <y>190</y>
-       <width>78</width>
+       <width>70</width>
        <height>16</height>
       </rect>
      </property>
@@ -1243,6 +1205,25 @@ background-image: url(:/icons/wallpaper5.png);</string>
      <string>NAND_GATE</string>
     </property>
    </widget>
+  </widget>
+  <widget class="Line" name="line_18">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>590</y>
+     <width>78</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>2</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
   </widget>
  </widget>
  <customwidgets>
