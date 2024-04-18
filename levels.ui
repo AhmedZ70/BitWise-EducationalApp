@@ -32,7 +32,7 @@
     <number>2</number>
    </property>
    <property name="currentIndex">
-    <number>8</number>
+    <number>5</number>
    </property>
    <widget class="QWidget" name="level1">
     <widget class="QLabel" name="label_2">
@@ -1417,7 +1417,7 @@
       </font>
      </property>
      <property name="text">
-      <string>Go Back To Level 5</string>
+      <string>Go Back To Level 6</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_14">
@@ -1724,7 +1724,7 @@
       </font>
      </property>
      <property name="text">
-      <string>Go Back To Level 5</string>
+      <string>Go Back To Level 7</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_16">
@@ -2085,7 +2085,7 @@
       </font>
      </property>
      <property name="text">
-      <string>Go Back To Level 5</string>
+      <string>Go Back To Level 8</string>
      </property>
     </widget>
     <widget class="Custom_GraphicsView" name="graphicsView_13">

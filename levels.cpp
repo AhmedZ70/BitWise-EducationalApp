@@ -69,6 +69,18 @@ void levels::on_pushButton_6_clicked(){
     cout<< "go clicked" << endl;
 }
 
+void levels::on_pushButton_7_clicked(){
+    cout<< "go clicked" << endl;
+}
+
+void levels::on_pushButton_8_clicked(){
+    cout<< "go clicked" << endl;
+}
+
+void levels::on_pushButton_9_clicked(){
+    cout<< "go clicked" << endl;
+}
+
 void levels::onHomeButtonClicked()
 {
     emit homeClicked();
@@ -102,6 +114,9 @@ void levels::on_homeButton_8_clicked(){
     emit homeClicked();
 }
 
+void levels::on_homeButton_9_clicked(){
+    emit homeClicked();
+}
 //Go to next level functions
 
 void levels::on_skipButton_clicked()
@@ -168,11 +183,11 @@ void levels::on_backToLevel1_6_clicked(){
 }
 
 void levels::on_backToLevel1_7_clicked(){
-    ui->stackedWidget->setCurrentIndex(5);
+    ui->stackedWidget->setCurrentIndex(6);
 }
 
 void levels::on_backToLevel1_8_clicked(){
-    ui->stackedWidget->setCurrentIndex(5);
+    ui->stackedWidget->setCurrentIndex(7);
 }
 
 void levels::on_goButtonLevelOne_clicked()
