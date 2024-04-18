@@ -25,6 +25,9 @@
      <height>481</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/icons/wallpaper5.png);</string>
+   </property>
    <property name="currentIndex">
     <number>0</number>
    </property>
@@ -32,9 +35,9 @@
     <widget class="QLabel" name="label_2">
      <property name="geometry">
       <rect>
-       <x>270</x>
+       <x>340</x>
        <y>30</y>
-       <width>261</width>
+       <width>91</width>
        <height>51</height>
       </rect>
      </property>
@@ -51,7 +54,7 @@
       <enum>QFrame::Raised</enum>
      </property>
      <property name="text">
-      <string>Welcome To Level ONE</string>
+      <string>Level ONE</string>
      </property>
      <property name="textFormat">
       <enum>Qt::MarkdownText</enum>
@@ -295,26 +298,47 @@
     </widget>
    </widget>
   </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>-40</x>
+     <y>-20</y>
+     <width>981</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/icons/wallpaper12.png);
+background-image: url(:/icons/wallpaper5.png);
+background-color: rgb(211, 211, 211);
+color: rgb(16, 255, 0);
+color: rgb(229, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
   <widget class="QGroupBox" name="groupBox">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>10</y>
-     <width>821</width>
+     <x>40</x>
+     <y>20</y>
+     <width>671</width>
      <height>121</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-image: url(:/icons/wallpaper12.png);</string>
+    <string notr="true">background-image: url(:/icons/wallpaper12.png);
+background-image: url(:/icons/wallpaper5.png);</string>
    </property>
    <property name="title">
-    <string>Drag the gate</string>
+    <string/>
    </property>
    <widget class="Custom_Label" name="orGateLabel">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>20</y>
+      <x>10</x>
+      <y>5</y>
       <width>101</width>
       <height>101</height>
      </rect>
@@ -326,27 +350,11 @@
      <string>OR_GATE</string>
     </property>
    </widget>
-   <widget class="Custom_Label" name="andGateLabel">
-    <property name="geometry">
-     <rect>
-      <x>120</x>
-      <y>20</y>
-      <width>101</width>
-      <height>101</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="text">
-     <string>AND_GATE</string>
-    </property>
-   </widget>
    <widget class="Custom_Label" name="nandGateLabel">
     <property name="geometry">
      <rect>
-      <x>240</x>
-      <y>20</y>
+      <x>230</x>
+      <y>5</y>
       <width>101</width>
       <height>101</height>
      </rect>
@@ -361,14 +369,15 @@
    <widget class="Custom_Label" name="norGateLabel">
     <property name="geometry">
      <rect>
-      <x>360</x>
-      <y>20</y>
+      <x>340</x>
+      <y>5</y>
       <width>101</width>
       <height>101</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/icons/wallpaper12.png);</string>
+     <string notr="true">background-image: url(:/icons/wallpaper12.png);
+background-image: url(:/icons/wallpaper5.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -380,8 +389,8 @@
    <widget class="Custom_Label" name="xorGateLabel">
     <property name="geometry">
      <rect>
-      <x>480</x>
-      <y>20</y>
+      <x>450</x>
+      <y>5</y>
       <width>101</width>
       <height>101</height>
      </rect>
@@ -396,8 +405,8 @@
    <widget class="Custom_Label" name="notGateLabel">
     <property name="geometry">
      <rect>
-      <x>600</x>
-      <y>20</y>
+      <x>560</x>
+      <y>5</y>
       <width>101</width>
       <height>101</height>
      </rect>
@@ -407,6 +416,22 @@
     </property>
     <property name="text">
      <string>NOT_GATE</string>
+    </property>
+   </widget>
+   <widget class="Custom_Label" name="andGateLabel">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>5</y>
+      <width>101</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string>NAND_GATE</string>
     </property>
    </widget>
   </widget>
