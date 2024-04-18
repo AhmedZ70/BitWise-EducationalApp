@@ -59,8 +59,9 @@ private slots:
 
     void on_skipButton_5_clicked();
 
-    void on_backToLevel1_clicked();
+    void on_skipButton_6_clicked();
 
+    void on_backToLevel1_clicked();
 
     void on_backToLevel1_2_clicked();
 
@@ -71,9 +72,6 @@ private slots:
     void on_backToLevel1_5_clicked();
 
     void on_backToLevel1_6_clicked();
-
-
-
 
     void on_goButtonLevelOne_clicked();
 
