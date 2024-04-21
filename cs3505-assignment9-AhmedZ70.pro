@@ -11,6 +11,7 @@ CONFIG += c++17
 SOURCES += \
     circuit.cpp \
     circuitLevel.cpp \
+    customlineedit.cpp \
     events.cpp \
     gameModel.cpp \
     gate.cpp \
@@ -30,6 +31,7 @@ SOURCES += \
 HEADERS += \
     circuit.h \
     circuitLevel.h \
+    customlineedit.h \
     events.h \
     gameModel.h \
     gate.h \
