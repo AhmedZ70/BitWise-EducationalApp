@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <levels.h>
+#include <LevelsView.h>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -20,7 +20,7 @@ public:
 
 private:
     Ui::MainWindow *ui;
-    levels * levelsUi;
+    LevelsView * levelsUi;
     // void dragEnterEvent(QDragEnterEvent *event) override;
 
     // void dropEvent(QDropEvent *event) override;

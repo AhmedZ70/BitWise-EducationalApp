@@ -5,7 +5,7 @@
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow),
-    levelsUi(new levels())
+    levelsUi(new LevelsView())
 
 {
     ui->setupUi(this);

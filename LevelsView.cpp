@@ -1,20 +1,20 @@
-#include "levels.h"
-#include "ui_levels.h"
+#include "LevelsView.h"
+#include "ui_LevelsView.h"
 #include <QMessageBox>
 #include <iostream>
 #include <vector>
 using namespace std;
-levels::levels(QWidget *parent) :
+LevelsView::LevelsView(QWidget *parent) :
     QWidget(parent),
-    ui(new Ui::levels)
+    ui(new Ui::LevelsView)
 {
     ui->setupUi(this);
     gameModel = new GameModel();
     ui->stackedWidget->setCurrentIndex(0);
-    connect (ui->homeButton, &QPushButton::clicked, this, &levels::onHomeButtonClicked);
-    connect(gameModel,&GameModel::circuitCompleted,this, &levels::onResultReceived);
-    connect(this, &levels::gotUserInput,gameModel,&GameModel::onInputReceived);
-    connect(this, &levels::calculateLevel,gameModel,&GameModel::computeLevelCircuit);
+    connect (ui->homeButton, &QPushButton::clicked, this, &LevelsView::onHomeButtonClicked);
+    connect(gameModel,&GameModel::circuitCompleted,this, &LevelsView::onResultReceived);
+    connect(this, &LevelsView::gotUserInput,gameModel,&GameModel::onInputReceived);
+    connect(this, &LevelsView::calculateLevel,gameModel,&GameModel::computeLevelCircuit);
 
     QPixmap AND_GATE(":/icons/andGate.png");
     QPixmap OR_GATE(":/icons/orGate.png");
@@ -46,159 +46,159 @@ levels::levels(QWidget *parent) :
     ui->notGateLabel->setGateName("NOT_GATE");
 }
 
-levels::~levels()
+LevelsView::~LevelsView()
 {
     delete ui;
 
 }
 
-void levels::on_pushButton_clicked()
+void LevelsView::on_pushButton_clicked()
 {
     cout << "go clicked" << endl;
 }
 
-void levels::on_pushButton_2_clicked(){
+void LevelsView::on_pushButton_2_clicked(){
     cout<< "go clicked" << endl;
 }
 
-void levels::on_pushButton_3_clicked(){
+void LevelsView::on_pushButton_3_clicked(){
     cout<< "go clicked" << endl;
 }
 
-void levels::on_pushButton_4_clicked(){
+void LevelsView::on_pushButton_4_clicked(){
     cout<< "go clicked" << endl;
 }
 
-void levels::on_pushButton_5_clicked(){
+void LevelsView::on_pushButton_5_clicked(){
     cout<< "go clicked" << endl;
 }
 
-void levels::on_pushButton_6_clicked(){
+void LevelsView::on_pushButton_6_clicked(){
     cout<< "go clicked" << endl;
 }
 
-void levels::on_pushButton_7_clicked(){
+void LevelsView::on_pushButton_7_clicked(){
     cout<< "go clicked" << endl;
 }
 
-void levels::on_pushButton_8_clicked(){
+void LevelsView::on_pushButton_8_clicked(){
     cout<< "go clicked" << endl;
 }
 
-void levels::on_pushButton_9_clicked(){
+void LevelsView::on_pushButton_9_clicked(){
     cout<< "go clicked" << endl;
 }
 
-void levels::onHomeButtonClicked()
+void LevelsView::onHomeButtonClicked()
 {
     emit homeClicked();
 }
 
-void levels::on_homeButton_2_clicked(){
+void LevelsView::on_homeButton_2_clicked(){
     emit homeClicked();
 }
 
-void levels::on_homeButton_3_clicked(){
+void LevelsView::on_homeButton_3_clicked(){
     emit homeClicked();
 }
 
-void levels::on_homeButton_4_clicked(){
+void LevelsView::on_homeButton_4_clicked(){
     emit homeClicked();
 }
 
-void levels::on_homeButton_5_clicked(){
+void LevelsView::on_homeButton_5_clicked(){
     emit homeClicked();
 }
 
-void levels::on_homeButton_6_clicked(){
+void LevelsView::on_homeButton_6_clicked(){
     emit homeClicked();
 }
 
-void levels::on_homeButton_7_clicked(){
+void LevelsView::on_homeButton_7_clicked(){
     emit homeClicked();
 }
 
-void levels::on_homeButton_8_clicked(){
+void LevelsView::on_homeButton_8_clicked(){
     emit homeClicked();
 }
 
-void levels::on_homeButton_9_clicked(){
+void LevelsView::on_homeButton_9_clicked(){
     emit homeClicked();
 }
 //Go to next level functions
 
-void levels::on_skipButton_clicked()
+void LevelsView::on_skipButton_clicked()
 {
     ui->stackedWidget->setCurrentIndex(1);
 }
 
-void levels::on_skipButton_2_clicked()
+void LevelsView::on_skipButton_2_clicked()
 {
     ui->stackedWidget->setCurrentIndex(2);
 }
 
-void levels::on_skipButton_3_clicked(){
+void LevelsView::on_skipButton_3_clicked(){
     ui->stackedWidget->setCurrentIndex(3);
 }
 
-void levels::on_skipButton_4_clicked(){
+void LevelsView::on_skipButton_4_clicked(){
     ui->stackedWidget->setCurrentIndex(4);
 }
 
-void levels::on_skipButton_5_clicked(){
+void LevelsView::on_skipButton_5_clicked(){
     ui->stackedWidget->setCurrentIndex(5);
 }
 
-void levels::on_skipButton_6_clicked(){
+void LevelsView::on_skipButton_6_clicked(){
     ui->stackedWidget->setCurrentIndex(6);
 }
 
-void levels::on_skipButton_7_clicked(){
+void LevelsView::on_skipButton_7_clicked(){
     ui->stackedWidget->setCurrentIndex(7);
 }
 
-void levels::on_skipButton_8_clicked(){
+void LevelsView::on_skipButton_8_clicked(){
     ui->stackedWidget->setCurrentIndex(8);
 }
 
-void levels::on_skipButton_9_clicked(){
+void LevelsView::on_skipButton_9_clicked(){
     ui->stackedWidget->setCurrentIndex(9);
 }
 //Go back to previous level functions
-void levels::on_backToLevel1_clicked()
+void LevelsView::on_backToLevel1_clicked()
 {
     ui->stackedWidget->setCurrentIndex(0);
 }
 
-void levels::on_backToLevel1_2_clicked(){
+void LevelsView::on_backToLevel1_2_clicked(){
     ui->stackedWidget->setCurrentIndex(1);
 }
 
-void levels::on_backToLevel1_3_clicked(){
+void LevelsView::on_backToLevel1_3_clicked(){
     ui->stackedWidget->setCurrentIndex(2);
 }
 
-void levels::on_backToLevel1_4_clicked(){
+void LevelsView::on_backToLevel1_4_clicked(){
     ui->stackedWidget->setCurrentIndex(3);
 }
 
-void levels::on_backToLevel1_5_clicked(){
+void LevelsView::on_backToLevel1_5_clicked(){
     ui->stackedWidget->setCurrentIndex(4);
 }
 
-void levels::on_backToLevel1_6_clicked(){
+void LevelsView::on_backToLevel1_6_clicked(){
     ui->stackedWidget->setCurrentIndex(5);
 }
 
-void levels::on_backToLevel1_7_clicked(){
+void LevelsView::on_backToLevel1_7_clicked(){
     ui->stackedWidget->setCurrentIndex(6);
 }
 
-void levels::on_backToLevel1_8_clicked(){
+void LevelsView::on_backToLevel1_8_clicked(){
     ui->stackedWidget->setCurrentIndex(7);
 }
 
-void levels::on_goButtonLevelOne_clicked() {
+void LevelsView::on_goButtonLevelOne_clicked() {
     bool inputValue1 = (ui->levelOneInput1->text() == "1");
     bool inputValue2 = (ui->levelOneInput2->text() == "1");
     std::vector<bool> inputs{inputValue1, inputValue2};
@@ -207,7 +207,7 @@ void levels::on_goButtonLevelOne_clicked() {
     emit calculateLevel(0);
 }
 
-void levels::onResultReceived(bool successful) {
+void LevelsView::onResultReceived(bool successful) {
     QString lastGate = ui->graphicsView->lastDroppedGateName();
     if (successful) {
         if (lastGate != "AND_GATE") {

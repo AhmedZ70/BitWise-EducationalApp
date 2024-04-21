@@ -1,5 +1,5 @@
-#ifndef LEVELS_H
-#define LEVELS_H
+#ifndef LEVELSVIEW_H
+#define LEVELSVIEW_H
 
 #include <QWidget>
 #include <QMainWindow>
@@ -13,16 +13,16 @@
 
 
 namespace Ui {
-class levels;
+class LevelsView;
 }
 
-class levels : public QWidget
+class LevelsView : public QWidget
 {
     Q_OBJECT
 
 public:
-    explicit levels(QWidget *parent = nullptr);
-    ~levels();
+    explicit LevelsView(QWidget *parent = nullptr);
+    ~LevelsView();
 
 private slots:
     void on_pushButton_clicked();
@@ -99,7 +99,7 @@ private slots:
     void on_goButtonLevelOne_clicked();
 
 private:
-    Ui::levels *ui;
+    Ui::LevelsView *ui;
 
     GameModel * gameModel;
 
@@ -112,4 +112,4 @@ public slots:
     void onResultReceived(bool successful);
 };
 
-#endif // LEVELS_H
+#endif // LEVELSVIEW_H
