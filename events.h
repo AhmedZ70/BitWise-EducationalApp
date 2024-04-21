@@ -57,6 +57,7 @@ protected:
     void dropEvent(QDropEvent *event) override;
     void addPixmap(const QPixmap &pixmap);
     void mydebuglines();
+    void paintEvent(QPaintEvent *event) override;
     using QGraphicsView::QGraphicsView;
 };
 

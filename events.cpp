@@ -1,5 +1,4 @@
 #include "events.h"
-#include <iostream>
 events::events() {}
 
 Custom_GraphicsView::Custom_GraphicsView(QWidget *widget) : QGraphicsView(widget){
@@ -48,6 +47,33 @@ void Custom_GraphicsView::dropEvent(QDropEvent *event) {
     }
     event->acceptProposedAction();
     emit itemdrop();
+}
+void Custom_GraphicsView::paintEvent(QPaintEvent *event) {
+    QGraphicsView::paintEvent(event);
+
+    if (gateNames.isEmpty()) {
+        QPainter painter(viewport());
+        painter.setPen(Qt::darkGray);
+        painter.setFont(QFont("Arial", 14, QFont::DemiBold));
+
+        QStringList lines = {"Drag", "Gate", "Here!"};
+
+        QRect viewportRect = viewport()->rect();
+        QPoint center = viewportRect.center();
+
+        QFontMetrics metrics(painter.font());
+        int totalHeight = metrics.height() * lines.size();
+
+        int startY = center.y() - totalHeight / 2;
+
+        for (const QString &line : lines) {
+            QRect lineRect = metrics.boundingRect(line);
+            lineRect.moveCenter(QPoint(center.x(), startY));
+
+            painter.drawText(lineRect, Qt::AlignCenter, line);
+            startY += metrics.height();
+        }
+    }
 }
 
 void Custom_GraphicsView::addPixmap(const QPixmap &pixmap) {
