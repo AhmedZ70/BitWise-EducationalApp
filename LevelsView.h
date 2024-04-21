@@ -96,16 +96,18 @@ private slots:
 
     void on_backToLevel1_8_clicked();
 
-    void on_goButtonLevelOne_clicked();
 
 private:
     Ui::LevelsView *ui;
-
+    int currentLevel;
     GameModel * gameModel;
+    void goClickedTrainingLevel(int level);
+    bool getFirstUserInput(int level);
+    bool getSecondUserInput(int level);
 
 signals:
     void homeClicked();
-    void gotUserInput(std::vector<bool>);
+    void gotUserInput(std::vector<bool>, int currentLevel);
     void calculateLevel(int level);
 
 public slots:

@@ -1,4 +1,5 @@
 #include "levelSix.h"
+#include <iostream>
 LevelSix::LevelSix() : inputA(false), inputB(false){}
 
 void LevelSix::setInput(std:: vector<bool> inputs) {
@@ -9,12 +10,13 @@ void LevelSix::setInput(std:: vector<bool> inputs) {
 void LevelSix::computeOutput() {
     Gate andGate = setGate("AND");
     andGate.setInput(inputA, inputB);
-    result = andGate.computeOutput();
+    bool firstResult = andGate.computeOutput();
     Gate notGate = setGate("NOT");
-    notGate.setInput(result, false);
+    notGate.setInput(firstResult);
     bool finalResult = notGate.computeOutput();
     result = finalResult;
 
 }
+
 
 

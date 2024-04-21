@@ -15,6 +15,12 @@ LevelsView::LevelsView(QWidget *parent) :
     connect(gameModel,&GameModel::circuitCompleted,this, &LevelsView::onResultReceived);
     connect(this, &LevelsView::gotUserInput,gameModel,&GameModel::onInputReceived);
     connect(this, &LevelsView::calculateLevel,gameModel,&GameModel::computeLevelCircuit);
+    connect (ui->goButtonLevelOne, &QPushButton::clicked, this, &LevelsView::on_pushButton_clicked);
+    connect (ui->pushButton_3, &QPushButton::clicked, this, &LevelsView::on_pushButton_3_clicked);
+    connect (ui->pushButton_4, &QPushButton::clicked, this, &LevelsView::on_pushButton_4_clicked);
+    connect (ui->pushButton_5, &QPushButton::clicked, this, &LevelsView::on_pushButton_5_clicked);
+    connect (ui->pushButton_6, &QPushButton::clicked, this, &LevelsView::on_pushButton_6_clicked);
+
 
     QPixmap AND_GATE(":/icons/andGate.png");
     QPixmap OR_GATE(":/icons/orGate.png");
@@ -54,32 +60,40 @@ LevelsView::~LevelsView()
 
 void LevelsView::on_pushButton_clicked()
 {
-    cout << "go clicked" << endl;
+    currentLevel = 1;
+    goClickedTrainingLevel(currentLevel);
 }
 
 void LevelsView::on_pushButton_2_clicked(){
-    cout<< "go clicked" << endl;
+    currentLevel = 2;
+    goClickedTrainingLevel(currentLevel);
 }
 
 void LevelsView::on_pushButton_3_clicked(){
-    cout<< "go clicked" << endl;
+    currentLevel = 3;
+    goClickedTrainingLevel(currentLevel);
 }
 
 void LevelsView::on_pushButton_4_clicked(){
-    cout<< "go clicked" << endl;
+    currentLevel = 4;
+    goClickedTrainingLevel(currentLevel);
 }
 
 void LevelsView::on_pushButton_5_clicked(){
-    cout<< "go clicked" << endl;
+    currentLevel = 5;
+    goClickedTrainingLevel(currentLevel);
 }
 
 void LevelsView::on_pushButton_6_clicked(){
-    cout<< "go clicked" << endl;
+    currentLevel = 6;
+    goClickedTrainingLevel(currentLevel);
 }
 
 void LevelsView::on_pushButton_7_clicked(){
-    cout<< "go clicked" << endl;
+    currentLevel = 7;
+    goClickedTrainingLevel(currentLevel);
 }
+
 
 void LevelsView::on_pushButton_8_clicked(){
     cout<< "go clicked" << endl;
@@ -198,13 +212,15 @@ void LevelsView::on_backToLevel1_8_clicked(){
     ui->stackedWidget->setCurrentIndex(7);
 }
 
-void LevelsView::on_goButtonLevelOne_clicked() {
-    bool inputValue1 = (ui->levelOneInput1->text() == "1");
-    bool inputValue2 = (ui->levelOneInput2->text() == "1");
+
+
+void LevelsView ::goClickedTrainingLevel(int level){
+    bool inputValue1 = getFirstUserInput(level);
+    bool inputValue2 = getSecondUserInput(level);
     std::vector<bool> inputs{inputValue1, inputValue2};
 
-    emit gotUserInput(inputs);
-    emit calculateLevel(0);
+    emit gotUserInput(inputs,level);
+    emit calculateLevel(level);
 }
 
 void LevelsView::onResultReceived(bool successful) {
@@ -213,7 +229,7 @@ void LevelsView::onResultReceived(bool successful) {
         if (lastGate != "AND_GATE") {
             QMessageBox::warning(this, "Gate Requirement", "you need an AND Gate dummy");
         } else {
-            ui->stackedWidget->setCurrentIndex(1);
+            ui->stackedWidget->setCurrentIndex(ui->stackedWidget->currentIndex() + 1);
             QMessageBox::information(this, "Success", "Good job, on to level 2");
         }
     } else {
@@ -221,4 +237,48 @@ void LevelsView::onResultReceived(bool successful) {
     }
 }
 
+bool LevelsView::getFirstUserInput(int level)
+{
+    switch(level){
+    case 1:
+        return (ui->levelOneInput1->text() == "1");
+    case 2:
+        return (ui->lineEdit_3->text() == "1");
+    case 3:
+        return (ui->lineEdit_5->text() == "1");
 
+    case 4:
+        return (ui->lineEdit_7->text() == "1");
+
+    case 5:
+        return (ui->lineEdit_9->text() == "1");
+
+    case 6:
+        return (ui -> lineEdit_11 -> text() == "1");
+    }
+
+
+}
+
+bool LevelsView::getSecondUserInput(int level)
+{
+    switch(level){
+    case 1:
+        return (ui->levelOneInput2->text() == "1");
+    case 2:
+        return (ui->lineEdit_4->text() == "1");
+    case 3:
+        return (ui->lineEdit_6->text() == "1");
+
+    case 4:
+        return (ui->lineEdit_8->text() == "1");
+
+    case 5:
+        return (ui->lineEdit_10->text() == "1");
+
+
+    case 6:
+        return (ui -> lineEdit_12 -> text() == "1");
+    }
+
+}

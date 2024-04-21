@@ -21,6 +21,12 @@ void Gate::setInput(bool firstValue, bool secondValue) {
     }
 }
 
+void Gate::setInput(bool firstValue)
+{
+    firstInput = firstValue;
+    secondInput = false;
+}
+
 bool Gate::computeOutput() {
     if (isNotGate) {
         output = notGateFunction(firstInput);

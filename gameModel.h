@@ -20,7 +20,7 @@ signals:
     void circuitCompleted(bool completed);
 
 public slots:
-    void onInputReceived(std::vector<bool>inputs);
+    void onInputReceived(std::vector<bool>inputs, int currentLevel);
     void computeLevelCircuit(int currentLevel);
 
 

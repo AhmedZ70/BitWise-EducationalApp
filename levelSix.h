@@ -7,7 +7,6 @@ class LevelSix: public CircuitLevel{
 private:
     bool inputA;
     bool inputB;
-    bool result;
 
 public:
     LevelSix();

@@ -24,14 +24,16 @@ GameModel::GameModel(QObject *parent) : QObject(parent), currentLevel(0){
 }
 
 void GameModel::computeLevelCircuit(int currentLevel){
+    currentLevel = currentLevel-1;
     levels[currentLevel]->computeOutput();
 
     bool result = levels[currentLevel]->getResult();
-
+    cout << result << endl;
     emit circuitCompleted(result);
 }
-void GameModel:: onInputReceived(std::vector<bool>inputs)
+void GameModel:: onInputReceived(std::vector<bool>inputs,int currentLevel)
 {
+    currentLevel = currentLevel-1;
     levels[currentLevel]->setInput(inputs);
 }
 

@@ -1,10 +1,12 @@
 #include "circuitLevel.h"
 #include <functional>
+#include <iostream>
 void CircuitLevel::setInput(vector<bool>inputs) {}
 
 void CircuitLevel::computeOutput() {}
 
 bool CircuitLevel::getResult() const {
+    cout << result << endl;
     return result;
 }
 
