@@ -1396,8 +1396,8 @@ background-image: url(:/icons/wallpaper5.png);</string>
     <widget class="Custom_GraphicsView" name="graphicsView_7">
      <property name="geometry">
       <rect>
-       <x>350</x>
-       <y>130</y>
+       <x>790</x>
+       <y>230</y>
        <width>140</width>
        <height>140</height>
       </rect>
@@ -1447,6 +1447,34 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <enum>Qt::Horizontal</enum>
      </property>
     </widget>
+    <widget class="QLabel" name="intializedNotGate">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>130</y>
+       <width>140</width>
+       <height>140</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <zorder>intializedNotGate</zorder>
+    <zorder>pushButton_6</zorder>
+    <zorder>lineEdit_11</zorder>
+    <zorder>backToLevel1_5</zorder>
+    <zorder>graphicsView_6</zorder>
+    <zorder>label_12</zorder>
+    <zorder>lineEdit_12</zorder>
+    <zorder>skipButton_6</zorder>
+    <zorder>homeButton_6</zorder>
+    <zorder>label_13</zorder>
+    <zorder>line_21</zorder>
+    <zorder>line_22</zorder>
+    <zorder>graphicsView_7</zorder>
+    <zorder>line_23</zorder>
+    <zorder>line_20</zorder>
    </widget>
    <widget class="QWidget" name="level7">
     <widget class="Custom_GraphicsView" name="graphicsView_8">

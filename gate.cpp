@@ -32,7 +32,6 @@ bool Gate::computeOutput() {
         output = notGateFunction(firstInput);
     }
     else {
-
         output = gateFunction(firstInput, secondInput);
     }
     return output;

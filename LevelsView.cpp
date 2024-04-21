@@ -13,7 +13,7 @@ LevelsView::LevelsView(QWidget *parent) :
     ui->stackedWidget->setCurrentIndex(0);
     connect (ui->homeButton, &QPushButton::clicked, this, &LevelsView::onHomeButtonClicked);
     connect(gameModel,&GameModel::circuitCompleted,this, &LevelsView::onResultReceived);
-    connect(this, &LevelsView::gotUserInput,gameModel,&GameModel::onInputReceived);
+    connect(this, &LevelsView::gotUserInput, gameModel,&GameModel::onInputReceived);
     connect(this, &LevelsView::calculateLevel,gameModel,&GameModel::computeLevelCircuit);
     connect (ui->goButtonLevelOne, &QPushButton::clicked, this, &LevelsView::on_pushButton_clicked);
     connect (ui->pushButton_3, &QPushButton::clicked, this, &LevelsView::on_pushButton_3_clicked);
@@ -27,7 +27,13 @@ LevelsView::LevelsView(QWidget *parent) :
     QPixmap NAND_GATE(":/icons/nandGate.png");
     QPixmap NOR_GATE(":/icons/norGate.png");
     QPixmap XOR_GATE(":/icons/xorGate.png");
-    QPixmap NOT_GATE(":/icons/notGate.png");
+    //TODO: delete the line below
+    // QPixmap NOT_GATE(":/icons/notGate.png");
+
+    QPixmap notGatePixmap(":/icons/notGate.png");
+    ui->intializedNotGate->setPixmap(notGatePixmap.scaled(105, 105, Qt::KeepAspectRatio, Qt::SmoothTransformation));
+    ui->intializedNotGate->setAlignment(Qt::AlignCenter);
+
 
 
     ui->andGateLabel->setPixmap(AND_GATE.scaled(100, 100, Qt::KeepAspectRatio));
@@ -35,7 +41,7 @@ LevelsView::LevelsView(QWidget *parent) :
     ui->nandGateLabel->setPixmap(NAND_GATE.scaled(100, 100, Qt::KeepAspectRatio));
     ui->norGateLabel->setPixmap(NOR_GATE.scaled(100, 100, Qt::KeepAspectRatio));
     ui->xorGateLabel->setPixmap(XOR_GATE.scaled(100,100, Qt::KeepAspectRatio));
-    ui->notGateLabel->setPixmap(NOT_GATE.scaled(100, 100, Qt::KeepAspectRatio));
+    // ui->notGateLabel->setPixmap(NOT_GATE.scaled(100, 100, Qt::KeepAspectRatio));
 
 
     ui->andGateLabel->setParent(ui->groupBox);
@@ -48,8 +54,8 @@ LevelsView::LevelsView(QWidget *parent) :
     ui->norGateLabel->setGateName("NOR_GATE");
     ui->xorGateLabel->setParent(ui->groupBox);
     ui->xorGateLabel->setGateName("XOR_GATE");
-    ui->notGateLabel->setParent(ui->groupBox);
-    ui->notGateLabel->setGateName("NOT_GATE");
+    // ui->notGateLabel->setParent(ui->groupBox);
+    // ui->notGateLabel->setGateName("NOT_GATE");
 }
 
 LevelsView::~LevelsView()
