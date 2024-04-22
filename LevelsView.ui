@@ -200,6 +200,9 @@
        <height>41</height>
       </rect>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="CustomLineEdit" name="levelOneInput2">
      <property name="geometry">
@@ -209,6 +212,9 @@
        <width>41</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="label">
@@ -304,7 +310,7 @@ color: rgb(255, 255, 255);</string>
       <string>Skip</string>
      </property>
     </widget>
-    <widget class="Custom_GraphicsView" name="graphicsView">
+    <widget class="Custom_GraphicsView" name="gateOneLevel1">
      <property name="geometry">
       <rect>
        <x>340</x>
@@ -346,7 +352,7 @@ color: rgb(255, 255, 255);</string>
     <zorder>label</zorder>
     <zorder>homeButton</zorder>
     <zorder>skipButton</zorder>
-    <zorder>graphicsView</zorder>
+    <zorder>gateOneLevel1</zorder>
     <zorder>line_3</zorder>
     <zorder>line</zorder>
     <zorder>line_2</zorder>
@@ -408,7 +414,7 @@ color: rgb(255, 255, 255);</string>
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_3">
+    <widget class="CustomLineEdit" name="levelTwoInput1">
      <property name="geometry">
       <rect>
        <x>90</x>
@@ -416,6 +422,9 @@ color: rgb(255, 255, 255);</string>
        <width>41</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="label_5">
@@ -459,7 +468,7 @@ color: rgb(255, 255, 255);</string>
       <string>Skip</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_2">
+    <widget class="QPushButton" name="goButtonLevelTwo">
      <property name="geometry">
       <rect>
        <x>440</x>
@@ -472,7 +481,7 @@ color: rgb(255, 255, 255);</string>
       <string>GO</string>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_4">
+    <widget class="CustomLineEdit" name="levelTwoInput2">
      <property name="geometry">
       <rect>
        <x>90</x>
@@ -481,8 +490,11 @@ color: rgb(255, 255, 255);</string>
        <height>41</height>
       </rect>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
-    <widget class="Custom_GraphicsView" name="graphicsView_2">
+    <widget class="Custom_GraphicsView" name="gateOneLevel2">
      <property name="geometry">
       <rect>
        <x>180</x>
@@ -582,7 +594,7 @@ color: rgb(255, 255, 255);</string>
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_5">
+    <widget class="CustomLineEdit" name="levelThreeInput1">
      <property name="geometry">
       <rect>
        <x>90</x>
@@ -590,6 +602,9 @@ color: rgb(255, 255, 255);</string>
        <width>41</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QPushButton" name="backToLevel1_2">
@@ -610,7 +625,7 @@ color: rgb(255, 255, 255);</string>
       <string>Go Back To Level 2 </string>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_6">
+    <widget class="CustomLineEdit" name="levelThreeInput2">
      <property name="geometry">
       <rect>
        <x>90</x>
@@ -619,8 +634,11 @@ color: rgb(255, 255, 255);</string>
        <height>41</height>
       </rect>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_3">
+    <widget class="QPushButton" name="goButtonLevelThree">
      <property name="geometry">
       <rect>
        <x>440</x>
@@ -633,7 +651,7 @@ color: rgb(255, 255, 255);</string>
       <string>GO</string>
      </property>
     </widget>
-    <widget class="Custom_GraphicsView" name="graphicsView_3">
+    <widget class="Custom_GraphicsView" name="gateOneLevel3">
      <property name="geometry">
       <rect>
        <x>180</x>
@@ -762,7 +780,7 @@ color: rgb(255, 255, 255);</string>
     </widget>
    </widget>
    <widget class="QWidget" name="level4">
-    <widget class="CustomLineEdit" name="lineEdit_7">
+    <widget class="CustomLineEdit" name="levelFourInput1">
      <property name="geometry">
       <rect>
        <x>90</x>
@@ -770,6 +788,9 @@ color: rgb(255, 255, 255);</string>
        <width>41</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QPushButton" name="backToLevel1_3">
@@ -790,7 +811,7 @@ color: rgb(255, 255, 255);</string>
       <string>Go Back To Level 3 </string>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_8">
+    <widget class="CustomLineEdit" name="levelFourInput2">
      <property name="geometry">
       <rect>
        <x>90</x>
@@ -799,8 +820,11 @@ color: rgb(255, 255, 255);</string>
        <height>41</height>
       </rect>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_4">
+    <widget class="QPushButton" name="goButtonLevelFour">
      <property name="geometry">
       <rect>
        <x>400</x>
@@ -813,7 +837,7 @@ color: rgb(255, 255, 255);</string>
       <string>GO</string>
      </property>
     </widget>
-    <widget class="Custom_GraphicsView" name="graphicsView_4">
+    <widget class="Custom_GraphicsView" name="gateOneLevel4">
      <property name="geometry">
       <rect>
        <x>180</x>
@@ -1058,7 +1082,7 @@ color: rgb(255, 255, 255);</string>
       <enum>Qt::MarkdownText</enum>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_5">
+    <widget class="QPushButton" name="goButtonLevelFive">
      <property name="geometry">
       <rect>
        <x>440</x>
@@ -1071,7 +1095,7 @@ color: rgb(255, 255, 255);</string>
       <string>GO</string>
      </property>
     </widget>
-    <widget class="Custom_GraphicsView" name="graphicsView_5">
+    <widget class="Custom_GraphicsView" name="gateOneLevel5">
      <property name="geometry">
       <rect>
        <x>180</x>
@@ -1112,7 +1136,7 @@ color: rgb(255, 255, 255);</string>
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_9">
+    <widget class="CustomLineEdit" name="levelFiveInput2">
      <property name="geometry">
       <rect>
        <x>90</x>
@@ -1121,8 +1145,11 @@ color: rgb(255, 255, 255);</string>
        <height>41</height>
       </rect>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_10">
+    <widget class="CustomLineEdit" name="levelFiveInput1">
      <property name="geometry">
       <rect>
        <x>90</x>
@@ -1130,6 +1157,9 @@ color: rgb(255, 255, 255);</string>
        <width>41</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="Line" name="line_16">
@@ -1191,7 +1221,7 @@ color: rgb(255, 255, 255);</string>
     </widget>
    </widget>
    <widget class="QWidget" name="level6">
-    <widget class="QPushButton" name="pushButton_6">
+    <widget class="QPushButton" name="goButtonLevelSix">
      <property name="geometry">
       <rect>
        <x>640</x>
@@ -1204,7 +1234,7 @@ color: rgb(255, 255, 255);</string>
       <string>GO</string>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_11">
+    <widget class="CustomLineEdit" name="levelSixInput2">
      <property name="geometry">
       <rect>
        <x>90</x>
@@ -1212,6 +1242,9 @@ color: rgb(255, 255, 255);</string>
        <width>41</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QPushButton" name="backToLevel1_5">
@@ -1232,7 +1265,7 @@ color: rgb(255, 255, 255);</string>
       <string>Go Back To Level 5</string>
      </property>
     </widget>
-    <widget class="Custom_GraphicsView" name="graphicsView_6">
+    <widget class="Custom_GraphicsView" name="gateOneLevel6">
      <property name="geometry">
       <rect>
        <x>180</x>
@@ -1273,7 +1306,7 @@ color: rgb(255, 255, 255);</string>
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_12">
+    <widget class="CustomLineEdit" name="levelSixInput1">
      <property name="geometry">
       <rect>
        <x>90</x>
@@ -1281,6 +1314,9 @@ color: rgb(255, 255, 255);</string>
        <width>41</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QPushButton" name="skipButton_6">
@@ -1427,12 +1463,12 @@ color: rgb(255, 255, 255);</string>
      </property>
     </widget>
     <zorder>intializedNotGate</zorder>
-    <zorder>pushButton_6</zorder>
-    <zorder>lineEdit_11</zorder>
+    <zorder>goButtonLevelSix</zorder>
+    <zorder>levelSixInput2</zorder>
     <zorder>backToLevel1_5</zorder>
-    <zorder>graphicsView_6</zorder>
+    <zorder>gateOneLevel6</zorder>
     <zorder>label_12</zorder>
-    <zorder>lineEdit_12</zorder>
+    <zorder>levelSixInput1</zorder>
     <zorder>skipButton_6</zorder>
     <zorder>homeButton_6</zorder>
     <zorder>label_13</zorder>
@@ -1486,6 +1522,9 @@ color: rgb(255, 255, 255);</string>
        <height>41</height>
       </rect>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="Line" name="line_26">
      <property name="geometry">
@@ -1519,7 +1558,7 @@ color: rgb(255, 255, 255);</string>
       <string>Home</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="goButtonLevel7">
+    <widget class="QPushButton" name="goButtonLevelSeven">
      <property name="geometry">
       <rect>
        <x>630</x>
@@ -1644,6 +1683,9 @@ color: rgb(255, 255, 255);</string>
        <height>41</height>
       </rect>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="CustomLineEdit" name="level7Input3">
      <property name="geometry">
@@ -1653,6 +1695,9 @@ color: rgb(255, 255, 255);</string>
        <width>41</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="Custom_GraphicsView" name="gateTwoLevel7">
@@ -1812,6 +1857,9 @@ color: rgb(255, 255, 255);</string>
        <height>41</height>
       </rect>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="QPushButton" name="homeButton_8">
      <property name="geometry">
@@ -1826,7 +1874,7 @@ color: rgb(255, 255, 255);</string>
       <string>Home</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="goButtonLevel8">
+    <widget class="QPushButton" name="goButtonLevelEight">
      <property name="geometry">
       <rect>
        <x>600</x>
@@ -1951,6 +1999,9 @@ color: rgb(255, 255, 255);</string>
        <height>41</height>
       </rect>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="CustomLineEdit" name="level8Input4">
      <property name="geometry">
@@ -1960,6 +2011,9 @@ color: rgb(255, 255, 255);</string>
        <width>41</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="Custom_GraphicsView" name="gateTwoLevel8">
@@ -1986,6 +2040,9 @@ color: rgb(255, 255, 255);</string>
        <width>41</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="Line" name="line_31">
@@ -2180,6 +2237,9 @@ color: rgb(255, 255, 255);</string>
        <height>41</height>
       </rect>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="Line" name="line_39">
      <property name="geometry">
@@ -2242,6 +2302,9 @@ color: rgb(255, 255, 255);</string>
        <width>41</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="label_18">
@@ -2310,6 +2373,9 @@ color: rgb(255, 255, 255);</string>
        <height>41</height>
       </rect>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="Line" name="line_43">
      <property name="geometry">
@@ -2349,7 +2415,7 @@ color: rgb(255, 255, 255);</string>
       <enum>Qt::Horizontal</enum>
      </property>
     </widget>
-    <widget class="QPushButton" name="goButtonLevel9">
+    <widget class="QPushButton" name="goButtonLevelNine">
      <property name="geometry">
       <rect>
        <x>590</x>
@@ -2370,6 +2436,9 @@ color: rgb(255, 255, 255);</string>
        <width>41</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="label_19">
@@ -2703,6 +2772,9 @@ color: rgb(255, 255, 255);</string>
        <height>41</height>
       </rect>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="QPushButton" name="homeButton_10">
      <property name="geometry">
@@ -2738,6 +2810,9 @@ color: rgb(255, 255, 255);</string>
        <width>41</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QPushButton" name="backToLevel1_9">
@@ -2795,6 +2870,9 @@ color: rgb(255, 255, 255);</string>
        <height>41</height>
       </rect>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="CustomLineEdit" name="level10Input4">
      <property name="geometry">
@@ -2804,6 +2882,9 @@ color: rgb(255, 255, 255);</string>
        <width>41</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="CustomLineEdit" name="level10Input5">
@@ -2815,6 +2896,9 @@ color: rgb(255, 255, 255);</string>
        <height>41</height>
       </rect>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="CustomLineEdit" name="level10Input6">
      <property name="geometry">
@@ -2824,6 +2908,9 @@ color: rgb(255, 255, 255);</string>
        <width>41</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="Line" name="line_117">
@@ -3444,6 +3531,9 @@ color: rgb(255, 255, 255);</string>
        <height>41</height>
       </rect>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="QPushButton" name="goButtonLevelEleven">
      <property name="geometry">
@@ -3466,6 +3556,9 @@ color: rgb(255, 255, 255);</string>
        <width>41</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QPushButton" name="skipButton_11">
@@ -3557,6 +3650,9 @@ color: rgb(255, 255, 255);</string>
        <height>41</height>
       </rect>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="CustomLineEdit" name="level11Input5">
      <property name="geometry">
@@ -3566,6 +3662,9 @@ color: rgb(255, 255, 255);</string>
        <width>41</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="CustomLineEdit" name="level11Input6">
@@ -3577,6 +3676,9 @@ color: rgb(255, 255, 255);</string>
        <height>41</height>
       </rect>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="CustomLineEdit" name="level11Input1">
      <property name="geometry">
@@ -3586,6 +3688,9 @@ color: rgb(255, 255, 255);</string>
        <width>41</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="Custom_GraphicsView" name="gateTwoLevel11">
@@ -4143,7 +4248,7 @@ color: rgb(255, 255, 255);</string>
       <enum>Qt::Vertical</enum>
      </property>
     </widget>
-    <widget class="QPushButton" name="goButtonLevelEleven_2">
+    <widget class="QPushButton" name="goButtonLevelTwelve">
      <property name="geometry">
       <rect>
        <x>660</x>
@@ -4218,6 +4323,9 @@ color: rgb(255, 255, 255);</string>
        <height>41</height>
       </rect>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="QPushButton" name="backToLevel1_11">
      <property name="geometry">
@@ -4248,6 +4356,9 @@ color: rgb(255, 255, 255);</string>
        <width>41</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="Custom_GraphicsView" name="gateFiveLevel12">
@@ -4288,6 +4399,9 @@ color: rgb(255, 255, 255);</string>
        <height>41</height>
       </rect>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="CustomLineEdit" name="level12Input4">
      <property name="geometry">
@@ -4297,6 +4411,9 @@ color: rgb(255, 255, 255);</string>
        <width>41</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="CustomLineEdit" name="level12Input5">
@@ -4308,6 +4425,9 @@ color: rgb(255, 255, 255);</string>
        <height>41</height>
       </rect>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="CustomLineEdit" name="level12Input6">
      <property name="geometry">
@@ -4317,6 +4437,9 @@ color: rgb(255, 255, 255);</string>
        <width>41</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="CustomLineEdit" name="level12Input7">
@@ -4328,6 +4451,9 @@ color: rgb(255, 255, 255);</string>
        <height>41</height>
       </rect>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="CustomLineEdit" name="level12Input8">
      <property name="geometry">
@@ -4337,6 +4463,9 @@ color: rgb(255, 255, 255);</string>
        <width>41</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="Custom_GraphicsView" name="gateOneLevel12">
@@ -4976,7 +5105,7 @@ color: rgb(255, 255, 255);</string>
   <customwidget>
    <class>Custom_GraphicsView</class>
    <extends>QGraphicsView</extends>
-   <header>events.h</header>
+   <header location="global">events.h</header>
   </customwidget>
   <customwidget>
    <class>CustomLineEdit</class>

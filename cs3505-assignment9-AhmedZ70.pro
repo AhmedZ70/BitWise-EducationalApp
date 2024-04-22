@@ -56,6 +56,7 @@ SOURCES += \
     Box2D/Dynamics/b2WorldCallbacks.cpp \
     Box2D/Rope/b2Rope.cpp \
     LevelsView.cpp \
+    Trainingdialog.cpp \
     circuitLevel.cpp \
     customlineedit.cpp \
     events.cpp \
@@ -125,6 +126,7 @@ HEADERS += \
     Box2D/Dynamics/b2WorldCallbacks.h \
     Box2D/Rope/b2Rope.h \
     LevelsView.h \
+    Trainingdialog.h \
     circuitLevel.h \
     customlineedit.h \
     events.h \
@@ -146,7 +148,8 @@ HEADERS += \
 
 FORMS += \
     LevelsView.ui \
-    mainwindow.ui
+    mainwindow.ui \
+    trainingdialog.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
