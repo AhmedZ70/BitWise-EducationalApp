@@ -94,9 +94,57 @@ void LevelsView::on_goButtonLevelFive_clicked()
 
 void LevelsView::on_goButtonLevelSix_clicked()
 {
-    currentLevel = 6;
-    emit levelChanged(currentLevel);
-    goClickedTrainingLevel(currentLevel);
+    std::vector<Custom_GraphicsView*> gates = {ui->gateOneLevel6};
+    std::vector<CustomLineEdit*> inputs = {ui->level6Input1, ui->level6Input2};
+    emit levelChanged(6);
+    processLevelInputs(gates, inputs);
+}
+void LevelsView::on_goButtonLevelSeven_clicked()
+{
+    std::vector<Custom_GraphicsView*> gates = {ui->gateOneLevel7, ui->gateTwoLevel7};
+    std::vector<CustomLineEdit*> inputs = {ui->level7Input1, ui->level7Input2, ui->level7Input3};
+    emit levelChanged(7);
+    processLevelInputs(gates, inputs);
+}
+
+void LevelsView::on_goButtonLevelEight_clicked()
+{
+    std::vector<Custom_GraphicsView*> gates = {ui->gateOneLevel8, ui->gateTwoLevel8, ui->gateThreeLevel8};
+    std::vector<CustomLineEdit*> inputs = {ui->level8Input1, ui->level8Input2, ui->level8Input3, ui->level8Input4};
+    emit levelChanged(8);
+    processLevelInputs(gates, inputs);
+}
+
+void LevelsView::on_goButtonLevelNine_clicked()
+{
+    std::vector<Custom_GraphicsView*> gates = {ui->gateOneLevel9, ui->gateTwoLevel9, ui->gateThreeLevel9};
+    std::vector<CustomLineEdit*> inputs = {ui->level9Input1, ui->level9Input2, ui->level9Input3, ui->level9Input4};
+    emit levelChanged(9);
+    processLevelInputs(gates, inputs);
+}
+
+void LevelsView::on_goButtonLevelTen_clicked()
+{
+    std::vector<Custom_GraphicsView*> gates = {ui->gateOneLevel10, ui->gateTwoLevel10, ui->gateThreeLevel10, ui->gateFourLevel10, ui->gateFiveLevel10};
+    std::vector<CustomLineEdit*> inputs = {ui->level10Input1, ui->level10Input2, ui->level10Input3, ui->level10Input4, ui->level10Input5, ui->level10Input6};
+    emit levelChanged(10);
+    processLevelInputs(gates, inputs);
+}
+
+void LevelsView::on_goButtonLevelEleven_clicked()
+{
+    std::vector<Custom_GraphicsView*> gates = {ui->gateOneLevel11, ui->gateTwoLevel11, ui->gateThreeLevel11, ui->gateFourLevel11, ui->gateFiveLevel11};
+    std::vector<CustomLineEdit*> inputs = {ui->level11Input1, ui->level11Input2, ui->level11Input3, ui->level11Input4, ui->level11Input5, ui->level11Input6};
+    emit levelChanged(11);
+    processLevelInputs(gates, inputs);
+}
+
+void LevelsView::on_goButtonLevelTwelve_clicked()
+{
+    std::vector<Custom_GraphicsView*> gates = {ui->gateOneLevel12, ui->gateTwoLevel12, ui->gateThreeLevel12, ui->gateFourLevel12, ui->gateFiveLevel12, ui->gateSixLevel12, ui->gateSevenLevel12};
+    std::vector<CustomLineEdit*> inputs = {ui->level12Input1, ui->level12Input2, ui->level12Input3, ui->level12Input4, ui->level12Input5, ui->level12Input6, ui->level12Input7, ui->level12Input8};
+    emit levelChanged(12);
+    processLevelInputs(gates, inputs);
 }
 
 void LevelsView::onHomeButtonClicked()
@@ -295,10 +343,10 @@ std::vector<bool> LevelsView::getUserInputs(int level) {
         inputs.push_back(ui->levelFiveInput1->text() == "1");
         inputs.push_back(ui->levelFiveInput2->text() == "1");
         break;
-    case 6:
-        inputs.push_back(ui->levelSixInput1->text() == "1");
-        inputs.push_back(ui->levelSixInput2->text() == "1");
-        break;
+    // case 6:
+    //     inputs.push_back(ui->levelSixInput1->text() == "1");
+    //     inputs.push_back(ui->levelSixInput2->text() == "1");
+    //     break;
     default:
         inputs = {false, false};
         break;
@@ -329,52 +377,6 @@ void LevelsView::processLevelInputs(const std::vector<Custom_GraphicsView*>& gat
 
 
 
-void LevelsView::on_goButtonLevelSeven_clicked()
-{
-    std::vector<Custom_GraphicsView*> gates = {ui->gateOneLevel7, ui->gateTwoLevel7};
-    std::vector<CustomLineEdit*> inputs = {ui->level7Input1, ui->level7Input2, ui->level7Input3};
-    processLevelInputs(gates, inputs);
-}
-
-void LevelsView::on_goButtonLevelEight_clicked()
-{
-    std::vector<Custom_GraphicsView*> gates = {ui->gateOneLevel8, ui->gateTwoLevel8, ui->gateThreeLevel8};
-    std::vector<CustomLineEdit*> inputs = {ui->level8Input1, ui->level8Input2, ui->level8Input3, ui->level8Input4};
-    emit levelChanged(8);
-    processLevelInputs(gates, inputs);
-}
-
-void LevelsView::on_goButtonLevelNine_clicked()
-{
-    std::vector<Custom_GraphicsView*> gates = {ui->gateOneLevel9, ui->gateTwoLevel9, ui->gateThreeLevel9};
-    std::vector<CustomLineEdit*> inputs = {ui->level9Input1, ui->level9Input2, ui->level9Input3, ui->level9Input4};
-     emit levelChanged(9);
-    processLevelInputs(gates, inputs);
-}
-
-void LevelsView::on_goButtonLevelTen_clicked()
-{
-    std::vector<Custom_GraphicsView*> gates = {ui->gateOneLevel10, ui->gateTwoLevel10, ui->gateThreeLevel10, ui->gateFourLevel10, ui->gateFiveLevel10};
-    std::vector<CustomLineEdit*> inputs = {ui->level10Input1, ui->level10Input2, ui->level10Input3, ui->level10Input4, ui->level10Input5, ui->level10Input6};
-    emit levelChanged(10);
-    processLevelInputs(gates, inputs);
-}
-
-void LevelsView::on_goButtonLevelEleven_clicked()
-{
-    std::vector<Custom_GraphicsView*> gates = {ui->gateOneLevel11, ui->gateTwoLevel11, ui->gateThreeLevel11, ui->gateFourLevel11, ui->gateFiveLevel11};
-    std::vector<CustomLineEdit*> inputs = {ui->level11Input1, ui->level11Input2, ui->level11Input3, ui->level11Input4, ui->level11Input5, ui->level11Input6};
-    emit levelChanged(11);
-    processLevelInputs(gates, inputs);
-}
-
-void LevelsView::on_goButtonLevelTwelve_clicked()
-{
-    std::vector<Custom_GraphicsView*> gates = {ui->gateOneLevel12, ui->gateTwoLevel12, ui->gateThreeLevel12, ui->gateFourLevel12, ui->gateFiveLevel12, ui->gateSixLevel12, ui->gateSevenLevel12};
-    std::vector<CustomLineEdit*> inputs = {ui->level12Input1, ui->level12Input2, ui->level12Input3, ui->level12Input4, ui->level12Input5, ui->level12Input6, ui->level12Input7, ui->level12Input8};
-    emit levelChanged(12);
-    processLevelInputs(gates, inputs);
-}
 
 QString LevelsView::getLastDroppedGate(int level)
 {

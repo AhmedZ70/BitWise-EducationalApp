@@ -10,23 +10,20 @@
 LevelSix::LevelSix() : inputA(false), inputB(false){}
 
 void LevelSix::setInput(std:: vector<bool> inputs) {
-    // Sets the user input
     inputA = inputs.at(0);
     inputB = inputs.at(1);
 }
 
 void LevelSix::computeOutput() {
-    // Sets gate and gets inputs from user while calculating outputs of the gates
-    Gate andGate = setGate("AND");
-    andGate.setInput(inputA, inputB);
-    bool firstResult = andGate.computeOutput();
+    Gate userGate = setGate(userGateSelected);
+    userGate.setInput(inputA, inputB);
+    bool firstResult = userGate.computeOutput();
     Gate notGate = setGate("NOT");
     notGate.setInput(firstResult);
     bool finalResult = notGate.computeOutput();
-
-    // Final output of the circuit
     result = finalResult;
 }
 
-
-
+void LevelSix::setGateTypes(const std::vector<std::string>& gateTypes){
+    userGateSelected = gateTypes.at(0);
+}

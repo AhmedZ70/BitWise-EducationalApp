@@ -147,7 +147,7 @@
     <number>2</number>
    </property>
    <property name="currentIndex">
-    <number>9</number>
+    <number>5</number>
    </property>
    <widget class="QWidget" name="level1">
     <widget class="QLabel" name="label_2">
@@ -1234,7 +1234,7 @@ color: rgb(255, 255, 255);</string>
       <string>GO</string>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="levelSixInput2">
+    <widget class="CustomLineEdit" name="level6Input2">
      <property name="geometry">
       <rect>
        <x>90</x>
@@ -1306,7 +1306,7 @@ color: rgb(255, 255, 255);</string>
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="levelSixInput1">
+    <widget class="CustomLineEdit" name="level6Input1">
      <property name="geometry">
       <rect>
        <x>90</x>
@@ -1464,11 +1464,11 @@ color: rgb(255, 255, 255);</string>
     </widget>
     <zorder>intializedNotGate</zorder>
     <zorder>goButtonLevelSix</zorder>
-    <zorder>levelSixInput2</zorder>
+    <zorder>level6Input2</zorder>
     <zorder>backToLevel1_5</zorder>
     <zorder>gateOneLevel6</zorder>
     <zorder>label_12</zorder>
-    <zorder>levelSixInput1</zorder>
+    <zorder>level6Input1</zorder>
     <zorder>skipButton_6</zorder>
     <zorder>homeButton_6</zorder>
     <zorder>label_13</zorder>
@@ -5105,7 +5105,7 @@ color: rgb(255, 255, 255);</string>
   <customwidget>
    <class>Custom_GraphicsView</class>
    <extends>QGraphicsView</extends>
-   <header location="global">events.h</header>
+   <header>events.h</header>
   </customwidget>
   <customwidget>
    <class>CustomLineEdit</class>

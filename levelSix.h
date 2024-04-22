@@ -17,6 +17,8 @@ private:
     /// @brief second input of the user
     bool inputB;
 
+    string userGateSelected;
+
 public:
     /// @brief Constructor that initializes the bits to false and sets the preset gate
     LevelSix();
@@ -28,5 +30,6 @@ public:
     /// @brief Computes the output of the levels circuit specific to this level using
     /// the user inputs
     void computeOutput()override;
+    void setGateTypes(const std::vector<std::string>& gateTypes) override;
 };
 #endif // LEVELSIX_H

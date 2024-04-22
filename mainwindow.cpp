@@ -32,7 +32,6 @@ void MainWindow::on_playButton_clicked()
                              "The truth table for the AND gate illustrates this and is shown below";
     dialog->setupImageAndText(":/icons/andGate.png", trainingDialog);
     dialog->exec();
-    //auto index = ui->stackedWidget->currentIndex();   // for debugging
 
 }
 
