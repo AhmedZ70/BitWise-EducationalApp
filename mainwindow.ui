@@ -115,7 +115,7 @@ QPushButton:pressed {
        <string>Play</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="optionsButton">
+     <widget class="QPushButton" name="helpButton">
       <property name="geometry">
        <rect>
         <x>240</x>
@@ -154,7 +154,7 @@ QPushButton:pressed {
 </string>
       </property>
       <property name="text">
-       <string>Options</string>
+       <string>Help</string>
       </property>
      </widget>
      <widget class="QPushButton" name="quitButton">
@@ -209,7 +209,7 @@ QPushButton:pressed {
      <x>0</x>
      <y>0</y>
      <width>1000</width>
-     <height>21</height>
+     <height>37</height>
     </rect>
    </property>
   </widget>
