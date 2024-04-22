@@ -43,6 +43,7 @@ void GameModel::checkUserGate(string gate)
     emit correctGate(gateCorrect);
 }
 
-void GameModel::setGateDropped(const std::vector<std::string>& gateTypese){
-   levels[currentLevel]->setGateTypes(gateTypese);
+void GameModel::setGateDropped(const std::vector<std::string>& gateTypese, int level){
+    currentLevel = level-1;
+    levels[currentLevel]->setGateTypes(gateTypese);
 }

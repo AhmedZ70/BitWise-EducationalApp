@@ -320,12 +320,13 @@ void LevelsView::on_goButtonLevel8_clicked()
     QString gateTwoType = ui->gateTwoLevel8->lastDroppedGateName();
     QString gateThreeType = ui->gateThreeLevel8->lastDroppedGateName();
 
+
     std::vector<std::string> gateTypes = {
         gateOneType.toStdString(),
         gateTwoType.toStdString(),
         gateThreeType.toStdString()
     };
-    gameModel->setGateDropped(gateTypes);
+    gameModel->setGateDropped(gateTypes, 8);
 
     userFirstInput = ui->level8Input1->text() == "1";
     userSecondInput = ui->level8Input2->text() == "1";

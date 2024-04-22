@@ -23,7 +23,7 @@ signals:
 
 public slots:
     void onInputReceived(std::vector<bool>inputs, int currentLevel);
-    void setGateDropped(const std::vector<std::string>& gateTypese);
+    void setGateDropped(const std::vector<std::string>& gateTypese, int level);
     void checkUserGate(string gate);
 
 
