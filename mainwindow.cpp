@@ -1,6 +1,8 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QDebug>
+#include "Trainingdialog.h"
+//#include "levelonewidget.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent),
@@ -10,6 +12,7 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     ui->stackedWidget->addWidget(levelsUi);
+    resize(800, 600);
     connect(levelsUi, SIGNAL(homeClicked()), this, SLOT(moveHome()));
     connect(ui->quitButton, &QPushButton::clicked, this, &QCoreApplication::quit, Qt::QueuedConnection);
 
@@ -40,7 +43,8 @@ MainWindow::~MainWindow()
     delete levelsUi;
 }
 
-void MainWindow::updatePhysics() {
+void MainWindow::updatePhysics()
+{
     world->Step(1.0f / 60.0f, 6, 2);
 
     // Update button positions based on physics bodies
@@ -48,8 +52,20 @@ void MainWindow::updatePhysics() {
     updateButtonPosition(ui->helpButton, helpButtonBody);
     updateButtonPosition(ui->quitButton, quitButtonBody);
 }
+void MainWindow::on_playButton_clicked() {
+    ui->stackedWidget->setCurrentIndex(ui->stackedWidget->indexOf(levelsUi));
+    TrainingDialog *dialog = new TrainingDialog();
+    QString trainingDialog = "This is an AND gate. The AND gate takes in 2 or 3 inputs and computes a single ouput.\n"
+                             "In order for the AND gate to calculate to TRUE, all inputs must be TRUE.\n"
+                             "The truth table for the AND gate illustrates this and is shown below";
+    dialog->setupImageAndText(":/icons/andGate.png", trainingDialog);
+    dialog->exec();
+    //auto index = ui->stackedWidget->currentIndex();   // for debugging
 
-void MainWindow::updateButtonPosition(QPushButton *button, b2Body *body) {
+}
+
+void MainWindow::updateButtonPosition(QPushButton *button, b2Body *body)
+{
     b2Vec2 pos = body->GetPosition();
     int newX = static_cast<int>(pos.x * pixelsPerMeter);
     button->move(newX, static_cast<int>(pos.y * pixelsPerMeter));
@@ -60,7 +76,8 @@ void MainWindow::updateButtonPosition(QPushButton *button, b2Body *body) {
     }
 }
 
-void MainWindow::createButtonBody(QPushButton* button, b2Body*& body, float width, float height) {
+void MainWindow::createButtonBody(QPushButton* button, b2Body*& body, float width, float height)
+{
     b2BodyDef bodyDef;
     bodyDef.type = b2_dynamicBody;
     bodyDef.position.Set(button->x() / 100.0f, button->y() / 100.0f);
@@ -76,7 +93,8 @@ void MainWindow::createButtonBody(QPushButton* button, b2Body*& body, float widt
     body->CreateFixture(&fixtureDef);
 }
 
-bool MainWindow::eventFilter(QObject *obj, QEvent *event) {
+bool MainWindow::eventFilter(QObject *obj, QEvent *event)
+{
     if (event->type() == QEvent::HoverEnter || event->type() == QEvent::HoverLeave) {
         QPushButton *button = qobject_cast<QPushButton *>(obj);
         b2Body *body = nullptr;
@@ -98,10 +116,7 @@ bool MainWindow::eventFilter(QObject *obj, QEvent *event) {
     return QMainWindow::eventFilter(obj, event);
 }
 
-void MainWindow::on_playButton_clicked() {
-    ui->stackedWidget->setCurrentIndex(ui->stackedWidget->indexOf(levelsUi));
-}
-
-void MainWindow::moveHome() {
+void MainWindow::moveHome()
+{
     ui->stackedWidget->setCurrentIndex(0);
 }
