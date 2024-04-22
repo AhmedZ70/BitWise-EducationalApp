@@ -10,7 +10,8 @@
 #include <QGraphicsScene>
 #include "gameModel.h"
 #include <vector>
-
+#include "events.h"
+#include "customlineedit.h"
 
 namespace Ui {
 class LevelsView;
@@ -129,7 +130,9 @@ private:
     bool getFirstUserInput(int level);
     bool getSecondUserInput(int level);
     QString getLastDroppedGate(int level);
-
+    void processLevelInputs(Custom_GraphicsView* gateOne, Custom_GraphicsView* gateTwo, Custom_GraphicsView* gateThree,
+                                        CustomLineEdit* input1, CustomLineEdit* input2, CustomLineEdit* input3, CustomLineEdit* input4,
+                                        int levelNumber);
     bool userFirstInput;
     bool userSecondInput;
     bool userThirdInput;

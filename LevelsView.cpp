@@ -329,32 +329,42 @@ bool LevelsView::getSecondUserInput(int level)
 
 }
 
+void LevelsView::processLevelInputs(Custom_GraphicsView* gateOne, Custom_GraphicsView* gateTwo, Custom_GraphicsView* gateThree,
+                                    CustomLineEdit* input1, CustomLineEdit* input2, CustomLineEdit* input3, CustomLineEdit* input4,
+                                    int levelNumber)
+{
+    std::vector<std::string> gateTypes = {
+        gateOne->lastDroppedGateName().toStdString(),
+        gateTwo->lastDroppedGateName().toStdString(),
+        gateThree->lastDroppedGateName().toStdString()
+    };
+    gameModel->setGateDropped(gateTypes, levelNumber);
+
+    std::vector<bool> inputs = {
+        input1->text() == "1",
+        input2->text() == "1",
+        input3->text() == "1",
+        input4->text() == "1"
+    };
+
+    emit gotUserInput(inputs, levelNumber);
+}
+
+
 void LevelsView::on_goButtonLevel8_clicked()
 {
-    QString gateOneType = ui->gateOneLevel8->lastDroppedGateName();
-    QString gateTwoType = ui->gateTwoLevel8->lastDroppedGateName();
-    QString gateThreeType = ui->gateThreeLevel8->lastDroppedGateName();
-
-
-    std::vector<std::string> gateTypes = {
-        gateOneType.toStdString(),
-        gateTwoType.toStdString(),
-        gateThreeType.toStdString()
-    };
-    gameModel->setGateDropped(gateTypes, 8);
-
-    userFirstInput = ui->level8Input1->text() == "1";
-    userSecondInput = ui->level8Input2->text() == "1";
-    userThirdInput = ui->level8Input3->text() == "1";
-    userFourthInput = ui->level8Input4->text() == "1";
-    std::vector<bool> inputs{userFirstInput, userSecondInput,
-                             userThirdInput, userFourthInput};
-
-    emit gotUserInput(inputs,8);
-
-
+    processLevelInputs(ui->gateOneLevel8, ui->gateTwoLevel8, ui->gateThreeLevel8,
+                       ui->level8Input1, ui->level8Input2, ui->level8Input3, ui->level8Input4, 8);
 
 }
+
+void LevelsView::on_goButtonLevel9_clicked()
+{
+    processLevelInputs(ui->gateOneLevel9, ui->gateTwoLevel9, ui->gateThreeLevel9,
+                       ui->level9Input1, ui->level9Input2, ui->level9Input3, ui->level9Input4, 9);
+
+}
+
 
 QString LevelsView::getLastDroppedGate(int level)
 {
@@ -390,31 +400,4 @@ void LevelsView:: onCorrectGateReceived(bool correct)
     correctGateDragged = correct;
 }
 
-void LevelsView::on_goButtonLevel9_clicked()
-{
-
-    QString gateOneType = ui->gateOneLevel9->lastDroppedGateName();
-    QString gateTwoType = ui->gateTwoLevel9->lastDroppedGateName();
-    QString gateThreeType = ui->gateThreeLevel9->lastDroppedGateName();
-
-
-    std::vector<std::string> gateTypes = {
-        gateOneType.toStdString(),
-        gateTwoType.toStdString(),
-        gateThreeType.toStdString()
-    };
-    gameModel->setGateDropped(gateTypes, 8);
-
-    userFirstInput = ui->level9Input1->text() == "1";
-    userSecondInput = ui->level9Input2->text() == "1";
-    userThirdInput = ui->level9Input3->text() == "1";
-    userFourthInput = ui->level9Input4->text() == "1";
-    std::vector<bool> inputs{userFirstInput, userSecondInput,
-                             userThirdInput, userFourthInput};
-
-    emit gotUserInput(inputs,8);
-
-
-
-}
 
