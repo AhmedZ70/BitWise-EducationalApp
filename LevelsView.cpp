@@ -412,7 +412,7 @@ void LevelsView:: onCorrectGateReceived(bool correct)
 
 void LevelsView::on_stackedWidget_currentChanged(int index)
 {
-    if(index >5)
+    if(index >5 || index < 1)
         return;
 
     QString image, text;
