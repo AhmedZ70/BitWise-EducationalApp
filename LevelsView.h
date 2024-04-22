@@ -108,11 +108,13 @@ private slots:
 
     void on_backToLevel1_9_clicked();
 
+    void on_backToLevel1_10_clicked();
+
+    void on_backToLevel1_12_clicked();
+
     void on_goButtonLevel8_clicked();
 
     void on_goButtonLevel9_clicked();
-
-    void on_goButtonLevel10_clicked();
 
     void on_backToLevel1_11_clicked();
 

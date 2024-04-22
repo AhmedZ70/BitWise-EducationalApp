@@ -239,8 +239,11 @@ void LevelsView::on_backToLevel1_8_clicked(){
 void LevelsView::on_backToLevel1_9_clicked(){
     ui->stackedWidget->setCurrentIndex(8);
 }
+void LevelsView::on_backToLevel1_10_clicked(){
+    ui->stackedWidget->setCurrentIndex(8);
+}
 
-void LevelsView::on_goButtonLevel10_clicked(){
+void LevelsView::on_backToLevel1_12_clicked(){
     ui->stackedWidget->setCurrentIndex(9);
 }
 
