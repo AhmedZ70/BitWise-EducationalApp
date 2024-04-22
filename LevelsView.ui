@@ -147,7 +147,7 @@
     <number>2</number>
    </property>
    <property name="currentIndex">
-    <number>11</number>
+    <number>8</number>
    </property>
    <widget class="QWidget" name="level1">
     <widget class="QLabel" name="label_2">
@@ -239,6 +239,9 @@ color: rgb(255, 255, 255);</string>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
      </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
      <property name="text">
       <string>1</string>
      </property>
@@ -256,7 +259,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -275,7 +278,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -336,7 +339,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -406,6 +409,9 @@ color: rgb(255, 255, 255);</string>
      </property>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="text">
       <string>1</string>
@@ -520,7 +526,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -539,7 +545,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -558,7 +564,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -586,6 +592,9 @@ color: rgb(255, 255, 255);</string>
      </property>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="text">
       <string>1</string>
@@ -731,7 +740,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -750,7 +759,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -769,7 +778,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -871,6 +880,9 @@ color: rgb(255, 255, 255);</string>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
      </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
      <property name="text">
       <string>1</string>
      </property>
@@ -942,7 +954,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -961,7 +973,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -980,7 +992,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -1129,6 +1141,9 @@ color: rgb(255, 255, 255);</string>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
      </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
      <property name="text">
       <string>1</string>
      </property>
@@ -1172,7 +1187,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -1191,7 +1206,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -1210,7 +1225,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -1299,6 +1314,9 @@ color: rgb(255, 255, 255);</string>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
      </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
      <property name="text">
       <string>1</string>
      </property>
@@ -1383,7 +1401,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -1402,7 +1420,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -1421,7 +1439,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -1440,7 +1458,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -1504,7 +1522,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -1536,7 +1554,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -1607,6 +1625,9 @@ color: rgb(255, 255, 255);</string>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
      </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
      <property name="text">
       <string>1</string>
      </property>
@@ -1665,7 +1686,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -1726,7 +1747,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -1745,7 +1766,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -1764,7 +1785,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -1783,7 +1804,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -1820,7 +1841,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -1839,7 +1860,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -1923,6 +1944,9 @@ color: rgb(255, 255, 255);</string>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
      </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
      <property name="text">
       <string>1</string>
      </property>
@@ -1981,7 +2005,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -2055,7 +2079,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -2074,7 +2098,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -2093,7 +2117,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -2112,7 +2136,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -2131,7 +2155,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -2166,7 +2190,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -2185,7 +2209,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -2204,7 +2228,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -2251,7 +2275,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -2325,6 +2349,9 @@ color: rgb(255, 255, 255);</string>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
      </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
      <property name="text">
       <string>1</string>
      </property>
@@ -2387,7 +2414,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -2406,7 +2433,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -2479,7 +2506,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -2511,7 +2538,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -2530,7 +2557,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -2549,7 +2576,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -2568,7 +2595,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -2587,7 +2614,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -2606,7 +2633,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -2625,7 +2652,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -2644,7 +2671,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -2663,7 +2690,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -2682,7 +2709,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -2701,7 +2728,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -2720,7 +2747,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -2739,7 +2766,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -2753,7 +2780,7 @@ color: rgb(255, 255, 255);</string>
     <widget class="QPushButton" name="goButtonLevelTen">
      <property name="geometry">
       <rect>
-       <x>790</x>
+       <x>690</x>
        <y>80</y>
        <width>80</width>
        <height>24</height>
@@ -2766,7 +2793,7 @@ color: rgb(255, 255, 255);</string>
     <widget class="CustomLineEdit" name="level10Input1">
      <property name="geometry">
       <rect>
-       <x>170</x>
+       <x>70</x>
        <y>160</y>
        <width>41</width>
        <height>41</height>
@@ -2779,7 +2806,7 @@ color: rgb(255, 255, 255);</string>
     <widget class="QPushButton" name="homeButton_10">
      <property name="geometry">
       <rect>
-       <x>260</x>
+       <x>160</x>
        <y>0</y>
        <width>80</width>
        <height>24</height>
@@ -2792,7 +2819,7 @@ color: rgb(255, 255, 255);</string>
     <widget class="QPushButton" name="skipButton_10">
      <property name="geometry">
       <rect>
-       <x>660</x>
+       <x>560</x>
        <y>0</y>
        <width>80</width>
        <height>24</height>
@@ -2805,7 +2832,7 @@ color: rgb(255, 255, 255);</string>
     <widget class="CustomLineEdit" name="level10Input2">
      <property name="geometry">
       <rect>
-       <x>170</x>
+       <x>70</x>
        <y>210</y>
        <width>41</width>
        <height>41</height>
@@ -2818,7 +2845,7 @@ color: rgb(255, 255, 255);</string>
     <widget class="QPushButton" name="backToLevel1_9">
      <property name="geometry">
       <rect>
-       <x>780</x>
+       <x>680</x>
        <y>0</y>
        <width>131</width>
        <height>31</height>
@@ -2836,7 +2863,7 @@ color: rgb(255, 255, 255);</string>
     <widget class="QLabel" name="label_39">
      <property name="geometry">
       <rect>
-       <x>480</x>
+       <x>380</x>
        <y>10</y>
        <width>121</width>
        <height>51</height>
@@ -2864,7 +2891,7 @@ color: rgb(255, 255, 255);</string>
     <widget class="CustomLineEdit" name="level10Input3">
      <property name="geometry">
       <rect>
-       <x>170</x>
+       <x>70</x>
        <y>280</y>
        <width>41</width>
        <height>41</height>
@@ -2877,7 +2904,7 @@ color: rgb(255, 255, 255);</string>
     <widget class="CustomLineEdit" name="level10Input4">
      <property name="geometry">
       <rect>
-       <x>170</x>
+       <x>70</x>
        <y>340</y>
        <width>41</width>
        <height>41</height>
@@ -2890,7 +2917,7 @@ color: rgb(255, 255, 255);</string>
     <widget class="CustomLineEdit" name="level10Input5">
      <property name="geometry">
       <rect>
-       <x>170</x>
+       <x>70</x>
        <y>390</y>
        <width>41</width>
        <height>41</height>
@@ -2903,7 +2930,7 @@ color: rgb(255, 255, 255);</string>
     <widget class="CustomLineEdit" name="level10Input6">
      <property name="geometry">
       <rect>
-       <x>170</x>
+       <x>70</x>
        <y>440</y>
        <width>41</width>
        <height>41</height>
@@ -2916,14 +2943,14 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_117">
      <property name="geometry">
       <rect>
-       <x>210</x>
+       <x>110</x>
        <y>400</y>
        <width>78</width>
        <height>16</height>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -2935,7 +2962,7 @@ color: rgb(255, 255, 255);</string>
     <widget class="Custom_GraphicsView" name="gateOneLevel10">
      <property name="geometry">
       <rect>
-       <x>280</x>
+       <x>180</x>
        <y>140</y>
        <width>140</width>
        <height>140</height>
@@ -2951,7 +2978,7 @@ color: rgb(255, 255, 255);</string>
     <widget class="Custom_GraphicsView" name="gateTwoLevel10">
      <property name="geometry">
       <rect>
-       <x>290</x>
+       <x>190</x>
        <y>260</y>
        <width>140</width>
        <height>140</height>
@@ -2967,7 +2994,7 @@ color: rgb(255, 255, 255);</string>
     <widget class="QLabel" name="intializedNotGate_2">
      <property name="geometry">
       <rect>
-       <x>280</x>
+       <x>180</x>
        <y>390</y>
        <width>140</width>
        <height>140</height>
@@ -2980,14 +3007,14 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_120">
      <property name="geometry">
       <rect>
-       <x>400</x>
+       <x>300</x>
        <y>200</y>
        <width>91</width>
        <height>20</height>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -2999,7 +3026,7 @@ color: rgb(255, 255, 255);</string>
     <widget class="Custom_GraphicsView" name="gateFourLevel10">
      <property name="geometry">
       <rect>
-       <x>570</x>
+       <x>470</x>
        <y>160</y>
        <width>140</width>
        <height>140</height>
@@ -3015,7 +3042,7 @@ color: rgb(255, 255, 255);</string>
     <widget class="Custom_GraphicsView" name="gateThreeLevel10">
      <property name="geometry">
       <rect>
-       <x>510</x>
+       <x>410</x>
        <y>370</y>
        <width>140</width>
        <height>140</height>
@@ -3031,14 +3058,14 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_125">
      <property name="geometry">
       <rect>
-       <x>270</x>
+       <x>170</x>
        <y>400</y>
        <width>78</width>
        <height>16</height>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -3050,14 +3077,14 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_127">
      <property name="geometry">
       <rect>
-       <x>397</x>
+       <x>297</x>
        <y>449</y>
        <width>133</width>
        <height>20</height>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -3069,14 +3096,14 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_129">
      <property name="geometry">
       <rect>
-       <x>629</x>
+       <x>529</x>
        <y>430</y>
        <width>71</width>
        <height>20</height>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -3088,7 +3115,7 @@ color: rgb(255, 255, 255);</string>
     <widget class="Custom_GraphicsView" name="gateFiveLevel10">
      <property name="geometry">
       <rect>
-       <x>794</x>
+       <x>694</x>
        <y>184</y>
        <width>140</width>
        <height>140</height>
@@ -3104,14 +3131,14 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_130">
      <property name="geometry">
       <rect>
-       <x>697</x>
+       <x>597</x>
        <y>263</y>
        <width>121</width>
        <height>20</height>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -3123,14 +3150,14 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_131">
      <property name="geometry">
       <rect>
-       <x>910</x>
+       <x>810</x>
        <y>243</y>
        <width>41</width>
        <height>20</height>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -3142,7 +3169,7 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_58">
      <property name="geometry">
       <rect>
-       <x>699</x>
+       <x>599</x>
        <y>310</y>
        <width>3</width>
        <height>61</height>
@@ -3155,7 +3182,7 @@ color: rgb(255, 255, 255);</string>
       </size>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -3167,7 +3194,7 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_59">
      <property name="geometry">
       <rect>
-       <x>690</x>
+       <x>590</x>
        <y>272</y>
        <width>20</width>
        <height>41</height>
@@ -3180,7 +3207,7 @@ color: rgb(255, 255, 255);</string>
       </size>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -3192,7 +3219,7 @@ color: rgb(255, 255, 255);</string>
     <widget class="QLabel" name="label_20">
      <property name="geometry">
       <rect>
-       <x>950</x>
+       <x>850</x>
        <y>232</y>
        <width>41</width>
        <height>41</height>
@@ -3207,6 +3234,9 @@ color: rgb(255, 255, 255);</string>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
      </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
      <property name="text">
       <string>1</string>
      </property>
@@ -3217,14 +3247,14 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_132">
      <property name="geometry">
       <rect>
-       <x>210</x>
+       <x>110</x>
        <y>178</y>
        <width>91</width>
        <height>16</height>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -3236,14 +3266,14 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_134">
      <property name="geometry">
       <rect>
-       <x>210</x>
+       <x>110</x>
        <y>222</y>
        <width>91</width>
        <height>16</height>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -3255,14 +3285,14 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_135">
      <property name="geometry">
       <rect>
-       <x>210</x>
+       <x>110</x>
        <y>298</y>
        <width>101</width>
        <height>16</height>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -3274,14 +3304,14 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_136">
      <property name="geometry">
       <rect>
-       <x>210</x>
+       <x>110</x>
        <y>341</y>
        <width>101</width>
        <height>16</height>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -3293,14 +3323,14 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_118">
      <property name="geometry">
       <rect>
-       <x>210</x>
+       <x>110</x>
        <y>450</y>
        <width>91</width>
        <height>16</height>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -3312,14 +3342,14 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_128">
      <property name="geometry">
       <rect>
-       <x>430</x>
+       <x>330</x>
        <y>410</y>
        <width>103</width>
        <height>20</height>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -3331,14 +3361,14 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_124">
      <property name="geometry">
       <rect>
-       <x>690</x>
+       <x>590</x>
        <y>218</y>
        <width>131</width>
        <height>20</height>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -3350,14 +3380,14 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_137">
      <property name="geometry">
       <rect>
-       <x>490</x>
+       <x>390</x>
        <y>202</y>
        <width>112</width>
        <height>16</height>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -3369,14 +3399,14 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_138">
      <property name="geometry">
       <rect>
-       <x>490</x>
+       <x>390</x>
        <y>242</y>
        <width>112</width>
        <height>16</height>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -3388,14 +3418,14 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_126">
      <property name="geometry">
       <rect>
-       <x>340</x>
+       <x>240</x>
        <y>398</y>
        <width>91</width>
        <height>20</height>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -3407,14 +3437,14 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_57">
      <property name="geometry">
       <rect>
-       <x>690</x>
+       <x>590</x>
        <y>370</y>
        <width>21</width>
        <height>71</height>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -3426,14 +3456,14 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_56">
      <property name="geometry">
       <rect>
-       <x>480</x>
+       <x>380</x>
        <y>250</y>
        <width>20</width>
        <height>83</height>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -3445,14 +3475,14 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_139">
      <property name="geometry">
       <rect>
-       <x>410</x>
+       <x>310</x>
        <y>320</y>
        <width>81</width>
        <height>16</height>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -3464,14 +3494,14 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_60">
      <property name="geometry">
       <rect>
-       <x>420</x>
+       <x>320</x>
        <y>410</y>
        <width>20</width>
        <height>10</height>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -3483,7 +3513,7 @@ color: rgb(255, 255, 255);</string>
     <widget class="QPushButton" name="backToLevel1_10">
      <property name="geometry">
       <rect>
-       <x>780</x>
+       <x>680</x>
        <y>0</y>
        <width>131</width>
        <height>31</height>
@@ -3600,7 +3630,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -3632,7 +3662,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -3719,7 +3749,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -3738,7 +3768,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -3773,7 +3803,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -3792,7 +3822,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -3811,7 +3841,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -3846,7 +3876,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -3892,6 +3922,9 @@ color: rgb(255, 255, 255);</string>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
      </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
      <property name="text">
       <string>1</string>
      </property>
@@ -3916,6 +3949,9 @@ color: rgb(255, 255, 255);</string>
      </property>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="text">
       <string>0</string>
@@ -3978,7 +4014,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -3997,7 +4033,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -4016,7 +4052,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -4035,7 +4071,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -4054,7 +4090,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -4073,7 +4109,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -4092,7 +4128,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -4130,7 +4166,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -4170,7 +4206,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -4189,7 +4225,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -4211,6 +4247,9 @@ color: rgb(255, 255, 255);</string>
      </property>
      <property name="styleSheet">
       <string notr="true">background-image: url(:/icons/background4.jpg);</string>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="text">
       <string/>
@@ -4239,7 +4278,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -4279,6 +4318,9 @@ color: rgb(255, 255, 255);</string>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
      </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
      <property name="text">
       <string>1</string>
      </property>
@@ -4305,7 +4347,7 @@ color: rgb(255, 255, 255);</string>
       <enum>QFrame::Box</enum>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Raised</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="text">
       <string>Level Twelve</string>
@@ -4494,7 +4536,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -4561,7 +4603,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -4580,7 +4622,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -4599,7 +4641,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -4618,7 +4660,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -4653,7 +4695,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -4672,7 +4714,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -4691,7 +4733,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -4710,7 +4752,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -4729,7 +4771,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -4748,7 +4790,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -4767,7 +4809,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -4802,7 +4844,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -4821,7 +4863,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -4841,6 +4883,9 @@ color: rgb(255, 255, 255);</string>
      </property>
      <property name="styleSheet">
       <string notr="true">background-image: url(:/icons/wallpaper5.png);</string>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="text">
       <string/>
@@ -4894,7 +4939,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -4913,7 +4958,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -4932,7 +4977,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -4951,7 +4996,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -4970,7 +5015,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -4989,7 +5034,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -5008,7 +5053,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -5027,7 +5072,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -5046,7 +5091,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -5065,7 +5110,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -5084,7 +5129,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Raised</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
