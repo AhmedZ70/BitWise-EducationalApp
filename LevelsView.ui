@@ -147,7 +147,7 @@
     <number>2</number>
    </property>
    <property name="currentIndex">
-    <number>11</number>
+    <number>8</number>
    </property>
    <widget class="QWidget" name="level1">
     <widget class="QLabel" name="label_2">
@@ -238,6 +238,9 @@ color: rgb(255, 255, 255);</string>
      </property>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="text">
       <string>1</string>
@@ -406,6 +409,9 @@ color: rgb(255, 255, 255);</string>
      </property>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="text">
       <string>1</string>
@@ -586,6 +592,9 @@ color: rgb(255, 255, 255);</string>
      </property>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="text">
       <string>1</string>
@@ -871,6 +880,9 @@ color: rgb(255, 255, 255);</string>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
      </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
      <property name="text">
       <string>1</string>
      </property>
@@ -1129,6 +1141,9 @@ color: rgb(255, 255, 255);</string>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
      </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
      <property name="text">
       <string>1</string>
      </property>
@@ -1298,6 +1313,9 @@ color: rgb(255, 255, 255);</string>
      </property>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="text">
       <string>1</string>
@@ -1606,6 +1624,9 @@ color: rgb(255, 255, 255);</string>
      </property>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="text">
       <string>1</string>
@@ -1922,6 +1943,9 @@ color: rgb(255, 255, 255);</string>
      </property>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="text">
       <string>1</string>
@@ -2324,6 +2348,9 @@ color: rgb(255, 255, 255);</string>
      </property>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="text">
       <string>1</string>
@@ -3207,6 +3234,9 @@ color: rgb(255, 255, 255);</string>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
      </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
      <property name="text">
       <string>1</string>
      </property>
@@ -3892,6 +3922,9 @@ color: rgb(255, 255, 255);</string>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
      </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
      <property name="text">
       <string>1</string>
      </property>
@@ -3916,6 +3949,9 @@ color: rgb(255, 255, 255);</string>
      </property>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="text">
       <string>0</string>
@@ -4212,6 +4248,9 @@ color: rgb(255, 255, 255);</string>
      <property name="styleSheet">
       <string notr="true">background-image: url(:/icons/background4.jpg);</string>
      </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
      <property name="text">
       <string/>
      </property>
@@ -4279,6 +4318,9 @@ color: rgb(255, 255, 255);</string>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
      </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
      <property name="text">
       <string>1</string>
      </property>
@@ -4305,7 +4347,7 @@ color: rgb(255, 255, 255);</string>
       <enum>QFrame::Box</enum>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Raised</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="text">
       <string>Level Twelve</string>
@@ -4841,6 +4883,9 @@ color: rgb(255, 255, 255);</string>
      </property>
      <property name="styleSheet">
       <string notr="true">background-image: url(:/icons/wallpaper5.png);</string>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="text">
       <string/>
