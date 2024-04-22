@@ -30,8 +30,8 @@ void GameModel::computeLevelCircuit(int currentLevel){
     bool result = levels[currentLevel]->getResult();
     emit circuitCompleted(result);
 }
-void GameModel:: onInputReceived(std::vector<bool>inputs,int level)
-{    currentLevel = level-1;
+void GameModel:: onInputReceived(std::vector<bool>inputs)
+{
     levels[currentLevel]->setInput(inputs);
     computeLevelCircuit(currentLevel);
 }
@@ -44,8 +44,7 @@ void GameModel::checkUserGate(string gate)
     emit correctGate(gateCorrect);
 }
 
-void GameModel::setGateDropped(const std::vector<std::string>& gateTypese, int level){
-    currentLevel = level-1;
+void GameModel::setGateDropped(const std::vector<std::string>& gateTypese){
     if (hasEmptyString(gateTypese)){
         throw std::invalid_argument("One or more gate types are empty.");
     }
@@ -57,4 +56,9 @@ void GameModel::setGateDropped(const std::vector<std::string>& gateTypese, int l
 
 bool GameModel::hasEmptyString(const std::vector<std::string>& gateTypes) {
     return std::find(gateTypes.begin(), gateTypes.end(), "") != gateTypes.end();
+}
+
+void GameModel::onGetCurrentLevel(int level)
+{
+    currentLevel = level-1;
 }

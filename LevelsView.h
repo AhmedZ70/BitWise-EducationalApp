@@ -128,8 +128,7 @@ private:
     bool getSecondUserInput(int level);
     QString getLastDroppedGate(int level);
     void processLevelInputs(const std::vector<Custom_GraphicsView*>& gateDropAreas,
-                                        const std::vector<CustomLineEdit*>& inputs,
-                                        int levelNumber);
+                                        const std::vector<CustomLineEdit*>& inputs);
     bool userFirstInput;
     bool userSecondInput;
     bool userThirdInput;
@@ -141,9 +140,10 @@ private:
 
 signals:
     void homeClicked();
-    void gotUserInput(std::vector<bool>, int currentLevel);
+    void gotUserInput(std::vector<bool>);
     void calculateLevel(int level);
     void userGateSelected(string gate);
+    void levelChanged(int level);
 
 public slots:
     void onResultReceived(bool successful);
