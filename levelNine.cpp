@@ -26,20 +26,10 @@ void LevelNine::computeOutput() {
     result = finalResult;
 }
 
-void LevelNine::setUserGateSelected1(string gateSelected)
-{
-    userGateSelected1 = gateSelected;
+void LevelNine::setGateTypes(const std::vector<std::string>& gateTypes){
+    userGateSelected1 = gateTypes.at(0);
+    userGateSelected2 = gateTypes.at(1);
+    userGateSelected3 = gateTypes.at(2);
 }
-
-void LevelNine::setUserGateSelected2(string gateSelected)
-{
-    userGateSelected2 = gateSelected;
-}
-
-void LevelNine::setUserGateSelected3(string gateSelected)
-{
-    userGateSelected3 = gateSelected;
-}
-
 
 

@@ -389,3 +389,32 @@ void LevelsView:: onCorrectGateReceived(bool correct)
 {
     correctGateDragged = correct;
 }
+
+void LevelsView::on_goButtonLevel9_clicked()
+{
+
+    QString gateOneType = ui->gateOneLevel9->lastDroppedGateName();
+    QString gateTwoType = ui->gateTwoLevel9->lastDroppedGateName();
+    QString gateThreeType = ui->gateThreeLevel9->lastDroppedGateName();
+
+
+    std::vector<std::string> gateTypes = {
+        gateOneType.toStdString(),
+        gateTwoType.toStdString(),
+        gateThreeType.toStdString()
+    };
+    gameModel->setGateDropped(gateTypes, 8);
+
+    userFirstInput = ui->level9Input1->text() == "1";
+    userSecondInput = ui->level9Input2->text() == "1";
+    userThirdInput = ui->level9Input3->text() == "1";
+    userFourthInput = ui->level9Input4->text() == "1";
+    std::vector<bool> inputs{userFirstInput, userSecondInput,
+                             userThirdInput, userFourthInput};
+
+    emit gotUserInput(inputs,8);
+
+
+
+}
+

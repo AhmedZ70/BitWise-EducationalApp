@@ -19,9 +19,8 @@ public:
     void setInput(std::vector<bool> inputs) override;
     void computeOutput() override;
     void setFunction(string gate);
-    void setUserGateSelected1(string gateSelected);
-    void setUserGateSelected2(string gateSelected);
-    void setUserGateSelected3(string gateSelected);
+    void setGateTypes(const std::vector<std::string>& gateTypes) override;
+
 };
 
 #endif // LEVELNINE_H

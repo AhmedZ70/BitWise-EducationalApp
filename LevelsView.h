@@ -118,6 +118,8 @@ private slots:
 
     void on_goButtonLevel8_clicked();
 
+    void on_goButtonLevel9_clicked();
+
 private:
     Ui::LevelsView *ui;
     int currentLevel;
