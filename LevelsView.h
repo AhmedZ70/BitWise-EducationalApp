@@ -38,15 +38,7 @@ private slots:
 
     void on_pushButton_6_clicked();
 
-    void on_pushButton_7_clicked();
 
-    void on_pushButton_8_clicked();
-
-    void on_pushButton_9_clicked();
-
-    void on_pushButton_10_clicked();
-
-    void on_pushButton_11_clicked();
 
     //Home button handlers
 
@@ -130,8 +122,8 @@ private:
     bool getFirstUserInput(int level);
     bool getSecondUserInput(int level);
     QString getLastDroppedGate(int level);
-    void processLevelInputs(Custom_GraphicsView* gateOne, Custom_GraphicsView* gateTwo, Custom_GraphicsView* gateThree,
-                                        CustomLineEdit* input1, CustomLineEdit* input2, CustomLineEdit* input3, CustomLineEdit* input4,
+    void processLevelInputs(const std::vector<Custom_GraphicsView*>& gateDropAreas,
+                                        const std::vector<CustomLineEdit*>& inputs,
                                         int levelNumber);
     bool userFirstInput;
     bool userSecondInput;

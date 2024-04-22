@@ -8,6 +8,7 @@
 #include "levelSeven.h"
 #include "levelEight.h"
 #include "levelNine.h"
+#include <algorithm>
 #include <iostream>
 
 GameModel::GameModel(QObject *parent) : QObject(parent), currentLevel(0){
@@ -45,5 +46,15 @@ void GameModel::checkUserGate(string gate)
 
 void GameModel::setGateDropped(const std::vector<std::string>& gateTypese, int level){
     currentLevel = level-1;
-    levels[currentLevel]->setGateTypes(gateTypese);
+    if (hasEmptyString(gateTypese)){
+        throw std::invalid_argument("One or more gate types are empty.");
+    }
+    else {
+         levels[currentLevel]->setGateTypes(gateTypese);
+    }
+
+}
+
+bool GameModel::hasEmptyString(const std::vector<std::string>& gateTypes) {
+    return std::find(gateTypes.begin(), gateTypes.end(), "") != gateTypes.end();
 }

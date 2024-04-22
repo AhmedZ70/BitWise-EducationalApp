@@ -36,10 +36,14 @@ Gate CircuitLevel::setGate(string gateType)
         gateFunction = [](bool a, bool b) { return a || b; };
         return Gate(gateFunction);
     }
-    else
+    else if (gateType == "NOT")
     {
         notGateFunction = [](bool a) { return !a; };
         return Gate(notGateFunction);
+    }
+    else{
+        //invalid gate
+        return Gate();
     }
 }
 

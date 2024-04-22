@@ -13,13 +13,14 @@ private:
     int currentLevel;
     std::vector<std::unique_ptr<CircuitLevel>> levels;
      void computeLevelCircuit(int currentLevel);
-
+    bool hasEmptyString(const std::vector<std::string>& gateTypes);
 public:
     explicit GameModel(QObject *parent = nullptr);
 
 signals:
     void circuitCompleted(bool completed);
     void correctGate(bool correctGate);
+    void emptyGate();
 
 public slots:
     void onInputReceived(std::vector<bool>inputs, int currentLevel);

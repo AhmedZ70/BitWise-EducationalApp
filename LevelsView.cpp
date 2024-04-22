@@ -16,6 +16,7 @@ LevelsView::LevelsView(QWidget *parent) :
     connect(this, &LevelsView::gotUserInput, gameModel,&GameModel::onInputReceived);
     connect(this, &LevelsView::userGateSelected,gameModel,&GameModel::checkUserGate);
     connect(gameModel, &GameModel::correctGate, this, &LevelsView:: onCorrectGateReceived);
+    //connect(gameModel, &GameModel::emptyGate, this, &LevelsView::)
     connect (ui->goButtonLevelOne, &QPushButton::clicked, this, &LevelsView::on_pushButton_clicked);
 
 
@@ -93,31 +94,7 @@ void LevelsView::on_pushButton_6_clicked(){
     goClickedTrainingLevel(currentLevel);
 }
 
-void LevelsView::on_pushButton_7_clicked(){
-    currentLevel = 7;
-    goClickedTrainingLevel(currentLevel);
-}
 
-
-void LevelsView::on_pushButton_8_clicked(){
-    currentLevel = 8;
-    cout<< "go clicked" << endl;
-}
-
-void LevelsView::on_pushButton_9_clicked(){
-    currentLevel = 9;
-    cout<< "go clicked" << endl;
-}
-
-void LevelsView::on_pushButton_10_clicked(){
-    currentLevel = 10;
-    cout<< "go clicked" << endl;
-}
-
-void LevelsView::on_pushButton_11_clicked(){
-    currentLevel = 11;
-    cout<< "go clicked" << endl;
-}
 
 
 void LevelsView::onHomeButtonClicked()
@@ -329,40 +306,41 @@ bool LevelsView::getSecondUserInput(int level)
 
 }
 
-void LevelsView::processLevelInputs(Custom_GraphicsView* gateOne, Custom_GraphicsView* gateTwo, Custom_GraphicsView* gateThree,
-                                    CustomLineEdit* input1, CustomLineEdit* input2, CustomLineEdit* input3, CustomLineEdit* input4,
+void LevelsView::processLevelInputs(const std::vector<Custom_GraphicsView*>& gateDropAreas,
+                                    const std::vector<CustomLineEdit*>& inputs,
                                     int levelNumber)
 {
-    std::vector<std::string> gateTypes = {
-        gateOne->lastDroppedGateName().toStdString(),
-        gateTwo->lastDroppedGateName().toStdString(),
-        gateThree->lastDroppedGateName().toStdString()
-    };
-    gameModel->setGateDropped(gateTypes, levelNumber);
+    std::vector<std::string> gateTypes;
+    for (auto& gate : gateDropAreas) {
+        gateTypes.push_back(gate->lastDroppedGateName().toStdString());
+    }
+    try {
+        std::vector<bool> inputValues;
+        for (auto& input : inputs) {
+            inputValues.push_back(input->text() == "1");
+        }
+        gameModel->setGateDropped(gateTypes, levelNumber);
+        emit gotUserInput(inputValues, levelNumber);
+    } catch (const std::invalid_argument& e) {
+        QMessageBox::warning(this, "Error", e.what());
+    }
 
-    std::vector<bool> inputs = {
-        input1->text() == "1",
-        input2->text() == "1",
-        input3->text() == "1",
-        input4->text() == "1"
-    };
-
-    emit gotUserInput(inputs, levelNumber);
 }
+
 
 
 void LevelsView::on_goButtonLevel8_clicked()
 {
-    processLevelInputs(ui->gateOneLevel8, ui->gateTwoLevel8, ui->gateThreeLevel8,
-                       ui->level8Input1, ui->level8Input2, ui->level8Input3, ui->level8Input4, 8);
-
+    std::vector<Custom_GraphicsView*> gates = {ui->gateOneLevel8, ui->gateTwoLevel8, ui->gateThreeLevel8};
+    std::vector<CustomLineEdit*> inputs = {ui->level8Input1, ui->level8Input2, ui->level8Input3, ui->level8Input4};
+    processLevelInputs(gates, inputs, 8);
 }
 
 void LevelsView::on_goButtonLevel9_clicked()
 {
-    processLevelInputs(ui->gateOneLevel9, ui->gateTwoLevel9, ui->gateThreeLevel9,
-                       ui->level9Input1, ui->level9Input2, ui->level9Input3, ui->level9Input4, 9);
-
+    std::vector<Custom_GraphicsView*> gates = {ui->gateOneLevel9, ui->gateTwoLevel9, ui->gateThreeLevel9};
+    std::vector<CustomLineEdit*> inputs = {ui->level9Input1, ui->level9Input2, ui->level9Input3, ui->level9Input4};
+    processLevelInputs(gates, inputs, 9);
 }
 
 

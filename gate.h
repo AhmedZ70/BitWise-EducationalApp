@@ -14,6 +14,8 @@ private:
 public:
     Gate(function<bool(bool, bool)> func);
     Gate(function<bool(bool)> func);
+    Gate();
+
     void setInput(bool firstValue, bool secondValue);
     void setInput(bool value);
     bool computeOutput();

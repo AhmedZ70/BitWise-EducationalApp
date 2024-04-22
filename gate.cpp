@@ -7,7 +7,9 @@ Gate::Gate(function<bool(bool, bool)> func)
 Gate::Gate(function<bool(bool)> func)
     : notGateFunction(func), isNotGate(true) {
 }
+Gate::Gate(){
 
+}
 // Set inputs for the gate
 void Gate::setInput(bool firstValue, bool secondValue) {
     if (!isNotGate) {
