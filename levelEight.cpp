@@ -4,8 +4,8 @@
 /**
  * @author Joseph Corbeil, Johnny Song, Ezekiel Jaramillo, Ahmed Zahran, Raj Reddy, Joel Ronca
  * @date April. 22, 2024
- * @name levelSeven cpp file for assignment9
- * This cpp file contains the the implementation of the methods outlines in the levelSeven h file.
+ * @name levelEight cpp file for assignment9
+ * This cpp file contains the the implementation of the methods outlines in the levelEight h file.
 */
 LevelEight::LevelEight() : firstBit(false), secondBit(false), thirdBit(false), fourthBit(false) {}
 
