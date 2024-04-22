@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>LevelsView</class>
- <widget class="QWidget" name="LevelsView">
+ <class>levels</class>
+ <widget class="QWidget" name="levels">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1000</width>
-    <height>800</height>
+    <width>800</width>
+    <height>600</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -21,7 +21,7 @@
     <rect>
      <x>-40</x>
      <y>0</y>
-     <width>1021</width>
+     <width>981</width>
      <height>171</height>
     </rect>
    </property>
@@ -158,8 +158,8 @@ background-image: url(:/icons/wallpaper5.png);</string>
     <rect>
      <x>-20</x>
      <y>160</y>
-     <width>1000</width>
-     <height>641</height>
+     <width>831</width>
+     <height>481</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -169,7 +169,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
     <number>2</number>
    </property>
    <property name="currentIndex">
-    <number>9</number>
+    <number>8</number>
    </property>
    <widget class="QWidget" name="level1">
     <widget class="QLabel" name="label_2">
@@ -213,7 +213,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <string>GO</string>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="levelOneInput1">
+    <widget class="QLineEdit" name="levelOneInput1">
      <property name="geometry">
       <rect>
        <x>90</x>
@@ -223,7 +223,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       </rect>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="levelOneInput2">
+    <widget class="QLineEdit" name="levelOneInput2">
      <property name="geometry">
       <rect>
        <x>90</x>
@@ -426,7 +426,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_3">
+    <widget class="QLineEdit" name="lineEdit_3">
      <property name="geometry">
       <rect>
        <x>90</x>
@@ -490,7 +490,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <string>GO</string>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_4">
+    <widget class="QLineEdit" name="lineEdit_4">
      <property name="geometry">
       <rect>
        <x>90</x>
@@ -600,7 +600,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_5">
+    <widget class="QLineEdit" name="lineEdit_5">
      <property name="geometry">
       <rect>
        <x>90</x>
@@ -628,7 +628,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <string>Go Back To Level 2 </string>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_6">
+    <widget class="QLineEdit" name="lineEdit_6">
      <property name="geometry">
       <rect>
        <x>90</x>
@@ -780,7 +780,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
     </widget>
    </widget>
    <widget class="QWidget" name="level4">
-    <widget class="CustomLineEdit" name="lineEdit_7">
+    <widget class="QLineEdit" name="lineEdit_7">
      <property name="geometry">
       <rect>
        <x>90</x>
@@ -808,7 +808,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <string>Go Back To Level 3 </string>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_8">
+    <widget class="QLineEdit" name="lineEdit_8">
      <property name="geometry">
       <rect>
        <x>90</x>
@@ -1130,7 +1130,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_9">
+    <widget class="QLineEdit" name="lineEdit_9">
      <property name="geometry">
       <rect>
        <x>90</x>
@@ -1140,7 +1140,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       </rect>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_10">
+    <widget class="QLineEdit" name="lineEdit_10">
      <property name="geometry">
       <rect>
        <x>90</x>
@@ -1222,7 +1222,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <string>GO</string>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_11">
+    <widget class="QLineEdit" name="lineEdit_11">
      <property name="geometry">
       <rect>
        <x>90</x>
@@ -1291,7 +1291,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_12">
+    <widget class="QLineEdit" name="lineEdit_12">
      <property name="geometry">
       <rect>
        <x>90</x>
@@ -1396,8 +1396,8 @@ background-image: url(:/icons/wallpaper5.png);</string>
     <widget class="Custom_GraphicsView" name="graphicsView_7">
      <property name="geometry">
       <rect>
-       <x>790</x>
-       <y>230</y>
+       <x>350</x>
+       <y>130</y>
        <width>140</width>
        <height>140</height>
       </rect>
@@ -1447,34 +1447,6 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <enum>Qt::Horizontal</enum>
      </property>
     </widget>
-    <widget class="QLabel" name="intializedNotGate">
-     <property name="geometry">
-      <rect>
-       <x>350</x>
-       <y>130</y>
-       <width>140</width>
-       <height>140</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>TextLabel</string>
-     </property>
-    </widget>
-    <zorder>intializedNotGate</zorder>
-    <zorder>pushButton_6</zorder>
-    <zorder>lineEdit_11</zorder>
-    <zorder>backToLevel1_5</zorder>
-    <zorder>graphicsView_6</zorder>
-    <zorder>label_12</zorder>
-    <zorder>lineEdit_12</zorder>
-    <zorder>skipButton_6</zorder>
-    <zorder>homeButton_6</zorder>
-    <zorder>label_13</zorder>
-    <zorder>line_21</zorder>
-    <zorder>line_22</zorder>
-    <zorder>graphicsView_7</zorder>
-    <zorder>line_23</zorder>
-    <zorder>line_20</zorder>
    </widget>
    <widget class="QWidget" name="level7">
     <widget class="Custom_GraphicsView" name="graphicsView_8">
@@ -1512,7 +1484,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <enum>Qt::Horizontal</enum>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_13">
+    <widget class="QLineEdit" name="lineEdit_13">
      <property name="geometry">
       <rect>
        <x>50</x>
@@ -1670,7 +1642,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <enum>Qt::Horizontal</enum>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_14">
+    <widget class="QLineEdit" name="lineEdit_14">
      <property name="geometry">
       <rect>
        <x>50</x>
@@ -1680,7 +1652,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       </rect>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_15">
+    <widget class="QLineEdit" name="lineEdit_15">
      <property name="geometry">
       <rect>
        <x>50</x>
@@ -1838,7 +1810,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <enum>Qt::Horizontal</enum>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_16">
+    <widget class="QLineEdit" name="lineEdit_16">
      <property name="geometry">
       <rect>
        <x>90</x>
@@ -1977,7 +1949,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <enum>Qt::Horizontal</enum>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_17">
+    <widget class="QLineEdit" name="lineEdit_17">
      <property name="geometry">
       <rect>
        <x>90</x>
@@ -1987,7 +1959,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       </rect>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_18">
+    <widget class="QLineEdit" name="lineEdit_18">
      <property name="geometry">
       <rect>
        <x>90</x>
@@ -2013,7 +1985,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <number>1</number>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_19">
+    <widget class="QLineEdit" name="lineEdit_19">
      <property name="geometry">
       <rect>
        <x>90</x>
@@ -2206,7 +2178,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <string>Skip</string>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_20">
+    <widget class="QLineEdit" name="lineEdit_20">
      <property name="geometry">
       <rect>
        <x>80</x>
@@ -2269,7 +2241,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <number>1</number>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_21">
+    <widget class="QLineEdit" name="lineEdit_21">
      <property name="geometry">
       <rect>
        <x>80</x>
@@ -2282,7 +2254,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
     <widget class="QLabel" name="label_18">
      <property name="geometry">
       <rect>
-       <x>660</x>
+       <x>650</x>
        <y>210</y>
        <width>41</width>
        <height>41</height>
@@ -2336,7 +2308,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <number>1</number>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_22">
+    <widget class="QLineEdit" name="lineEdit_22">
      <property name="geometry">
       <rect>
        <x>80</x>
@@ -2397,7 +2369,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <string>GO</string>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_23">
+    <widget class="QLineEdit" name="lineEdit_23">
      <property name="geometry">
       <rect>
        <x>80</x>
@@ -2715,869 +2687,6 @@ background-image: url(:/icons/wallpaper5.png);</string>
      </property>
     </widget>
    </widget>
-   <widget class="QWidget" name="level10">
-    <widget class="QLabel" name="label_38">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>0</y>
-       <width>851</width>
-       <height>481</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-image: url(:/icons/wallpaper5.png);</string>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_10">
-     <property name="geometry">
-      <rect>
-       <x>660</x>
-       <y>80</y>
-       <width>80</width>
-       <height>24</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>GO</string>
-     </property>
-    </widget>
-    <widget class="CustomLineEdit" name="lineEdit_45">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>160</y>
-       <width>41</width>
-       <height>41</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="homeButton_10">
-     <property name="geometry">
-      <rect>
-       <x>130</x>
-       <y>0</y>
-       <width>80</width>
-       <height>24</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Home</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="skipButton_19">
-     <property name="geometry">
-      <rect>
-       <x>530</x>
-       <y>0</y>
-       <width>80</width>
-       <height>24</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Skip</string>
-     </property>
-    </widget>
-    <widget class="CustomLineEdit" name="lineEdit_46">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>210</y>
-       <width>41</width>
-       <height>41</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="backToLevel1_9">
-     <property name="geometry">
-      <rect>
-       <x>650</x>
-       <y>0</y>
-       <width>131</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>9</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>Go Back To Level 9</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_39">
-     <property name="geometry">
-      <rect>
-       <x>350</x>
-       <y>10</y>
-       <width>101</width>
-       <height>51</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>16</pointsize>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Raised</enum>
-     </property>
-     <property name="text">
-      <string>Level Ten</string>
-     </property>
-     <property name="textFormat">
-      <enum>Qt::MarkdownText</enum>
-     </property>
-    </widget>
-    <widget class="CustomLineEdit" name="lineEdit_47">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>280</y>
-       <width>41</width>
-       <height>41</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="CustomLineEdit" name="lineEdit_48">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>340</y>
-       <width>41</width>
-       <height>41</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="CustomLineEdit" name="lineEdit_49">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>390</y>
-       <width>41</width>
-       <height>41</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="CustomLineEdit" name="lineEdit_50">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>440</y>
-       <width>41</width>
-       <height>41</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="Line" name="line_117">
-     <property name="geometry">
-      <rect>
-       <x>80</x>
-       <y>400</y>
-       <width>78</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
-     </property>
-     <property name="lineWidth">
-      <number>2</number>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-    </widget>
-    <widget class="Custom_GraphicsView" name="graphicsView_16">
-     <property name="geometry">
-      <rect>
-       <x>150</x>
-       <y>140</y>
-       <width>140</width>
-       <height>140</height>
-      </rect>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
-     </property>
-     <property name="lineWidth">
-      <number>1</number>
-     </property>
-    </widget>
-    <widget class="Custom_GraphicsView" name="graphicsView_17">
-     <property name="geometry">
-      <rect>
-       <x>160</x>
-       <y>260</y>
-       <width>140</width>
-       <height>140</height>
-      </rect>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
-     </property>
-     <property name="lineWidth">
-      <number>1</number>
-     </property>
-    </widget>
-    <widget class="QLabel" name="intializedNotGate_2">
-     <property name="geometry">
-      <rect>
-       <x>150</x>
-       <y>390</y>
-       <width>140</width>
-       <height>140</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>TextLabel</string>
-     </property>
-    </widget>
-    <widget class="Line" name="line_120">
-     <property name="geometry">
-      <rect>
-       <x>270</x>
-       <y>200</y>
-       <width>91</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
-     </property>
-     <property name="lineWidth">
-      <number>2</number>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-    </widget>
-    <widget class="Custom_GraphicsView" name="graphicsView_18">
-     <property name="geometry">
-      <rect>
-       <x>440</x>
-       <y>160</y>
-       <width>140</width>
-       <height>140</height>
-      </rect>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
-     </property>
-     <property name="lineWidth">
-      <number>1</number>
-     </property>
-    </widget>
-    <widget class="Custom_GraphicsView" name="graphicsView_19">
-     <property name="geometry">
-      <rect>
-       <x>380</x>
-       <y>370</y>
-       <width>140</width>
-       <height>140</height>
-      </rect>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
-     </property>
-     <property name="lineWidth">
-      <number>1</number>
-     </property>
-    </widget>
-    <widget class="Line" name="line_125">
-     <property name="geometry">
-      <rect>
-       <x>140</x>
-       <y>400</y>
-       <width>78</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
-     </property>
-     <property name="lineWidth">
-      <number>2</number>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-    </widget>
-    <widget class="Line" name="line_127">
-     <property name="geometry">
-      <rect>
-       <x>277</x>
-       <y>450</y>
-       <width>121</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
-     </property>
-     <property name="lineWidth">
-      <number>2</number>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-    </widget>
-    <widget class="Line" name="line_129">
-     <property name="geometry">
-      <rect>
-       <x>499</x>
-       <y>430</y>
-       <width>71</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
-     </property>
-     <property name="lineWidth">
-      <number>2</number>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-    </widget>
-    <widget class="Custom_GraphicsView" name="graphicsView_20">
-     <property name="geometry">
-      <rect>
-       <x>664</x>
-       <y>182</y>
-       <width>140</width>
-       <height>140</height>
-      </rect>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
-     </property>
-     <property name="lineWidth">
-      <number>1</number>
-     </property>
-    </widget>
-    <widget class="Line" name="line_130">
-     <property name="geometry">
-      <rect>
-       <x>567</x>
-       <y>262</y>
-       <width>121</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
-     </property>
-     <property name="lineWidth">
-      <number>2</number>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-    </widget>
-    <widget class="Line" name="line_131">
-     <property name="geometry">
-      <rect>
-       <x>790</x>
-       <y>243</y>
-       <width>31</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
-     </property>
-     <property name="lineWidth">
-      <number>2</number>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-    </widget>
-    <widget class="Line" name="line_58">
-     <property name="geometry">
-      <rect>
-       <x>569</x>
-       <y>310</y>
-       <width>3</width>
-       <height>61</height>
-      </rect>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>16777215</width>
-       <height>61</height>
-      </size>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
-     </property>
-     <property name="lineWidth">
-      <number>2</number>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Vertical</enum>
-     </property>
-    </widget>
-    <widget class="Line" name="line_59">
-     <property name="geometry">
-      <rect>
-       <x>560</x>
-       <y>272</y>
-       <width>20</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>16777215</width>
-       <height>61</height>
-      </size>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
-     </property>
-     <property name="lineWidth">
-      <number>2</number>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Vertical</enum>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_20">
-     <property name="geometry">
-      <rect>
-       <x>820</x>
-       <y>232</y>
-       <width>41</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>11</pointsize>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="text">
-      <string>1</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="Line" name="line_132">
-     <property name="geometry">
-      <rect>
-       <x>80</x>
-       <y>180</y>
-       <width>91</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
-     </property>
-     <property name="lineWidth">
-      <number>2</number>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-    </widget>
-    <widget class="Line" name="line_134">
-     <property name="geometry">
-      <rect>
-       <x>80</x>
-       <y>220</y>
-       <width>91</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
-     </property>
-     <property name="lineWidth">
-      <number>2</number>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-    </widget>
-    <widget class="Line" name="line_135">
-     <property name="geometry">
-      <rect>
-       <x>80</x>
-       <y>300</y>
-       <width>101</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
-     </property>
-     <property name="lineWidth">
-      <number>2</number>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-    </widget>
-    <widget class="Line" name="line_136">
-     <property name="geometry">
-      <rect>
-       <x>80</x>
-       <y>340</y>
-       <width>101</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
-     </property>
-     <property name="lineWidth">
-      <number>2</number>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-    </widget>
-    <widget class="Line" name="line_118">
-     <property name="geometry">
-      <rect>
-       <x>80</x>
-       <y>450</y>
-       <width>91</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
-     </property>
-     <property name="lineWidth">
-      <number>2</number>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-    </widget>
-    <widget class="Line" name="line_128">
-     <property name="geometry">
-      <rect>
-       <x>300</x>
-       <y>410</y>
-       <width>101</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
-     </property>
-     <property name="lineWidth">
-      <number>2</number>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-    </widget>
-    <widget class="Line" name="line_124">
-     <property name="geometry">
-      <rect>
-       <x>560</x>
-       <y>220</y>
-       <width>131</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
-     </property>
-     <property name="lineWidth">
-      <number>2</number>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-    </widget>
-    <widget class="Line" name="line_137">
-     <property name="geometry">
-      <rect>
-       <x>360</x>
-       <y>202</y>
-       <width>112</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
-     </property>
-     <property name="lineWidth">
-      <number>2</number>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-    </widget>
-    <widget class="Line" name="line_138">
-     <property name="geometry">
-      <rect>
-       <x>360</x>
-       <y>240</y>
-       <width>112</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
-     </property>
-     <property name="lineWidth">
-      <number>2</number>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-    </widget>
-    <widget class="Line" name="line_126">
-     <property name="geometry">
-      <rect>
-       <x>210</x>
-       <y>398</y>
-       <width>91</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
-     </property>
-     <property name="lineWidth">
-      <number>2</number>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-    </widget>
-    <widget class="Line" name="line_57">
-     <property name="geometry">
-      <rect>
-       <x>560</x>
-       <y>370</y>
-       <width>21</width>
-       <height>71</height>
-      </rect>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
-     </property>
-     <property name="lineWidth">
-      <number>2</number>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Vertical</enum>
-     </property>
-    </widget>
-    <widget class="Line" name="line_56">
-     <property name="geometry">
-      <rect>
-       <x>350</x>
-       <y>250</y>
-       <width>20</width>
-       <height>83</height>
-      </rect>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
-     </property>
-     <property name="lineWidth">
-      <number>2</number>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Vertical</enum>
-     </property>
-    </widget>
-    <widget class="Line" name="line_139">
-     <property name="geometry">
-      <rect>
-       <x>280</x>
-       <y>320</y>
-       <width>81</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
-     </property>
-     <property name="lineWidth">
-      <number>2</number>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-    </widget>
-    <widget class="Line" name="line_60">
-     <property name="geometry">
-      <rect>
-       <x>290</x>
-       <y>410</y>
-       <width>20</width>
-       <height>10</height>
-      </rect>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
-     </property>
-     <property name="lineWidth">
-      <number>2</number>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Vertical</enum>
-     </property>
-    </widget>
-   </widget>
-  </widget>
-  <widget class="Line" name="line_114">
-   <property name="geometry">
-    <rect>
-     <x>530</x>
-     <y>790</y>
-     <width>101</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Plain</enum>
-   </property>
-   <property name="lineWidth">
-    <number>2</number>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-  </widget>
-  <widget class="Line" name="line_133">
-   <property name="geometry">
-    <rect>
-     <x>500</x>
-     <y>790</y>
-     <width>101</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Plain</enum>
-   </property>
-   <property name="lineWidth">
-    <number>2</number>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-  </widget>
-  <widget class="Line" name="line_115">
-   <property name="geometry">
-    <rect>
-     <x>430</x>
-     <y>790</y>
-     <width>101</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Plain</enum>
-   </property>
-   <property name="lineWidth">
-    <number>2</number>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-  </widget>
-  <widget class="Line" name="line_116">
-   <property name="geometry">
-    <rect>
-     <x>390</x>
-     <y>790</y>
-     <width>101</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Plain</enum>
-   </property>
-   <property name="lineWidth">
-    <number>2</number>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-  </widget>
-  <widget class="Line" name="line_122">
-   <property name="geometry">
-    <rect>
-     <x>830</x>
-     <y>790</y>
-     <width>121</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Plain</enum>
-   </property>
-   <property name="lineWidth">
-    <number>2</number>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-  </widget>
-  <widget class="Line" name="line_123">
-   <property name="geometry">
-    <rect>
-     <x>750</x>
-     <y>790</y>
-     <width>121</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Plain</enum>
-   </property>
-   <property name="lineWidth">
-    <number>2</number>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-  </widget>
-  <widget class="Line" name="line_121">
-   <property name="geometry">
-    <rect>
-     <x>610</x>
-     <y>790</y>
-     <width>81</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Plain</enum>
-   </property>
-   <property name="lineWidth">
-    <number>2</number>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
   </widget>
  </widget>
  <customwidgets>
@@ -3589,12 +2698,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
   <customwidget>
    <class>Custom_GraphicsView</class>
    <extends>QGraphicsView</extends>
-   <header>events.h</header>
-  </customwidget>
-  <customwidget>
-   <class>CustomLineEdit</class>
-   <extends>QLineEdit</extends>
-   <header location="global">customlineedit.h</header>
+   <header location="global">events.h</header>
   </customwidget>
  </customwidgets>
  <resources/>

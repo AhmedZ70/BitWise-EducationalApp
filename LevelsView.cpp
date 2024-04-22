@@ -34,6 +34,8 @@ LevelsView::LevelsView(QWidget *parent) :
     ui->intializedNotGate->setPixmap(notGatePixmap.scaled(105, 105, Qt::KeepAspectRatio, Qt::SmoothTransformation));
     ui->intializedNotGate->setAlignment(Qt::AlignCenter);
 
+    ui->intializedNotGate_2->setPixmap(notGatePixmap.scaled(105, 105, Qt::KeepAspectRatio, Qt::SmoothTransformation));
+    ui->intializedNotGate_2->setAlignment(Qt::AlignCenter);
 
 
     ui->andGateLabel->setPixmap(AND_GATE.scaled(100, 100, Qt::KeepAspectRatio));
@@ -102,10 +104,17 @@ void LevelsView::on_pushButton_7_clicked(){
 
 
 void LevelsView::on_pushButton_8_clicked(){
+    currentLevel = 8;
     cout<< "go clicked" << endl;
 }
 
 void LevelsView::on_pushButton_9_clicked(){
+    currentLevel = 9;
+    cout<< "go clicked" << endl;
+}
+
+void LevelsView::on_pushButton_10_clicked(){
+    currentLevel = 10;
     cout<< "go clicked" << endl;
 }
 
@@ -145,6 +154,11 @@ void LevelsView::on_homeButton_8_clicked(){
 void LevelsView::on_homeButton_9_clicked(){
     emit homeClicked();
 }
+
+void LevelsView::on_homeButton_10_clicked(){
+    emit homeClicked();
+}
+
 //Go to next level functions
 
 void LevelsView::on_skipButton_clicked()
@@ -184,6 +198,11 @@ void LevelsView::on_skipButton_8_clicked(){
 void LevelsView::on_skipButton_9_clicked(){
     ui->stackedWidget->setCurrentIndex(9);
 }
+
+void LevelsView::on_skipButton_10_clicked(){
+    ui->stackedWidget->setCurrentIndex(10);
+}
+
 //Go back to previous level functions
 void LevelsView::on_backToLevel1_clicked()
 {
@@ -216,6 +235,10 @@ void LevelsView::on_backToLevel1_7_clicked(){
 
 void LevelsView::on_backToLevel1_8_clicked(){
     ui->stackedWidget->setCurrentIndex(7);
+}
+
+void LevelsView::on_backToLevel1_9_clicked(){
+    ui->stackedWidget->setCurrentIndex(8);
 }
 
 
