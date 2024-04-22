@@ -12,6 +12,8 @@ MainWindow::MainWindow(QWidget *parent)
     ui->stackedWidget->addWidget(levelsUi);
 
     connect(levelsUi, SIGNAL(homeClicked()), this, SLOT(moveHome()));
+
+    connect(ui->quitButton, &QPushButton::clicked, this, &QCoreApplication::quit, Qt::QueuedConnection);
 }
 
 MainWindow::~MainWindow()
