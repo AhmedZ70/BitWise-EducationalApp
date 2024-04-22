@@ -62,11 +62,13 @@ SOURCES += \
     gameModel.cpp \
     gate.cpp \
     levelEight.cpp \
+    levelEleven.cpp \
     levelFive.cpp \
     levelFour.cpp \
     levelNine.cpp \
     levelSeven.cpp \
     levelSix.cpp \
+    levelTen.cpp \
     levelThree.cpp \
     levelTwo.cpp \
     levelone.cpp \
@@ -133,8 +135,10 @@ HEADERS += \
     levelNine.h \
     levelSeven.h \
     levelSix.h \
+    levelTen.h \
     levelThree.h \
     levelTwo.h \
+    leveleEleven.h \
     levelone.h \
     mainwindow.h
 

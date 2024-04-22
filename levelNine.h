@@ -2,7 +2,6 @@
 #define LEVELNINE_H
 #include "circuitLevel.h"
 #include <vector>
-#include <functional>
 #include <string>
 using namespace std;
 class LevelNine: public CircuitLevel {
