@@ -11,6 +11,7 @@ public:
     LevelOne();
     void setInput(std:: vector<bool> inputs)override;
     void computeOutput()override;
+    bool checkCorrectGate(string userGate);
 };
 
 #endif // LEVELONE_H

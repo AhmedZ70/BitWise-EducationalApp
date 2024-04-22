@@ -14,12 +14,10 @@ LevelsView::LevelsView(QWidget *parent) :
     connect (ui->homeButton, &QPushButton::clicked, this, &LevelsView::onHomeButtonClicked);
     connect(gameModel,&GameModel::circuitCompleted,this, &LevelsView::onResultReceived);
     connect(this, &LevelsView::gotUserInput, gameModel,&GameModel::onInputReceived);
-    connect(this, &LevelsView::calculateLevel,gameModel,&GameModel::computeLevelCircuit);
+    connect(this, &LevelsView::userGateSelected,gameModel,&GameModel::checkUserGate);
+    connect(gameModel, &GameModel::correctGate, this, &LevelsView:: onCorrectGateReceived);
     connect (ui->goButtonLevelOne, &QPushButton::clicked, this, &LevelsView::on_pushButton_clicked);
-    connect (ui->pushButton_3, &QPushButton::clicked, this, &LevelsView::on_pushButton_3_clicked);
-    connect (ui->pushButton_4, &QPushButton::clicked, this, &LevelsView::on_pushButton_4_clicked);
-    connect (ui->pushButton_5, &QPushButton::clicked, this, &LevelsView::on_pushButton_5_clicked);
-    connect (ui->pushButton_6, &QPushButton::clicked, this, &LevelsView::on_pushButton_6_clicked);
+
 
 
     QPixmap AND_GATE(":/icons/andGate.png");
@@ -34,6 +32,8 @@ LevelsView::LevelsView(QWidget *parent) :
     ui->intializedNotGate->setPixmap(notGatePixmap.scaled(105, 105, Qt::KeepAspectRatio, Qt::SmoothTransformation));
     ui->intializedNotGate->setAlignment(Qt::AlignCenter);
 
+    ui->intializedNotGate_2->setPixmap(notGatePixmap.scaled(105, 105, Qt::KeepAspectRatio, Qt::SmoothTransformation));
+    ui->intializedNotGate_2->setAlignment(Qt::AlignCenter);
 
 
     ui->andGateLabel->setPixmap(AND_GATE.scaled(100, 100, Qt::KeepAspectRatio));
@@ -45,17 +45,15 @@ LevelsView::LevelsView(QWidget *parent) :
 
 
     ui->andGateLabel->setParent(ui->groupBox);
-    ui->andGateLabel->setGateName("AND_GATE");
+    ui->andGateLabel->setGateName("AND");
     ui->orGateLabel->setParent(ui->groupBox);
-    ui->orGateLabel->setGateName("OR_GATE");
+    ui->orGateLabel->setGateName("OR");
     ui->nandGateLabel->setParent(ui->groupBox);
-    ui->nandGateLabel->setGateName("NAND_GATE");
+    ui->nandGateLabel->setGateName("NAND");
     ui->norGateLabel->setParent(ui->groupBox);
-    ui->norGateLabel->setGateName("NOR_GATE");
+    ui->norGateLabel->setGateName("NOR");
     ui->xorGateLabel->setParent(ui->groupBox);
-    ui->xorGateLabel->setGateName("XOR_GATE");
-    // ui->notGateLabel->setParent(ui->groupBox);
-    // ui->notGateLabel->setGateName("NOT_GATE");
+    ui->xorGateLabel->setGateName("XOR");
 }
 
 LevelsView::~LevelsView()
@@ -102,10 +100,17 @@ void LevelsView::on_pushButton_7_clicked(){
 
 
 void LevelsView::on_pushButton_8_clicked(){
+    currentLevel = 8;
     cout<< "go clicked" << endl;
 }
 
 void LevelsView::on_pushButton_9_clicked(){
+    currentLevel = 9;
+    cout<< "go clicked" << endl;
+}
+
+void LevelsView::on_pushButton_10_clicked(){
+    currentLevel = 10;
     cout<< "go clicked" << endl;
 }
 
@@ -145,6 +150,11 @@ void LevelsView::on_homeButton_8_clicked(){
 void LevelsView::on_homeButton_9_clicked(){
     emit homeClicked();
 }
+
+void LevelsView::on_homeButton_10_clicked(){
+    emit homeClicked();
+}
+
 //Go to next level functions
 
 void LevelsView::on_skipButton_clicked()
@@ -184,6 +194,11 @@ void LevelsView::on_skipButton_8_clicked(){
 void LevelsView::on_skipButton_9_clicked(){
     ui->stackedWidget->setCurrentIndex(9);
 }
+
+void LevelsView::on_skipButton_10_clicked(){
+    ui->stackedWidget->setCurrentIndex(10);
+}
+
 //Go back to previous level functions
 void LevelsView::on_backToLevel1_clicked()
 {
@@ -218,6 +233,10 @@ void LevelsView::on_backToLevel1_8_clicked(){
     ui->stackedWidget->setCurrentIndex(7);
 }
 
+void LevelsView::on_backToLevel1_9_clicked(){
+    ui->stackedWidget->setCurrentIndex(8);
+}
+
 
 
 void LevelsView ::goClickedTrainingLevel(int level){
@@ -226,7 +245,6 @@ void LevelsView ::goClickedTrainingLevel(int level){
     std::vector<bool> inputs{inputValue1, inputValue2};
 
     emit gotUserInput(inputs,level);
-    emit calculateLevel(level);
 }
 void LevelsView::onResultReceived(bool successful) {
     //QString lastGate = ui->graphicsView->lastDroppedGateName();
@@ -317,9 +335,41 @@ void LevelsView::on_goButtonLevel8_clicked()
                              userThirdInput, userFourthInput};
 
     emit gotUserInput(inputs,8);
-    emit calculateLevel(8);
 
 
 
 }
 
+QString LevelsView::getLastDroppedGate(int level)
+{
+    QString lastGate;
+    switch(level){
+    case 1:
+        lastGate = ui->graphicsView->lastDroppedGateName();
+        return lastGate;
+    case 2:
+        lastGate = ui->graphicsView_2->lastDroppedGateName();
+        return lastGate;
+    case 3:
+        lastGate = ui->graphicsView_3->lastDroppedGateName();
+        return lastGate;
+    case 4:
+        lastGate = ui->graphicsView_4->lastDroppedGateName();
+        return lastGate;
+
+    case 5:
+        lastGate = ui->graphicsView_5->lastDroppedGateName();
+        return lastGate;
+
+
+    case 6:
+        lastGate = ui->graphicsView_6->lastDroppedGateName();
+        return lastGate;
+    }
+
+}
+
+void LevelsView:: onCorrectGateReceived(bool correct)
+{
+    correctGateDragged = correct;
+}

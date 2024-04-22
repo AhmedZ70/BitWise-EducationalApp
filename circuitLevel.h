@@ -11,11 +11,13 @@ protected:
     Gate setGate(string gate);
 
 
+    string expectedGate;
 public:
     virtual void setInput(std:: vector<bool> inputs);
     virtual void computeOutput();
     virtual void setGateTypes(const std::vector<std::string>& gateTypes);
     bool getResult() const;
+    bool correctUserGate(string givenGate);
     ~CircuitLevel();
 
 };

@@ -1,6 +1,9 @@
 #include "levelTwo.h"
 
-LevelTwo::LevelTwo() : inputA(false), inputB(false){}
+LevelTwo::LevelTwo() : inputA(false), inputB(false)
+{
+    expectedGate = "OR";
+}
 
 void LevelTwo::setInput(std:: vector<bool> inputs) {
     inputA = inputs.at(0);

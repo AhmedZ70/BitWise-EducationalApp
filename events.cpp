@@ -87,6 +87,7 @@ void Custom_GraphicsView::addPixmap(const QPixmap &pixmap) {
     scene->addPixmap(pixmap);
 }
 
+
 Custom_Label::Custom_Label(QWidget *widget){
 
 }

@@ -43,6 +43,9 @@ private slots:
 
     void on_pushButton_9_clicked();
 
+    void on_pushButton_10_clicked();
+
+    //Home button handlers
 
     void onHomeButtonClicked();
 
@@ -62,6 +65,10 @@ private slots:
 
     void on_homeButton_9_clicked();
 
+    void on_homeButton_10_clicked();
+
+    // Skip button handlers
+
     void on_skipButton_clicked();
 
     void on_skipButton_2_clicked();
@@ -80,6 +87,10 @@ private slots:
 
     void on_skipButton_9_clicked();
 
+    void on_skipButton_10_clicked();
+
+    //Back to level handlers
+
     void on_backToLevel1_clicked();
 
     void on_backToLevel1_2_clicked();
@@ -96,6 +107,8 @@ private slots:
 
     void on_backToLevel1_8_clicked();
 
+    void on_backToLevel1_9_clicked();
+
 
     void on_goButtonLevel8_clicked();
 
@@ -103,9 +116,11 @@ private:
     Ui::LevelsView *ui;
     int currentLevel;
     GameModel * gameModel;
+    bool correctGateDragged;
     void goClickedTrainingLevel(int level);
     bool getFirstUserInput(int level);
     bool getSecondUserInput(int level);
+    QString getLastDroppedGate(int level);
 
     bool userFirstInput;
     bool userSecondInput;
@@ -120,9 +135,11 @@ signals:
     void homeClicked();
     void gotUserInput(std::vector<bool>, int currentLevel);
     void calculateLevel(int level);
+    void userGateSelected(string gate);
 
 public slots:
     void onResultReceived(bool successful);
+    void onCorrectGateReceived(bool correct);
 };
 
 #endif // LEVELSVIEW_H

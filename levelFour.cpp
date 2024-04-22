@@ -1,6 +1,9 @@
 #include "levelFour.h"
 
-LevelFour::LevelFour() : inputA(false), inputB(false){}
+LevelFour::LevelFour() : inputA(false), inputB(false)
+{
+    expectedGate = "NOR";
+}
 
 void LevelFour::setInput(std:: vector<bool> inputs) {
     inputA = inputs.at(0);
