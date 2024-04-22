@@ -70,6 +70,7 @@ SOURCES += \
     levelSix.cpp \
     levelTen.cpp \
     levelThree.cpp \
+    levelTwelve.cpp \
     levelTwo.cpp \
     levelone.cpp \
     main.cpp \
@@ -138,6 +139,7 @@ HEADERS += \
     levelSix.h \
     levelTen.h \
     levelThree.h \
+    levelTwelve.h \
     levelTwo.h \
     levelone.h \
     mainwindow.h
