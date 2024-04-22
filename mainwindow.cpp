@@ -25,7 +25,6 @@ MainWindow::~MainWindow()
 void MainWindow::on_playButton_clicked()
 {
     ui->stackedWidget->setCurrentIndex(ui->stackedWidget->indexOf(levelsUi));
-    //auto index = ui->stackedWidget->currentIndex();   // for debugging
 }
 
 void MainWindow::moveHome()

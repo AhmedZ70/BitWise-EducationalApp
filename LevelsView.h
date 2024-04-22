@@ -26,17 +26,22 @@ public:
     ~LevelsView();
 
 private slots:
-    void on_pushButton_clicked();
+    // Go buttons
+    void on_goButtonLevelOne_clicked();
+    void on_goButtonLevelTwo_clicked();
+    void on_goButtonLevelThree_clicked();
+    void on_goButtonLevelFour_clicked();
+    void on_goButtonLevelFive_clicked();
+    void on_goButtonLevelSix_clicked();
+    void on_goButtonLevelSeven_clicked();
+    void on_goButtonLevelEight_clicked();
+    void on_goButtonLevelNine_clicked();
+    void on_goButtonLevelTen_clicked();
+    void on_goButtonLevelEleven_clicked();
+    void on_goButtonLevelTwelve_clicked();
 
-    void on_pushButton_2_clicked();
 
-    void on_pushButton_3_clicked();
 
-    void on_pushButton_4_clicked();
-
-    void on_pushButton_5_clicked();
-
-    void on_pushButton_6_clicked();
 
     //Home button handlers
 
@@ -67,64 +72,36 @@ private slots:
     // Skip button handlers
 
     void on_skipButton_clicked();
-
     void on_skipButton_2_clicked();
-
     void on_skipButton_3_clicked();
-
     void on_skipButton_4_clicked();
-
     void on_skipButton_5_clicked();
-
     void on_skipButton_6_clicked();
-
     void on_skipButton_7_clicked();
-
     void on_skipButton_8_clicked();
-
     void on_skipButton_9_clicked();
-
     void on_skipButton_10_clicked();
-
     void on_skipButton_11_clicked();
 
     //Back to level handlers
 
     void on_backToLevel1_clicked();
-
     void on_backToLevel1_2_clicked();
-
     void on_backToLevel1_3_clicked();
-
     void on_backToLevel1_4_clicked();
-
     void on_backToLevel1_5_clicked();
-
     void on_backToLevel1_6_clicked();
-
     void on_backToLevel1_7_clicked();
-
     void on_backToLevel1_8_clicked();
-
     void on_backToLevel1_9_clicked();
-
     void on_backToLevel1_10_clicked();
-
+    void on_backToLevel1_11_clicked();
     void on_backToLevel1_12_clicked();
 
-    void on_goButtonLevel8_clicked();
 
-    void on_goButtonLevel9_clicked();
 
-    void on_backToLevel1_11_clicked();
 
-    void on_goButtonLevel7_clicked();
 
-    void on_goButtonLevelTen_clicked();
-
-    void on_goButtonLevelEleven_clicked();
-
-    void on_goButtonLevelEleven_2_clicked();
 
 private:
     Ui::LevelsView *ui;
@@ -137,6 +114,7 @@ private:
     QString getLastDroppedGate(int level);
     void processLevelInputs(const std::vector<Custom_GraphicsView*>& gateDropAreas,
                                         const std::vector<CustomLineEdit*>& inputs);
+    std::vector<bool> getUserInputs(int level);
     bool userFirstInput;
     bool userSecondInput;
     bool userThirdInput;
