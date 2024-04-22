@@ -1,15 +1,15 @@
-#ifndef LEVELELEVEN_H
-#define LEVELELEVEN_H
+#ifndef LEVELTWELVE_H
+#define LEVELTWELVE_H
 
 #include "circuitLevel.h"
 
 /**
  * @author Joseph Corbeil, Johnny Song, Ezekiel Jaramillo, Ahmed Zahran, Raj Reddy, Joel Ronca
  * @date April. 22, 2024
- * @name levelEleven h file for assignment9
- * This h file contains the outlined methods for use within the circuit level eleven.
+ * @name levelTwelve h file for assignment9
+ * This h file contains the outlined methods for use within the circuit level twelve.
 */
-class LevelEleven : public CircuitLevel
+class LevelTwelve : public CircuitLevel
 {
 private:
     /// @brief first input of the user
@@ -30,8 +30,11 @@ private:
     /// @brief sixth input of the user
     bool sixthBit;
 
-    /// @brief end success bool that determines the circuit is correct
-    bool success;
+    /// @brief seventh input of the user
+    bool seventhBit;
+
+    /// @brief eighth input of the user
+    bool eighthBit;
 
     /// @brief first user selected gate on the circuit
     string userGateSelected1;
@@ -48,9 +51,15 @@ private:
     /// @brief fifth user selected gate on the circuit
     string userGateSelected5;
 
+    /// @brief sixth user selected gate on the circuit
+    string userGateSelected6;
+
+    /// @brief seventh user selected gate on the circuit
+    string userGateSelected7;
+
 public:
     /// @brief Constructor that initializes the bits to false and sets the preset gate
-    LevelEleven();
+    LevelTwelve();
 
     /// @brief Uses a vector of inputs from the user and sets them in the model
     /// @param vector of boolean user inputs
@@ -66,4 +75,4 @@ public:
     void computeOutput();
 };
 
-#endif // LEVELELEVEN_H
+#endif // LEVELTWELVE_H

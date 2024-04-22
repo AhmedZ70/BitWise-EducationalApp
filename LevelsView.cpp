@@ -18,18 +18,12 @@ LevelsView::LevelsView(QWidget *parent) :
     connect(this, &LevelsView::userGateSelected,gameModel,&GameModel::checkUserGate);
     connect(gameModel, &GameModel::correctGate, this, &LevelsView:: onCorrectGateReceived);
     connect(this, &LevelsView::levelChanged, gameModel,&GameModel::onGetCurrentLevel);
-    //connect(gameModel, &GameModel::emptyGate, this, &LevelsView::)
-    connect (ui->goButtonLevelOne, &QPushButton::clicked, this, &LevelsView::on_pushButton_clicked);
-
-
 
     QPixmap AND_GATE(":/icons/andGate.png");
     QPixmap OR_GATE(":/icons/orGate.png");
     QPixmap NAND_GATE(":/icons/nandGate.png");
     QPixmap NOR_GATE(":/icons/norGate.png");
     QPixmap XOR_GATE(":/icons/xorGate.png");
-    //TODO: delete the line below
-    // QPixmap NOT_GATE(":/icons/notGate.png");
 
     QPixmap notGatePixmap(":/icons/notGate.png");
     ui->intializedNotGate->setPixmap(notGatePixmap.scaled(105, 105, Qt::KeepAspectRatio, Qt::SmoothTransformation));
@@ -44,7 +38,6 @@ LevelsView::LevelsView(QWidget *parent) :
     ui->nandGateLabel->setPixmap(NAND_GATE.scaled(100, 100, Qt::KeepAspectRatio));
     ui->norGateLabel->setPixmap(NOR_GATE.scaled(100, 100, Qt::KeepAspectRatio));
     ui->xorGateLabel->setPixmap(XOR_GATE.scaled(100,100, Qt::KeepAspectRatio));
-    // ui->notGateLabel->setPixmap(NOT_GATE.scaled(100, 100, Qt::KeepAspectRatio));
 
 
     ui->andGateLabel->setParent(ui->groupBox);
@@ -65,45 +58,46 @@ LevelsView::~LevelsView()
 
 }
 
-void LevelsView::on_pushButton_clicked()
+void LevelsView::on_goButtonLevelOne_clicked()
 {
     currentLevel = 1;
     emit levelChanged(currentLevel);
     goClickedTrainingLevel(currentLevel);
 }
-
-void LevelsView::on_pushButton_2_clicked(){
+void LevelsView::on_goButtonLevelTwo_clicked()
+{
     currentLevel = 2;
     emit levelChanged(currentLevel);
     goClickedTrainingLevel(currentLevel);
 }
 
-void LevelsView::on_pushButton_3_clicked(){
+void LevelsView::on_goButtonLevelThree_clicked()
+{
     currentLevel = 3;
     emit levelChanged(currentLevel);
     goClickedTrainingLevel(currentLevel);
 }
 
-void LevelsView::on_pushButton_4_clicked(){
+
+void LevelsView::on_goButtonLevelFour_clicked()
+{
     currentLevel = 4;
     emit levelChanged(currentLevel);
     goClickedTrainingLevel(currentLevel);
 }
-
-void LevelsView::on_pushButton_5_clicked(){
+void LevelsView::on_goButtonLevelFive_clicked()
+{
     currentLevel = 5;
     emit levelChanged(currentLevel);
     goClickedTrainingLevel(currentLevel);
 }
 
-void LevelsView::on_pushButton_6_clicked(){
+void LevelsView::on_goButtonLevelSix_clicked()
+{
     currentLevel = 6;
     emit levelChanged(currentLevel);
     goClickedTrainingLevel(currentLevel);
 }
-
-
-
 
 void LevelsView::onHomeButtonClicked()
 {
@@ -240,8 +234,11 @@ void LevelsView::on_backToLevel1_8_clicked(){
 void LevelsView::on_backToLevel1_9_clicked(){
     ui->stackedWidget->setCurrentIndex(8);
 }
+void LevelsView::on_backToLevel1_10_clicked(){
+    ui->stackedWidget->setCurrentIndex(8);
+}
 
-void LevelsView::on_goButtonLevel10_clicked(){
+void LevelsView::on_backToLevel1_12_clicked(){
     ui->stackedWidget->setCurrentIndex(9);
 }
 
@@ -249,13 +246,12 @@ void LevelsView::on_backToLevel1_11_clicked(){
     ui->stackedWidget->setCurrentIndex(10);
 }
 
-void LevelsView ::goClickedTrainingLevel(int level){
-    bool inputValue1 = getFirstUserInput(level);
-    bool inputValue2 = getSecondUserInput(level);
-    std::vector<bool> inputs{inputValue1, inputValue2};
-    QString lastGate = getLastDroppedGate(currentLevel);
+void LevelsView::goClickedTrainingLevel(int level) {
+    std::vector<bool> inputs = getUserInputs(level);
+    QString lastGate = getLastDroppedGate(level);
     emit userGateSelected(lastGate.toStdString());
-    QString warning = "you must use the specified gate to solve this circuit.";
+
+    QString warning = "You must use the specified gate to solve this circuit.";
     if (!correctGateDragged) {
         QMessageBox::warning(this, "Gate Requirement", warning);
         return;
@@ -263,6 +259,7 @@ void LevelsView ::goClickedTrainingLevel(int level){
 
     emit gotUserInput(inputs);
 }
+
 void LevelsView::onResultReceived(bool successful) {
     //QString lastGate = ui->graphicsView->lastDroppedGateName();
     if (successful) {
@@ -274,50 +271,41 @@ void LevelsView::onResultReceived(bool successful) {
     }
 }
 
-
-bool LevelsView::getFirstUserInput(int level)
-{
-    switch(level){
+std::vector<bool> LevelsView::getUserInputs(int level) {
+    std::vector<bool> inputs;
+    inputs.reserve(2);
+    switch(level) {
     case 1:
-        return (ui->levelOneInput1->text() == "1");
+        inputs.push_back(ui->levelOneInput1->text() == "1");
+        inputs.push_back(ui->levelOneInput2->text() == "1");
+        break;
     case 2:
-        return (ui->lineEdit_3->text() == "1");
+        inputs.push_back(ui->levelTwoInput1->text() == "1");
+        inputs.push_back(ui->levelTwoInput2->text() == "1");
+        break;
     case 3:
-        return (ui->lineEdit_5->text() == "1");
+        inputs.push_back(ui->levelThreeInput1->text() == "1");
+        inputs.push_back(ui->levelThreeInput2->text() == "1");
+        break;
     case 4:
-        return (ui->lineEdit_7->text() == "1");
-
+        inputs.push_back(ui->levelFourInput1->text() == "1");
+        inputs.push_back(ui->levelFourInput2->text() == "1");
+        break;
     case 5:
-        return (ui->lineEdit_9->text() == "1");
-
+        inputs.push_back(ui->levelFiveInput1->text() == "1");
+        inputs.push_back(ui->levelFiveInput2->text() == "1");
+        break;
     case 6:
-        return (ui -> lineEdit_11 -> text() == "1");
+        inputs.push_back(ui->levelSixInput1->text() == "1");
+        inputs.push_back(ui->levelSixInput2->text() == "1");
+        break;
+    default:
+        inputs = {false, false};
+        break;
     }
-
-
+    return inputs;
 }
 
-bool LevelsView::getSecondUserInput(int level)
-{
-    switch(level){
-    case 1:
-        return (ui->levelOneInput2->text() == "1");
-    case 2:
-        return (ui->lineEdit_4->text() == "1");
-    case 3:
-        return (ui->lineEdit_6->text() == "1");
-
-    case 4:
-        return (ui->lineEdit_8->text() == "1");
-
-    case 5:
-        return (ui->lineEdit_10->text() == "1");
-
-    case 6:
-        return (ui -> lineEdit_12 -> text() == "1");
-    }
-
-}
 
 void LevelsView::processLevelInputs(const std::vector<Custom_GraphicsView*>& gateDropAreas,
                                     const std::vector<CustomLineEdit*>& inputs)
@@ -341,14 +329,14 @@ void LevelsView::processLevelInputs(const std::vector<Custom_GraphicsView*>& gat
 
 
 
-void LevelsView::on_goButtonLevel7_clicked()
+void LevelsView::on_goButtonLevelSeven_clicked()
 {
     std::vector<Custom_GraphicsView*> gates = {ui->gateOneLevel7, ui->gateTwoLevel7};
     std::vector<CustomLineEdit*> inputs = {ui->level7Input1, ui->level7Input2, ui->level7Input3};
     processLevelInputs(gates, inputs);
 }
 
-void LevelsView::on_goButtonLevel8_clicked()
+void LevelsView::on_goButtonLevelEight_clicked()
 {
     std::vector<Custom_GraphicsView*> gates = {ui->gateOneLevel8, ui->gateTwoLevel8, ui->gateThreeLevel8};
     std::vector<CustomLineEdit*> inputs = {ui->level8Input1, ui->level8Input2, ui->level8Input3, ui->level8Input4};
@@ -356,7 +344,7 @@ void LevelsView::on_goButtonLevel8_clicked()
     processLevelInputs(gates, inputs);
 }
 
-void LevelsView::on_goButtonLevel9_clicked()
+void LevelsView::on_goButtonLevelNine_clicked()
 {
     std::vector<Custom_GraphicsView*> gates = {ui->gateOneLevel9, ui->gateTwoLevel9, ui->gateThreeLevel9};
     std::vector<CustomLineEdit*> inputs = {ui->level9Input1, ui->level9Input2, ui->level9Input3, ui->level9Input4};
@@ -364,31 +352,53 @@ void LevelsView::on_goButtonLevel9_clicked()
     processLevelInputs(gates, inputs);
 }
 
+void LevelsView::on_goButtonLevelTen_clicked()
+{
+    std::vector<Custom_GraphicsView*> gates = {ui->gateOneLevel10, ui->gateTwoLevel10, ui->gateThreeLevel10, ui->gateFourLevel10, ui->gateFiveLevel10};
+    std::vector<CustomLineEdit*> inputs = {ui->level10Input1, ui->level10Input2, ui->level10Input3, ui->level10Input4, ui->level10Input5, ui->level10Input6};
+    emit levelChanged(10);
+    processLevelInputs(gates, inputs);
+}
+
+void LevelsView::on_goButtonLevelEleven_clicked()
+{
+    std::vector<Custom_GraphicsView*> gates = {ui->gateOneLevel11, ui->gateTwoLevel11, ui->gateThreeLevel11, ui->gateFourLevel11, ui->gateFiveLevel11};
+    std::vector<CustomLineEdit*> inputs = {ui->level11Input1, ui->level11Input2, ui->level11Input3, ui->level11Input4, ui->level11Input5, ui->level11Input6};
+    emit levelChanged(11);
+    processLevelInputs(gates, inputs);
+}
+
+void LevelsView::on_goButtonLevelTwelve_clicked()
+{
+    std::vector<Custom_GraphicsView*> gates = {ui->gateOneLevel12, ui->gateTwoLevel12, ui->gateThreeLevel12, ui->gateFourLevel12, ui->gateFiveLevel12, ui->gateSixLevel12, ui->gateSevenLevel12};
+    std::vector<CustomLineEdit*> inputs = {ui->level12Input1, ui->level12Input2, ui->level12Input3, ui->level12Input4, ui->level12Input5, ui->level12Input6, ui->level12Input7, ui->level12Input8};
+    emit levelChanged(12);
+    processLevelInputs(gates, inputs);
+}
 
 QString LevelsView::getLastDroppedGate(int level)
 {
     QString lastGate;
     switch(level){
     case 1:
-        lastGate = ui->graphicsView->lastDroppedGateName();
+        lastGate = ui->gateOneLevel1->lastDroppedGateName();
         return lastGate;
     case 2:
-        lastGate = ui->graphicsView_2->lastDroppedGateName();
+        lastGate = ui->gateOneLevel2->lastDroppedGateName();
         return lastGate;
     case 3:
-        lastGate = ui->graphicsView_3->lastDroppedGateName();
+        lastGate = ui->gateOneLevel3->lastDroppedGateName();
         return lastGate;
     case 4:
-        lastGate = ui->graphicsView_4->lastDroppedGateName();
+        lastGate = ui->gateOneLevel4->lastDroppedGateName();
         return lastGate;
 
     case 5:
-        lastGate = ui->graphicsView_5->lastDroppedGateName();
+        lastGate = ui->gateOneLevel5->lastDroppedGateName();
         return lastGate;
 
-
     case 6:
-        lastGate = ui->graphicsView_6->lastDroppedGateName();
+        lastGate = ui->gateOneLevel6->lastDroppedGateName();
         return lastGate;
     }
 
@@ -444,4 +454,16 @@ void LevelsView::on_stackedWidget_currentChanged(int index)
     dialog->setupImageAndText(image,text);
     dialog->exec();  // This will display the dialog modally
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
