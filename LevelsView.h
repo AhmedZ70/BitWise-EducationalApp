@@ -118,6 +118,8 @@ private slots:
 
     void on_goButtonLevel7_clicked();
 
+    void on_stackedWidget_currentChanged(int arg1);
+
 private:
     Ui::LevelsView *ui;
     int currentLevel;
@@ -137,6 +139,8 @@ private:
     bool userSixthInput;
     bool userSeventhInput;
     bool userEighthInput;
+
+    void LearningWindow(int level);
 
 signals:
     void homeClicked();

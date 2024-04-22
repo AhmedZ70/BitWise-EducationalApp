@@ -3,6 +3,7 @@
 #include <QMessageBox>
 #include <iostream>
 #include <vector>
+#include "Trainingdialog.h"
 using namespace std;
 LevelsView::LevelsView(QWidget *parent) :
     QWidget(parent),
@@ -265,26 +266,14 @@ void LevelsView ::goClickedTrainingLevel(int level){
 void LevelsView::onResultReceived(bool successful) {
     //QString lastGate = ui->graphicsView->lastDroppedGateName();
     if (successful) {
-             ui->stackedWidget->setCurrentIndex(ui->stackedWidget->currentIndex() + 1);
             QMessageBox::information(this, "Success", "Good job, on to the next level");
+            ui->stackedWidget->setCurrentIndex(ui->stackedWidget->currentIndex() + 1);
 
     } else {
         QMessageBox::critical(this, "Level Failed", "Try again");
     }
 }
-// void LevelsView::onResultReceived(bool successful) {
-//     QString lastGate = ui->graphicsView->lastDroppedGateName();
-//     if (successful) {
-//         if (lastGate != "AND_GATE") {
-//             QMessageBox::warning(this, "Gate Requirement", "you need an AND Gate dummy");
-//         } else {
-//             ui->stackedWidget->setCurrentIndex(ui->stackedWidget->currentIndex() + 1);
-//             QMessageBox::information(this, "Success", "Good job, on to level 2");
-//         }
-//     } else {
-//         QMessageBox::critical(this, "Level Failed", "Try again");
-//     }
-// }
+
 
 bool LevelsView::getFirstUserInput(int level)
 {
@@ -411,4 +400,48 @@ void LevelsView:: onCorrectGateReceived(bool correct)
 }
 
 
+void LevelsView::on_stackedWidget_currentChanged(int index)
+{
+    if(index >5)
+        return;
+
+    QString image, text;
+    TrainingDialog *dialog = new TrainingDialog();
+    switch(index) {
+    case 1:
+        image = ":/icons/orGate.png";
+        text = "This is an OR gate. The OR gate takes in 2 or 3 inputs and computes a single ouput.\n"
+               "In order for the OR gate to calculate to TRUE, at least one inputs must be TRUE.\n"
+               "The truth table for the AND gate illustrates this and is shown below";
+
+        dialog->setTruthTable("OR");
+        break;
+    case 2:
+        image = ":/icons/nandGate.png";
+        text = "This is an NAND gate. The NAND gate takes in 2 or 3 inputs and computes a single ouput.\n"
+               "The NAND gate will function similar to an AND gate, except it will negate its value before outputting it.\n"
+               "Negating the output will simply flip the value: if it was originally True, it will be false, and if it was\n"
+               "originally false, it will be true. The truth table for the NAND gate illustrates this and is shown below.";
+        break;
+    case 3:
+        image = ":/icons/norGate.png";
+        text = "This is a NOR Gate.The NOR gate takes in 2 or 3 inputs and computes a single ouput.\n"
+               "The NOR gate will function similar to an OR gate, except it will negate its value before outputting it.\n"
+               "Negating the output will simply flip the value: if it was originally True, it will be false, and if it was\n"
+               "originally false, it will be true. The truth table for the OR gate illustrates this and is shown below.";;
+        break;
+
+    case 4:
+        image = ":/icons/xorGate.png";
+        text = "This is a XorGate";
+        break;
+    case 5:
+        image = ":/icons/notGate.png";
+        text = "This is a notGate";
+        break;
+    }
+
+    dialog->setupImageAndText(image,text);
+    dialog->exec();  // This will display the dialog modally
+}
 

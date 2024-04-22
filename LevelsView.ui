@@ -169,7 +169,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
     <number>2</number>
    </property>
    <property name="currentIndex">
-    <number>6</number>
+    <number>0</number>
    </property>
    <widget class="QWidget" name="level1">
     <widget class="QLabel" name="label_2">
@@ -4989,7 +4989,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
   <customwidget>
    <class>Custom_GraphicsView</class>
    <extends>QGraphicsView</extends>
-   <header>events.h</header>
+   <header location="global">events.h</header>
   </customwidget>
   <customwidget>
    <class>CustomLineEdit</class>
