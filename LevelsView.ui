@@ -169,7 +169,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
     <number>2</number>
    </property>
    <property name="currentIndex">
-    <number>11</number>
+    <number>10</number>
    </property>
    <widget class="QWidget" name="level1">
     <widget class="QLabel" name="label_2">
@@ -3567,7 +3567,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
      <property name="geometry">
       <rect>
        <x>83</x>
-       <y>130</y>
+       <y>131</y>
        <width>101</width>
        <height>16</height>
       </rect>
@@ -3763,25 +3763,6 @@ background-image: url(:/icons/wallpaper5.png);</string>
      </property>
      <property name="lineWidth">
       <number>1</number>
-     </property>
-    </widget>
-    <widget class="Line" name="line_74">
-     <property name="geometry">
-      <rect>
-       <x>370</x>
-       <y>360</y>
-       <width>20</width>
-       <height>61</height>
-      </rect>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
-     </property>
-     <property name="lineWidth">
-      <number>2</number>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Vertical</enum>
      </property>
     </widget>
     <widget class="Line" name="line_77">
@@ -3997,7 +3978,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <rect>
        <x>80</x>
        <y>389</y>
-       <width>91</width>
+       <width>93</width>
        <height>16</height>
       </rect>
      </property>
@@ -4016,7 +3997,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <rect>
        <x>80</x>
        <y>431</y>
-       <width>91</width>
+       <width>93</width>
        <height>16</height>
       </rect>
      </property>
@@ -4112,7 +4093,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
      <property name="geometry">
       <rect>
        <x>270</x>
-       <y>410</y>
+       <y>408</y>
        <width>111</width>
        <height>20</height>
       </rect>
@@ -4125,6 +4106,25 @@ background-image: url(:/icons/wallpaper5.png);</string>
      </property>
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="line_83">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>360</y>
+       <width>20</width>
+       <height>62</height>
+      </rect>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="lineWidth">
+      <number>2</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
      </property>
     </widget>
    </widget>
