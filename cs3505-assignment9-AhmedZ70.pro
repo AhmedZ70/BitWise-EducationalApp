@@ -130,6 +130,7 @@ HEADERS += \
     gameModel.h \
     gate.h \
     levelEight.h \
+    levelEleven.h \
     levelFive.h \
     levelFour.h \
     levelNine.h \
@@ -138,7 +139,6 @@ HEADERS += \
     levelTen.h \
     levelThree.h \
     levelTwo.h \
-    leveleEleven.h \
     levelone.h \
     mainwindow.h
 

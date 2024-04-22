@@ -10,6 +10,8 @@ private:
     bool secondBit;
     bool thirdBit;
     bool fourthBit;
+    bool fifthBit;
+    bool sixthBit;
     string userGateSelected1;
     string userGateSelected2;
     string userGateSelected3;
@@ -17,6 +19,12 @@ private:
     string userGateSelected5;
 public:
     LevelTen();
+
+    void setInput(std::vector<bool> inputs);
+
+    void setGateTypes(const std::vector<std::string>& gateTypes);
+
+    void computeOutput();
 };
 
 
