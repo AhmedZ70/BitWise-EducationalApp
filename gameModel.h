@@ -22,6 +22,7 @@ signals:
 public slots:
     void onInputReceived(std::vector<bool>inputs, int currentLevel);
     void computeLevelCircuit(int currentLevel);
+    void setGateDropped(const std::vector<std::string>& gateTypese);
 
 
 

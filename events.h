@@ -50,6 +50,7 @@ public:
 
 signals:
     void itemdrop();
+    void gateDragged();
 protected:
     void dragEnterEvent(QDragEnterEvent *event) override;
     void dragLeaveEvent(QDragLeaveEvent *event) override;

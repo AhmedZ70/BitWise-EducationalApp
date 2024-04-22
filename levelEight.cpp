@@ -1,6 +1,6 @@
 #include "levelEight.h"
 #include "gate.h"
-LevelEight::LevelEight() : firstBit(false), secondBit(false), thirdBit(false) {}
+LevelEight::LevelEight() : firstBit(false), secondBit(false), thirdBit(false), fourthBit(false) {}
 
 void LevelEight::setInput(std:: vector<bool> inputs) {
     firstBit = inputs.at(0);
@@ -26,20 +26,26 @@ void LevelEight::computeOutput() {
     result = finalResult;
 }
 
-void LevelEight::setUserGateSelected1(string gateSelected)
-{
-    userGateSelected1 = gateSelected;
+void LevelEight::setGateTypes(const std::vector<std::string>& gateTypes){
+    userGateSelected1 = gateTypes.at(0);
+    userGateSelected2 = gateTypes.at(1);
+    userGateSelected3 = gateTypes.at(2);
 }
 
-void LevelEight::setUserGateSelected2(string gateSelected)
-{
-    userGateSelected2 = gateSelected;
-}
+// void LevelEight::setUserGateSelected1(string gateSelected)
+// {
+//     userGateSelected1 = gateSelected;
+// }
 
-void LevelEight::setUserGateSelected3(string gateSelected)
-{
-    userGateSelected3 = gateSelected;
-}
+// void LevelEight::setUserGateSelected2(string gateSelected)
+// {
+//     userGateSelected2 = gateSelected;
+// }
+
+// void LevelEight::setUserGateSelected3(string gateSelected)
+// {
+//     userGateSelected3 = gateSelected;
+// }
 
 
 

@@ -169,7 +169,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
     <number>2</number>
    </property>
    <property name="currentIndex">
-    <number>5</number>
+    <number>7</number>
    </property>
    <widget class="QWidget" name="level1">
     <widget class="QLabel" name="label_2">
@@ -1784,7 +1784,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
     </widget>
    </widget>
    <widget class="QWidget" name="level8">
-    <widget class="Custom_GraphicsView" name="graphicsView_10">
+    <widget class="Custom_GraphicsView" name="gateOneLevel8">
      <property name="geometry">
       <rect>
        <x>180</x>
@@ -1838,7 +1838,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <enum>Qt::Horizontal</enum>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_16">
+    <widget class="CustomLineEdit" name="level8Input2">
      <property name="geometry">
       <rect>
        <x>90</x>
@@ -1861,7 +1861,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <string>Home</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_8">
+    <widget class="QPushButton" name="goButtonLevel8">
      <property name="geometry">
       <rect>
        <x>600</x>
@@ -1977,7 +1977,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <enum>Qt::Horizontal</enum>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_17">
+    <widget class="CustomLineEdit" name="level8Input1">
      <property name="geometry">
       <rect>
        <x>90</x>
@@ -1987,7 +1987,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       </rect>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_18">
+    <widget class="CustomLineEdit" name="level8Input4">
      <property name="geometry">
       <rect>
        <x>90</x>
@@ -1997,7 +1997,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       </rect>
      </property>
     </widget>
-    <widget class="Custom_GraphicsView" name="graphicsView_11">
+    <widget class="Custom_GraphicsView" name="gateTwoLevel8">
      <property name="geometry">
       <rect>
        <x>180</x>
@@ -2013,7 +2013,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <number>1</number>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_19">
+    <widget class="CustomLineEdit" name="level8Input3">
      <property name="geometry">
       <rect>
        <x>90</x>
@@ -2118,7 +2118,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <enum>Qt::Vertical</enum>
      </property>
     </widget>
-    <widget class="Custom_GraphicsView" name="graphicsView_12">
+    <widget class="Custom_GraphicsView" name="gateThreeLevel8">
      <property name="geometry">
       <rect>
        <x>420</x>

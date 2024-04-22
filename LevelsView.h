@@ -97,6 +97,8 @@ private slots:
     void on_backToLevel1_8_clicked();
 
 
+    void on_goButtonLevel8_clicked();
+
 private:
     Ui::LevelsView *ui;
     int currentLevel;
@@ -104,6 +106,15 @@ private:
     void goClickedTrainingLevel(int level);
     bool getFirstUserInput(int level);
     bool getSecondUserInput(int level);
+
+    bool userFirstInput;
+    bool userSecondInput;
+    bool userThirdInput;
+    bool userFourthInput;
+    bool userFifthInput;
+    bool userSixthInput;
+    bool userSeventhInput;
+    bool userEighthInput;
 
 signals:
     void homeClicked();

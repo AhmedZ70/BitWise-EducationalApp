@@ -18,6 +18,7 @@ public:
     LevelEight();
     void setInput(std::vector<bool> inputs) override;
     void computeOutput() override;
+    void setGateTypes(const std::vector<std::string>&) override;
     void setFunction(string gate);
     void setUserGateSelected1(string gateSelected);
     void setUserGateSelected2(string gateSelected);

@@ -47,6 +47,7 @@ void Custom_GraphicsView::dropEvent(QDropEvent *event) {
     }
     event->acceptProposedAction();
     emit itemdrop();
+    emit gateDragged();
 }
 void Custom_GraphicsView::paintEvent(QPaintEvent *event) {
     QGraphicsView::paintEvent(event);

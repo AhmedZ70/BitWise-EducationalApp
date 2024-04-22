@@ -228,20 +228,29 @@ void LevelsView ::goClickedTrainingLevel(int level){
     emit gotUserInput(inputs,level);
     emit calculateLevel(level);
 }
-
 void LevelsView::onResultReceived(bool successful) {
-    QString lastGate = ui->graphicsView->lastDroppedGateName();
+    //QString lastGate = ui->graphicsView->lastDroppedGateName();
     if (successful) {
-        if (lastGate != "AND_GATE") {
-            QMessageBox::warning(this, "Gate Requirement", "you need an AND Gate dummy");
-        } else {
-            ui->stackedWidget->setCurrentIndex(ui->stackedWidget->currentIndex() + 1);
-            QMessageBox::information(this, "Success", "Good job, on to level 2");
-        }
+             ui->stackedWidget->setCurrentIndex(ui->stackedWidget->currentIndex() + 1);
+            QMessageBox::information(this, "Success", "Good job, on to the next level");
+
     } else {
         QMessageBox::critical(this, "Level Failed", "Try again");
     }
 }
+// void LevelsView::onResultReceived(bool successful) {
+//     QString lastGate = ui->graphicsView->lastDroppedGateName();
+//     if (successful) {
+//         if (lastGate != "AND_GATE") {
+//             QMessageBox::warning(this, "Gate Requirement", "you need an AND Gate dummy");
+//         } else {
+//             ui->stackedWidget->setCurrentIndex(ui->stackedWidget->currentIndex() + 1);
+//             QMessageBox::information(this, "Success", "Good job, on to level 2");
+//         }
+//     } else {
+//         QMessageBox::critical(this, "Level Failed", "Try again");
+//     }
+// }
 
 bool LevelsView::getFirstUserInput(int level)
 {
@@ -252,7 +261,6 @@ bool LevelsView::getFirstUserInput(int level)
         return (ui->lineEdit_3->text() == "1");
     case 3:
         return (ui->lineEdit_5->text() == "1");
-
     case 4:
         return (ui->lineEdit_7->text() == "1");
 
@@ -282,9 +290,36 @@ bool LevelsView::getSecondUserInput(int level)
     case 5:
         return (ui->lineEdit_10->text() == "1");
 
-
     case 6:
         return (ui -> lineEdit_12 -> text() == "1");
     }
 
 }
+
+void LevelsView::on_goButtonLevel8_clicked()
+{
+    QString gateOneType = ui->gateOneLevel8->lastDroppedGateName();
+    QString gateTwoType = ui->gateTwoLevel8->lastDroppedGateName();
+    QString gateThreeType = ui->gateThreeLevel8->lastDroppedGateName();
+
+    std::vector<std::string> gateTypes = {
+        gateOneType.toStdString(),
+        gateTwoType.toStdString(),
+        gateThreeType.toStdString()
+    };
+    gameModel->setGateDropped(gateTypes);
+
+    userFirstInput = ui->level8Input1->text() == "1";
+    userSecondInput = ui->level8Input2->text() == "1";
+    userThirdInput = ui->level8Input3->text() == "1";
+    userFourthInput = ui->level8Input4->text() == "1";
+    std::vector<bool> inputs{userFirstInput, userSecondInput,
+                             userThirdInput, userFourthInput};
+
+    emit gotUserInput(inputs,8);
+    emit calculateLevel(8);
+
+
+
+}
+

@@ -10,6 +10,7 @@ bool CircuitLevel::getResult() const {
     return result;
 }
 
+void CircuitLevel::setGateTypes(const std::vector<std::string>&){}
 
 Gate CircuitLevel::setGate(string gateType)
 {

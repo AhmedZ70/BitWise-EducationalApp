@@ -31,9 +31,13 @@ void GameModel::computeLevelCircuit(int currentLevel){
     cout << result << endl;
     emit circuitCompleted(result);
 }
+
 void GameModel:: onInputReceived(std::vector<bool>inputs,int currentLevel)
 {
     currentLevel = currentLevel-1;
     levels[currentLevel]->setInput(inputs);
 }
 
+void GameModel::setGateDropped(const std::vector<std::string>& gateTypese){
+   levels[currentLevel]->setGateTypes(gateTypese);
+}
