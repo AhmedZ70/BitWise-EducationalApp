@@ -9,21 +9,21 @@ void LevelSeven::setInput(std:: vector<bool> inputs) {
 }
 
 void LevelSeven::computeOutput() {
-    Gate andGate = setGate("AND");
-    Gate secondGate = setGate(userGateSelected);
+    Gate firstGate = setGate(userGateSelected1);
+    Gate secondGate = setGate(userGateSelected2);
 
-    andGate.setInput(firstBit, secondBit);
-    bool firstResult = andGate.computeOutput();
+    firstGate.setInput(firstBit, secondBit);
+    bool firstResult = firstGate.computeOutput();
     secondGate.setInput(firstResult, thirdBit);
-    bool finalResult = andGate.computeOutput();
+    bool finalResult = secondGate.computeOutput();
     result = finalResult;
 
 }
 
-void LevelSeven::setUserGateSelected(string gateSelected)
-{
-    userGateSelected = gateSelected;
-}
+void LevelSeven::setGateTypes(const std::vector<std::string>& gateTypes){
+    userGateSelected1 = gateTypes.at(0);
+    userGateSelected2 = gateTypes.at(1);
 
+}
 
 

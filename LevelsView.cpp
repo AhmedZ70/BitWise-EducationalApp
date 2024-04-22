@@ -339,6 +339,13 @@ void LevelsView::processLevelInputs(const std::vector<Custom_GraphicsView*>& gat
 
 
 
+void LevelsView::on_goButtonLevel7_clicked()
+{
+    std::vector<Custom_GraphicsView*> gates = {ui->gateOneLevel7, ui->gateTwoLevel7};
+    std::vector<CustomLineEdit*> inputs = {ui->level7Input1, ui->level7Input2, ui->level7Input3};
+    processLevelInputs(gates, inputs, 7);
+}
+
 void LevelsView::on_goButtonLevel8_clicked()
 {
     std::vector<Custom_GraphicsView*> gates = {ui->gateOneLevel8, ui->gateTwoLevel8, ui->gateThreeLevel8};
@@ -387,5 +394,6 @@ void LevelsView:: onCorrectGateReceived(bool correct)
 {
     correctGateDragged = correct;
 }
+
 
 

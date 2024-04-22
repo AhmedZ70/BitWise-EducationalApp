@@ -169,7 +169,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
     <number>2</number>
    </property>
    <property name="currentIndex">
-    <number>11</number>
+    <number>6</number>
    </property>
    <widget class="QWidget" name="level1">
     <widget class="QLabel" name="label_2">
@@ -1393,22 +1393,6 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <enum>Qt::Horizontal</enum>
      </property>
     </widget>
-    <widget class="Custom_GraphicsView" name="graphicsView_7">
-     <property name="geometry">
-      <rect>
-       <x>790</x>
-       <y>230</y>
-       <width>140</width>
-       <height>140</height>
-      </rect>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
-     </property>
-     <property name="lineWidth">
-      <number>1</number>
-     </property>
-    </widget>
     <widget class="Line" name="line_23">
      <property name="geometry">
       <rect>
@@ -1472,12 +1456,11 @@ background-image: url(:/icons/wallpaper5.png);</string>
     <zorder>label_13</zorder>
     <zorder>line_21</zorder>
     <zorder>line_22</zorder>
-    <zorder>graphicsView_7</zorder>
     <zorder>line_23</zorder>
     <zorder>line_20</zorder>
    </widget>
    <widget class="QWidget" name="level7">
-    <widget class="Custom_GraphicsView" name="graphicsView_8">
+    <widget class="Custom_GraphicsView" name="gateOneLevel7">
      <property name="geometry">
       <rect>
        <x>140</x>
@@ -1512,7 +1495,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <enum>Qt::Horizontal</enum>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_13">
+    <widget class="CustomLineEdit" name="level7Input2">
      <property name="geometry">
       <rect>
        <x>50</x>
@@ -1554,7 +1537,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <string>Home</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_7">
+    <widget class="QPushButton" name="goButtonLevel7">
      <property name="geometry">
       <rect>
        <x>630</x>
@@ -1670,7 +1653,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <enum>Qt::Horizontal</enum>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_14">
+    <widget class="CustomLineEdit" name="level7Input1">
      <property name="geometry">
       <rect>
        <x>50</x>
@@ -1680,7 +1663,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       </rect>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_15">
+    <widget class="CustomLineEdit" name="level7Input3">
      <property name="geometry">
       <rect>
        <x>50</x>
@@ -1690,7 +1673,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       </rect>
      </property>
     </widget>
-    <widget class="Custom_GraphicsView" name="graphicsView_9">
+    <widget class="Custom_GraphicsView" name="gateTwoLevel7">
      <property name="geometry">
       <rect>
        <x>490</x>
