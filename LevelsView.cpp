@@ -142,6 +142,10 @@ void LevelsView::on_homeButton_11_clicked(){
     emit homeClicked();
 }
 
+void LevelsView::on_homeButton_12_clicked(){
+    emit homeClicked();
+}
+
 //Go to next level functions
 
 void LevelsView::on_skipButton_clicked()
@@ -187,7 +191,7 @@ void LevelsView::on_skipButton_10_clicked(){
 }
 
 void LevelsView::on_skipButton_11_clicked(){
-    ui->stackedWidget->setCurrentIndex(10);
+    ui->stackedWidget->setCurrentIndex(11);
 }
 
 
@@ -229,7 +233,13 @@ void LevelsView::on_backToLevel1_9_clicked(){
     ui->stackedWidget->setCurrentIndex(8);
 }
 
+void LevelsView::on_goButtonLevel10_clicked(){
+    ui->stackedWidget->setCurrentIndex(9);
+}
 
+void LevelsView::on_backToLevel1_11_clicked(){
+    ui->stackedWidget->setCurrentIndex(10);
+}
 
 void LevelsView ::goClickedTrainingLevel(int level){
     bool inputValue1 = getFirstUserInput(level);

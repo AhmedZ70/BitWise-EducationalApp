@@ -40,6 +40,8 @@ private slots:
 
 
 
+    void on_pushButton_12_clicked();
+
     //Home button handlers
 
     void onHomeButtonClicked();
@@ -63,6 +65,8 @@ private slots:
     void on_homeButton_10_clicked();
 
     void on_homeButton_11_clicked();
+
+    void on_homeButton_12_clicked();
 
     // Skip button handlers
 
@@ -108,10 +112,13 @@ private slots:
 
     void on_backToLevel1_9_clicked();
 
-
     void on_goButtonLevel8_clicked();
 
     void on_goButtonLevel9_clicked();
+
+    void on_goButtonLevel10_clicked();
+
+    void on_backToLevel1_11_clicked();
 
 private:
     Ui::LevelsView *ui;
