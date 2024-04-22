@@ -6,7 +6,6 @@ void CircuitLevel::setInput(vector<bool>inputs) {}
 void CircuitLevel::computeOutput() {}
 
 bool CircuitLevel::getResult() const {
-    cout << result << endl;
     return result;
 }
 
@@ -41,6 +40,13 @@ Gate CircuitLevel::setGate(string gateType)
         notGateFunction = [](bool a) { return !a; };
         return Gate(notGateFunction);
     }
+}
+
+bool CircuitLevel::correctUserGate(string givenGate)
+{
+    cout << expectedGate << endl;
+    return givenGate == expectedGate;
+
 }
 
 CircuitLevel::~CircuitLevel() {};

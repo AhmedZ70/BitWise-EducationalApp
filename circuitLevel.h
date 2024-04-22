@@ -9,11 +9,12 @@ class CircuitLevel {
 protected:
     bool result;
     Gate setGate(string gate);
-
+    string expectedGate;
 public:
     virtual void setInput(std:: vector<bool> inputs);
     virtual void computeOutput();
     bool getResult() const;
+    bool correctUserGate(string givenGate);
     ~CircuitLevel();
 
 };

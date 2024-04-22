@@ -1,6 +1,9 @@
 #include "levelFive.h"
 
-LevelFive::LevelFive() : inputA(false), inputB(false){}
+LevelFive::LevelFive() : inputA(false), inputB(false)
+{
+    expectedGate = "XOR";
+}
 
 void LevelFive::setInput(std:: vector<bool> inputs) {
     inputA = inputs.at(0);

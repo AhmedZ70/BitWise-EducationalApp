@@ -101,17 +101,21 @@ private:
     Ui::LevelsView *ui;
     int currentLevel;
     GameModel * gameModel;
+    bool correctGateDragged;
     void goClickedTrainingLevel(int level);
     bool getFirstUserInput(int level);
     bool getSecondUserInput(int level);
+    QString getLastDroppedGate(int level);
 
 signals:
     void homeClicked();
     void gotUserInput(std::vector<bool>, int currentLevel);
     void calculateLevel(int level);
+    void userGateSelected(string gate);
 
 public slots:
     void onResultReceived(bool successful);
+    void onCorrectGateReceived(bool correct);
 };
 
 #endif // LEVELSVIEW_H

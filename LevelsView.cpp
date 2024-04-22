@@ -14,12 +14,10 @@ LevelsView::LevelsView(QWidget *parent) :
     connect (ui->homeButton, &QPushButton::clicked, this, &LevelsView::onHomeButtonClicked);
     connect(gameModel,&GameModel::circuitCompleted,this, &LevelsView::onResultReceived);
     connect(this, &LevelsView::gotUserInput, gameModel,&GameModel::onInputReceived);
-    connect(this, &LevelsView::calculateLevel,gameModel,&GameModel::computeLevelCircuit);
+    connect(this, &LevelsView::userGateSelected,gameModel,&GameModel::checkUserGate);
+    connect(gameModel, &GameModel::correctGate, this, &LevelsView:: onCorrectGateReceived);
     connect (ui->goButtonLevelOne, &QPushButton::clicked, this, &LevelsView::on_pushButton_clicked);
-    connect (ui->pushButton_3, &QPushButton::clicked, this, &LevelsView::on_pushButton_3_clicked);
-    connect (ui->pushButton_4, &QPushButton::clicked, this, &LevelsView::on_pushButton_4_clicked);
-    connect (ui->pushButton_5, &QPushButton::clicked, this, &LevelsView::on_pushButton_5_clicked);
-    connect (ui->pushButton_6, &QPushButton::clicked, this, &LevelsView::on_pushButton_6_clicked);
+
 
 
     QPixmap AND_GATE(":/icons/andGate.png");
@@ -45,17 +43,15 @@ LevelsView::LevelsView(QWidget *parent) :
 
 
     ui->andGateLabel->setParent(ui->groupBox);
-    ui->andGateLabel->setGateName("AND_GATE");
+    ui->andGateLabel->setGateName("AND");
     ui->orGateLabel->setParent(ui->groupBox);
-    ui->orGateLabel->setGateName("OR_GATE");
+    ui->orGateLabel->setGateName("OR");
     ui->nandGateLabel->setParent(ui->groupBox);
-    ui->nandGateLabel->setGateName("NAND_GATE");
+    ui->nandGateLabel->setGateName("NAND");
     ui->norGateLabel->setParent(ui->groupBox);
-    ui->norGateLabel->setGateName("NOR_GATE");
+    ui->norGateLabel->setGateName("NOR");
     ui->xorGateLabel->setParent(ui->groupBox);
-    ui->xorGateLabel->setGateName("XOR_GATE");
-    // ui->notGateLabel->setParent(ui->groupBox);
-    // ui->notGateLabel->setGateName("NOT_GATE");
+    ui->xorGateLabel->setGateName("XOR");
 }
 
 LevelsView::~LevelsView()
@@ -226,19 +222,22 @@ void LevelsView ::goClickedTrainingLevel(int level){
     std::vector<bool> inputs{inputValue1, inputValue2};
 
     emit gotUserInput(inputs,level);
-    emit calculateLevel(level);
 }
 
 void LevelsView::onResultReceived(bool successful) {
-    QString lastGate = ui->graphicsView->lastDroppedGateName();
+    QString lastGate = getLastDroppedGate(currentLevel);
+    emit userGateSelected(lastGate.toStdString());
+    QString warning = "you must use the specified gate to solve this circuit.";
+    if (!correctGateDragged) {
+        QMessageBox::warning(this, "Gate Requirement", warning);
+        return;
+    }
+
     if (successful) {
-        if (lastGate != "AND_GATE") {
-            QMessageBox::warning(this, "Gate Requirement", "you need an AND Gate dummy");
-        } else {
             ui->stackedWidget->setCurrentIndex(ui->stackedWidget->currentIndex() + 1);
             QMessageBox::information(this, "Success", "Good job, on to level 2");
-        }
-    } else {
+    }
+    else {
         QMessageBox::critical(this, "Level Failed", "Try again");
     }
 }
@@ -287,4 +286,38 @@ bool LevelsView::getSecondUserInput(int level)
         return (ui -> lineEdit_12 -> text() == "1");
     }
 
+}
+
+QString LevelsView::getLastDroppedGate(int level)
+{
+    QString lastGate;
+    switch(level){
+    case 1:
+        lastGate = ui->graphicsView->lastDroppedGateName();
+        return lastGate;
+    case 2:
+        lastGate = ui->graphicsView_2->lastDroppedGateName();
+        return lastGate;
+    case 3:
+        lastGate = ui->graphicsView_3->lastDroppedGateName();
+        return lastGate;
+    case 4:
+        lastGate = ui->graphicsView_4->lastDroppedGateName();
+        return lastGate;
+
+    case 5:
+        lastGate = ui->graphicsView_5->lastDroppedGateName();
+        return lastGate;
+
+
+    case 6:
+        lastGate = ui->graphicsView_6->lastDroppedGateName();
+        return lastGate;
+    }
+
+}
+
+void LevelsView:: onCorrectGateReceived(bool correct)
+{
+    correctGateDragged = correct;
 }

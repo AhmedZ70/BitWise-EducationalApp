@@ -1,6 +1,9 @@
 #include "levelThree.h"
 
-LevelThree::LevelThree() : inputA(false), inputB(false){}
+LevelThree::LevelThree() : inputA(false), inputB(false)
+{
+    expectedGate = "NAND";
+}
 
 void LevelThree::setInput(std:: vector<bool> inputs) {
     inputA = inputs.at(0);
