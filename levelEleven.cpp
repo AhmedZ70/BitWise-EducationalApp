@@ -1,7 +1,7 @@
 #include "levelEleven.h"
 
 LevelEleven::LevelEleven() : firstBit(false), secondBit(false), thirdBit(false),
-    fourthBit(false), fifthBit(false), sixthBit(false) {}
+    fourthBit(false), fifthBit(false), sixthBit(false), success(false) {}
 
 void LevelEleven::setInput(std:: vector<bool> inputs) {
     firstBit = inputs.at(0);
@@ -29,14 +29,15 @@ void LevelEleven::computeOutput() {
     bool thirdResult = gate3.computeOutput();
 
     gate4.setInput(secondResult, firstResult);
-    bool fourthResult = gate4.computeOutput();
+    bool output1 = gate4.computeOutput();
 
     gate5.setInput(thirdResult, secondResult);
-    bool fifthResult = gate5.computeOutput();
-
-    result = fourthResult;
-    //result2 = fifthResult;
-}
+    bool output2 = gate5.computeOutput();
+    if (output1 & !output2){
+        success = true;
+    }
+    result = success;
+ }
 
 void LevelEleven::setGateTypes(const std::vector<std::string>& gateTypes){
     userGateSelected1 = gateTypes.at(0);

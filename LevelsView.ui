@@ -169,7 +169,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
     <number>2</number>
    </property>
    <property name="currentIndex">
-    <number>9</number>
+    <number>11</number>
    </property>
    <widget class="QWidget" name="level1">
     <widget class="QLabel" name="label_2">
@@ -3469,7 +3469,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <string/>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_16">
+    <widget class="CustomLineEdit" name="level11Input2">
      <property name="geometry">
       <rect>
        <x>40</x>
@@ -3479,7 +3479,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       </rect>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_11">
+    <widget class="QPushButton" name="goButtonLevelEleven">
      <property name="geometry">
       <rect>
        <x>600</x>
@@ -3492,7 +3492,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <string>GO</string>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_17">
+    <widget class="CustomLineEdit" name="level11Input3">
      <property name="geometry">
       <rect>
        <x>40</x>
@@ -3515,7 +3515,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <string>Skip</string>
      </property>
     </widget>
-    <widget class="Custom_GraphicsView" name="graphicsView_10">
+    <widget class="Custom_GraphicsView" name="gateOneLevel11">
      <property name="geometry">
       <rect>
        <x>160</x>
@@ -3582,7 +3582,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <enum>Qt::Horizontal</enum>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_18">
+    <widget class="CustomLineEdit" name="level11Input4">
      <property name="geometry">
       <rect>
        <x>40</x>
@@ -3592,7 +3592,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       </rect>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_19">
+    <widget class="CustomLineEdit" name="level11Input5">
      <property name="geometry">
       <rect>
        <x>40</x>
@@ -3602,7 +3602,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       </rect>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_24">
+    <widget class="CustomLineEdit" name="level11Input6">
      <property name="geometry">
       <rect>
        <x>40</x>
@@ -3612,7 +3612,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       </rect>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_25">
+    <widget class="CustomLineEdit" name="level11Input1">
      <property name="geometry">
       <rect>
        <x>40</x>
@@ -3622,7 +3622,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       </rect>
      </property>
     </widget>
-    <widget class="Custom_GraphicsView" name="graphicsView_11">
+    <widget class="Custom_GraphicsView" name="gateTwoLevel11">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -3676,7 +3676,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <enum>Qt::Horizontal</enum>
      </property>
     </widget>
-    <widget class="Custom_GraphicsView" name="graphicsView_12">
+    <widget class="Custom_GraphicsView" name="gateThreeLevel11">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -3768,7 +3768,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <enum>Qt::Vertical</enum>
      </property>
     </widget>
-    <widget class="Custom_GraphicsView" name="graphicsView_21">
+    <widget class="Custom_GraphicsView" name="gateFourLevel11">
      <property name="geometry">
       <rect>
        <x>490</x>
@@ -3919,7 +3919,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <enum>Qt::MarkdownText</enum>
      </property>
     </widget>
-    <widget class="Custom_GraphicsView" name="graphicsView_22">
+    <widget class="Custom_GraphicsView" name="gateFiveLevel11">
      <property name="geometry">
       <rect>
        <x>480</x>
@@ -4156,7 +4156,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <enum>Qt::Vertical</enum>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_12">
+    <widget class="QPushButton" name="goButtonLevelEleven_2">
      <property name="geometry">
       <rect>
        <x>660</x>
@@ -4222,7 +4222,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <enum>Qt::MarkdownText</enum>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_52">
+    <widget class="CustomLineEdit" name="level12Input1">
      <property name="geometry">
       <rect>
        <x>40</x>
@@ -4253,7 +4253,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <string>Go Back To Level 11</string>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_51">
+    <widget class="CustomLineEdit" name="level12Input2">
      <property name="geometry">
       <rect>
        <x>40</x>
@@ -4263,7 +4263,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       </rect>
      </property>
     </widget>
-    <widget class="Custom_GraphicsView" name="graphicsView_23">
+    <widget class="Custom_GraphicsView" name="gateFiveLevel12">
      <property name="geometry">
       <rect>
        <x>480</x>
@@ -4292,7 +4292,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <string>Home</string>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_53">
+    <widget class="CustomLineEdit" name="level12Input3">
      <property name="geometry">
       <rect>
        <x>40</x>
@@ -4302,7 +4302,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       </rect>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_54">
+    <widget class="CustomLineEdit" name="level12Input4">
      <property name="geometry">
       <rect>
        <x>40</x>
@@ -4312,7 +4312,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       </rect>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_55">
+    <widget class="CustomLineEdit" name="level12Input5">
      <property name="geometry">
       <rect>
        <x>40</x>
@@ -4322,7 +4322,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       </rect>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_56">
+    <widget class="CustomLineEdit" name="level12Input6">
      <property name="geometry">
       <rect>
        <x>40</x>
@@ -4332,7 +4332,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       </rect>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_57">
+    <widget class="CustomLineEdit" name="level12Input7">
      <property name="geometry">
       <rect>
        <x>40</x>
@@ -4342,7 +4342,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       </rect>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_58">
+    <widget class="CustomLineEdit" name="level12Input8">
      <property name="geometry">
       <rect>
        <x>40</x>
@@ -4352,7 +4352,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       </rect>
      </property>
     </widget>
-    <widget class="Custom_GraphicsView" name="graphicsView_24">
+    <widget class="Custom_GraphicsView" name="gateOneLevel12">
      <property name="geometry">
       <rect>
        <x>160</x>
@@ -4387,7 +4387,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <enum>Qt::Horizontal</enum>
      </property>
     </widget>
-    <widget class="Custom_GraphicsView" name="graphicsView_26">
+    <widget class="Custom_GraphicsView" name="gateTwoLevel12">
      <property name="geometry">
       <rect>
        <x>170</x>
@@ -4403,7 +4403,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <number>1</number>
      </property>
     </widget>
-    <widget class="Custom_GraphicsView" name="graphicsView_27">
+    <widget class="Custom_GraphicsView" name="gateThreeLevel12">
      <property name="geometry">
       <rect>
        <x>170</x>
@@ -4419,7 +4419,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <number>1</number>
      </property>
     </widget>
-    <widget class="Custom_GraphicsView" name="graphicsView_28">
+    <widget class="Custom_GraphicsView" name="gateFourLevel12">
      <property name="geometry">
       <rect>
        <x>170</x>
@@ -4511,7 +4511,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <enum>Qt::Horizontal</enum>
      </property>
     </widget>
-    <widget class="Custom_GraphicsView" name="graphicsView_29">
+    <widget class="Custom_GraphicsView" name="gateSixLevel12">
      <property name="geometry">
       <rect>
        <x>470</x>
@@ -4660,7 +4660,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <enum>Qt::Vertical</enum>
      </property>
     </widget>
-    <widget class="Custom_GraphicsView" name="graphicsView_30">
+    <widget class="Custom_GraphicsView" name="gateSevenLevel12">
      <property name="geometry">
       <rect>
        <x>780</x>

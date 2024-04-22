@@ -265,8 +265,9 @@ void LevelsView ::goClickedTrainingLevel(int level){
 void LevelsView::onResultReceived(bool successful) {
     //QString lastGate = ui->graphicsView->lastDroppedGateName();
     if (successful) {
-             ui->stackedWidget->setCurrentIndex(ui->stackedWidget->currentIndex() + 1);
+
             QMessageBox::information(this, "Success", "Good job, on to the next level");
+            ui->stackedWidget->setCurrentIndex(ui->stackedWidget->currentIndex() + 1);
 
     } else {
         QMessageBox::critical(this, "Level Failed", "Try again");
@@ -382,7 +383,20 @@ void LevelsView::on_goButtonLevelTen_clicked()
     emit levelChanged(10);
     processLevelInputs(gates, inputs);
 }
-
+void LevelsView::on_goButtonLevelEleven_clicked()
+{
+    std::vector<Custom_GraphicsView*> gates = {ui->gateOneLevel11, ui->gateTwoLevel11, ui->gateThreeLevel11, ui->gateFourLevel11, ui->gateFiveLevel11};
+    std::vector<CustomLineEdit*> inputs = {ui->level11Input1, ui->level11Input2, ui->level11Input3, ui->level11Input4, ui->level11Input5, ui->level11Input6};
+    emit levelChanged(11);
+    processLevelInputs(gates, inputs);
+}
+void LevelsView::on_goButtonLevelEleven_2_clicked()
+{
+    std::vector<Custom_GraphicsView*> gates = {ui->gateOneLevel12, ui->gateTwoLevel12, ui->gateThreeLevel12, ui->gateFourLevel12, ui->gateFiveLevel12, ui->gateSixLevel12, ui->gateSevenLevel12};
+    std::vector<CustomLineEdit*> inputs = {ui->level12Input1, ui->level12Input2, ui->level12Input3, ui->level12Input4, ui->level12Input5, ui->level12Input6, ui->level12Input7, ui->level12Input8};
+    emit levelChanged(12);
+    processLevelInputs(gates, inputs);
+}
 
 QString LevelsView::getLastDroppedGate(int level)
 {
@@ -417,6 +431,11 @@ void LevelsView:: onCorrectGateReceived(bool correct)
 {
     correctGateDragged = correct;
 }
+
+
+
+
+
 
 
 

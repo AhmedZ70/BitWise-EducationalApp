@@ -10,6 +10,7 @@ private:
     bool fourthBit;
     bool fifthBit;
     bool sixthBit;
+    bool success;
     string userGateSelected1;
     string userGateSelected2;
     string userGateSelected3;
