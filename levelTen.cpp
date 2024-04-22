@@ -1,9 +1,16 @@
 #include "levelTen.h"
 
+/**
+ * @author Joseph Corbeil, Johnny Song, Ezekiel Jaramillo, Ahmed Zahran, Raj Reddy, Joel Ronca
+ * @date April. 22, 2024
+ * @name levelTen cpp file for assignment9
+ * This cpp file contains the the implementation of the methods outlines in the levelTen h file.
+*/
 LevelTen::LevelTen() : firstBit(false), secondBit(false), thirdBit(false),
     fourthBit(false), fifthBit(false), sixthBit(false) {}
 
 void LevelTen::setInput(std:: vector<bool> inputs) {
+    // Sets the user input
     firstBit = inputs.at(0);
     secondBit = inputs.at(1);
     thirdBit = inputs.at(2);
@@ -13,6 +20,7 @@ void LevelTen::setInput(std:: vector<bool> inputs) {
 }
 
 void LevelTen::computeOutput() {
+    // Create gate objects for the gates on the circuit
     Gate gate1 = setGate(userGateSelected1);
     Gate gate2 = setGate(userGateSelected2);
     Gate gate3 = setGate(userGateSelected3);
@@ -20,6 +28,7 @@ void LevelTen::computeOutput() {
     Gate gate5 = setGate(userGateSelected5);
     Gate notGate = setGate("NOT");
 
+    // Sets gate and gets inputs from user while calculating outputs of the gates
     gate1.setInput(firstBit, secondBit);
     bool firstResult = gate1.computeOutput();
 
@@ -38,10 +47,12 @@ void LevelTen::computeOutput() {
     gate5.setInput(thirdResult, fourthResult);
     bool finalResult = gate5.computeOutput();
 
+    // Final output of the circuit
     result = finalResult;
 }
 
 void LevelTen::setGateTypes(const std::vector<std::string>& gateTypes){
+    // Sets the user gate type drag and drop assignment
     userGateSelected1 = gateTypes.at(0);
     userGateSelected2 = gateTypes.at(1);
     userGateSelected3 = gateTypes.at(2);
