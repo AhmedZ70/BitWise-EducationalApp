@@ -375,6 +375,14 @@ void LevelsView::on_goButtonLevel9_clicked()
     processLevelInputs(gates, inputs);
 }
 
+void LevelsView::on_goButtonLevelTen_clicked()
+{
+    std::vector<Custom_GraphicsView*> gates = {ui->gateOneLevel10, ui->gateTwoLevel10, ui->gateThreeLevel10, ui->gateFourLevel10, ui->gateFiveLevel10};
+    std::vector<CustomLineEdit*> inputs = {ui->level10Input1, ui->level10Input2, ui->level10Input3, ui->level10Input4, ui->level10Input5, ui->level10Input6};
+    emit levelChanged(10);
+    processLevelInputs(gates, inputs);
+}
+
 
 QString LevelsView::getLastDroppedGate(int level)
 {
@@ -409,6 +417,8 @@ void LevelsView:: onCorrectGateReceived(bool correct)
 {
     correctGateDragged = correct;
 }
+
+
 
 
 

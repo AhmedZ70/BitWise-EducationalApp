@@ -169,7 +169,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
     <number>2</number>
    </property>
    <property name="currentIndex">
-    <number>6</number>
+    <number>9</number>
    </property>
    <widget class="QWidget" name="level1">
     <widget class="QLabel" name="label_2">
@@ -2715,7 +2715,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <string/>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_10">
+    <widget class="QPushButton" name="goButtonLevelTen">
      <property name="geometry">
       <rect>
        <x>660</x>
@@ -2728,7 +2728,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <string>GO</string>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_45">
+    <widget class="CustomLineEdit" name="level10Input1">
      <property name="geometry">
       <rect>
        <x>40</x>
@@ -2764,7 +2764,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <string>Skip</string>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_46">
+    <widget class="CustomLineEdit" name="level10Input2">
      <property name="geometry">
       <rect>
        <x>40</x>
@@ -2820,7 +2820,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <enum>Qt::MarkdownText</enum>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_47">
+    <widget class="CustomLineEdit" name="level10Input3">
      <property name="geometry">
       <rect>
        <x>40</x>
@@ -2830,7 +2830,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       </rect>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_48">
+    <widget class="CustomLineEdit" name="level10Input4">
      <property name="geometry">
       <rect>
        <x>40</x>
@@ -2840,7 +2840,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       </rect>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_49">
+    <widget class="CustomLineEdit" name="level10Input5">
      <property name="geometry">
       <rect>
        <x>40</x>
@@ -2850,7 +2850,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       </rect>
      </property>
     </widget>
-    <widget class="CustomLineEdit" name="lineEdit_50">
+    <widget class="CustomLineEdit" name="level10Input6">
      <property name="geometry">
       <rect>
        <x>40</x>
@@ -2879,7 +2879,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <enum>Qt::Horizontal</enum>
      </property>
     </widget>
-    <widget class="Custom_GraphicsView" name="graphicsView_16">
+    <widget class="Custom_GraphicsView" name="gateOneLevel10">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2895,7 +2895,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <number>1</number>
      </property>
     </widget>
-    <widget class="Custom_GraphicsView" name="graphicsView_17">
+    <widget class="Custom_GraphicsView" name="gateTwoLevel10">
      <property name="geometry">
       <rect>
        <x>160</x>
@@ -2943,7 +2943,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <enum>Qt::Horizontal</enum>
      </property>
     </widget>
-    <widget class="Custom_GraphicsView" name="graphicsView_18">
+    <widget class="Custom_GraphicsView" name="gateFourLevel10">
      <property name="geometry">
       <rect>
        <x>440</x>
@@ -2959,7 +2959,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <number>1</number>
      </property>
     </widget>
-    <widget class="Custom_GraphicsView" name="graphicsView_19">
+    <widget class="Custom_GraphicsView" name="gateThreeLevel10">
      <property name="geometry">
       <rect>
        <x>380</x>
@@ -3032,7 +3032,7 @@ background-image: url(:/icons/wallpaper5.png);</string>
       <enum>Qt::Horizontal</enum>
      </property>
     </widget>
-    <widget class="Custom_GraphicsView" name="graphicsView_20">
+    <widget class="Custom_GraphicsView" name="gateFiveLevel10">
      <property name="geometry">
       <rect>
        <x>664</x>

@@ -1,6 +1,6 @@
 #include "levelNine.h"
 #include "gate.h"
-LevelNine::LevelNine() : firstBit(false), secondBit(false), thirdBit(false) {}
+LevelNine::LevelNine() : firstBit(false), secondBit(false), thirdBit(false), fourthBit(false)  {}
 
 void LevelNine::setInput(std:: vector<bool> inputs) {
     firstBit = inputs.at(0);

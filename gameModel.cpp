@@ -8,6 +8,9 @@
 #include "levelSeven.h"
 #include "levelEight.h"
 #include "levelNine.h"
+#include "levelTen.h"
+#include "levelEleven.h"
+#include "levelTwelve.h"
 #include <algorithm>
 #include <iostream>
 
@@ -22,6 +25,9 @@ GameModel::GameModel(QObject *parent) : QObject(parent), currentLevel(0){
     levels.push_back(std::make_unique<LevelSeven>());
     levels.push_back(std::make_unique<LevelEight>());
     levels.push_back(std::make_unique<LevelNine>());
+    levels.push_back(std::make_unique<LevelTen>());
+    levels.push_back(std::make_unique<LevelEleven>());
+    levels.push_back(std::make_unique<LevelTwelve>());
 }
 
 void GameModel::computeLevelCircuit(int currentLevel){

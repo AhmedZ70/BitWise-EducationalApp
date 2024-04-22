@@ -20,11 +20,9 @@ private:
 public:
     LevelTen();
 
-    void setInput(std::vector<bool> inputs);
-
-    void setGateTypes(const std::vector<std::string>& gateTypes);
-
-    void computeOutput();
+    void setInput(std::vector<bool> inputs) override;
+    void setGateTypes(const std::vector<std::string>&) override;
+    void computeOutput() override;
 };
 
 
