@@ -7,13 +7,13 @@
  * @name levelOne cpp file for assignment9
  * This cpp file contains the the implementation of the methods outlines in the levelOne h file.
 */
-
 LevelOne::LevelOne() : inputA(false), inputB(false)
 {
     expectedGate = "AND";
 }
 
 void LevelOne::setInput(std:: vector<bool> inputs) {
+    // Sets user inputs
     inputA = inputs.at(0);
     inputB = inputs.at(1);
 }

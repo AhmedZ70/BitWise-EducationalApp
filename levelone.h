@@ -18,7 +18,7 @@ private:
     bool inputB;
 
 public:
-    /// @brief Constructor that initializes the bits to false
+    /// @brief Constructor that initializes the bits to false and sets the preset gate
     LevelOne();
 
     /// @brief Uses a vector of inputs from the user and sets them in the model
