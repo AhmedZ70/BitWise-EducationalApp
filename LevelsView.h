@@ -40,8 +40,6 @@ private slots:
 
 
 
-    void on_pushButton_12_clicked();
-
     //Home button handlers
 
     void onHomeButtonClicked();
