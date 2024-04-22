@@ -114,6 +114,12 @@ void LevelsView::on_pushButton_10_clicked(){
     cout<< "go clicked" << endl;
 }
 
+void LevelsView::on_pushButton_11_clicked(){
+    currentLevel = 11;
+    cout<< "go clicked" << endl;
+}
+
+
 void LevelsView::onHomeButtonClicked()
 {
     emit homeClicked();
@@ -152,6 +158,10 @@ void LevelsView::on_homeButton_9_clicked(){
 }
 
 void LevelsView::on_homeButton_10_clicked(){
+    emit homeClicked();
+}
+
+void LevelsView::on_homeButton_11_clicked(){
     emit homeClicked();
 }
 
@@ -198,6 +208,11 @@ void LevelsView::on_skipButton_9_clicked(){
 void LevelsView::on_skipButton_10_clicked(){
     ui->stackedWidget->setCurrentIndex(10);
 }
+
+void LevelsView::on_skipButton_11_clicked(){
+    ui->stackedWidget->setCurrentIndex(10);
+}
+
 
 //Go back to previous level functions
 void LevelsView::on_backToLevel1_clicked()

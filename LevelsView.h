@@ -45,6 +45,8 @@ private slots:
 
     void on_pushButton_10_clicked();
 
+    void on_pushButton_11_clicked();
+
     //Home button handlers
 
     void onHomeButtonClicked();
@@ -67,6 +69,8 @@ private slots:
 
     void on_homeButton_10_clicked();
 
+    void on_homeButton_11_clicked();
+
     // Skip button handlers
 
     void on_skipButton_clicked();
@@ -88,6 +92,8 @@ private slots:
     void on_skipButton_9_clicked();
 
     void on_skipButton_10_clicked();
+
+    void on_skipButton_11_clicked();
 
     //Back to level handlers
 
