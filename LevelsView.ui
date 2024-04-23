@@ -158,7 +158,7 @@
       <rect>
        <x>455</x>
        <y>20</y>
-       <width>391</width>
+       <width>291</width>
        <height>41</height>
       </rect>
      </property>
@@ -170,7 +170,8 @@
      </property>
      <property name="styleSheet">
       <string notr="true">text: center;
-text-size: 50px; </string>
+text-size: 50px; 
+color: black;</string>
      </property>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
@@ -195,7 +196,7 @@ text-size: 50px; </string>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true"/>
+      <string notr="true">color: black;</string>
      </property>
      <property name="text">
       <string>GO</string>
@@ -250,7 +251,7 @@ text-size: 50px; </string>
      </property>
      <property name="styleSheet">
       <string notr="true">border-color: rgb(255, 255, 255);
-color: rgb(255, 255, 255);</string>
+color: black;</string>
      </property>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
@@ -312,6 +313,9 @@ color: rgb(255, 255, 255);</string>
        <height>24</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
+     </property>
      <property name="text">
       <string>Home</string>
      </property>
@@ -324,6 +328,9 @@ color: rgb(255, 255, 255);</string>
        <width>80</width>
        <height>24</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
      </property>
      <property name="text">
       <string>Skip</string>
@@ -376,13 +383,14 @@ color: rgb(255, 255, 255);</string>
      <property name="styleSheet">
       <string notr="true">QTextBrowser {
   background-color: #f5f5f5; /* Light grey background */
-  color: #333333; /* Dark grey text */
-  border: 1px solid #cccccc; /* Light grey border */
+  border: 3px solid #cccccc; /* Light grey border */
   border-radius: 5px; /* Rounded corners */
   padding: 10px; /* Spacing between text and border */
   font-family: 'Segoe UI'; /* Modern font */
   font-size: 12pt; /* Font size */
   border-color: black;
+  color: black;
+  text-color: black;
 }
 
 QTextBrowser::hover {
@@ -480,7 +488,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">color: white;</string>
+      <string notr="true">color: black;</string>
      </property>
      <property name="text">
       <string>Go Back To Lesson 1 </string>
@@ -496,7 +504,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">color: white;</string>
+      <string notr="true">color: black;</string>
      </property>
      <property name="text">
       <string>Home</string>
@@ -518,7 +526,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">color: white;</string>
+      <string notr="true">color: black;</string>
      </property>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
@@ -554,7 +562,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <rect>
        <x>455</x>
        <y>20</y>
-       <width>391</width>
+       <width>251</width>
        <height>41</height>
       </rect>
      </property>
@@ -565,7 +573,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">color: white;</string>
+      <string notr="true">color: black;</string>
      </property>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
@@ -590,7 +598,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">color: white;</string>
+      <string notr="true">color: black;</string>
      </property>
      <property name="text">
       <string>Skip</string>
@@ -604,6 +612,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <width>101</width>
        <height>51</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
      </property>
      <property name="text">
       <string>GO</string>
@@ -710,8 +721,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="styleSheet">
       <string notr="true">QTextBrowser {
   background-color: #f5f5f5; /* Light grey background */
-  color: #333333; /* Dark grey text */
-  border: 1px solid #cccccc; /* Light grey border */
+  color: black;
+  border: 3px solid #cccccc; /* Light grey border */
   border-radius: 5px; /* Rounded corners */
   padding: 10px; /* Spacing between text and border */
   font-family: 'Segoe UI'; /* Modern font */
@@ -790,6 +801,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <bold>true</bold>
       </font>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
+     </property>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
      </property>
@@ -833,6 +847,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <pointsize>9</pointsize>
       </font>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
+     </property>
      <property name="text">
       <string>Go Back To Lesson 2 </string>
      </property>
@@ -861,6 +878,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <width>101</width>
        <height>51</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
      </property>
      <property name="text">
       <string>GO</string>
@@ -891,6 +911,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <height>24</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
+     </property>
      <property name="text">
       <string>Skip</string>
      </property>
@@ -900,7 +923,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <rect>
        <x>455</x>
        <y>20</y>
-       <width>420</width>
+       <width>321</width>
        <height>41</height>
       </rect>
      </property>
@@ -909,6 +932,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <pointsize>16</pointsize>
        <bold>true</bold>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
      </property>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
@@ -931,6 +957,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <width>80</width>
        <height>24</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
      </property>
      <property name="text">
       <string>Home</string>
@@ -1005,8 +1034,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="styleSheet">
       <string notr="true">QTextBrowser {
   background-color: #f5f5f5; /* Light grey background */
-  color: #333333; /* Dark grey text */
-  border: 1px solid #cccccc; /* Light grey border */
+  color: black;
+  border: 3px solid #cccccc; /* Light grey border */
   border-radius: 5px; /* Rounded corners */
   padding: 10px; /* Spacing between text and border */
   font-family: 'Segoe UI'; /* Modern font */
@@ -1102,6 +1131,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <pointsize>9</pointsize>
       </font>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
+     </property>
      <property name="text">
       <string>Go Back To lesson 3 </string>
      </property>
@@ -1130,6 +1162,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <width>101</width>
        <height>51</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
      </property>
      <property name="text">
       <string>GO</string>
@@ -1166,6 +1201,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <bold>true</bold>
       </font>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
+     </property>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
      </property>
@@ -1188,6 +1226,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <height>24</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
+     </property>
      <property name="text">
       <string>Skip</string>
      </property>
@@ -1197,7 +1238,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <rect>
        <x>455</x>
        <y>20</y>
-       <width>391</width>
+       <width>301</width>
        <height>41</height>
       </rect>
      </property>
@@ -1206,6 +1247,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <pointsize>16</pointsize>
        <bold>true</bold>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
      </property>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
@@ -1228,6 +1272,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <width>80</width>
        <height>24</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
      </property>
      <property name="text">
       <string>Home</string>
@@ -1302,8 +1349,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="styleSheet">
       <string notr="true">QTextBrowser {
   background-color: #f5f5f5; /* Light grey background */
-  color: #333333; /* Dark grey text */
-  border: 1px solid #cccccc; /* Light grey border */
+  color: black;
+  border: 3px solid #cccccc; /* Light grey border */
   border-radius: 5px; /* Rounded corners */
   padding: 10px; /* Spacing between text and border */
   font-family: 'Segoe UI'; /* Modern font */
@@ -1376,6 +1423,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <height>24</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
+     </property>
      <property name="text">
       <string>Skip</string>
      </property>
@@ -1393,6 +1443,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <font>
        <pointsize>9</pointsize>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
      </property>
      <property name="text">
       <string>Go Back To lesson 4</string>
@@ -1426,6 +1479,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <height>24</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
+     </property>
      <property name="text">
       <string>Home</string>
      </property>
@@ -1435,7 +1491,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <rect>
        <x>455</x>
        <y>20</y>
-       <width>391</width>
+       <width>291</width>
        <height>41</height>
       </rect>
      </property>
@@ -1444,6 +1500,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <pointsize>16</pointsize>
        <bold>true</bold>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
      </property>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
@@ -1466,6 +1525,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <width>101</width>
        <height>51</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
      </property>
      <property name="text">
       <string>GO</string>
@@ -1501,6 +1563,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <pointsize>11</pointsize>
        <bold>true</bold>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
      </property>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
@@ -1616,8 +1681,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="styleSheet">
       <string notr="true">QTextBrowser {
   background-color: #f5f5f5; /* Light grey background */
-  color: #333333; /* Dark grey text */
-  border: 1px solid #cccccc; /* Light grey border */
+  color: black;
+  border: 3px solid #cccccc; /* Light grey border */
   border-radius: 5px; /* Rounded corners */
   padding: 10px; /* Spacing between text and border */
   font-family: 'Segoe UI'; /* Modern font */
@@ -1690,6 +1755,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <height>51</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
+     </property>
      <property name="text">
       <string>GO</string>
      </property>
@@ -1723,6 +1791,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <font>
        <pointsize>9</pointsize>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
      </property>
      <property name="text">
       <string>Go Back To Lesson 5</string>
@@ -1758,6 +1829,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <pointsize>11</pointsize>
        <bold>true</bold>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
      </property>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
@@ -1797,6 +1871,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <height>24</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
+     </property>
      <property name="text">
       <string>Skip</string>
      </property>
@@ -1810,6 +1887,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <height>24</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
+     </property>
      <property name="text">
       <string>Home</string>
      </property>
@@ -1819,7 +1899,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <rect>
        <x>455</x>
        <y>20</y>
-       <width>391</width>
+       <width>271</width>
        <height>41</height>
       </rect>
      </property>
@@ -1828,6 +1908,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <pointsize>16</pointsize>
        <bold>true</bold>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
      </property>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
@@ -1943,8 +2026,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="styleSheet">
       <string notr="true">QTextBrowser {
   background-color: #f5f5f5; /* Light grey background */
-  color: #333333; /* Dark grey text */
-  border: 1px solid #cccccc; /* Light grey border */
+  color: black;
+  border: 3px solid #cccccc; /* Light grey border */
   border-radius: 5px; /* Rounded corners */
   padding: 10px; /* Spacing between text and border */
   font-family: 'Segoe UI'; /* Modern font */
@@ -2102,6 +2185,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <height>24</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
+     </property>
      <property name="text">
       <string>Home</string>
      </property>
@@ -2116,7 +2202,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true"/>
+      <string notr="true">color: black;</string>
      </property>
      <property name="text">
       <string>GO</string>
@@ -2135,6 +2221,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <font>
        <pointsize>9</pointsize>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
      </property>
      <property name="text">
       <string>Go Back To Lesson 6</string>
@@ -2155,6 +2244,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <bold>true</bold>
       </font>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
+     </property>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
      </property>
@@ -2173,7 +2265,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <rect>
        <x>455</x>
        <y>20</y>
-       <width>85</width>
+       <width>71</width>
        <height>41</height>
       </rect>
      </property>
@@ -2182,6 +2274,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <pointsize>16</pointsize>
        <bold>true</bold>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
      </property>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
@@ -2204,6 +2299,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <width>80</width>
        <height>24</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
      </property>
      <property name="text">
       <string>Skip</string>
@@ -2364,8 +2462,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="styleSheet">
       <string notr="true">QTextBrowser {
   background-color: #f5f5f5; /* Light grey background */
-  color: #333333; /* Dark grey text */
-  border: 1px solid #cccccc; /* Light grey border */
+  color: black;
+  border: 3px solid #cccccc; /* Light grey border */
   border-radius: 5px; /* Rounded corners */
   padding: 10px; /* Spacing between text and border */
   font-family: 'Segoe UI'; /* Modern font */
@@ -2501,6 +2599,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <height>24</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
+     </property>
      <property name="text">
       <string>Home</string>
      </property>
@@ -2513,6 +2614,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <width>101</width>
        <height>51</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
      </property>
      <property name="text">
       <string>GO</string>
@@ -2531,6 +2635,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <font>
        <pointsize>9</pointsize>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
      </property>
      <property name="text">
       <string>Go Back To Level 1</string>
@@ -2551,6 +2658,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <bold>true</bold>
       </font>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
+     </property>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
      </property>
@@ -2569,7 +2679,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <rect>
        <x>455</x>
        <y>20</y>
-       <width>85</width>
+       <width>71</width>
        <height>41</height>
       </rect>
      </property>
@@ -2578,6 +2688,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <pointsize>16</pointsize>
        <bold>true</bold>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
      </property>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
@@ -2600,6 +2713,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <width>80</width>
        <height>24</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
      </property>
      <property name="text">
       <string>Skip</string>
@@ -2868,8 +2984,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="styleSheet">
       <string notr="true">QTextBrowser {
   background-color: #f5f5f5; /* Light grey background */
-  color: #333333; /* Dark grey text */
-  border: 1px solid #cccccc; /* Light grey border */
+  color: black;
+  border: 3px solid #cccccc; /* Light grey border */
   border-radius: 5px; /* Rounded corners */
   padding: 10px; /* Spacing between text and border */
   font-family: 'Segoe UI'; /* Modern font */
@@ -3161,6 +3277,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <width>101</width>
        <height>51</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
      </property>
      <property name="text">
       <string>GO</string>
@@ -3508,8 +3627,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="styleSheet">
       <string notr="true">QTextBrowser {
   background-color: #f5f5f5; /* Light grey background */
-  color: #333333; /* Dark grey text */
-  border: 1px solid #cccccc; /* Light grey border */
+  color: black;
+  border: 3px solid #cccccc; /* Light grey border */
   border-radius: 5px; /* Rounded corners */
   border-color: black;
   padding: 10px; /* Spacing between text and border */
@@ -3612,6 +3731,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <height>24</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
+     </property>
      <property name="text">
       <string>Home</string>
      </property>
@@ -3624,6 +3746,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <width>80</width>
        <height>24</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
      </property>
      <property name="text">
       <string>Skip</string>
@@ -3659,6 +3784,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <pointsize>9</pointsize>
       </font>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
+     </property>
      <property name="text">
       <string>Go Back To Level 3</string>
      </property>
@@ -3677,6 +3805,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <pointsize>16</pointsize>
        <bold>true</bold>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
      </property>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
@@ -4046,6 +4177,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <bold>true</bold>
       </font>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
+     </property>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
      </property>
@@ -4337,8 +4471,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="styleSheet">
       <string notr="true">QTextBrowser {
   background-color: #f5f5f5; /* Light grey background */
-  color: #333333; /* Dark grey text */
-  border: 1px solid #cccccc; /* Light grey border */
+  color: black;
+  border: 3px solid #cccccc; /* Light grey border */
   border-radius: 5px; /* Rounded corners */
   padding: 10px; /* Spacing between text and border */
   font-family: 'Segoe UI'; /* Modern font */
@@ -4423,6 +4557,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <height>51</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
+     </property>
      <property name="text">
       <string>GO</string>
      </property>
@@ -4451,6 +4588,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <width>80</width>
        <height>24</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
      </property>
      <property name="text">
       <string>Skip</string>
@@ -4499,6 +4639,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <width>80</width>
        <height>24</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
      </property>
      <property name="text">
       <string>Home</string>
@@ -4783,6 +4926,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <bold>true</bold>
       </font>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
+     </property>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
      </property>
@@ -4811,6 +4957,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <bold>true</bold>
       </font>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
+     </property>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
      </property>
@@ -4838,6 +4987,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <pointsize>16</pointsize>
        <bold>true</bold>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
      </property>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
@@ -5035,7 +5187,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-image: url(:/icons/background4.jpg);</string>
+      <string notr="true">color: black;</string>
      </property>
      <property name="text">
       <string>Go Back To Level 4</string>
@@ -5091,8 +5243,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="styleSheet">
       <string notr="true">QTextBrowser {
   background-color: #f5f5f5; /* Light grey background */
-  color: #333333; /* Dark grey text */
-  border: 1px solid #cccccc; /* Light grey border */
+  color: black;
+  border: 3px solid #cccccc; /* Light grey border */
   border-radius: 5px; /* Rounded corners */
   padding: 10px; /* Spacing between text and border */
   font-family: 'Segoe UI'; /* Modern font */
@@ -5159,7 +5311,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">color: white;</string>
+      <string notr="true">color: black;</string>
      </property>
      <property name="text">
       <string>Skip</string>
@@ -5193,6 +5345,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <height>51</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
+     </property>
      <property name="text">
       <string>GO</string>
      </property>
@@ -5213,7 +5368,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">color: white;</string>
+      <string notr="true">color: black;</string>
      </property>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
@@ -5244,7 +5399,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">color: white;</string>
+      <string notr="true">color: black;</string>
      </property>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
@@ -5290,8 +5445,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-image: url(:/icons/background4.jpg);
-color: white;</string>
+      <string notr="true">color: black;</string>
      </property>
      <property name="text">
       <string>Go Back To Level 5</string>
@@ -5339,7 +5493,7 @@ color: white;</string>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">color: white;</string>
+      <string notr="true">color: black;</string>
      </property>
      <property name="text">
       <string>Home</string>
@@ -6081,8 +6235,8 @@ color: white;</string>
      <property name="styleSheet">
       <string notr="true">QTextBrowser {
   background-color: #f5f5f5; /* Light grey background */
-  color: #333333; /* Dark grey text */
-  border: 1px solid #cccccc; /* Light grey border */
+  color: black;
+  border: 3px solid #cccccc; /* Light grey border */
   border-radius: 5px; /* Rounded corners */
   padding: 10px; /* Spacing between text and border */
   font-family: 'Segoe UI'; /* Modern font */
