@@ -33,14 +33,15 @@ private:
     b2Body* helpButtonBody;
     b2Body* quitButtonBody;
 
-    float originalX;
-    float originalY;
+    float originalXPlay;
+    float originalXHelp;
+    float originalXQuit;
 
     float maxDisplacement;
     const float pixelsPerMeter = 100.0f;  // Define pixels per meter scaling factor
 
     void createButtonBody(QPushButton* button, b2Body*& body, float width, float height);
-    void updateButtonPosition(QPushButton* button, b2Body* body);
+    void updateButtonPosition(QPushButton* button, b2Body* body, int height);
 
 private slots:
     void updatePhysics();
