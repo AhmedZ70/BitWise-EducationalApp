@@ -50,9 +50,6 @@ private slots:
     void on_goButtonLevelEleven_clicked();
     void on_goButtonLevelTwelve_clicked();
 
-
-
-
     // Home button handlers
     void onHomeButtonClicked();
     void on_homeButton_2_clicked();

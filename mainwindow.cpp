@@ -3,6 +3,14 @@
 #include <QDebug>
 #include "Trainingdialog.h"
 
+/**
+ * @author Joseph Corbeil, Johnny Song, Ezekiel Jaramillo, Ahmed Zahran, Raj Reddy, Joel Ronca
+ * @date April 22, 2024
+ * @name MainWindow cpp file for assignment9
+ * This cpp file implements the MainWindow class methods, which serves as the main interface
+ * for a physics-enabled UI application, integrating Box2D for dynamic button interactions.
+ */
+
 // Assuming PIXELS_PER_METER is defined as 100
 const float PIXELS_PER_METER = 100.0f;
 const float MAX_DISPLACEMENT = 3.0f; // Max displacement in pixels
