@@ -454,7 +454,7 @@ void LevelsView::on_stackedWidget_currentChanged(int index)
     }
 
     dialog->setupImageAndText(image,text);
-    dialog->exec();  // This will display the dialog modally
+    dialog->exec();
 }
 
 

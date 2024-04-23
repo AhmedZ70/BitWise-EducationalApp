@@ -8,11 +8,16 @@ const float PIXELS_PER_METER = 100.0f;
 const float MAX_DISPLACEMENT = 50.0f; // Max displacement in pixels
 
 MainWindow::MainWindow(QWidget *parent)
-    : QMainWindow(parent), ui(new Ui::MainWindow), world(new b2World(b2Vec2(0.0f, 0.0f))) {
+    : QMainWindow(parent), ui(new Ui::MainWindow), levelsUi(new LevelsView()), world(new b2World(b2Vec2(0.0f, 0.0f))) {
     ui->setupUi(this);
+    ui->stackedWidget->addWidget(levelsUi);
+    resize(1300, 800);
+    setFixedSize(1300, 800);
     timer = new QTimer(this);
     connect(timer, &QTimer::timeout, this, &MainWindow::updatePhysics);
     timer->start(16);
+    connect(levelsUi, SIGNAL(homeClicked()), this, SLOT(moveHome()));
+    connect(ui->quitButton, &QPushButton::clicked, this, &QCoreApplication::quit, Qt::QueuedConnection);
 
     createButtonBody(ui->playButton, playButtonBody, ui->playButton->width(), ui->playButton->height());
     createButtonBody(ui->helpButton, helpButtonBody, ui->helpButton->width(), ui->helpButton->height());
@@ -96,7 +101,9 @@ bool MainWindow::eventFilter(QObject *obj, QEvent *event) {
 }
 
 void MainWindow::on_playButton_clicked() {
+    qDebug() << "Current index before change:" << ui->stackedWidget->currentIndex();
     ui->stackedWidget->setCurrentIndex(ui->stackedWidget->indexOf(levelsUi));
+    qDebug() << "Current index after change:" << ui->stackedWidget->currentIndex();
     TrainingDialog *dialog = new TrainingDialog();
     QString trainingDialog = "This is an AND gate. The AND gate takes in 2 or 3 inputs and computes a single ouput.\n"
                              "In order for the AND gate to calculate to TRUE, all inputs must be TRUE.\n"
