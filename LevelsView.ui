@@ -147,7 +147,7 @@
     <number>2</number>
    </property>
    <property name="currentIndex">
-    <number>8</number>
+    <number>10</number>
    </property>
    <widget class="QWidget" name="level1">
     <property name="styleSheet">
@@ -3552,8 +3552,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="CustomLineEdit" name="level11Input2">
      <property name="geometry">
       <rect>
-       <x>40</x>
-       <y>130</y>
+       <x>120</x>
+       <y>140</y>
        <width>41</width>
        <height>41</height>
       </rect>
@@ -3565,8 +3565,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="QPushButton" name="goButtonLevelEleven">
      <property name="geometry">
       <rect>
-       <x>700</x>
-       <y>400</y>
+       <x>780</x>
+       <y>410</y>
        <width>80</width>
        <height>24</height>
       </rect>
@@ -3578,8 +3578,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="CustomLineEdit" name="level11Input3">
      <property name="geometry">
       <rect>
-       <x>40</x>
-       <y>230</y>
+       <x>120</x>
+       <y>240</y>
        <width>41</width>
        <height>41</height>
       </rect>
@@ -3591,8 +3591,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="QPushButton" name="skipButton_11">
      <property name="geometry">
       <rect>
-       <x>80</x>
-       <y>40</y>
+       <x>160</x>
+       <y>50</y>
        <width>80</width>
        <height>24</height>
       </rect>
@@ -3604,8 +3604,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Custom_GraphicsView" name="gateOneLevel11">
      <property name="geometry">
       <rect>
-       <x>160</x>
-       <y>50</y>
+       <x>240</x>
+       <y>60</y>
        <width>140</width>
        <height>140</height>
       </rect>
@@ -3620,8 +3620,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_62">
      <property name="geometry">
       <rect>
-       <x>80</x>
-       <y>88</y>
+       <x>160</x>
+       <y>98</y>
        <width>103</width>
        <height>16</height>
       </rect>
@@ -3639,8 +3639,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="QPushButton" name="homeButton_11">
      <property name="geometry">
       <rect>
-       <x>80</x>
-       <y>10</y>
+       <x>160</x>
+       <y>20</y>
        <width>80</width>
        <height>24</height>
       </rect>
@@ -3652,8 +3652,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_63">
      <property name="geometry">
       <rect>
-       <x>83</x>
-       <y>131</y>
+       <x>163</x>
+       <y>141</y>
        <width>101</width>
        <height>16</height>
       </rect>
@@ -3671,8 +3671,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="CustomLineEdit" name="level11Input4">
      <property name="geometry">
       <rect>
-       <x>40</x>
-       <y>280</y>
+       <x>120</x>
+       <y>290</y>
        <width>41</width>
        <height>41</height>
       </rect>
@@ -3684,8 +3684,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="CustomLineEdit" name="level11Input5">
      <property name="geometry">
       <rect>
-       <x>40</x>
-       <y>380</y>
+       <x>120</x>
+       <y>390</y>
        <width>41</width>
        <height>41</height>
       </rect>
@@ -3697,8 +3697,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="CustomLineEdit" name="level11Input6">
      <property name="geometry">
       <rect>
-       <x>40</x>
-       <y>430</y>
+       <x>120</x>
+       <y>440</y>
        <width>41</width>
        <height>41</height>
       </rect>
@@ -3710,8 +3710,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="CustomLineEdit" name="level11Input1">
      <property name="geometry">
       <rect>
-       <x>40</x>
-       <y>70</y>
+       <x>120</x>
+       <y>80</y>
        <width>41</width>
        <height>41</height>
       </rect>
@@ -3723,8 +3723,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Custom_GraphicsView" name="gateTwoLevel11">
      <property name="geometry">
       <rect>
-       <x>150</x>
-       <y>200</y>
+       <x>230</x>
+       <y>210</y>
        <width>140</width>
        <height>140</height>
       </rect>
@@ -3739,8 +3739,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_64">
      <property name="geometry">
       <rect>
-       <x>80</x>
-       <y>239</y>
+       <x>160</x>
+       <y>249</y>
        <width>91</width>
        <height>16</height>
       </rect>
@@ -3758,8 +3758,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_65">
      <property name="geometry">
       <rect>
-       <x>80</x>
-       <y>281</y>
+       <x>160</x>
+       <y>291</y>
        <width>91</width>
        <height>16</height>
       </rect>
@@ -3777,8 +3777,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Custom_GraphicsView" name="gateThreeLevel11">
      <property name="geometry">
       <rect>
-       <x>150</x>
-       <y>350</y>
+       <x>230</x>
+       <y>360</y>
        <width>140</width>
        <height>140</height>
       </rect>
@@ -3793,8 +3793,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_68">
      <property name="geometry">
       <rect>
-       <x>280</x>
-       <y>108</y>
+       <x>360</x>
+       <y>118</y>
        <width>101</width>
        <height>20</height>
       </rect>
@@ -3812,8 +3812,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_61">
      <property name="geometry">
       <rect>
-       <x>370</x>
-       <y>120</y>
+       <x>450</x>
+       <y>130</y>
        <width>16</width>
        <height>81</height>
       </rect>
@@ -3831,8 +3831,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_71">
      <property name="geometry">
       <rect>
-       <x>390</x>
-       <y>160</y>
+       <x>470</x>
+       <y>170</y>
        <width>20</width>
        <height>241</height>
       </rect>
@@ -3850,8 +3850,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Custom_GraphicsView" name="gateFourLevel11">
      <property name="geometry">
       <rect>
-       <x>490</x>
-       <y>110</y>
+       <x>570</x>
+       <y>120</y>
        <width>140</width>
        <height>140</height>
       </rect>
@@ -3866,8 +3866,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_77">
      <property name="geometry">
       <rect>
-       <x>610</x>
-       <y>170</y>
+       <x>690</x>
+       <y>180</y>
        <width>121</width>
        <height>16</height>
       </rect>
@@ -3885,8 +3885,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="QLabel" name="label_23">
      <property name="geometry">
       <rect>
-       <x>640</x>
-       <y>720</y>
+       <x>720</x>
+       <y>730</y>
        <width>1101</width>
        <height>191</height>
       </rect>
@@ -3904,8 +3904,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="QLabel" name="label_24">
      <property name="geometry">
       <rect>
-       <x>730</x>
-       <y>160</y>
+       <x>810</x>
+       <y>170</y>
        <width>41</width>
        <height>41</height>
       </rect>
@@ -3932,8 +3932,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="QLabel" name="label_25">
      <property name="geometry">
       <rect>
-       <x>720</x>
-       <y>350</y>
+       <x>800</x>
+       <y>360</y>
        <width>41</width>
        <height>41</height>
       </rect>
@@ -3960,8 +3960,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="QLabel" name="label_40">
      <property name="geometry">
       <rect>
-       <x>380</x>
-       <y>10</y>
+       <x>460</x>
+       <y>20</y>
        <width>111</width>
        <height>51</height>
       </rect>
@@ -3988,8 +3988,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Custom_GraphicsView" name="gateFiveLevel11">
      <property name="geometry">
       <rect>
-       <x>480</x>
-       <y>310</y>
+       <x>560</x>
+       <y>320</y>
        <width>140</width>
        <height>140</height>
       </rect>
@@ -4004,8 +4004,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_133">
      <property name="geometry">
       <rect>
-       <x>380</x>
-       <y>349</y>
+       <x>460</x>
+       <y>359</y>
        <width>123</width>
        <height>16</height>
       </rect>
@@ -4023,8 +4023,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_123">
      <property name="geometry">
       <rect>
-       <x>400</x>
-       <y>391</y>
+       <x>480</x>
+       <y>401</y>
        <width>103</width>
        <height>16</height>
       </rect>
@@ -4042,8 +4042,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_69">
      <property name="geometry">
       <rect>
-       <x>270</x>
-       <y>258</y>
+       <x>350</x>
+       <y>268</y>
        <width>131</width>
        <height>20</height>
       </rect>
@@ -4061,8 +4061,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_72">
      <property name="geometry">
       <rect>
-       <x>400</x>
-       <y>149</y>
+       <x>480</x>
+       <y>159</y>
        <width>111</width>
        <height>16</height>
       </rect>
@@ -4080,8 +4080,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_66">
      <property name="geometry">
       <rect>
-       <x>80</x>
-       <y>389</y>
+       <x>160</x>
+       <y>399</y>
        <width>93</width>
        <height>16</height>
       </rect>
@@ -4099,8 +4099,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_67">
      <property name="geometry">
       <rect>
-       <x>80</x>
-       <y>431</y>
+       <x>160</x>
+       <y>441</y>
        <width>93</width>
        <height>16</height>
       </rect>
@@ -4118,8 +4118,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_73">
      <property name="geometry">
       <rect>
-       <x>380</x>
-       <y>189</y>
+       <x>460</x>
+       <y>199</y>
        <width>141</width>
        <height>20</height>
       </rect>
@@ -4137,8 +4137,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_76">
      <property name="geometry">
       <rect>
-       <x>600</x>
-       <y>369</y>
+       <x>680</x>
+       <y>379</y>
        <width>121</width>
        <height>20</height>
       </rect>
@@ -4156,8 +4156,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="QPushButton" name="backToLevel1_12">
      <property name="geometry">
       <rect>
-       <x>170</x>
-       <y>20</y>
+       <x>250</x>
+       <y>30</y>
        <width>131</width>
        <height>31</height>
       </rect>
@@ -4177,8 +4177,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_115">
      <property name="geometry">
       <rect>
-       <x>270</x>
-       <y>408</y>
+       <x>350</x>
+       <y>418</y>
        <width>114</width>
        <height>21</height>
       </rect>
@@ -4196,8 +4196,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_83">
      <property name="geometry">
       <rect>
-       <x>380</x>
-       <y>360</y>
+       <x>460</x>
+       <y>370</y>
        <width>10</width>
        <height>62</height>
       </rect>
@@ -4217,7 +4217,7 @@ color: rgb(255, 255, 255);</string>
     <widget class="QPushButton" name="skipButton_13">
      <property name="geometry">
       <rect>
-       <x>90</x>
+       <x>110</x>
        <y>40</y>
        <width>80</width>
        <height>24</height>
@@ -4230,8 +4230,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_70">
      <property name="geometry">
       <rect>
-       <x>380</x>
-       <y>160</y>
+       <x>400</x>
+       <y>140</y>
        <width>20</width>
        <height>40</height>
       </rect>
@@ -4249,8 +4249,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="QPushButton" name="goButtonLevelTwelve">
      <property name="geometry">
       <rect>
-       <x>920</x>
-       <y>360</y>
+       <x>940</x>
+       <y>340</y>
        <width>80</width>
        <height>24</height>
       </rect>
@@ -4262,8 +4262,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="QLabel" name="label_26">
      <property name="geometry">
       <rect>
-       <x>950</x>
-       <y>310</y>
+       <x>970</x>
+       <y>290</y>
        <width>41</width>
        <height>41</height>
       </rect>
@@ -4318,8 +4318,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="CustomLineEdit" name="level12Input1">
      <property name="geometry">
       <rect>
-       <x>40</x>
-       <y>120</y>
+       <x>60</x>
+       <y>100</y>
        <width>41</width>
        <height>41</height>
       </rect>
@@ -4331,7 +4331,7 @@ color: rgb(255, 255, 255);</string>
     <widget class="QPushButton" name="backToLevel1_11">
      <property name="geometry">
       <rect>
-       <x>180</x>
+       <x>200</x>
        <y>20</y>
        <width>131</width>
        <height>31</height>
@@ -4352,8 +4352,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="CustomLineEdit" name="level12Input2">
      <property name="geometry">
       <rect>
-       <x>40</x>
-       <y>170</y>
+       <x>60</x>
+       <y>150</y>
        <width>41</width>
        <height>41</height>
       </rect>
@@ -4365,8 +4365,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Custom_GraphicsView" name="gateFiveLevel12">
      <property name="geometry">
       <rect>
-       <x>480</x>
-       <y>150</y>
+       <x>500</x>
+       <y>130</y>
        <width>140</width>
        <height>140</height>
       </rect>
@@ -4381,7 +4381,7 @@ color: rgb(255, 255, 255);</string>
     <widget class="QPushButton" name="homeButton_12">
      <property name="geometry">
       <rect>
-       <x>90</x>
+       <x>110</x>
        <y>10</y>
        <width>80</width>
        <height>24</height>
@@ -4394,8 +4394,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="CustomLineEdit" name="level12Input3">
      <property name="geometry">
       <rect>
-       <x>40</x>
-       <y>250</y>
+       <x>60</x>
+       <y>230</y>
        <width>41</width>
        <height>41</height>
       </rect>
@@ -4407,8 +4407,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="CustomLineEdit" name="level12Input4">
      <property name="geometry">
       <rect>
-       <x>40</x>
-       <y>310</y>
+       <x>60</x>
+       <y>290</y>
        <width>41</width>
        <height>41</height>
       </rect>
@@ -4420,8 +4420,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="CustomLineEdit" name="level12Input5">
      <property name="geometry">
       <rect>
-       <x>40</x>
-       <y>390</y>
+       <x>60</x>
+       <y>370</y>
        <width>41</width>
        <height>41</height>
       </rect>
@@ -4433,8 +4433,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="CustomLineEdit" name="level12Input6">
      <property name="geometry">
       <rect>
-       <x>40</x>
-       <y>450</y>
+       <x>60</x>
+       <y>430</y>
        <width>41</width>
        <height>41</height>
       </rect>
@@ -4446,8 +4446,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="CustomLineEdit" name="level12Input7">
      <property name="geometry">
       <rect>
-       <x>40</x>
-       <y>520</y>
+       <x>60</x>
+       <y>500</y>
        <width>41</width>
        <height>41</height>
       </rect>
@@ -4459,8 +4459,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="CustomLineEdit" name="level12Input8">
      <property name="geometry">
       <rect>
-       <x>40</x>
-       <y>570</y>
+       <x>60</x>
+       <y>550</y>
        <width>41</width>
        <height>41</height>
       </rect>
@@ -4472,8 +4472,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Custom_GraphicsView" name="gateOneLevel12">
      <property name="geometry">
       <rect>
-       <x>160</x>
-       <y>90</y>
+       <x>180</x>
+       <y>70</y>
        <width>140</width>
        <height>140</height>
       </rect>
@@ -4488,8 +4488,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_144">
      <property name="geometry">
       <rect>
-       <x>80</x>
-       <y>129</y>
+       <x>100</x>
+       <y>109</y>
        <width>101</width>
        <height>16</height>
       </rect>
@@ -4507,8 +4507,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Custom_GraphicsView" name="gateTwoLevel12">
      <property name="geometry">
       <rect>
-       <x>170</x>
-       <y>230</y>
+       <x>190</x>
+       <y>210</y>
        <width>140</width>
        <height>140</height>
       </rect>
@@ -4523,8 +4523,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Custom_GraphicsView" name="gateThreeLevel12">
      <property name="geometry">
       <rect>
-       <x>170</x>
-       <y>370</y>
+       <x>190</x>
+       <y>350</y>
        <width>140</width>
        <height>140</height>
       </rect>
@@ -4539,8 +4539,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Custom_GraphicsView" name="gateFourLevel12">
      <property name="geometry">
       <rect>
-       <x>170</x>
-       <y>500</y>
+       <x>190</x>
+       <y>480</y>
        <width>140</width>
        <height>140</height>
       </rect>
@@ -4555,8 +4555,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_151">
      <property name="geometry">
       <rect>
-       <x>280</x>
-       <y>148</y>
+       <x>300</x>
+       <y>128</y>
        <width>111</width>
        <height>20</height>
       </rect>
@@ -4574,8 +4574,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_152">
      <property name="geometry">
       <rect>
-       <x>290</x>
-       <y>288</y>
+       <x>310</x>
+       <y>268</y>
        <width>101</width>
        <height>20</height>
       </rect>
@@ -4593,8 +4593,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_75">
      <property name="geometry">
       <rect>
-       <x>380</x>
-       <y>300</y>
+       <x>400</x>
+       <y>280</y>
        <width>20</width>
        <height>159</height>
       </rect>
@@ -4612,8 +4612,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_155">
      <property name="geometry">
       <rect>
-       <x>390</x>
-       <y>189</y>
+       <x>410</x>
+       <y>169</y>
        <width>111</width>
        <height>16</height>
       </rect>
@@ -4631,8 +4631,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Custom_GraphicsView" name="gateSixLevel12">
      <property name="geometry">
       <rect>
-       <x>470</x>
-       <y>410</y>
+       <x>490</x>
+       <y>390</y>
        <width>140</width>
        <height>140</height>
       </rect>
@@ -4647,8 +4647,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_79">
      <property name="geometry">
       <rect>
-       <x>380</x>
-       <y>500</y>
+       <x>400</x>
+       <y>480</y>
        <width>20</width>
        <height>71</height>
       </rect>
@@ -4666,8 +4666,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_156">
      <property name="geometry">
       <rect>
-       <x>390</x>
-       <y>491</y>
+       <x>410</x>
+       <y>471</y>
        <width>102</width>
        <height>16</height>
       </rect>
@@ -4685,8 +4685,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_157">
      <property name="geometry">
       <rect>
-       <x>440</x>
-       <y>231</y>
+       <x>460</x>
+       <y>211</y>
        <width>61</width>
        <height>16</height>
       </rect>
@@ -4704,8 +4704,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_158">
      <property name="geometry">
       <rect>
-       <x>390</x>
-       <y>448</y>
+       <x>410</x>
+       <y>428</y>
        <width>102</width>
        <height>16</height>
       </rect>
@@ -4723,8 +4723,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_159">
      <property name="geometry">
       <rect>
-       <x>600</x>
-       <y>210</y>
+       <x>620</x>
+       <y>190</y>
        <width>91</width>
        <height>16</height>
       </rect>
@@ -4742,8 +4742,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_81">
      <property name="geometry">
       <rect>
-       <x>680</x>
-       <y>220</y>
+       <x>700</x>
+       <y>200</y>
        <width>20</width>
        <height>91</height>
       </rect>
@@ -4761,8 +4761,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_82">
      <property name="geometry">
       <rect>
-       <x>680</x>
-       <y>350</y>
+       <x>700</x>
+       <y>330</y>
        <width>20</width>
        <height>131</height>
       </rect>
@@ -4780,8 +4780,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Custom_GraphicsView" name="gateSevenLevel12">
      <property name="geometry">
       <rect>
-       <x>780</x>
-       <y>260</y>
+       <x>800</x>
+       <y>240</y>
        <width>140</width>
        <height>140</height>
       </rect>
@@ -4796,8 +4796,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_163">
      <property name="geometry">
       <rect>
-       <x>690</x>
-       <y>299</y>
+       <x>710</x>
+       <y>279</y>
        <width>112</width>
        <height>16</height>
       </rect>
@@ -4815,8 +4815,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_161">
      <property name="geometry">
       <rect>
-       <x>690</x>
-       <y>341</y>
+       <x>710</x>
+       <y>321</y>
        <width>112</width>
        <height>16</height>
       </rect>
@@ -4834,10 +4834,10 @@ color: rgb(255, 255, 255);</string>
     <widget class="QLabel" name="label_27">
      <property name="geometry">
       <rect>
-       <x>890</x>
-       <y>500</y>
-       <width>991</width>
-       <height>641</height>
+       <x>1020</x>
+       <y>620</y>
+       <width>881</width>
+       <height>501</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -4853,8 +4853,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_162">
      <property name="geometry">
       <rect>
-       <x>1270</x>
-       <y>960</y>
+       <x>1290</x>
+       <y>940</y>
        <width>91</width>
        <height>16</height>
       </rect>
@@ -4872,8 +4872,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_164">
      <property name="geometry">
       <rect>
-       <x>900</x>
-       <y>318</y>
+       <x>920</x>
+       <y>298</y>
        <width>51</width>
        <height>20</height>
       </rect>
@@ -4891,8 +4891,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_149">
      <property name="geometry">
       <rect>
-       <x>80</x>
-       <y>538</y>
+       <x>100</x>
+       <y>518</y>
        <width>112</width>
        <height>16</height>
       </rect>
@@ -4910,8 +4910,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_150">
      <property name="geometry">
       <rect>
-       <x>80</x>
-       <y>581</y>
+       <x>100</x>
+       <y>561</y>
        <width>112</width>
        <height>16</height>
       </rect>
@@ -4929,8 +4929,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_165">
      <property name="geometry">
       <rect>
-       <x>80</x>
-       <y>409</y>
+       <x>100</x>
+       <y>389</y>
        <width>111</width>
        <height>16</height>
       </rect>
@@ -4948,8 +4948,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_166">
      <property name="geometry">
       <rect>
-       <x>80</x>
-       <y>451</y>
+       <x>100</x>
+       <y>431</y>
        <width>111</width>
        <height>16</height>
       </rect>
@@ -4967,8 +4967,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_167">
      <property name="geometry">
       <rect>
-       <x>80</x>
-       <y>171</y>
+       <x>100</x>
+       <y>151</y>
        <width>101</width>
        <height>16</height>
       </rect>
@@ -4986,8 +4986,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_147">
      <property name="geometry">
       <rect>
-       <x>80</x>
-       <y>269</y>
+       <x>100</x>
+       <y>249</y>
        <width>113</width>
        <height>16</height>
       </rect>
@@ -5005,8 +5005,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_146">
      <property name="geometry">
       <rect>
-       <x>80</x>
-       <y>311</y>
+       <x>100</x>
+       <y>291</y>
        <width>113</width>
        <height>16</height>
       </rect>
@@ -5024,8 +5024,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_154">
      <property name="geometry">
       <rect>
-       <x>290</x>
-       <y>558</y>
+       <x>310</x>
+       <y>538</y>
        <width>101</width>
        <height>20</height>
       </rect>
@@ -5043,8 +5043,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_80">
      <property name="geometry">
       <rect>
-       <x>430</x>
-       <y>240</y>
+       <x>450</x>
+       <y>220</y>
        <width>20</width>
        <height>201</height>
       </rect>
@@ -5062,8 +5062,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_153">
      <property name="geometry">
       <rect>
-       <x>290</x>
-       <y>428</y>
+       <x>310</x>
+       <y>408</y>
        <width>151</width>
        <height>20</height>
       </rect>
@@ -5081,8 +5081,8 @@ color: rgb(255, 255, 255);</string>
     <widget class="Line" name="line_160">
      <property name="geometry">
       <rect>
-       <x>590</x>
-       <y>470</y>
+       <x>610</x>
+       <y>450</y>
        <width>101</width>
        <height>16</height>
       </rect>
