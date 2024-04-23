@@ -45,8 +45,6 @@ void MainWindow::updatePhysics() {
     updateButtonPosition(ui->quitButton, quitButtonBody, originalXQuit);
 }
 
-
-
 void MainWindow::updateButtonPosition(QPushButton *button, b2Body *body, int originalX) {
     b2Vec2 pos = body->GetPosition();
     int newX = static_cast<int>(pos.x * PIXELS_PER_METER);
@@ -77,7 +75,6 @@ void MainWindow::createButtonBody(QPushButton* button, b2Body*& body, float widt
     fixtureDef.friction = 0.3f;
     body->CreateFixture(&fixtureDef);
 
-    qDebug() << "Created body for button:" << button->text() << "at" << initialX * 100.0f << initialY * 100.0f;
 }
 
 bool MainWindow::eventFilter(QObject *obj, QEvent *event) {
