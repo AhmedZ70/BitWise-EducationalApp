@@ -12,8 +12,8 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     ui->stackedWidget->addWidget(levelsUi);
-    resize(1000, 800); // Set initial size
-    setFixedSize(1000, 800); // Prevent resizing by setting a fixed size
+    resize(1300, 800); // Set initial size
+    setFixedSize(1300, 800); // Prevent resizing by setting a fixed size
     connect(levelsUi, SIGNAL(homeClicked()), this, SLOT(moveHome()));
     connect(ui->quitButton, &QPushButton::clicked, this, &QCoreApplication::quit, Qt::QueuedConnection);
 
