@@ -29,6 +29,7 @@ MainWindow::MainWindow(QWidget *parent)
     timer->start(16);
     connect(levelsUi, SIGNAL(homeClicked()), this, SLOT(moveHome()));
     connect(ui->quitButton, &QPushButton::clicked, this, &QCoreApplication::quit, Qt::QueuedConnection);
+    connect(ui->stackedWidget, &QStackedWidget::currentChanged, this, &MainWindow::onStackedWidgetChange);
 
     createButtonBody(ui->playButton, playButtonBody, ui->playButton->width(), ui->playButton->height());
     createButtonBody(ui->helpButton, helpButtonBody, ui->helpButton->width(), ui->helpButton->height());
@@ -138,8 +139,6 @@ bool MainWindow::eventFilter(QObject *obj, QEvent *event) {
 }
 
 void MainWindow::on_playButton_clicked() {
-    movingLabel->hide();
-    labelBody->SetLinearVelocity(b2Vec2(0, 0));
     qDebug() << "Current index before change:" << ui->stackedWidget->currentIndex();
     ui->stackedWidget->setCurrentIndex(ui->stackedWidget->indexOf(levelsUi));
     qDebug() << "Current index after change:" << ui->stackedWidget->currentIndex();
@@ -176,3 +175,21 @@ void MainWindow::createLabelBody(QLabel *label, b2Body*& body) {
     // Set initial velocity to move across the screen
     body->SetLinearVelocity(b2Vec2(2.0f, 0)); // Adjust speed as needed
 }
+
+void MainWindow::onStackedWidgetChange(int index) {
+    if (index == 0) {
+        movingLabel->show();
+        // Restart movement if needed
+        if (labelBody) {
+            labelBody->SetLinearVelocity(b2Vec2(2.0f, 0)); // Adjust speed as needed
+        }
+    }
+
+    else {
+        movingLabel->hide();
+        if (labelBody) {
+            labelBody->SetLinearVelocity(b2Vec2(0, 0));
+        }
+    }
+}
+

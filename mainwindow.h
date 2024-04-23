@@ -82,6 +82,8 @@ private slots:
 
     /// @brief Moves the view back to the home screen.
     void moveHome();
+
+    void onStackedWidgetChange(int index);
 };
 
 #endif // MAINWINDOW_H
