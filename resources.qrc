@@ -17,5 +17,6 @@
         <file>green2.png</file>
         <file>bright green.png</file>
         <file>bright green2.jpg</file>
+        <file>ArtWorkForBackgroundImage.png</file>
     </qresource>
 </RCC>
