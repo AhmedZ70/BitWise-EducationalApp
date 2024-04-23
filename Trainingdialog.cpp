@@ -11,6 +11,7 @@ TrainingDialog::TrainingDialog(QWidget *parent)
 {
     ui->setupUi(this);
     setWindowTitle("Training Dialog");
+    ui->truthTable->setEditTriggers(QAbstractItemView::NoEditTriggers);
 
     // Setup the initial image and text
     setupImageAndText(":/path/to/image.png", "Welcome to the Training Module");
