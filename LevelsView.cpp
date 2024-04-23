@@ -159,22 +159,28 @@ void LevelsView::on_goButtonLevelTwelve_clicked()
 void LevelsView::onHomeButtonClicked()
 {
     emit homeClicked();
+    ui->stackedWidget->setCurrentIndex(0);
 }
 
 void LevelsView::on_homeButton_2_clicked(){
     emit homeClicked();
+    ui->stackedWidget->setCurrentIndex(0);
 }
+
 
 void LevelsView::on_homeButton_3_clicked(){
     emit homeClicked();
+    ui->stackedWidget->setCurrentIndex(0);
 }
 
 void LevelsView::on_homeButton_4_clicked(){
     emit homeClicked();
+    ui->stackedWidget->setCurrentIndex(0);
 }
 
 void LevelsView::on_homeButton_5_clicked(){
     emit homeClicked();
+    ui->stackedWidget->setCurrentIndex(0);
 }
 
 void LevelsView::on_homeButton_6_clicked(){
@@ -183,26 +189,32 @@ void LevelsView::on_homeButton_6_clicked(){
 
 void LevelsView::on_homeButton_7_clicked(){
     emit homeClicked();
+    ui->stackedWidget->setCurrentIndex(0);
 }
 
 void LevelsView::on_homeButton_8_clicked(){
     emit homeClicked();
+    ui->stackedWidget->setCurrentIndex(0);
 }
 
 void LevelsView::on_homeButton_9_clicked(){
     emit homeClicked();
+    ui->stackedWidget->setCurrentIndex(0);
 }
 
 void LevelsView::on_homeButton_10_clicked(){
     emit homeClicked();
+    ui->stackedWidget->setCurrentIndex(0);
 }
 
 void LevelsView::on_homeButton_11_clicked(){
     emit homeClicked();
+    ui->stackedWidget->setCurrentIndex(0);
 }
 
 void LevelsView::on_homeButton_12_clicked(){
     emit homeClicked();
+    ui->stackedWidget->setCurrentIndex(0);
 }
 
 //Go to next level functions
