@@ -18,5 +18,8 @@
         <file>bright green.png</file>
         <file>bright green2.jpg</file>
         <file>ArtWorkForBackgroundImage.png</file>
+        <file>DarkSolidBackgroundImage.jpeg</file>
+        <file>GridBackgroundImage.png</file>
+        <file>BitWiseTitle.png</file>
     </qresource>
 </RCC>
