@@ -72,7 +72,10 @@ public:
     QString lastDroppedGateName() const;
 
 signals:
+    /// @brief Signals that a gate has been dropped (placed).
     void itemdrop();
+
+    /// @brief Signals that a gate is being dragged.
     void gateDragged();
 protected:
     /// @brief Handles the event when a drag enters the view.

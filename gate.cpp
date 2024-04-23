@@ -1,5 +1,11 @@
 #include "Gate.h"
 
+/**
+ * @author Joseph Corbeil, Johnny Song, Ezekiel Jaramillo, Ahmed Zahran, Raj Reddy, Joel Ronca
+ * @date April. 22, 2024
+ * @name Gate cpp file for assignment9
+ * This cpp file implements the methods defined in the Gate class which computes logic gate functionalities.
+ */
 Gate::Gate(function<bool(bool, bool)> func)
     : gateFunction(func), isNotGate(false) {
 }

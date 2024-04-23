@@ -14,8 +14,15 @@
 #include <algorithm>
 #include <iostream>
 
+/**
+ * @author Joseph Corbeil, Johnny Song, Ezekiel Jaramillo, Ahmed Zahran, Raj Reddy, Joel Ronca
+ * @date April. 22, 2024
+ * @name GameModel header file for assignment9
+ * This cpp file defines and implements  the GameModel class which manages game levels and handles logic
+ * for circuit simulation based on user interactions in a digital circuit simulation game.
+ */
 GameModel::GameModel(QObject *parent) : QObject(parent), currentLevel(0){
-
+    // Push all premade levels
     levels.push_back(std::make_unique<LevelOne>());
     levels.push_back(std::make_unique<LevelTwo>());
     levels.push_back(std::make_unique<LevelThree>());
