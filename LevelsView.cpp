@@ -264,7 +264,7 @@ void LevelsView::on_skipButton_10_clicked(){
 void LevelsView::on_skipButton_11_clicked(){
     ui->stackedWidget->setCurrentIndex(11);
 }
-void LevelsView::on_skipTrainingLessons_clicked()
+void LevelsView::on_skipTrainingButton_clicked()
 {
     ui->stackedWidget->setCurrentIndex(6);
 }
@@ -480,6 +480,8 @@ void LevelsView::on_stackedWidget_currentChanged(int index)
     dialog->setupImageAndText(image,text);
     dialog->exec();
 }
+
+
 
 
 
