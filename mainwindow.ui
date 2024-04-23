@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/icons/BGIMageBitWise.png);</string>
+     <string notr="true">background-image: url(:/icons/ArtWorkForBackgroundImage.png);</string>
     </property>
     <property name="currentIndex">
      <number>0</number>
