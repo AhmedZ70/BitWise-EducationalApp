@@ -19,13 +19,93 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog {
+  background-color: #323232; /* Dark background */
+  color: #ffffff; /* Light text for better contrast */
+  border: 2px solid #444444; /* Solid border */
+}
+
+QPushButton {
+  color: #ffffff;
+  background-color: #5c5c5c;
+  border: 1px solid #8f8f8f;
+  padding: 5px;
+  border-radius: 2px;
+}
+
+QPushButton:hover {
+  background-color: #505050;
+}
+
+QPushButton:pressed {
+  background-color: #3a3a3a;
+}
+
+QLabel {
+  color: #ffffff;
+}
+
+QTableWidget {
+  background-color: #323232;
+  color: #ffffff;
+  gridline-color: #505050; /* Grid lines in a slightly lighter shade for visibility */
+  border: none;
+  /* Disabling editing */
+  selection-mode: QAbstractItemView::NoSelection;
+  selection-behavior: QAbstractItemView::SelectRows;
+}
+
+QTableWidget::item {
+  padding: 5px;
+  border-radius: 2px;
+  /* Making table items read-only */
+  selection-background-color: #323232;
+}
+
+QTableWidget::item:selected {
+  background-color: #505050;
+}
+
+QHeaderView::section {
+  background-color: #424242;
+  padding: 4px;
+  border: 1px solid #4d4d4d;
+  color: #ffffff;
+}
+
+QScrollBar:vertical {
+  border: none;
+  background-color: #2e2e2e;
+  width: 10px;
+  margin: 21px 0 21px 0;
+}
+
+QScrollBar::handle:vertical {
+  background: #626262;
+  min-height: 25px;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+  background: none;
+}
+
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+  background: none;
+}
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+  background: none;
+}
+</string>
+  </property>
   <widget class="QPushButton" name="okButton">
    <property name="geometry">
     <rect>
      <x>460</x>
-     <y>370</y>
+     <y>357</y>
      <width>80</width>
-     <height>18</height>
+     <height>31</height>
     </rect>
    </property>
    <property name="text">
@@ -72,9 +152,15 @@
     <rect>
      <x>90</x>
      <y>180</y>
-     <width>301</width>
-     <height>161</height>
+     <width>307</width>
+     <height>148</height>
     </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="gridStyle">
+    <enum>Qt::SolidLine</enum>
    </property>
    <property name="rowCount">
     <number>4</number>
