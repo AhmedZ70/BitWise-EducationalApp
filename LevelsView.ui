@@ -194,6 +194,9 @@ text-size: 50px; </string>
        <height>24</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
      <property name="text">
       <string>GO</string>
      </property>
@@ -1627,6 +1630,9 @@ color: rgb(255, 255, 255);</string>
        <width>80</width>
        <height>24</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
      </property>
      <property name="text">
       <string>GO</string>
