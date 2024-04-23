@@ -94,7 +94,7 @@ private slots:
     /// @brief Slot triggered when the current page of the stacked widget changes.
     void on_stackedWidget_currentChanged(int arg1);
 
-    void on_skipTrainingButton_clicked();
+    void on_skipTrainingLessons_clicked();
 
 private:
     // Pointer to the user interface setup.
