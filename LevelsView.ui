@@ -26,7 +26,7 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-image: url(:/icons/background3.png);</string>
+    <string notr="true">background-image: url(:/icons/DarkSolidBackgroundImage.jpeg);</string>
    </property>
    <property name="text">
     <string/>
@@ -42,7 +42,7 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-image: url(:/icons/background3.png);</string>
+    <string notr="true"/>
    </property>
    <property name="title">
     <string/>
@@ -89,7 +89,8 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/icons/background3.png);</string>
+     <string notr="true">
+</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -141,7 +142,7 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-image: url(:/icons/background4.jpg);</string>
+    <string notr="true">background-image: url(:/icons/GridBackgroundImage.png);</string>
    </property>
    <property name="lineWidth">
     <number>2</number>
@@ -382,6 +383,7 @@ color: rgb(255, 255, 255);</string>
   padding: 10px; /* Spacing between text and border */
   font-family: 'Segoe UI'; /* Modern font */
   font-size: 12pt; /* Font size */
+  border-color: black;
 }
 
 QTextBrowser::hover {
@@ -701,6 +703,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
   padding: 10px; /* Spacing between text and border */
   font-family: 'Segoe UI'; /* Modern font */
   font-size: 12pt; /* Font size */
+  border-color: black;
 }
 
 QTextBrowser::hover {
@@ -995,6 +998,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
   padding: 10px; /* Spacing between text and border */
   font-family: 'Segoe UI'; /* Modern font */
   font-size: 12pt; /* Font size */
+  border-color: black;
 }
 
 QTextBrowser::hover {
@@ -1291,6 +1295,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
   padding: 10px; /* Spacing between text and border */
   font-family: 'Segoe UI'; /* Modern font */
   font-size: 12pt; /* Font size */
+  border-color: black;
 }
 
 QTextBrowser::hover {
@@ -1604,6 +1609,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
   padding: 10px; /* Spacing between text and border */
   font-family: 'Segoe UI'; /* Modern font */
   font-size: 12pt; /* Font size */
+  border-color: black;
 }
 
 QTextBrowser::hover {
@@ -1930,6 +1936,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
   padding: 10px; /* Spacing between text and border */
   font-family: 'Segoe UI'; /* Modern font */
   font-size: 12pt; /* Font size */
+  border-color: black;
 }
 
 QTextBrowser::hover {
@@ -2350,6 +2357,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
   padding: 10px; /* Spacing between text and border */
   font-family: 'Segoe UI'; /* Modern font */
   font-size: 12pt; /* Font size */
+  border-color: black;
 }
 
 QTextBrowser::hover {
@@ -2853,6 +2861,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
   padding: 10px; /* Spacing between text and border */
   font-family: 'Segoe UI'; /* Modern font */
   font-size: 12pt; /* Font size */
+  border-color: black;
 }
 
 QTextBrowser::hover {
@@ -3470,6 +3479,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
   color: #333333; /* Dark grey text */
   border: 1px solid #cccccc; /* Light grey border */
   border-radius: 5px; /* Rounded corners */
+  border-color: black;
   padding: 10px; /* Spacing between text and border */
   font-family: 'Segoe UI'; /* Modern font */
   font-size: 12pt; /* Font size */
@@ -3506,7 +3516,12 @@ QTextBrowser QScrollBar::sub-line:vertical {
 QTextBrowser QScrollBar::add-page:vertical,
 QTextBrowser QScrollBar::sub-page:vertical {
   background: none; /* No background for the area between handle and buttons */
-}</string>
+}
+
+QTextBrowser::selection {
+  background-color: #ffff00; /* Background color for selected text */
+}
+</string>
      </property>
      <property name="html">
       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
@@ -4296,6 +4311,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
   padding: 10px; /* Spacing between text and border */
   font-family: 'Segoe UI'; /* Modern font */
   font-size: 12pt; /* Font size */
+  border-color: black;
 }
 
 QTextBrowser::hover {
@@ -5049,6 +5065,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
   padding: 10px; /* Spacing between text and border */
   font-family: 'Segoe UI'; /* Modern font */
   font-size: 12pt; /* Font size */
+  border-color: black;
 }
 
 QTextBrowser::hover {
@@ -6038,6 +6055,7 @@ color: white;</string>
   padding: 10px; /* Spacing between text and border */
   font-family: 'Segoe UI'; /* Modern font */
   font-size: 12pt; /* Font size */
+  border-color: black;
 }
 
 QTextBrowser::hover {
