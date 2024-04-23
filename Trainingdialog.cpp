@@ -4,7 +4,13 @@
 #include <QVBoxLayout>
 #include <QStringList>
 
-
+/**
+ * @author Joseph Corbeil, Johnny Song, Ezekiel Jaramillo, Ahmed Zahran, Raj Reddy, Joel Ronca
+ * @date April 22, 2024
+ * @name TrainingDialog cpp file for assignment9
+ * This cpp file implements the TrainingDialog class, which is used to display educational material
+ * about logic gates in a dialog format, including images and truth tables.
+ */
 TrainingDialog::TrainingDialog(QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::TrainingDialog)

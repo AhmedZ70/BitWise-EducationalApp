@@ -4,6 +4,15 @@
 #include <iostream>
 #include <vector>
 #include "Trainingdialog.h"
+
+/**
+ * @author Joseph Corbeil, Johnny Song, Ezekiel Jaramillo, Ahmed Zahran, Raj Reddy, Joel Ronca
+ * @date April 22, 2024
+ * @name LevelsView cpp file for assignment9
+ * This header file implements the LevelsView class methods, which are responsible for displaying
+ * and managing the game levels in the user interface.
+ */
+
 using namespace std;
 LevelsView::LevelsView(QWidget *parent) :
     QWidget(parent),
