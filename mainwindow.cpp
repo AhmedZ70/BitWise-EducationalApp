@@ -3,6 +3,7 @@
 #include <QDebug>
 #include "Trainingdialog.h"
 #include <QLabel>
+#include <QMessageBox>  // Include for QMessageBox
 
 /**
  * @author Joseph Corbeil, Johnny Song, Ezekiel Jaramillo, Ahmed Zahran, Raj Reddy, Joel Ronca
@@ -30,6 +31,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(levelsUi, SIGNAL(homeClicked()), this, SLOT(moveHome()));
     connect(ui->quitButton, &QPushButton::clicked, this, &QCoreApplication::quit, Qt::QueuedConnection);
     connect(ui->stackedWidget, &QStackedWidget::currentChanged, this, &MainWindow::onStackedWidgetChange);
+    connect(ui->helpButton, &QPushButton::clicked, this, &MainWindow::showHelpDialog);  // Connect helpButton click to the new dialog
 
     createButtonBody(ui->playButton, playButtonBody, ui->playButton->width(), ui->playButton->height());
     createButtonBody(ui->helpButton, helpButtonBody, ui->helpButton->width(), ui->helpButton->height());
@@ -38,6 +40,9 @@ MainWindow::MainWindow(QWidget *parent)
     ui->playButton->installEventFilter(this);
     ui->helpButton->installEventFilter(this);
     ui->quitButton->installEventFilter(this);
+
+    initializeHelpTexts(); // Initialize help texts after setup
+    setupHelpDialog();      // Set up the help dialog components
 
     // Store initial positions
     originalXPlay = ui->playButton->x();
@@ -156,6 +161,55 @@ void MainWindow::moveHome()
     ui->stackedWidget->setCurrentIndex(0);
 }
 
+void MainWindow::initializeHelpTexts()
+{
+    helpTexts["AND Gates"] = "The AND gate is a digital logic gate that outputs true only if all its inputs are true.";
+    helpTexts["OR Gates"] = "The OR gate is a digital logic gate that outputs true if at least one of its inputs is true.";
+    helpTexts["NOT Gates"] = "The NOT gate, also known as an inverter, is a digital logic gate that outputs the opposite of its input.";
+    helpTexts["NAND Gates"] = "The NAND gate outputs false only when all its inputs are true. It is an inverted AND gate.";
+    helpTexts["NOR Gates"] = "The NOR gate outputs true only when all its inputs are false. It is an inverted OR gate.";
+    helpTexts["XOR Gates"] = "The XOR gate (exclusive OR) is a digital logic gate that outputs true only when its inputs are different.";
+    helpTexts["Bits"] = "A bit (binary digit) is the basic unit of information in computing and digital communications. A bit can have only one of two values: 0 or 1, often corresponding to the electrical values of off or on, respectively.";
+    helpTexts["Binary Operations"] = "Binary operations involve arithmetic on binary numbers, which are composed of bits. The most common binary operations are addition, subtraction, and multiplication. Binary operations are fundamental in the functioning of digital electronics, such as processors and logic gates.";
+    helpTexts["Binary Numbers"] = "Binary numbers are represented using only two symbols: 0 and 1. Each digit in a binary number is called a bit. For example, the binary number '1010' represents the decimal number 10, with each position representing a power of two, starting from the rightmost digit.";
+}
+
+
+
+void MainWindow::setupHelpDialog() {
+    helpDialog = new QDialog(this);
+    helpDialog->setWindowTitle("Help Information");
+    helpDialog->resize(400, 200); // Set the desired width and height
+
+    QVBoxLayout *layout = new QVBoxLayout(helpDialog);
+    helpOptions = new QComboBox(helpDialog);
+    helpContent = new QLabel(helpDialog);
+    helpContent->setWordWrap(true);
+    QPushButton *backButton = new QPushButton("Back", helpDialog);
+
+    layout->addWidget(helpOptions);
+    layout->addWidget(helpContent);
+    layout->addWidget(backButton);
+
+    connect(helpOptions, SIGNAL(currentIndexChanged(int)), this, SLOT(updateHelpContent()));
+    connect(backButton, &QPushButton::clicked, helpDialog, &QDialog::hide);
+
+    // Populate the combo box
+    foreach (const QString &key, helpTexts.keys()) {
+        helpOptions->addItem(key, helpTexts[key]);
+    }
+}
+
+
+void MainWindow::showHelpDialog() {
+    helpDialog->show();
+}
+
+void MainWindow::updateHelpContent() {
+    int index = helpOptions->currentIndex();
+    QString helpText = helpOptions->itemData(index).toString();
+    helpContent->setText(helpText);
+}
 
 void MainWindow::createLabelBody(QLabel *label, b2Body*& body) {
     b2BodyDef bodyDef;
