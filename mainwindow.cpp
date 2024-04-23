@@ -2,6 +2,7 @@
 #include "ui_mainwindow.h"
 #include <QDebug>
 #include "Trainingdialog.h"
+#include <QLabel>
 
 /**
  * @author Joseph Corbeil, Johnny Song, Ezekiel Jaramillo, Ahmed Zahran, Raj Reddy, Joel Ronca
@@ -13,7 +14,9 @@
 
 // Assuming PIXELS_PER_METER is defined as 100
 const float PIXELS_PER_METER = 100.0f;
-const float MAX_DISPLACEMENT = 3.0f; // Max displacement in pixels
+const float MAX_DISPLACEMENT = 2.0f; // Max displacement in pixels
+QLabel *movingLabel;
+b2Body *labelBody;
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow), levelsUi(new LevelsView()), world(new b2World(b2Vec2(0.0f, 0.0f))) {
@@ -39,6 +42,16 @@ MainWindow::MainWindow(QWidget *parent)
     originalXPlay = ui->playButton->x();
     originalXHelp = ui->helpButton->x();
     originalXQuit = ui->quitButton->x();
+
+    QPixmap gameTitle(":/icons/BitWiseTitle.png");
+    QSize scaledSize = gameTitle.size() * 0.8;
+    gameTitle= gameTitle.scaled(scaledSize, Qt::KeepAspectRatio, Qt::SmoothTransformation);
+    movingLabel = new QLabel(this);
+    movingLabel->setPixmap(gameTitle);
+    movingLabel->setFixedSize(gameTitle.size());// Ensure 'this' is the parent
+    movingLabel->setGeometry(10, 200, 200, 50); // Initial position and size
+    movingLabel->raise();  // Raise the QLabel to make sure it is on top
+    createLabelBody(movingLabel, labelBody);
 }
 
 MainWindow::~MainWindow()
@@ -56,6 +69,15 @@ void MainWindow::updatePhysics() {
     updateButtonPosition(ui->playButton, playButtonBody, originalXPlay);
     updateButtonPosition(ui->helpButton, helpButtonBody, originalXHelp);
     updateButtonPosition(ui->quitButton, quitButtonBody, originalXQuit);
+
+    b2Vec2 pos = labelBody->GetPosition();
+    int newX = static_cast<int>(pos.x * PIXELS_PER_METER);
+    if (newX > this->width()) {  // Check if the label moves off-screen
+        labelBody->SetTransform(b2Vec2(-movingLabel->width() / PIXELS_PER_METER, pos.y), 0);
+    }
+    else {
+        movingLabel->move(newX, movingLabel->y());
+    }
 }
 
 void MainWindow::updateButtonPosition(QPushButton *button, b2Body *body, int originalX) {
@@ -63,10 +85,17 @@ void MainWindow::updateButtonPosition(QPushButton *button, b2Body *body, int ori
     int newX = static_cast<int>(pos.x * PIXELS_PER_METER);
     button->move(newX, button->y());
 
-    // Reverse direction if max displacement is reached
-    if (newX > originalX + MAX_DISPLACEMENT || newX < originalX - MAX_DISPLACEMENT) {
-        b2Vec2 currentVelocity = body->GetLinearVelocity();
-        body->SetLinearVelocity(b2Vec2(-currentVelocity.x, 0)); // Reverse direction
+    const float hysteresis = 0.1f;  // Adjust this value based on testing
+
+
+    if (newX > originalX + MAX_DISPLACEMENT + hysteresis) {
+        if (body->GetLinearVelocity().x > 0) {  // Only reverse if currently moving right
+            body->SetLinearVelocity(b2Vec2(-std::abs(body->GetLinearVelocity().x), 0)); // Reverse direction
+        }
+    } else if (newX < originalX - MAX_DISPLACEMENT - hysteresis) {
+        if (body->GetLinearVelocity().x < 0) {  // Only reverse if currently moving left
+            body->SetLinearVelocity(b2Vec2(std::abs(body->GetLinearVelocity().x), 0)); // Reverse direction
+        }
     }
 }
 
@@ -99,7 +128,7 @@ bool MainWindow::eventFilter(QObject *obj, QEvent *event) {
     else if (button == ui->quitButton) body = quitButtonBody;
 
     if (body && event->type() == QEvent::HoverEnter) {
-        body->SetLinearVelocity(b2Vec2(1.0f, 0)); // Start moving right
+        body->SetLinearVelocity(b2Vec2(0.75f, 0)); // Start moving right
     } else if (body && event->type() == QEvent::HoverLeave) {
         body->SetLinearVelocity(b2Vec2(0, 0)); // Stop moving
         body->SetTransform(b2Vec2(button->x() / PIXELS_PER_METER, button->y() / PIXELS_PER_METER), body->GetAngle());
@@ -124,4 +153,24 @@ void MainWindow::on_playButton_clicked() {
 void MainWindow::moveHome()
 {
     ui->stackedWidget->setCurrentIndex(0);
+}
+
+
+void MainWindow::createLabelBody(QLabel *label, b2Body*& body) {
+    b2BodyDef bodyDef;
+    bodyDef.type = b2_kinematicBody;  // Using kinematic body for constant velocity
+    float initialX = label->x() / PIXELS_PER_METER;
+    float initialY = label->y() / PIXELS_PER_METER;
+    bodyDef.position.Set(initialX, initialY);
+    body = world->CreateBody(&bodyDef);
+
+    b2PolygonShape dynamicBox;
+    dynamicBox.SetAsBox(label->width() / 2.0f / PIXELS_PER_METER, label->height() / 2.0f / PIXELS_PER_METER);
+
+    b2FixtureDef fixtureDef;
+    fixtureDef.shape = &dynamicBox;
+    body->CreateFixture(&fixtureDef);
+
+    // Set initial velocity to move across the screen
+    body->SetLinearVelocity(b2Vec2(2.0f, 0)); // Adjust speed as needed
 }

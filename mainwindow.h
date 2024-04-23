@@ -71,6 +71,8 @@ private:
     /// @brief Updates the button position based on its physics body's status.
     void updateButtonPosition(QPushButton* button, b2Body* body, int height);
 
+    void createLabelBody(QLabel *label, b2Body*& body);
+
 private slots:
     /// @brief Updates the physics world and the positions of physics-enabled UI elements.
     void updatePhysics();
