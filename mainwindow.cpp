@@ -49,7 +49,7 @@ MainWindow::MainWindow(QWidget *parent)
     movingLabel = new QLabel(this);
     movingLabel->setPixmap(gameTitle);
     movingLabel->setFixedSize(gameTitle.size());// Ensure 'this' is the parent
-    movingLabel->setGeometry(10, 200, 200, 50); // Initial position and size
+    movingLabel->setGeometry(10, 175, 200, 50); // Initial position and size
     movingLabel->raise();  // Raise the QLabel to make sure it is on top
     createLabelBody(movingLabel, labelBody);
 }
@@ -138,6 +138,8 @@ bool MainWindow::eventFilter(QObject *obj, QEvent *event) {
 }
 
 void MainWindow::on_playButton_clicked() {
+    movingLabel->hide();
+    labelBody->SetLinearVelocity(b2Vec2(0, 0));
     qDebug() << "Current index before change:" << ui->stackedWidget->currentIndex();
     ui->stackedWidget->setCurrentIndex(ui->stackedWidget->indexOf(levelsUi));
     qDebug() << "Current index after change:" << ui->stackedWidget->currentIndex();
