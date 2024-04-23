@@ -147,7 +147,7 @@
     <number>2</number>
    </property>
    <property name="currentIndex">
-    <number>6</number>
+    <number>11</number>
    </property>
    <widget class="QWidget" name="level1">
     <property name="styleSheet">
@@ -454,6 +454,9 @@ color: rgb(255, 255, 255);</string>
        <height>41</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
+     </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
      </property>
@@ -526,6 +529,9 @@ color: rgb(255, 255, 255);</string>
        <width>41</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -646,6 +652,9 @@ color: rgb(255, 255, 255);</string>
        <height>41</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
+     </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
      </property>
@@ -676,6 +685,9 @@ color: rgb(255, 255, 255);</string>
        <width>41</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -835,6 +847,9 @@ color: rgb(255, 255, 255);</string>
        <height>41</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
+     </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
      </property>
@@ -865,6 +880,9 @@ color: rgb(255, 255, 255);</string>
        <width>41</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -1200,6 +1218,9 @@ color: rgb(255, 255, 255);</string>
        <height>41</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
+     </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
      </property>
@@ -1212,6 +1233,9 @@ color: rgb(255, 255, 255);</string>
        <width>41</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -1301,6 +1325,9 @@ color: rgb(255, 255, 255);</string>
        <height>41</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
+     </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
      </property>
@@ -1375,6 +1402,9 @@ color: rgb(255, 255, 255);</string>
        <width>41</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -1586,6 +1616,9 @@ color: rgb(255, 255, 255);</string>
        <height>41</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
+     </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
      </property>
@@ -1753,6 +1786,9 @@ color: rgb(255, 255, 255);</string>
        <height>41</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
+     </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
      </property>
@@ -1765,6 +1801,9 @@ color: rgb(255, 255, 255);</string>
        <width>41</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -1930,6 +1969,9 @@ color: rgb(255, 255, 255);</string>
        <height>41</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
+     </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
      </property>
@@ -2075,6 +2117,9 @@ color: rgb(255, 255, 255);</string>
        <height>41</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
+     </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
      </property>
@@ -2087,6 +2132,9 @@ color: rgb(255, 255, 255);</string>
        <width>41</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -2116,6 +2164,9 @@ color: rgb(255, 255, 255);</string>
        <width>41</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -2316,6 +2367,9 @@ color: rgb(255, 255, 255);</string>
        <height>41</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
+     </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
      </property>
@@ -2381,6 +2435,9 @@ color: rgb(255, 255, 255);</string>
        <width>41</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -2455,6 +2512,9 @@ color: rgb(255, 255, 255);</string>
        <height>41</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
+     </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
      </property>
@@ -2518,6 +2578,9 @@ color: rgb(255, 255, 255);</string>
        <width>41</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -2857,6 +2920,9 @@ color: rgb(255, 255, 255);</string>
        <height>41</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
+     </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
      </property>
@@ -2895,6 +2961,9 @@ color: rgb(255, 255, 255);</string>
        <width>41</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -2955,6 +3024,9 @@ color: rgb(255, 255, 255);</string>
        <height>41</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
+     </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
      </property>
@@ -2967,6 +3039,9 @@ color: rgb(255, 255, 255);</string>
        <width>41</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -2981,6 +3056,9 @@ color: rgb(255, 255, 255);</string>
        <height>41</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
+     </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
      </property>
@@ -2993,6 +3071,9 @@ color: rgb(255, 255, 255);</string>
        <width>41</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -3582,6 +3663,9 @@ color: rgb(255, 255, 255);</string>
        <height>41</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
+     </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
      </property>
@@ -3607,6 +3691,9 @@ color: rgb(255, 255, 255);</string>
        <width>41</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -3701,6 +3788,9 @@ color: rgb(255, 255, 255);</string>
        <height>41</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
+     </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
      </property>
@@ -3713,6 +3803,9 @@ color: rgb(255, 255, 255);</string>
        <width>41</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -3727,6 +3820,9 @@ color: rgb(255, 255, 255);</string>
        <height>41</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
+     </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
      </property>
@@ -3739,6 +3835,9 @@ color: rgb(255, 255, 255);</string>
        <width>41</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -4301,6 +4400,9 @@ color: rgb(255, 255, 255);</string>
        <bold>true</bold>
       </font>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: white;</string>
+     </property>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
      </property>
@@ -4354,6 +4456,9 @@ color: rgb(255, 255, 255);</string>
        <height>41</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
+     </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
      </property>
@@ -4388,6 +4493,9 @@ color: white;</string>
        <width>41</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -4434,6 +4542,9 @@ color: white;</string>
        <height>41</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
+     </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
      </property>
@@ -4446,6 +4557,9 @@ color: white;</string>
        <width>41</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -4460,6 +4574,9 @@ color: white;</string>
        <height>41</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
+     </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
      </property>
@@ -4472,6 +4589,9 @@ color: white;</string>
        <width>41</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -4486,6 +4606,9 @@ color: white;</string>
        <height>41</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
+     </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
      </property>
@@ -4498,6 +4621,9 @@ color: white;</string>
        <width>41</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -4913,7 +5039,7 @@ color: white;</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>

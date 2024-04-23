@@ -5,7 +5,7 @@
 
 // Assuming PIXELS_PER_METER is defined as 100
 const float PIXELS_PER_METER = 100.0f;
-const float MAX_DISPLACEMENT = 50.0f; // Max displacement in pixels
+const float MAX_DISPLACEMENT = 3.0f; // Max displacement in pixels
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow), levelsUi(new LevelsView()), world(new b2World(b2Vec2(0.0f, 0.0f))) {
