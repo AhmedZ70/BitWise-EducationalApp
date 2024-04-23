@@ -147,7 +147,7 @@
     <number>2</number>
    </property>
    <property name="currentIndex">
-    <number>0</number>
+    <number>6</number>
    </property>
    <widget class="QWidget" name="level1">
     <property name="styleSheet">
@@ -207,6 +207,9 @@ text-size: 50px; </string>
        <height>41</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
+     </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
      </property>
@@ -219,6 +222,9 @@ text-size: 50px; </string>
        <width>41</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -382,6 +388,9 @@ color: rgb(255, 255, 255);</string>
        <pointsize>9</pointsize>
       </font>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: white;</string>
+     </property>
      <property name="text">
       <string>Go Back To Level 1 </string>
      </property>
@@ -394,6 +403,9 @@ color: rgb(255, 255, 255);</string>
        <width>80</width>
        <height>24</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: white;</string>
      </property>
      <property name="text">
       <string>Home</string>
@@ -458,6 +470,9 @@ color: rgb(255, 255, 255);</string>
        <bold>true</bold>
       </font>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: white;</string>
+     </property>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
      </property>
@@ -479,6 +494,9 @@ color: rgb(255, 255, 255);</string>
        <width>80</width>
        <height>24</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: white;</string>
      </property>
      <property name="text">
       <string>Skip</string>
@@ -4223,6 +4241,9 @@ color: rgb(255, 255, 255);</string>
        <height>24</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: white;</string>
+     </property>
      <property name="text">
       <string>Skip</string>
      </property>
@@ -4302,6 +4323,9 @@ color: rgb(255, 255, 255);</string>
        <bold>true</bold>
       </font>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: white;</string>
+     </property>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
      </property>
@@ -4343,7 +4367,8 @@ color: rgb(255, 255, 255);</string>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-image: url(:/icons/background4.jpg);</string>
+      <string notr="true">background-image: url(:/icons/background4.jpg);
+color: white;</string>
      </property>
      <property name="text">
       <string>Go Back To Level 11</string>
@@ -4386,6 +4411,9 @@ color: rgb(255, 255, 255);</string>
        <width>80</width>
        <height>24</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: white;</string>
      </property>
      <property name="text">
       <string>Home</string>
