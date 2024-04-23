@@ -57,7 +57,7 @@
      </rect>
     </property>
     <property name="frameShape">
-     <enum>QFrame::Box</enum>
+     <enum>QFrame::Shape::Box</enum>
     </property>
     <property name="text">
      <string>OR_GATE</string>
@@ -73,7 +73,7 @@
      </rect>
     </property>
     <property name="frameShape">
-     <enum>QFrame::Box</enum>
+     <enum>QFrame::Shape::Box</enum>
     </property>
     <property name="text">
      <string>NAND_GATE</string>
@@ -92,7 +92,7 @@
      <string notr="true"/>
     </property>
     <property name="frameShape">
-     <enum>QFrame::Box</enum>
+     <enum>QFrame::Shape::Box</enum>
     </property>
     <property name="text">
      <string>NOR_Gate</string>
@@ -108,7 +108,7 @@
      </rect>
     </property>
     <property name="frameShape">
-     <enum>QFrame::Box</enum>
+     <enum>QFrame::Shape::Box</enum>
     </property>
     <property name="text">
      <string>XOR_GATE</string>
@@ -124,7 +124,7 @@
      </rect>
     </property>
     <property name="frameShape">
-     <enum>QFrame::Box</enum>
+     <enum>QFrame::Shape::Box</enum>
     </property>
     <property name="text">
      <string>NAND_GATE</string>
@@ -147,7 +147,7 @@
     <number>2</number>
    </property>
    <property name="currentIndex">
-    <number>8</number>
+    <number>11</number>
    </property>
    <widget class="QWidget" name="level1">
     <property name="styleSheet">
@@ -158,7 +158,7 @@
       <rect>
        <x>455</x>
        <y>20</y>
-       <width>291</width>
+       <width>381</width>
        <height>41</height>
       </rect>
      </property>
@@ -174,16 +174,16 @@ text-size: 50px;
 color: black;</string>
      </property>
      <property name="frameShape">
-      <enum>QFrame::Box</enum>
+      <enum>QFrame::Shape::Box</enum>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Raised</enum>
+      <enum>QFrame::Shadow::Raised</enum>
      </property>
      <property name="text">
       <string>Lesson ONE: Mastering the AND gate</string>
      </property>
      <property name="textFormat">
-      <enum>Qt::MarkdownText</enum>
+      <enum>Qt::TextFormat::MarkdownText</enum>
      </property>
     </widget>
     <widget class="QPushButton" name="goButtonLevelOne">
@@ -215,7 +215,7 @@ color: black;</string>
       <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="CustomLineEdit" name="levelOneInput2">
@@ -231,7 +231,7 @@ color: black;</string>
       <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="label">
@@ -254,16 +254,16 @@ color: black;</string>
 color: black;</string>
      </property>
      <property name="frameShape">
-      <enum>QFrame::Box</enum>
+      <enum>QFrame::Shape::Box</enum>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="text">
       <string>1</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="Line" name="line">
@@ -276,13 +276,13 @@ color: black;</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_2">
@@ -295,13 +295,13 @@ color: black;</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="QPushButton" name="homeButton">
@@ -346,7 +346,7 @@ color: black;</string>
       </rect>
      </property>
      <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
+      <enum>QFrame::Shape::NoFrame</enum>
      </property>
      <property name="lineWidth">
       <number>1</number>
@@ -362,13 +362,13 @@ color: black;</string>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="QTextBrowser" name="textBrowser">
@@ -377,7 +377,7 @@ color: black;</string>
        <x>910</x>
        <y>30</y>
        <width>341</width>
-       <height>321</height>
+       <height>541</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -389,8 +389,8 @@ color: black;</string>
   font-family: 'Segoe UI'; /* Modern font */
   font-size: 12pt; /* Font size */
   border-color: black;
-  color: black;
-  text-color: black;
+  color: black !important;
+  text-color: black !important;
 }
 
 QTextBrowser::hover {
@@ -434,28 +434,31 @@ hr { height: 1px; border-width: 0; }
 li.unchecked::marker { content: &quot;\2610&quot;; }
 li.checked::marker { content: &quot;\2612&quot;; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Welcome to the first challenge! Here, you will learn the power of logical thinking with the help of an AND gate.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700; color:#ffffff;&quot;&gt;Your Mission:&lt;/span&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt; Use the AND gate provided to solve the puzzle. You must arrange the inputs to match the preset output.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700; color:#ffffff;&quot;&gt;Instructions:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Welcome to the first challenge! Here, you will learn the power of logical thinking with the help of an AND gate.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700; color:#000000;&quot;&gt;Your Mission:&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt; Use the AND gate provided to solve the puzzle. You must arrange the inputs to match the preset output.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700; color:#000000;&quot;&gt;Instructions:&lt;/span&gt;&lt;/p&gt;
 &lt;ol style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;
-&lt;li style=&quot; color:#ffffff;&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Drag the AND gate to the designated area.&lt;/li&gt;
-&lt;li style=&quot; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Examine the preset output required for this level.&lt;/li&gt;
-&lt;li style=&quot; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Adjust the inputs to the AND gate so that the output matches the preset value.&lt;/li&gt;
-&lt;li style=&quot; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Once you believe you have the correct configuration, press &amp;quot;GO&amp;quot; to test your solution.&lt;/li&gt;&lt;/ol&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Remember, the AND gate only gives a TRUE output (1) when ALL inputs are TRUE (1). Good luck, and let the logic flow!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;li style=&quot; color:#000000;&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Drag the AND gate to the designated area.&lt;/li&gt;
+&lt;li style=&quot; color:#000000;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Examine the preset output required for this level.&lt;/li&gt;
+&lt;li style=&quot; color:#000000;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Adjust the inputs to the AND gate so that the output matches the preset value.&lt;/li&gt;
+&lt;li style=&quot; color:#000000;&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Once you believe you have the correct configuration, press &amp;quot;GO&amp;quot; to test your solution.&lt;/li&gt;&lt;/ol&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Remember, the AND gate only gives a TRUE output (1) when ALL inputs are TRUE (1). Good luck, and let the logic flow!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="skipTrainingLessons">
+    <widget class="QPushButton" name="skipTrainingButton">
      <property name="geometry">
       <rect>
-       <x>300</x>
+       <x>329</x>
        <y>20</y>
-       <width>141</width>
+       <width>111</width>
        <height>41</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
+     </property>
      <property name="text">
-      <string> Skip Training Lessons</string>
+      <string>Skip Training</string>
      </property>
     </widget>
     <zorder>label_2</zorder>
@@ -470,7 +473,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <zorder>line</zorder>
     <zorder>line_2</zorder>
     <zorder>textBrowser</zorder>
-    <zorder>skipTrainingLessons</zorder>
+    <zorder>skipTrainingButton</zorder>
    </widget>
    <widget class="QWidget" name="level2">
     <widget class="QPushButton" name="backToLevel1">
@@ -529,16 +532,16 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="frameShape">
-      <enum>QFrame::Box</enum>
+      <enum>QFrame::Shape::Box</enum>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="text">
       <string>1</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="CustomLineEdit" name="levelTwoInput1">
@@ -554,7 +557,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="label_5">
@@ -562,7 +565,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <rect>
        <x>455</x>
        <y>20</y>
-       <width>251</width>
+       <width>331</width>
        <height>41</height>
       </rect>
      </property>
@@ -576,16 +579,16 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="frameShape">
-      <enum>QFrame::Box</enum>
+      <enum>QFrame::Shape::Box</enum>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Raised</enum>
+      <enum>QFrame::Shadow::Raised</enum>
      </property>
      <property name="text">
       <string>Lesson TWO: Mastering OR gate</string>
      </property>
      <property name="textFormat">
-      <enum>Qt::MarkdownText</enum>
+      <enum>Qt::TextFormat::MarkdownText</enum>
      </property>
     </widget>
     <widget class="QPushButton" name="skipButton_2">
@@ -633,7 +636,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="Custom_GraphicsView" name="gateOneLevel2">
@@ -646,7 +649,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
+      <enum>QFrame::Shape::NoFrame</enum>
      </property>
      <property name="lineWidth">
       <number>1</number>
@@ -662,13 +665,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_6">
@@ -681,13 +684,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_4">
@@ -700,13 +703,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="QTextBrowser" name="textBrowser_2">
@@ -715,7 +718,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <x>910</x>
        <y>30</y>
        <width>341</width>
-       <height>261</height>
+       <height>541</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -771,14 +774,14 @@ hr { height: 1px; border-width: 0; }
 li.unchecked::marker { content: &quot;\2610&quot;; }
 li.checked::marker { content: &quot;\2612&quot;; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Your Mission: Utilize the OR gate provided to unravel the puzzle. You need to arrange the inputs to align with the given output.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Instructions:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Your Mission: Utilize the OR gate provided to unravel the puzzle. You need to arrange the inputs to align with the given output.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Instructions:&lt;/span&gt;&lt;/p&gt;
 &lt;ol style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;
-&lt;li style=&quot; color:#ffffff;&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Drag the OR gate to the indicated spot.&lt;/li&gt;
-&lt;li style=&quot; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Look over the required output for this stage.&lt;/li&gt;
-&lt;li style=&quot; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Adjust the inputs to the OR gate until the output corresponds with the predetermined value.&lt;/li&gt;
-&lt;li style=&quot; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;When you're convinced your setup is accurate, hit &amp;quot;GO&amp;quot; to check your solution.&lt;/li&gt;&lt;/ol&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Keep in mind, the OR gate delivers a TRUE output (1) if ANY of the inputs are TRUE (1). Best of luck, and may the logic be in your favor!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;li style=&quot; color:#000000;&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Drag the OR gate to the indicated spot.&lt;/li&gt;
+&lt;li style=&quot; color:#000000;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Look over the required output for this stage.&lt;/li&gt;
+&lt;li style=&quot; color:#000000;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Adjust the inputs to the OR gate until the output corresponds with the predetermined value.&lt;/li&gt;
+&lt;li style=&quot; color:#000000;&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;When you're convinced your setup is accurate, hit &amp;quot;GO&amp;quot; to check your solution.&lt;/li&gt;&lt;/ol&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Keep in mind, the OR gate delivers a TRUE output (1) if ANY of the inputs are TRUE (1). Best of luck, and may the logic be in your favor!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
    </widget>
@@ -805,16 +808,16 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="frameShape">
-      <enum>QFrame::Box</enum>
+      <enum>QFrame::Shape::Box</enum>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="text">
       <string>1</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="CustomLineEdit" name="levelThreeInput1">
@@ -830,7 +833,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="QPushButton" name="backToLevel1_2">
@@ -867,7 +870,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="QPushButton" name="goButtonLevelThree">
@@ -896,7 +899,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
+      <enum>QFrame::Shape::NoFrame</enum>
      </property>
      <property name="lineWidth">
       <number>1</number>
@@ -923,7 +926,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <rect>
        <x>455</x>
        <y>20</y>
-       <width>321</width>
+       <width>421</width>
        <height>41</height>
       </rect>
      </property>
@@ -937,16 +940,16 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="frameShape">
-      <enum>QFrame::Box</enum>
+      <enum>QFrame::Shape::Box</enum>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Raised</enum>
+      <enum>QFrame::Shadow::Raised</enum>
      </property>
      <property name="text">
       <string>Lesson THREE: Mastering the NAND gate</string>
      </property>
      <property name="textFormat">
-      <enum>Qt::MarkdownText</enum>
+      <enum>Qt::TextFormat::MarkdownText</enum>
      </property>
     </widget>
     <widget class="QPushButton" name="homeButton_3">
@@ -975,13 +978,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_9">
@@ -994,13 +997,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_10">
@@ -1013,13 +1016,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="QTextBrowser" name="textBrowser_3">
@@ -1028,7 +1031,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <x>910</x>
        <y>30</y>
        <width>341</width>
-       <height>291</height>
+       <height>541</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -1084,16 +1087,16 @@ hr { height: 1px; border-width: 0; }
 li.unchecked::marker { content: &quot;\2610&quot;; }
 li.checked::marker { content: &quot;\2612&quot;; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Your Mission: Utilize the NAND gate provided to solve the puzzle. You need to arrange the inputs to align with the given output.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Instructions:&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;1. Drag the NAND gate to the indicated spot.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;2. Look over the required output for this stage.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;3. Adjust the inputs to the NAND gate until the output corresponds with the predetermined value.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;4. When you're convinced your setup is accurate, hit &amp;quot;GO&amp;quot; to check your solution.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Keep in mind, the NAND gate delivers a TRUE output (1) unless ALL of the inputs are TRUE (1). In that case, it delivers a FALSE output (0). Best of luck, and may the logic be in your favor!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Your Mission: Utilize the NAND gate provided to solve the puzzle. You need to arrange the inputs to align with the given output.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Instructions:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt;1. Drag the NAND gate to the indicated spot.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt;2. Look over the required output for this stage.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt;3. Adjust the inputs to the NAND gate until the output corresponds with the predetermined value.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt;4. When you're convinced your setup is accurate, hit &amp;quot;GO&amp;quot; to check your solution.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Keep in mind, the NAND gate delivers a TRUE output (1) unless ALL of the inputs are TRUE (1). In that case, it delivers a FALSE output (0). Best of luck, and may the logic be in your favor!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
    </widget>
@@ -1114,7 +1117,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="QPushButton" name="backToLevel1_3">
@@ -1151,7 +1154,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="QPushButton" name="goButtonLevelFour">
@@ -1180,7 +1183,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
+      <enum>QFrame::Shape::NoFrame</enum>
      </property>
      <property name="lineWidth">
       <number>1</number>
@@ -1205,16 +1208,16 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="frameShape">
-      <enum>QFrame::Box</enum>
+      <enum>QFrame::Shape::Box</enum>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="text">
       <string>1</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="QPushButton" name="skipButton_4">
@@ -1238,7 +1241,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <rect>
        <x>455</x>
        <y>20</y>
-       <width>301</width>
+       <width>391</width>
        <height>41</height>
       </rect>
      </property>
@@ -1252,16 +1255,16 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="frameShape">
-      <enum>QFrame::Box</enum>
+      <enum>QFrame::Shape::Box</enum>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Raised</enum>
+      <enum>QFrame::Shadow::Raised</enum>
      </property>
      <property name="text">
       <string>Lesson FOUR: Mastering the NOR gate</string>
      </property>
      <property name="textFormat">
-      <enum>Qt::MarkdownText</enum>
+      <enum>Qt::TextFormat::MarkdownText</enum>
      </property>
     </widget>
     <widget class="QPushButton" name="homeButton_4">
@@ -1290,13 +1293,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_12">
@@ -1309,13 +1312,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_11">
@@ -1328,13 +1331,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="QTextBrowser" name="textBrowser_4">
@@ -1343,7 +1346,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <x>910</x>
        <y>30</y>
        <width>341</width>
-       <height>291</height>
+       <height>541</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -1399,14 +1402,14 @@ hr { height: 1px; border-width: 0; }
 li.unchecked::marker { content: &quot;\2610&quot;; }
 li.checked::marker { content: &quot;\2612&quot;; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Your Mission: Utilize the NOR gate provided to solve the puzzle. You need to arrange the inputs to align with the given output.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Instructions:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Your Mission: Utilize the NOR gate provided to solve the puzzle. You need to arrange the inputs to align with the given output.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Instructions:&lt;/span&gt;&lt;/p&gt;
 &lt;ol style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;
-&lt;li style=&quot; color:#ffffff;&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Drag the NOR gate to the indicated spot.&lt;/li&gt;
-&lt;li style=&quot; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Look over the required output for this stage.&lt;/li&gt;
-&lt;li style=&quot; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Adjust the inputs to the NOR gate until the output corresponds with the predetermined value.&lt;/li&gt;
-&lt;li style=&quot; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;When you're convinced your setup is accurate, hit &amp;quot;GO&amp;quot; to check your solution.&lt;/li&gt;&lt;/ol&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Keep in mind, the NOR gate delivers a TRUE output (1) only when ALL inputs are FALSE (0). If any input is TRUE (1), the output will be FALSE (0). Best of luck, and may the logic be in your favor!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;li style=&quot; color:#000000;&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Drag the NOR gate to the indicated spot.&lt;/li&gt;
+&lt;li style=&quot; color:#000000;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Look over the required output for this stage.&lt;/li&gt;
+&lt;li style=&quot; color:#000000;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Adjust the inputs to the NOR gate until the output corresponds with the predetermined value.&lt;/li&gt;
+&lt;li style=&quot; color:#000000;&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;When you're convinced your setup is accurate, hit &amp;quot;GO&amp;quot; to check your solution.&lt;/li&gt;&lt;/ol&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Keep in mind, the NOR gate delivers a TRUE output (1) only when ALL inputs are FALSE (0). If any input is TRUE (1), the output will be FALSE (0). Best of luck, and may the logic be in your favor!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
    </widget>
@@ -1461,13 +1464,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Shadow::Plain</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="QPushButton" name="homeButton_5">
@@ -1491,7 +1494,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <rect>
        <x>455</x>
        <y>20</y>
-       <width>291</width>
+       <width>381</width>
        <height>41</height>
       </rect>
      </property>
@@ -1505,16 +1508,16 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="frameShape">
-      <enum>QFrame::Box</enum>
+      <enum>QFrame::Shape::Box</enum>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Raised</enum>
+      <enum>QFrame::Shadow::Raised</enum>
      </property>
      <property name="text">
       <string>Lesson FIVE: Mastering the XOR gate</string>
      </property>
      <property name="textFormat">
-      <enum>Qt::MarkdownText</enum>
+      <enum>Qt::TextFormat::MarkdownText</enum>
      </property>
     </widget>
     <widget class="QPushButton" name="goButtonLevelFive">
@@ -1543,7 +1546,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
+      <enum>QFrame::Shape::NoFrame</enum>
      </property>
      <property name="lineWidth">
       <number>1</number>
@@ -1568,16 +1571,16 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="frameShape">
-      <enum>QFrame::Box</enum>
+      <enum>QFrame::Shape::Box</enum>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="text">
       <string>1</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="CustomLineEdit" name="levelFiveInput2">
@@ -1593,7 +1596,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="CustomLineEdit" name="levelFiveInput1">
@@ -1609,7 +1612,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="Line" name="line_16">
@@ -1622,13 +1625,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_17">
@@ -1641,13 +1644,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_19">
@@ -1660,13 +1663,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="QTextBrowser" name="textBrowser_5">
@@ -1675,7 +1678,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <x>910</x>
        <y>30</y>
        <width>341</width>
-       <height>291</height>
+       <height>541</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -1731,14 +1734,14 @@ hr { height: 1px; border-width: 0; }
 li.unchecked::marker { content: &quot;\2610&quot;; }
 li.checked::marker { content: &quot;\2612&quot;; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Your Mission: Utilize the XOR gate provided to solve the puzzle. You need to arrange the inputs to align with the given output.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Instructions:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Your Mission: Utilize the XOR gate provided to solve the puzzle. You need to arrange the inputs to align with the given output.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Instructions:&lt;/span&gt;&lt;/p&gt;
 &lt;ol style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;
-&lt;li style=&quot; color:#ffffff;&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Drag the XOR gate to the indicated spot.&lt;/li&gt;
-&lt;li style=&quot; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Look over the required output for this stage.&lt;/li&gt;
-&lt;li style=&quot; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Adjust the inputs to the XOR gate until the output corresponds with the predetermined value.&lt;/li&gt;
-&lt;li style=&quot; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;When you're convinced your setup is accurate, hit &amp;quot;GO&amp;quot; to check your solution.&lt;/li&gt;&lt;/ol&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Remember, the XOR gate delivers a TRUE output (1) only when ONE of the inputs is TRUE (1). If both inputs are the same, the output will be FALSE (0). Best of luck, and may the logic be in your favor!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;li style=&quot; color:#000000;&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Drag the XOR gate to the indicated spot.&lt;/li&gt;
+&lt;li style=&quot; color:#000000;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Look over the required output for this stage.&lt;/li&gt;
+&lt;li style=&quot; color:#000000;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Adjust the inputs to the XOR gate until the output corresponds with the predetermined value.&lt;/li&gt;
+&lt;li style=&quot; color:#000000;&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;When you're convinced your setup is accurate, hit &amp;quot;GO&amp;quot; to check your solution.&lt;/li&gt;&lt;/ol&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Remember, the XOR gate delivers a TRUE output (1) only when ONE of the inputs is TRUE (1). If both inputs are the same, the output will be FALSE (0). Best of luck, and may the logic be in your favor!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
    </widget>
@@ -1775,7 +1778,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="QPushButton" name="backToLevel1_5">
@@ -1809,7 +1812,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
+      <enum>QFrame::Shape::NoFrame</enum>
      </property>
      <property name="lineWidth">
       <number>1</number>
@@ -1834,16 +1837,16 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="frameShape">
-      <enum>QFrame::Box</enum>
+      <enum>QFrame::Shape::Box</enum>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="text">
       <string>1</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="CustomLineEdit" name="level6Input1">
@@ -1859,7 +1862,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="QPushButton" name="skipButton_6">
@@ -1899,7 +1902,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <rect>
        <x>455</x>
        <y>20</y>
-       <width>271</width>
+       <width>361</width>
        <height>41</height>
       </rect>
      </property>
@@ -1913,16 +1916,16 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="frameShape">
-      <enum>QFrame::Box</enum>
+      <enum>QFrame::Shape::Box</enum>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Raised</enum>
+      <enum>QFrame::Shadow::Raised</enum>
      </property>
      <property name="text">
       <string>Lesson SIX: Masterig the NOT gate</string>
      </property>
      <property name="textFormat">
-      <enum>Qt::MarkdownText</enum>
+      <enum>Qt::TextFormat::MarkdownText</enum>
      </property>
     </widget>
     <widget class="Line" name="line_21">
@@ -1935,13 +1938,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_22">
@@ -1954,13 +1957,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_23">
@@ -1973,13 +1976,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_20">
@@ -1992,13 +1995,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="QLabel" name="intializedNotGate">
@@ -2020,7 +2023,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <x>910</x>
        <y>30</y>
        <width>341</width>
-       <height>291</height>
+       <height>541</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -2076,14 +2079,14 @@ hr { height: 1px; border-width: 0; }
 li.unchecked::marker { content: &quot;\2610&quot;; }
 li.checked::marker { content: &quot;\2612&quot;; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt; color:#ffffff;&quot;&gt;Your Mission: Employ any logic gate available to you to complete the puzzle successfully. The goal is to configure the circuit such that you achieve the desired output.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt; color:#ffffff;&quot;&gt;Instructions:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt; color:#000000;&quot;&gt;Your Mission: Employ any logic gate available to you to complete the puzzle successfully. The goal is to configure the circuit such that you achieve the desired output.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt; color:#000000;&quot;&gt;Instructions:&lt;/span&gt;&lt;/p&gt;
 &lt;ol style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;
-&lt;li style=&quot; font-size:11pt; color:#ffffff;&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Drag any gate to the workspace to create a working circuit with the NOT gate.&lt;/li&gt;
-&lt;li style=&quot; font-size:11pt; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Observe the required output for this challenge.&lt;/li&gt;
-&lt;li style=&quot; font-size:11pt; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Combine the gates to invert the input, as a NOT gate would.&lt;/li&gt;
-&lt;li style=&quot; font-size:11pt; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Once you have constructed a circuit that you believe will produce the correct output, press &amp;quot;GO&amp;quot; to test your logic.&lt;/li&gt;&lt;/ol&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt; color:#ffffff;&quot;&gt;Remember, the NOT gate outputs the opposite of the input signal: if the input is TRUE (1), the output will be FALSE (0), and vice versa. This challenge may require using more than just a NOT gate to achieve the correct output. Good luck!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;li style=&quot; font-size:11pt; color:#000000;&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Drag any gate to the workspace to create a working circuit with the NOT gate.&lt;/li&gt;
+&lt;li style=&quot; font-size:11pt; color:#000000;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Observe the required output for this challenge.&lt;/li&gt;
+&lt;li style=&quot; font-size:11pt; color:#000000;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Combine the gates to invert the input, as a NOT gate would.&lt;/li&gt;
+&lt;li style=&quot; font-size:11pt; color:#000000;&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Once you have constructed a circuit that you believe will produce the correct output, press &amp;quot;GO&amp;quot; to test your logic.&lt;/li&gt;&lt;/ol&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt; color:#000000;&quot;&gt;Remember, the NOT gate outputs the opposite of the input signal: if the input is TRUE (1), the output will be FALSE (0), and vice versa. This challenge may require using more than just a NOT gate to achieve the correct output. Good luck!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
     <zorder>intializedNotGate</zorder>
@@ -2116,7 +2119,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
+      <enum>QFrame::Shape::NoFrame</enum>
      </property>
      <property name="lineWidth">
       <number>1</number>
@@ -2132,13 +2135,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="CustomLineEdit" name="level7Input2">
@@ -2154,7 +2157,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="Line" name="line_26">
@@ -2167,13 +2170,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="QPushButton" name="homeButton_7">
@@ -2248,16 +2251,16 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="frameShape">
-      <enum>QFrame::Box</enum>
+      <enum>QFrame::Shape::Box</enum>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="text">
       <string>1</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="label_15">
@@ -2265,7 +2268,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <rect>
        <x>455</x>
        <y>20</y>
-       <width>71</width>
+       <width>81</width>
        <height>41</height>
       </rect>
      </property>
@@ -2279,16 +2282,16 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="frameShape">
-      <enum>QFrame::Box</enum>
+      <enum>QFrame::Shape::Box</enum>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Raised</enum>
+      <enum>QFrame::Shadow::Raised</enum>
      </property>
      <property name="text">
       <string>Level 1</string>
      </property>
      <property name="textFormat">
-      <enum>Qt::MarkdownText</enum>
+      <enum>Qt::TextFormat::MarkdownText</enum>
      </property>
     </widget>
     <widget class="QPushButton" name="skipButton_7">
@@ -2317,13 +2320,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="CustomLineEdit" name="level7Input1">
@@ -2339,7 +2342,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="CustomLineEdit" name="level7Input3">
@@ -2355,7 +2358,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="Custom_GraphicsView" name="gateTwoLevel7">
@@ -2368,7 +2371,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
+      <enum>QFrame::Shape::NoFrame</enum>
      </property>
      <property name="lineWidth">
       <number>1</number>
@@ -2384,13 +2387,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Vertical</enum>
+      <enum>Qt::Orientation::Vertical</enum>
      </property>
     </widget>
     <widget class="Line" name="line_15">
@@ -2403,13 +2406,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_25">
@@ -2422,13 +2425,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_28">
@@ -2441,13 +2444,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="QTextBrowser" name="textBrowser_7">
@@ -2456,7 +2459,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <x>910</x>
        <y>30</y>
        <width>341</width>
-       <height>161</height>
+       <height>281</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -2512,7 +2515,7 @@ hr { height: 1px; border-width: 0; }
 li.unchecked::marker { content: &quot;\2610&quot;; }
 li.checked::marker { content: &quot;\2612&quot;; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Congratulations on completing the lessons! Now it's time to put your understanding to the test in the next six levels, starting with this one. Carefully select and drag the right gates, and set the inputs to reach the predetermined output. Use your knowledge of logic gates to build circuits that work as expected. The correct configuration is key, so think logically and proceed when you're ready. Good luck, and let's see you apply your skills!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Congratulations on completing the lessons! Now it's time to put your understanding to the test in the next six levels, starting with this one. Carefully select and drag the right gates, and set the inputs to reach the predetermined output. Use your knowledge of logic gates to build circuits that work as expected. The correct configuration is key, so think logically and proceed when you're ready. Good luck, and let's see you apply your skills!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
    </widget>
@@ -2530,7 +2533,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
+      <enum>QFrame::Shape::NoFrame</enum>
      </property>
      <property name="lineWidth">
       <number>1</number>
@@ -2546,13 +2549,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_30">
@@ -2565,13 +2568,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="CustomLineEdit" name="level8Input2">
@@ -2587,7 +2590,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="QPushButton" name="homeButton_8">
@@ -2662,16 +2665,16 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="frameShape">
-      <enum>QFrame::Box</enum>
+      <enum>QFrame::Shape::Box</enum>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="text">
       <string>1</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="label_17">
@@ -2693,16 +2696,16 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="frameShape">
-      <enum>QFrame::Box</enum>
+      <enum>QFrame::Shape::Box</enum>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Raised</enum>
+      <enum>QFrame::Shadow::Raised</enum>
      </property>
      <property name="text">
       <string>Level 2</string>
      </property>
      <property name="textFormat">
-      <enum>Qt::MarkdownText</enum>
+      <enum>Qt::TextFormat::MarkdownText</enum>
      </property>
     </widget>
     <widget class="QPushButton" name="skipButton_8">
@@ -2731,13 +2734,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="CustomLineEdit" name="level8Input1">
@@ -2753,7 +2756,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="CustomLineEdit" name="level8Input4">
@@ -2769,7 +2772,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="Custom_GraphicsView" name="gateTwoLevel8">
@@ -2782,7 +2785,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
+      <enum>QFrame::Shape::NoFrame</enum>
      </property>
      <property name="lineWidth">
       <number>1</number>
@@ -2801,7 +2804,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="Line" name="line_31">
@@ -2814,13 +2817,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_34">
@@ -2833,13 +2836,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_33">
@@ -2852,13 +2855,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_18">
@@ -2871,13 +2874,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Vertical</enum>
+      <enum>Qt::Orientation::Vertical</enum>
      </property>
     </widget>
     <widget class="Line" name="line_35">
@@ -2890,13 +2893,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Vertical</enum>
+      <enum>Qt::Orientation::Vertical</enum>
      </property>
     </widget>
     <widget class="Custom_GraphicsView" name="gateThreeLevel8">
@@ -2909,7 +2912,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
+      <enum>QFrame::Shape::NoFrame</enum>
      </property>
      <property name="lineWidth">
       <number>1</number>
@@ -2925,13 +2928,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_37">
@@ -2944,13 +2947,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_38">
@@ -2963,13 +2966,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="QTextBrowser" name="textBrowser_8">
@@ -2978,7 +2981,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <x>910</x>
        <y>30</y>
        <width>341</width>
-       <height>101</height>
+       <height>171</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -3035,9 +3038,9 @@ li.unchecked::marker { content: &quot;\2610&quot;; }
 li.checked::marker { content: &quot;\2612&quot;; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;
-&lt;li style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt; Drag the appropriate logic gates onto the circuit board.&lt;/span&gt;&lt;/li&gt;
-&lt;li style=&quot; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt; Enter the correct inputs to achieve the preset output.&lt;/li&gt;
-&lt;li style=&quot; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt; Test your configuration by pressing &amp;quot;GO&amp;quot;.&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;li style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt; Drag the appropriate logic gates onto the circuit board.&lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot; color:#000000;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt; Enter the correct inputs to achieve the preset output.&lt;/li&gt;
+&lt;li style=&quot; color:#000000;&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt; Test your configuration by pressing &amp;quot;GO&amp;quot;.&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
    </widget>
@@ -3074,7 +3077,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="Line" name="line_39">
@@ -3087,13 +3090,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="QPushButton" name="backToLevel1_8">
@@ -3127,7 +3130,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
+      <enum>QFrame::Shape::NoFrame</enum>
      </property>
      <property name="lineWidth">
       <number>1</number>
@@ -3146,7 +3149,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="label_18">
@@ -3168,16 +3171,16 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="frameShape">
-      <enum>QFrame::Box</enum>
+      <enum>QFrame::Shape::Box</enum>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="text">
       <string>1</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="Custom_GraphicsView" name="gateThreeLevel9">
@@ -3190,7 +3193,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
+      <enum>QFrame::Shape::NoFrame</enum>
      </property>
      <property name="lineWidth">
       <number>1</number>
@@ -3206,7 +3209,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
+      <enum>QFrame::Shape::NoFrame</enum>
      </property>
      <property name="lineWidth">
       <number>1</number>
@@ -3225,7 +3228,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="Line" name="line_43">
@@ -3241,13 +3244,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_44">
@@ -3260,13 +3263,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="QPushButton" name="goButtonLevelNine">
@@ -3298,7 +3301,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="label_19">
@@ -3320,16 +3323,16 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="frameShape">
-      <enum>QFrame::Box</enum>
+      <enum>QFrame::Shape::Box</enum>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Raised</enum>
+      <enum>QFrame::Shadow::Raised</enum>
      </property>
      <property name="text">
       <string>Level 3</string>
      </property>
      <property name="textFormat">
-      <enum>Qt::MarkdownText</enum>
+      <enum>Qt::TextFormat::MarkdownText</enum>
      </property>
     </widget>
     <widget class="Line" name="line_45">
@@ -3342,13 +3345,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Vertical</enum>
+      <enum>Qt::Orientation::Vertical</enum>
      </property>
     </widget>
     <widget class="QPushButton" name="homeButton_9">
@@ -3378,13 +3381,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_47">
@@ -3397,13 +3400,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_48">
@@ -3416,13 +3419,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Vertical</enum>
+      <enum>Qt::Orientation::Vertical</enum>
      </property>
     </widget>
     <widget class="Line" name="line_49">
@@ -3435,13 +3438,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_50">
@@ -3454,13 +3457,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Vertical</enum>
+      <enum>Qt::Orientation::Vertical</enum>
      </property>
     </widget>
     <widget class="Line" name="line_51">
@@ -3473,13 +3476,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_52">
@@ -3492,13 +3495,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Vertical</enum>
+      <enum>Qt::Orientation::Vertical</enum>
      </property>
     </widget>
     <widget class="Line" name="line_53">
@@ -3511,13 +3514,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_54">
@@ -3530,13 +3533,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Vertical</enum>
+      <enum>Qt::Orientation::Vertical</enum>
      </property>
     </widget>
     <widget class="Line" name="line_55">
@@ -3549,13 +3552,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_42">
@@ -3568,13 +3571,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_41">
@@ -3587,13 +3590,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_40">
@@ -3606,13 +3609,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="QTextBrowser" name="textBrowser_9">
@@ -3621,13 +3624,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <x>910</x>
        <y>30</y>
        <width>341</width>
-       <height>101</height>
+       <height>171</height>
       </rect>
      </property>
      <property name="styleSheet">
       <string notr="true">QTextBrowser {
   background-color: #f5f5f5; /* Light grey background */
-  color: black;
+  color: black !important;
   border: 3px solid #cccccc; /* Light grey border */
   border-radius: 5px; /* Rounded corners */
   border-color: black;
@@ -3719,7 +3722,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="QPushButton" name="homeButton_10">
@@ -3767,7 +3770,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="QPushButton" name="backToLevel1_9">
@@ -3810,16 +3813,16 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="frameShape">
-      <enum>QFrame::Box</enum>
+      <enum>QFrame::Shape::Box</enum>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Raised</enum>
+      <enum>QFrame::Shadow::Raised</enum>
      </property>
      <property name="text">
       <string>Level 4</string>
      </property>
      <property name="textFormat">
-      <enum>Qt::MarkdownText</enum>
+      <enum>Qt::TextFormat::MarkdownText</enum>
      </property>
     </widget>
     <widget class="CustomLineEdit" name="level10Input3">
@@ -3835,7 +3838,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="CustomLineEdit" name="level10Input4">
@@ -3851,7 +3854,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="CustomLineEdit" name="level10Input5">
@@ -3867,7 +3870,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="CustomLineEdit" name="level10Input6">
@@ -3883,7 +3886,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="Line" name="line_117">
@@ -3896,13 +3899,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Custom_GraphicsView" name="gateOneLevel10">
@@ -3915,7 +3918,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
+      <enum>QFrame::Shape::NoFrame</enum>
      </property>
      <property name="lineWidth">
       <number>1</number>
@@ -3931,7 +3934,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
+      <enum>QFrame::Shape::NoFrame</enum>
      </property>
      <property name="lineWidth">
       <number>1</number>
@@ -3960,13 +3963,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Custom_GraphicsView" name="gateFourLevel10">
@@ -3979,7 +3982,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
+      <enum>QFrame::Shape::NoFrame</enum>
      </property>
      <property name="lineWidth">
       <number>1</number>
@@ -3995,7 +3998,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
+      <enum>QFrame::Shape::NoFrame</enum>
      </property>
      <property name="lineWidth">
       <number>1</number>
@@ -4011,13 +4014,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_127">
@@ -4030,13 +4033,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_129">
@@ -4049,13 +4052,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Custom_GraphicsView" name="gateFiveLevel10">
@@ -4068,7 +4071,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
+      <enum>QFrame::Shape::NoFrame</enum>
      </property>
      <property name="lineWidth">
       <number>1</number>
@@ -4084,13 +4087,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_131">
@@ -4103,13 +4106,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_58">
@@ -4128,13 +4131,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </size>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Vertical</enum>
+      <enum>Qt::Orientation::Vertical</enum>
      </property>
     </widget>
     <widget class="Line" name="line_59">
@@ -4153,13 +4156,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </size>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Vertical</enum>
+      <enum>Qt::Orientation::Vertical</enum>
      </property>
     </widget>
     <widget class="QLabel" name="label_20">
@@ -4181,16 +4184,16 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="frameShape">
-      <enum>QFrame::Box</enum>
+      <enum>QFrame::Shape::Box</enum>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="text">
       <string>1</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="Line" name="line_132">
@@ -4203,13 +4206,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_134">
@@ -4222,13 +4225,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_135">
@@ -4241,13 +4244,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_136">
@@ -4260,13 +4263,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_118">
@@ -4279,13 +4282,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_128">
@@ -4298,13 +4301,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_124">
@@ -4317,13 +4320,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_137">
@@ -4336,13 +4339,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_138">
@@ -4355,13 +4358,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_126">
@@ -4374,13 +4377,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_57">
@@ -4393,13 +4396,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Vertical</enum>
+      <enum>Qt::Orientation::Vertical</enum>
      </property>
     </widget>
     <widget class="Line" name="line_56">
@@ -4412,13 +4415,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Vertical</enum>
+      <enum>Qt::Orientation::Vertical</enum>
      </property>
     </widget>
     <widget class="Line" name="line_139">
@@ -4431,13 +4434,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_60">
@@ -4450,13 +4453,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Vertical</enum>
+      <enum>Qt::Orientation::Vertical</enum>
      </property>
     </widget>
     <widget class="QTextBrowser" name="textBrowser_10">
@@ -4465,7 +4468,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <x>910</x>
        <y>30</y>
        <width>341</width>
-       <height>111</height>
+       <height>171</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -4522,9 +4525,9 @@ li.unchecked::marker { content: &quot;\2610&quot;; }
 li.checked::marker { content: &quot;\2612&quot;; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;
-&lt;li style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt; Drag the appropriate logic gates onto the circuit board.&lt;/span&gt;&lt;/li&gt;
-&lt;li style=&quot; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt; Enter the correct inputs to achieve the preset output.&lt;/li&gt;
-&lt;li style=&quot; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt; Test your configuration by pressing &amp;quot;GO&amp;quot;.&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;li style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt; Drag the appropriate logic gates onto the circuit board.&lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot; color:#000000;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt; Enter the correct inputs to achieve the preset output.&lt;/li&gt;
+&lt;li style=&quot; color:#000000;&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt; Test your configuration by pressing &amp;quot;GO&amp;quot;.&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
    </widget>
@@ -4545,7 +4548,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="QPushButton" name="goButtonLevelEleven">
@@ -4577,7 +4580,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="QPushButton" name="skipButton_11">
@@ -4606,7 +4609,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
+      <enum>QFrame::Shape::NoFrame</enum>
      </property>
      <property name="lineWidth">
       <number>1</number>
@@ -4622,13 +4625,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="QPushButton" name="homeButton_11">
@@ -4657,13 +4660,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="CustomLineEdit" name="level11Input4">
@@ -4679,7 +4682,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="CustomLineEdit" name="level11Input5">
@@ -4695,7 +4698,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="CustomLineEdit" name="level11Input6">
@@ -4711,7 +4714,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="CustomLineEdit" name="level11Input1">
@@ -4727,7 +4730,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="Custom_GraphicsView" name="gateTwoLevel11">
@@ -4740,7 +4743,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
+      <enum>QFrame::Shape::NoFrame</enum>
      </property>
      <property name="lineWidth">
       <number>1</number>
@@ -4756,13 +4759,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_65">
@@ -4775,13 +4778,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Custom_GraphicsView" name="gateThreeLevel11">
@@ -4794,7 +4797,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
+      <enum>QFrame::Shape::NoFrame</enum>
      </property>
      <property name="lineWidth">
       <number>1</number>
@@ -4810,13 +4813,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_61">
@@ -4829,13 +4832,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Vertical</enum>
+      <enum>Qt::Orientation::Vertical</enum>
      </property>
     </widget>
     <widget class="Line" name="line_71">
@@ -4848,13 +4851,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Vertical</enum>
+      <enum>Qt::Orientation::Vertical</enum>
      </property>
     </widget>
     <widget class="Custom_GraphicsView" name="gateFourLevel11">
@@ -4867,7 +4870,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
+      <enum>QFrame::Shape::NoFrame</enum>
      </property>
      <property name="lineWidth">
       <number>1</number>
@@ -4883,13 +4886,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="QLabel" name="label_23">
@@ -4930,16 +4933,16 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="frameShape">
-      <enum>QFrame::Box</enum>
+      <enum>QFrame::Shape::Box</enum>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="text">
       <string>1</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="label_25">
@@ -4961,16 +4964,16 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="frameShape">
-      <enum>QFrame::Box</enum>
+      <enum>QFrame::Shape::Box</enum>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="text">
       <string>0</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="label_40">
@@ -4992,16 +4995,16 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="frameShape">
-      <enum>QFrame::Box</enum>
+      <enum>QFrame::Shape::Box</enum>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Raised</enum>
+      <enum>QFrame::Shadow::Raised</enum>
      </property>
      <property name="text">
       <string>Level 5</string>
      </property>
      <property name="textFormat">
-      <enum>Qt::MarkdownText</enum>
+      <enum>Qt::TextFormat::MarkdownText</enum>
      </property>
     </widget>
     <widget class="Custom_GraphicsView" name="gateFiveLevel11">
@@ -5014,7 +5017,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
+      <enum>QFrame::Shape::NoFrame</enum>
      </property>
      <property name="lineWidth">
       <number>1</number>
@@ -5030,13 +5033,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_123">
@@ -5049,13 +5052,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_69">
@@ -5068,13 +5071,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_72">
@@ -5087,13 +5090,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_66">
@@ -5106,13 +5109,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_67">
@@ -5125,13 +5128,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_73">
@@ -5144,13 +5147,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_76">
@@ -5163,13 +5166,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="QPushButton" name="backToLevel1_12">
@@ -5203,13 +5206,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_83">
@@ -5222,13 +5225,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Vertical</enum>
+      <enum>Qt::Orientation::Vertical</enum>
      </property>
     </widget>
     <widget class="QTextBrowser" name="textBrowser_11">
@@ -5237,7 +5240,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <x>910</x>
        <y>30</y>
        <width>341</width>
-       <height>111</height>
+       <height>171</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -5294,9 +5297,9 @@ li.unchecked::marker { content: &quot;\2610&quot;; }
 li.checked::marker { content: &quot;\2612&quot;; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;
-&lt;li style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt; Drag the appropriate logic gates onto the circuit board.&lt;/span&gt;&lt;/li&gt;
-&lt;li style=&quot; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt; Enter the correct inputs to achieve the preset output.&lt;/li&gt;
-&lt;li style=&quot; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt; Test your configuration by pressing &amp;quot;GO&amp;quot;.&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;li style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt; Drag the appropriate logic gates onto the circuit board.&lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot; color:#000000;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt; Enter the correct inputs to achieve the preset output.&lt;/li&gt;
+&lt;li style=&quot; color:#000000;&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt; Test your configuration by pressing &amp;quot;GO&amp;quot;.&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
    </widget>
@@ -5327,13 +5330,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Vertical</enum>
+      <enum>Qt::Orientation::Vertical</enum>
      </property>
     </widget>
     <widget class="QPushButton" name="goButtonLevelTwelve">
@@ -5371,16 +5374,16 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="frameShape">
-      <enum>QFrame::Box</enum>
+      <enum>QFrame::Shape::Box</enum>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="text">
       <string>1</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="label_41">
@@ -5402,16 +5405,16 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="frameShape">
-      <enum>QFrame::Box</enum>
+      <enum>QFrame::Shape::Box</enum>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="text">
       <string>Level 6</string>
      </property>
      <property name="textFormat">
-      <enum>Qt::MarkdownText</enum>
+      <enum>Qt::TextFormat::MarkdownText</enum>
      </property>
     </widget>
     <widget class="CustomLineEdit" name="level12Input1">
@@ -5427,7 +5430,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="QPushButton" name="backToLevel1_11">
@@ -5464,7 +5467,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="Custom_GraphicsView" name="gateFiveLevel12">
@@ -5477,7 +5480,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
+      <enum>QFrame::Shape::NoFrame</enum>
      </property>
      <property name="lineWidth">
       <number>1</number>
@@ -5512,7 +5515,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="CustomLineEdit" name="level12Input4">
@@ -5528,7 +5531,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="CustomLineEdit" name="level12Input5">
@@ -5544,7 +5547,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="CustomLineEdit" name="level12Input6">
@@ -5560,7 +5563,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="CustomLineEdit" name="level12Input7">
@@ -5576,7 +5579,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="CustomLineEdit" name="level12Input8">
@@ -5592,7 +5595,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">color: black;</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="Custom_GraphicsView" name="gateOneLevel12">
@@ -5605,7 +5608,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
+      <enum>QFrame::Shape::NoFrame</enum>
      </property>
      <property name="lineWidth">
       <number>1</number>
@@ -5621,13 +5624,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Custom_GraphicsView" name="gateTwoLevel12">
@@ -5640,7 +5643,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
+      <enum>QFrame::Shape::NoFrame</enum>
      </property>
      <property name="lineWidth">
       <number>1</number>
@@ -5656,7 +5659,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
+      <enum>QFrame::Shape::NoFrame</enum>
      </property>
      <property name="lineWidth">
       <number>1</number>
@@ -5672,7 +5675,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
+      <enum>QFrame::Shape::NoFrame</enum>
      </property>
      <property name="lineWidth">
       <number>1</number>
@@ -5688,13 +5691,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_152">
@@ -5707,13 +5710,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_75">
@@ -5726,13 +5729,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Vertical</enum>
+      <enum>Qt::Orientation::Vertical</enum>
      </property>
     </widget>
     <widget class="Line" name="line_155">
@@ -5745,13 +5748,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Custom_GraphicsView" name="gateSixLevel12">
@@ -5764,7 +5767,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
+      <enum>QFrame::Shape::NoFrame</enum>
      </property>
      <property name="lineWidth">
       <number>1</number>
@@ -5780,32 +5783,32 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Vertical</enum>
+      <enum>Qt::Orientation::Vertical</enum>
      </property>
     </widget>
     <widget class="Line" name="line_156">
      <property name="geometry">
       <rect>
-       <x>410</x>
+       <x>408</x>
        <y>471</y>
        <width>102</width>
        <height>16</height>
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_157">
@@ -5818,13 +5821,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_158">
@@ -5837,13 +5840,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_159">
@@ -5856,13 +5859,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_81">
@@ -5875,13 +5878,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Vertical</enum>
+      <enum>Qt::Orientation::Vertical</enum>
      </property>
     </widget>
     <widget class="Line" name="line_82">
@@ -5894,13 +5897,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Vertical</enum>
+      <enum>Qt::Orientation::Vertical</enum>
      </property>
     </widget>
     <widget class="Custom_GraphicsView" name="gateSevenLevel12">
@@ -5913,7 +5916,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
+      <enum>QFrame::Shape::NoFrame</enum>
      </property>
      <property name="lineWidth">
       <number>1</number>
@@ -5929,13 +5932,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_161">
@@ -5948,13 +5951,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="QLabel" name="label_27">
@@ -5970,7 +5973,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string notr="true">background-image: url(:/icons/wallpaper5.png);</string>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="text">
       <string/>
@@ -5986,13 +5989,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
+      <enum>QFrame::Shadow::Plain</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_164">
@@ -6005,13 +6008,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_149">
@@ -6024,13 +6027,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_150">
@@ -6043,13 +6046,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_165">
@@ -6062,13 +6065,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_166">
@@ -6081,13 +6084,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_167">
@@ -6100,13 +6103,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_147">
@@ -6119,13 +6122,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_146">
@@ -6138,13 +6141,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_154">
@@ -6157,13 +6160,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_80">
@@ -6176,13 +6179,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Vertical</enum>
+      <enum>Qt::Orientation::Vertical</enum>
      </property>
     </widget>
     <widget class="Line" name="line_153">
@@ -6195,13 +6198,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Shadow::Sunken</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="Line" name="line_160">
@@ -6214,13 +6217,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </rect>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Raised</enum>
+      <enum>QFrame::Shadow::Raised</enum>
      </property>
      <property name="lineWidth">
       <number>2</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
     <widget class="QTextBrowser" name="textBrowser_12">
@@ -6229,7 +6232,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <x>910</x>
        <y>30</y>
        <width>341</width>
-       <height>111</height>
+       <height>171</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -6286,9 +6289,9 @@ li.unchecked::marker { content: &quot;\2610&quot;; }
 li.checked::marker { content: &quot;\2612&quot;; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;
-&lt;li style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt; Drag the appropriate logic gates onto the circuit board.&lt;/span&gt;&lt;/li&gt;
-&lt;li style=&quot; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt; Enter the correct inputs to achieve the preset output.&lt;/li&gt;
-&lt;li style=&quot; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt; Test your configuration by pressing &amp;quot;GO&amp;quot;.&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;li style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt; Drag the appropriate logic gates onto the circuit board.&lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot; color:#000000;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt; Enter the correct inputs to achieve the preset output.&lt;/li&gt;
+&lt;li style=&quot; color:#000000;&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt; Test your configuration by pressing &amp;quot;GO&amp;quot;.&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
    </widget>
