@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1400</width>
+    <width>1300</width>
     <height>800</height>
    </rect>
   </property>
@@ -147,7 +147,7 @@
     <number>2</number>
    </property>
    <property name="currentIndex">
-    <number>0</number>
+    <number>11</number>
    </property>
    <widget class="QWidget" name="level1">
     <property name="styleSheet">
@@ -156,9 +156,9 @@
     <widget class="QLabel" name="label_2">
      <property name="geometry">
       <rect>
-       <x>390</x>
+       <x>455</x>
        <y>20</y>
-       <width>91</width>
+       <width>391</width>
        <height>41</height>
       </rect>
      </property>
@@ -179,7 +179,7 @@ text-size: 50px; </string>
       <enum>QFrame::Raised</enum>
      </property>
      <property name="text">
-      <string>Level ONE</string>
+      <string>Lesson ONE: Mastering the AND gate</string>
      </property>
      <property name="textFormat">
       <enum>Qt::MarkdownText</enum>
@@ -355,6 +355,78 @@ color: rgb(255, 255, 255);</string>
       <enum>Qt::Horizontal</enum>
      </property>
     </widget>
+    <widget class="QTextBrowser" name="textBrowser">
+     <property name="geometry">
+      <rect>
+       <x>910</x>
+       <y>30</y>
+       <width>341</width>
+       <height>501</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTextBrowser {
+  background-color: #f5f5f5; /* Light grey background */
+  color: #333333; /* Dark grey text */
+  border: 1px solid #cccccc; /* Light grey border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px; /* Spacing between text and border */
+  font-family: 'Segoe UI'; /* Modern font */
+  font-size: 12pt; /* Font size */
+}
+
+QTextBrowser::hover {
+  border-color: #a0a0a0; /* Darker border on hover */
+}
+
+QTextBrowser QScrollBar:vertical {
+  border: none;
+  background: #e0e0e0; /* Scrollbar track color */
+  width: 10px; /* Width of the scrollbar */
+  margin: 10px 0 10px 0; /* Top and bottom margin */
+  border-radius: 4px; /* Rounded corners for scrollbar */
+}
+
+QTextBrowser QScrollBar::handle:vertical {
+  background: #a5d6a7; /* Color of the scrollbar handle */
+  min-height: 20px; /* Minimum handle size */
+  border-radius: 4px; /* Rounded corners for handle */
+}
+
+QTextBrowser QScrollBar::handle:vertical:hover {
+  background: #81c784; /* Scrollbar handle color when hovered */
+}
+
+QTextBrowser QScrollBar::add-line:vertical,
+QTextBrowser QScrollBar::sub-line:vertical {
+  border: none;
+  background: none; /* No arrows at the top and bottom */
+}
+
+QTextBrowser QScrollBar::add-page:vertical,
+QTextBrowser QScrollBar::sub-page:vertical {
+  background: none; /* No background for the area between handle and buttons */
+}</string>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Welcome to the first challenge! Here, you will learn the power of logical thinking with the help of an AND gate.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700; color:#ffffff;&quot;&gt;Your Mission:&lt;/span&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt; Use the AND gate provided to solve the puzzle. You must arrange the inputs to match the preset output.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700; color:#ffffff;&quot;&gt;Instructions:&lt;/span&gt;&lt;/p&gt;
+&lt;ol style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;
+&lt;li style=&quot; color:#ffffff;&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Drag the AND gate to the designated area.&lt;/li&gt;
+&lt;li style=&quot; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Examine the preset output required for this level.&lt;/li&gt;
+&lt;li style=&quot; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Adjust the inputs to the AND gate so that the output matches the preset value.&lt;/li&gt;
+&lt;li style=&quot; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Once you believe you have the correct configuration, press &amp;quot;GO&amp;quot; to test your solution.&lt;/li&gt;&lt;/ol&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Remember, the AND gate only gives a TRUE output (1) when ALL inputs are TRUE (1). Good luck, and let the logic flow!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
     <zorder>label_2</zorder>
     <zorder>goButtonLevelOne</zorder>
     <zorder>levelOneInput1</zorder>
@@ -366,6 +438,7 @@ color: rgb(255, 255, 255);</string>
     <zorder>line_3</zorder>
     <zorder>line</zorder>
     <zorder>line_2</zorder>
+    <zorder>textBrowser</zorder>
    </widget>
    <widget class="QWidget" name="level2">
     <widget class="QPushButton" name="backToLevel1">
@@ -446,10 +519,10 @@ color: rgb(255, 255, 255);</string>
     <widget class="QLabel" name="label_5">
      <property name="geometry">
       <rect>
-       <x>370</x>
-       <y>10</y>
-       <width>91</width>
-       <height>51</height>
+       <x>455</x>
+       <y>20</y>
+       <width>391</width>
+       <height>41</height>
       </rect>
      </property>
      <property name="font">
@@ -465,7 +538,7 @@ color: rgb(255, 255, 255);</string>
       <enum>QFrame::Raised</enum>
      </property>
      <property name="text">
-      <string>Level TWO</string>
+      <string>Lesson TWO: Mastering OR gate</string>
      </property>
      <property name="textFormat">
       <enum>Qt::MarkdownText</enum>
@@ -581,6 +654,77 @@ color: rgb(255, 255, 255);</string>
      </property>
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser_2">
+     <property name="geometry">
+      <rect>
+       <x>910</x>
+       <y>30</y>
+       <width>341</width>
+       <height>501</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTextBrowser {
+  background-color: #f5f5f5; /* Light grey background */
+  color: #333333; /* Dark grey text */
+  border: 1px solid #cccccc; /* Light grey border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px; /* Spacing between text and border */
+  font-family: 'Segoe UI'; /* Modern font */
+  font-size: 12pt; /* Font size */
+}
+
+QTextBrowser::hover {
+  border-color: #a0a0a0; /* Darker border on hover */
+}
+
+QTextBrowser QScrollBar:vertical {
+  border: none;
+  background: #e0e0e0; /* Scrollbar track color */
+  width: 10px; /* Width of the scrollbar */
+  margin: 10px 0 10px 0; /* Top and bottom margin */
+  border-radius: 4px; /* Rounded corners for scrollbar */
+}
+
+QTextBrowser QScrollBar::handle:vertical {
+  background: #a5d6a7; /* Color of the scrollbar handle */
+  min-height: 20px; /* Minimum handle size */
+  border-radius: 4px; /* Rounded corners for handle */
+}
+
+QTextBrowser QScrollBar::handle:vertical:hover {
+  background: #81c784; /* Scrollbar handle color when hovered */
+}
+
+QTextBrowser QScrollBar::add-line:vertical,
+QTextBrowser QScrollBar::sub-line:vertical {
+  border: none;
+  background: none; /* No arrows at the top and bottom */
+}
+
+QTextBrowser QScrollBar::add-page:vertical,
+QTextBrowser QScrollBar::sub-page:vertical {
+  background: none; /* No background for the area between handle and buttons */
+}</string>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Your Mission: Utilize the OR gate provided to unravel the puzzle. You need to arrange the inputs to align with the given output.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Instructions:&lt;/span&gt;&lt;/p&gt;
+&lt;ol style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;
+&lt;li style=&quot; color:#ffffff;&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Drag the OR gate to the indicated spot.&lt;/li&gt;
+&lt;li style=&quot; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Look over the required output for this stage.&lt;/li&gt;
+&lt;li style=&quot; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Adjust the inputs to the OR gate until the output corresponds with the predetermined value.&lt;/li&gt;
+&lt;li style=&quot; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;When you're convinced your setup is accurate, hit &amp;quot;GO&amp;quot; to check your solution.&lt;/li&gt;&lt;/ol&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Keep in mind, the OR gate delivers a TRUE output (1) if ANY of the inputs are TRUE (1). Best of luck, and may the logic be in your favor!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
    </widget>
@@ -705,10 +849,10 @@ color: rgb(255, 255, 255);</string>
     <widget class="QLabel" name="label_6">
      <property name="geometry">
       <rect>
-       <x>410</x>
-       <y>10</y>
-       <width>101</width>
-       <height>51</height>
+       <x>455</x>
+       <y>20</y>
+       <width>420</width>
+       <height>41</height>
       </rect>
      </property>
      <property name="font">
@@ -724,7 +868,7 @@ color: rgb(255, 255, 255);</string>
       <enum>QFrame::Raised</enum>
      </property>
      <property name="text">
-      <string>Level Three</string>
+      <string>Lesson THREE: Mastering the NAND gate</string>
      </property>
      <property name="textFormat">
       <enum>Qt::MarkdownText</enum>
@@ -800,6 +944,79 @@ color: rgb(255, 255, 255);</string>
       <enum>Qt::Horizontal</enum>
      </property>
     </widget>
+    <widget class="QTextBrowser" name="textBrowser_3">
+     <property name="geometry">
+      <rect>
+       <x>910</x>
+       <y>30</y>
+       <width>341</width>
+       <height>501</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTextBrowser {
+  background-color: #f5f5f5; /* Light grey background */
+  color: #333333; /* Dark grey text */
+  border: 1px solid #cccccc; /* Light grey border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px; /* Spacing between text and border */
+  font-family: 'Segoe UI'; /* Modern font */
+  font-size: 12pt; /* Font size */
+}
+
+QTextBrowser::hover {
+  border-color: #a0a0a0; /* Darker border on hover */
+}
+
+QTextBrowser QScrollBar:vertical {
+  border: none;
+  background: #e0e0e0; /* Scrollbar track color */
+  width: 10px; /* Width of the scrollbar */
+  margin: 10px 0 10px 0; /* Top and bottom margin */
+  border-radius: 4px; /* Rounded corners for scrollbar */
+}
+
+QTextBrowser QScrollBar::handle:vertical {
+  background: #a5d6a7; /* Color of the scrollbar handle */
+  min-height: 20px; /* Minimum handle size */
+  border-radius: 4px; /* Rounded corners for handle */
+}
+
+QTextBrowser QScrollBar::handle:vertical:hover {
+  background: #81c784; /* Scrollbar handle color when hovered */
+}
+
+QTextBrowser QScrollBar::add-line:vertical,
+QTextBrowser QScrollBar::sub-line:vertical {
+  border: none;
+  background: none; /* No arrows at the top and bottom */
+}
+
+QTextBrowser QScrollBar::add-page:vertical,
+QTextBrowser QScrollBar::sub-page:vertical {
+  background: none; /* No background for the area between handle and buttons */
+}</string>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Your Mission: Utilize the NAND gate provided to solve the puzzle. You need to arrange the inputs to align with the given output.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Instructions:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;1. Drag the NAND gate to the indicated spot.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;2. Look over the required output for this stage.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;3. Adjust the inputs to the NAND gate until the output corresponds with the predetermined value.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;4. When you're convinced your setup is accurate, hit &amp;quot;GO&amp;quot; to check your solution.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Keep in mind, the NAND gate delivers a TRUE output (1) unless ALL of the inputs are TRUE (1). In that case, it delivers a FALSE output (0). Best of luck, and may the logic be in your favor!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
    </widget>
    <widget class="QWidget" name="level4">
     <property name="styleSheet">
@@ -833,7 +1050,7 @@ color: rgb(255, 255, 255);</string>
       </font>
      </property>
      <property name="text">
-      <string>Go Back To Level 3 </string>
+      <string>Go Back To lesson 3 </string>
      </property>
     </widget>
     <widget class="CustomLineEdit" name="levelFourInput2">
@@ -922,10 +1139,10 @@ color: rgb(255, 255, 255);</string>
     <widget class="QLabel" name="label_9">
      <property name="geometry">
       <rect>
-       <x>390</x>
-       <y>10</y>
-       <width>91</width>
-       <height>51</height>
+       <x>455</x>
+       <y>20</y>
+       <width>391</width>
+       <height>41</height>
       </rect>
      </property>
      <property name="font">
@@ -941,7 +1158,7 @@ color: rgb(255, 255, 255);</string>
       <enum>QFrame::Raised</enum>
      </property>
      <property name="text">
-      <string>Level Four</string>
+      <string>Lesson FOUR: Mastering the NOR gate</string>
      </property>
      <property name="textFormat">
       <enum>Qt::MarkdownText</enum>
@@ -1017,6 +1234,77 @@ color: rgb(255, 255, 255);</string>
       <enum>Qt::Horizontal</enum>
      </property>
     </widget>
+    <widget class="QTextBrowser" name="textBrowser_4">
+     <property name="geometry">
+      <rect>
+       <x>910</x>
+       <y>30</y>
+       <width>341</width>
+       <height>501</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTextBrowser {
+  background-color: #f5f5f5; /* Light grey background */
+  color: #333333; /* Dark grey text */
+  border: 1px solid #cccccc; /* Light grey border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px; /* Spacing between text and border */
+  font-family: 'Segoe UI'; /* Modern font */
+  font-size: 12pt; /* Font size */
+}
+
+QTextBrowser::hover {
+  border-color: #a0a0a0; /* Darker border on hover */
+}
+
+QTextBrowser QScrollBar:vertical {
+  border: none;
+  background: #e0e0e0; /* Scrollbar track color */
+  width: 10px; /* Width of the scrollbar */
+  margin: 10px 0 10px 0; /* Top and bottom margin */
+  border-radius: 4px; /* Rounded corners for scrollbar */
+}
+
+QTextBrowser QScrollBar::handle:vertical {
+  background: #a5d6a7; /* Color of the scrollbar handle */
+  min-height: 20px; /* Minimum handle size */
+  border-radius: 4px; /* Rounded corners for handle */
+}
+
+QTextBrowser QScrollBar::handle:vertical:hover {
+  background: #81c784; /* Scrollbar handle color when hovered */
+}
+
+QTextBrowser QScrollBar::add-line:vertical,
+QTextBrowser QScrollBar::sub-line:vertical {
+  border: none;
+  background: none; /* No arrows at the top and bottom */
+}
+
+QTextBrowser QScrollBar::add-page:vertical,
+QTextBrowser QScrollBar::sub-page:vertical {
+  background: none; /* No background for the area between handle and buttons */
+}</string>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Your Mission: Utilize the NOR gate provided to solve the puzzle. You need to arrange the inputs to align with the given output.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Instructions:&lt;/span&gt;&lt;/p&gt;
+&lt;ol style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;
+&lt;li style=&quot; color:#ffffff;&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Drag the NOR gate to the indicated spot.&lt;/li&gt;
+&lt;li style=&quot; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Look over the required output for this stage.&lt;/li&gt;
+&lt;li style=&quot; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Adjust the inputs to the NOR gate until the output corresponds with the predetermined value.&lt;/li&gt;
+&lt;li style=&quot; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;When you're convinced your setup is accurate, hit &amp;quot;GO&amp;quot; to check your solution.&lt;/li&gt;&lt;/ol&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Keep in mind, the NOR gate delivers a TRUE output (1) only when ALL inputs are FALSE (0). If any input is TRUE (1), the output will be FALSE (0). Best of luck, and may the logic be in your favor!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
    </widget>
    <widget class="QWidget" name="level5">
     <property name="styleSheet">
@@ -1088,10 +1376,10 @@ color: rgb(255, 255, 255);</string>
     <widget class="QLabel" name="label_10">
      <property name="geometry">
       <rect>
-       <x>410</x>
-       <y>10</y>
-       <width>91</width>
-       <height>51</height>
+       <x>455</x>
+       <y>20</y>
+       <width>391</width>
+       <height>41</height>
       </rect>
      </property>
      <property name="font">
@@ -1107,7 +1395,7 @@ color: rgb(255, 255, 255);</string>
       <enum>QFrame::Raised</enum>
      </property>
      <property name="text">
-      <string>Level Five</string>
+      <string>Lesson FIVE: Mastering the XOR gate</string>
      </property>
      <property name="textFormat">
       <enum>Qt::MarkdownText</enum>
@@ -1253,6 +1541,77 @@ color: rgb(255, 255, 255);</string>
       <enum>Qt::Horizontal</enum>
      </property>
     </widget>
+    <widget class="QTextBrowser" name="textBrowser_5">
+     <property name="geometry">
+      <rect>
+       <x>910</x>
+       <y>30</y>
+       <width>341</width>
+       <height>501</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTextBrowser {
+  background-color: #f5f5f5; /* Light grey background */
+  color: #333333; /* Dark grey text */
+  border: 1px solid #cccccc; /* Light grey border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px; /* Spacing between text and border */
+  font-family: 'Segoe UI'; /* Modern font */
+  font-size: 12pt; /* Font size */
+}
+
+QTextBrowser::hover {
+  border-color: #a0a0a0; /* Darker border on hover */
+}
+
+QTextBrowser QScrollBar:vertical {
+  border: none;
+  background: #e0e0e0; /* Scrollbar track color */
+  width: 10px; /* Width of the scrollbar */
+  margin: 10px 0 10px 0; /* Top and bottom margin */
+  border-radius: 4px; /* Rounded corners for scrollbar */
+}
+
+QTextBrowser QScrollBar::handle:vertical {
+  background: #a5d6a7; /* Color of the scrollbar handle */
+  min-height: 20px; /* Minimum handle size */
+  border-radius: 4px; /* Rounded corners for handle */
+}
+
+QTextBrowser QScrollBar::handle:vertical:hover {
+  background: #81c784; /* Scrollbar handle color when hovered */
+}
+
+QTextBrowser QScrollBar::add-line:vertical,
+QTextBrowser QScrollBar::sub-line:vertical {
+  border: none;
+  background: none; /* No arrows at the top and bottom */
+}
+
+QTextBrowser QScrollBar::add-page:vertical,
+QTextBrowser QScrollBar::sub-page:vertical {
+  background: none; /* No background for the area between handle and buttons */
+}</string>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Your Mission: Utilize the XOR gate provided to solve the puzzle. You need to arrange the inputs to align with the given output.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Instructions:&lt;/span&gt;&lt;/p&gt;
+&lt;ol style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;
+&lt;li style=&quot; color:#ffffff;&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Drag the XOR gate to the indicated spot.&lt;/li&gt;
+&lt;li style=&quot; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Look over the required output for this stage.&lt;/li&gt;
+&lt;li style=&quot; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Adjust the inputs to the XOR gate until the output corresponds with the predetermined value.&lt;/li&gt;
+&lt;li style=&quot; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;When you're convinced your setup is accurate, hit &amp;quot;GO&amp;quot; to check your solution.&lt;/li&gt;&lt;/ol&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Remember, the XOR gate delivers a TRUE output (1) only when ONE of the inputs is TRUE (1). If both inputs are the same, the output will be FALSE (0). Best of luck, and may the logic be in your favor!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
    </widget>
    <widget class="QWidget" name="level6">
     <property name="styleSheet">
@@ -1388,10 +1747,10 @@ color: rgb(255, 255, 255);</string>
     <widget class="QLabel" name="label_13">
      <property name="geometry">
       <rect>
-       <x>420</x>
-       <y>10</y>
-       <width>81</width>
-       <height>51</height>
+       <x>455</x>
+       <y>20</y>
+       <width>391</width>
+       <height>41</height>
       </rect>
      </property>
      <property name="font">
@@ -1407,7 +1766,7 @@ color: rgb(255, 255, 255);</string>
       <enum>QFrame::Raised</enum>
      </property>
      <property name="text">
-      <string>Level Six</string>
+      <string>Lesson SIX: Masterig the NOT gate</string>
      </property>
      <property name="textFormat">
       <enum>Qt::MarkdownText</enum>
@@ -1502,6 +1861,77 @@ color: rgb(255, 255, 255);</string>
       <string>TextLabel</string>
      </property>
     </widget>
+    <widget class="QTextBrowser" name="textBrowser_6">
+     <property name="geometry">
+      <rect>
+       <x>910</x>
+       <y>30</y>
+       <width>341</width>
+       <height>501</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTextBrowser {
+  background-color: #f5f5f5; /* Light grey background */
+  color: #333333; /* Dark grey text */
+  border: 1px solid #cccccc; /* Light grey border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px; /* Spacing between text and border */
+  font-family: 'Segoe UI'; /* Modern font */
+  font-size: 12pt; /* Font size */
+}
+
+QTextBrowser::hover {
+  border-color: #a0a0a0; /* Darker border on hover */
+}
+
+QTextBrowser QScrollBar:vertical {
+  border: none;
+  background: #e0e0e0; /* Scrollbar track color */
+  width: 10px; /* Width of the scrollbar */
+  margin: 10px 0 10px 0; /* Top and bottom margin */
+  border-radius: 4px; /* Rounded corners for scrollbar */
+}
+
+QTextBrowser QScrollBar::handle:vertical {
+  background: #a5d6a7; /* Color of the scrollbar handle */
+  min-height: 20px; /* Minimum handle size */
+  border-radius: 4px; /* Rounded corners for handle */
+}
+
+QTextBrowser QScrollBar::handle:vertical:hover {
+  background: #81c784; /* Scrollbar handle color when hovered */
+}
+
+QTextBrowser QScrollBar::add-line:vertical,
+QTextBrowser QScrollBar::sub-line:vertical {
+  border: none;
+  background: none; /* No arrows at the top and bottom */
+}
+
+QTextBrowser QScrollBar::add-page:vertical,
+QTextBrowser QScrollBar::sub-page:vertical {
+  background: none; /* No background for the area between handle and buttons */
+}</string>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt; color:#ffffff;&quot;&gt;Your Mission: Employ any logic gate available to you to complete the puzzle successfully. The goal is to configure the circuit such that you achieve the desired output.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt; color:#ffffff;&quot;&gt;Instructions:&lt;/span&gt;&lt;/p&gt;
+&lt;ol style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;
+&lt;li style=&quot; font-size:11pt; color:#ffffff;&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Drag any gate to the workspace to create a working circuit with the NOT gate.&lt;/li&gt;
+&lt;li style=&quot; font-size:11pt; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Observe the required output for this challenge.&lt;/li&gt;
+&lt;li style=&quot; font-size:11pt; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Combine the gates to invert the input, as a NOT gate would.&lt;/li&gt;
+&lt;li style=&quot; font-size:11pt; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Once you have constructed a circuit that you believe will produce the correct output, press &amp;quot;GO&amp;quot; to test your logic.&lt;/li&gt;&lt;/ol&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt; color:#ffffff;&quot;&gt;Remember, the NOT gate outputs the opposite of the input signal: if the input is TRUE (1), the output will be FALSE (0), and vice versa. This challenge may require using more than just a NOT gate to achieve the correct output. Good luck!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
     <zorder>intializedNotGate</zorder>
     <zorder>goButtonLevelSix</zorder>
     <zorder>level6Input2</zorder>
@@ -1516,6 +1946,7 @@ color: rgb(255, 255, 255);</string>
     <zorder>line_22</zorder>
     <zorder>line_23</zorder>
     <zorder>line_20</zorder>
+    <zorder>textBrowser_6</zorder>
    </widget>
    <widget class="QWidget" name="level7">
     <property name="styleSheet">
@@ -1629,7 +2060,7 @@ color: rgb(255, 255, 255);</string>
       </font>
      </property>
      <property name="text">
-      <string>Go Back To Level 6</string>
+      <string>Go Back To Lesson 6</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_14">
@@ -1663,10 +2094,10 @@ color: rgb(255, 255, 255);</string>
     <widget class="QLabel" name="label_15">
      <property name="geometry">
       <rect>
-       <x>380</x>
-       <y>10</y>
-       <width>101</width>
-       <height>51</height>
+       <x>455</x>
+       <y>20</y>
+       <width>85</width>
+       <height>41</height>
       </rect>
      </property>
      <property name="font">
@@ -1682,7 +2113,7 @@ color: rgb(255, 255, 255);</string>
       <enum>QFrame::Raised</enum>
      </property>
      <property name="text">
-      <string>Level Seven</string>
+      <string>Level 1</string>
      </property>
      <property name="textFormat">
       <enum>Qt::MarkdownText</enum>
@@ -1838,6 +2269,70 @@ color: rgb(255, 255, 255);</string>
       <enum>Qt::Horizontal</enum>
      </property>
     </widget>
+    <widget class="QTextBrowser" name="textBrowser_7">
+     <property name="geometry">
+      <rect>
+       <x>910</x>
+       <y>30</y>
+       <width>341</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTextBrowser {
+  background-color: #f5f5f5; /* Light grey background */
+  color: #333333; /* Dark grey text */
+  border: 1px solid #cccccc; /* Light grey border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px; /* Spacing between text and border */
+  font-family: 'Segoe UI'; /* Modern font */
+  font-size: 12pt; /* Font size */
+}
+
+QTextBrowser::hover {
+  border-color: #a0a0a0; /* Darker border on hover */
+}
+
+QTextBrowser QScrollBar:vertical {
+  border: none;
+  background: #e0e0e0; /* Scrollbar track color */
+  width: 10px; /* Width of the scrollbar */
+  margin: 10px 0 10px 0; /* Top and bottom margin */
+  border-radius: 4px; /* Rounded corners for scrollbar */
+}
+
+QTextBrowser QScrollBar::handle:vertical {
+  background: #a5d6a7; /* Color of the scrollbar handle */
+  min-height: 20px; /* Minimum handle size */
+  border-radius: 4px; /* Rounded corners for handle */
+}
+
+QTextBrowser QScrollBar::handle:vertical:hover {
+  background: #81c784; /* Scrollbar handle color when hovered */
+}
+
+QTextBrowser QScrollBar::add-line:vertical,
+QTextBrowser QScrollBar::sub-line:vertical {
+  border: none;
+  background: none; /* No arrows at the top and bottom */
+}
+
+QTextBrowser QScrollBar::add-page:vertical,
+QTextBrowser QScrollBar::sub-page:vertical {
+  background: none; /* No background for the area between handle and buttons */
+}</string>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Congratulations on completing the lessons! Now it's time to put your understanding to the test in the next six levels, starting with this one. Carefully select and drag the right gates, and set the inputs to reach the predetermined output. Use your knowledge of logic gates to build circuits that work as expected. The correct configuration is key, so think logically and proceed when you're ready. Good luck, and let's see you apply your skills!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
    </widget>
    <widget class="QWidget" name="level8">
     <property name="styleSheet">
@@ -1951,7 +2446,7 @@ color: rgb(255, 255, 255);</string>
       </font>
      </property>
      <property name="text">
-      <string>Go Back To Level 7</string>
+      <string>Go Back To Level 1</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_16">
@@ -1985,10 +2480,10 @@ color: rgb(255, 255, 255);</string>
     <widget class="QLabel" name="label_17">
      <property name="geometry">
       <rect>
-       <x>400</x>
-       <y>10</y>
-       <width>91</width>
-       <height>51</height>
+       <x>455</x>
+       <y>20</y>
+       <width>85</width>
+       <height>41</height>
       </rect>
      </property>
      <property name="font">
@@ -2004,7 +2499,7 @@ color: rgb(255, 255, 255);</string>
       <enum>QFrame::Raised</enum>
      </property>
      <property name="text">
-      <string>Level Eight</string>
+      <string>Level 2</string>
      </property>
      <property name="textFormat">
       <enum>Qt::MarkdownText</enum>
@@ -2265,6 +2760,73 @@ color: rgb(255, 255, 255);</string>
       <enum>Qt::Horizontal</enum>
      </property>
     </widget>
+    <widget class="QTextBrowser" name="textBrowser_8">
+     <property name="geometry">
+      <rect>
+       <x>910</x>
+       <y>30</y>
+       <width>341</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTextBrowser {
+  background-color: #f5f5f5; /* Light grey background */
+  color: #333333; /* Dark grey text */
+  border: 1px solid #cccccc; /* Light grey border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px; /* Spacing between text and border */
+  font-family: 'Segoe UI'; /* Modern font */
+  font-size: 12pt; /* Font size */
+}
+
+QTextBrowser::hover {
+  border-color: #a0a0a0; /* Darker border on hover */
+}
+
+QTextBrowser QScrollBar:vertical {
+  border: none;
+  background: #e0e0e0; /* Scrollbar track color */
+  width: 10px; /* Width of the scrollbar */
+  margin: 10px 0 10px 0; /* Top and bottom margin */
+  border-radius: 4px; /* Rounded corners for scrollbar */
+}
+
+QTextBrowser QScrollBar::handle:vertical {
+  background: #a5d6a7; /* Color of the scrollbar handle */
+  min-height: 20px; /* Minimum handle size */
+  border-radius: 4px; /* Rounded corners for handle */
+}
+
+QTextBrowser QScrollBar::handle:vertical:hover {
+  background: #81c784; /* Scrollbar handle color when hovered */
+}
+
+QTextBrowser QScrollBar::add-line:vertical,
+QTextBrowser QScrollBar::sub-line:vertical {
+  border: none;
+  background: none; /* No arrows at the top and bottom */
+}
+
+QTextBrowser QScrollBar::add-page:vertical,
+QTextBrowser QScrollBar::sub-page:vertical {
+  background: none; /* No background for the area between handle and buttons */
+}</string>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;
+&lt;li style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt; Drag the appropriate logic gates onto the circuit board.&lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt; Enter the correct inputs to achieve the preset output.&lt;/li&gt;
+&lt;li style=&quot; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt; Test your configuration by pressing &amp;quot;GO&amp;quot;.&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
    </widget>
    <widget class="QWidget" name="level9">
     <property name="styleSheet">
@@ -2330,7 +2892,7 @@ color: rgb(255, 255, 255);</string>
       </font>
      </property>
      <property name="text">
-      <string>Go Back To Level 8</string>
+      <string>Go Back To Level 2</string>
      </property>
     </widget>
     <widget class="Custom_GraphicsView" name="gateOneLevel9">
@@ -2502,10 +3064,10 @@ color: rgb(255, 255, 255);</string>
     <widget class="QLabel" name="label_19">
      <property name="geometry">
       <rect>
-       <x>390</x>
-       <y>10</y>
-       <width>91</width>
-       <height>51</height>
+       <x>455</x>
+       <y>20</y>
+       <width>85</width>
+       <height>41</height>
       </rect>
      </property>
      <property name="font">
@@ -2521,7 +3083,7 @@ color: rgb(255, 255, 255);</string>
       <enum>QFrame::Raised</enum>
      </property>
      <property name="text">
-      <string>Level Nine</string>
+      <string>Level 3</string>
      </property>
      <property name="textFormat">
       <enum>Qt::MarkdownText</enum>
@@ -2806,6 +3368,73 @@ color: rgb(255, 255, 255);</string>
       <enum>Qt::Horizontal</enum>
      </property>
     </widget>
+    <widget class="QTextBrowser" name="textBrowser_9">
+     <property name="geometry">
+      <rect>
+       <x>910</x>
+       <y>30</y>
+       <width>341</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTextBrowser {
+  background-color: #f5f5f5; /* Light grey background */
+  color: #333333; /* Dark grey text */
+  border: 1px solid #cccccc; /* Light grey border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px; /* Spacing between text and border */
+  font-family: 'Segoe UI'; /* Modern font */
+  font-size: 12pt; /* Font size */
+}
+
+QTextBrowser::hover {
+  border-color: #a0a0a0; /* Darker border on hover */
+}
+
+QTextBrowser QScrollBar:vertical {
+  border: none;
+  background: #e0e0e0; /* Scrollbar track color */
+  width: 10px; /* Width of the scrollbar */
+  margin: 10px 0 10px 0; /* Top and bottom margin */
+  border-radius: 4px; /* Rounded corners for scrollbar */
+}
+
+QTextBrowser QScrollBar::handle:vertical {
+  background: #a5d6a7; /* Color of the scrollbar handle */
+  min-height: 20px; /* Minimum handle size */
+  border-radius: 4px; /* Rounded corners for handle */
+}
+
+QTextBrowser QScrollBar::handle:vertical:hover {
+  background: #81c784; /* Scrollbar handle color when hovered */
+}
+
+QTextBrowser QScrollBar::add-line:vertical,
+QTextBrowser QScrollBar::sub-line:vertical {
+  border: none;
+  background: none; /* No arrows at the top and bottom */
+}
+
+QTextBrowser QScrollBar::add-page:vertical,
+QTextBrowser QScrollBar::sub-page:vertical {
+  background: none; /* No background for the area between handle and buttons */
+}</string>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;
+&lt;li style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt; Drag the appropriate logic gates onto the circuit board.&lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt; Enter the correct inputs to achieve the preset output.&lt;/li&gt;
+&lt;li style=&quot; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt; Test your configuration by pressing &amp;quot;GO&amp;quot;.&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
    </widget>
    <widget class="QWidget" name="level10">
     <property name="styleSheet">
@@ -2891,16 +3520,16 @@ color: rgb(255, 255, 255);</string>
       </font>
      </property>
      <property name="text">
-      <string>Go Back To Level 9</string>
+      <string>Go Back To Level 3</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_39">
      <property name="geometry">
       <rect>
-       <x>440</x>
-       <y>10</y>
-       <width>81</width>
-       <height>51</height>
+       <x>455</x>
+       <y>20</y>
+       <width>85</width>
+       <height>41</height>
       </rect>
      </property>
      <property name="font">
@@ -2916,7 +3545,7 @@ color: rgb(255, 255, 255);</string>
       <enum>QFrame::Raised</enum>
      </property>
      <property name="text">
-      <string>Level Ten</string>
+      <string>Level 4</string>
      </property>
      <property name="textFormat">
       <enum>Qt::MarkdownText</enum>
@@ -3544,6 +4173,73 @@ color: rgb(255, 255, 255);</string>
       <enum>Qt::Vertical</enum>
      </property>
     </widget>
+    <widget class="QTextBrowser" name="textBrowser_10">
+     <property name="geometry">
+      <rect>
+       <x>910</x>
+       <y>30</y>
+       <width>341</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTextBrowser {
+  background-color: #f5f5f5; /* Light grey background */
+  color: #333333; /* Dark grey text */
+  border: 1px solid #cccccc; /* Light grey border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px; /* Spacing between text and border */
+  font-family: 'Segoe UI'; /* Modern font */
+  font-size: 12pt; /* Font size */
+}
+
+QTextBrowser::hover {
+  border-color: #a0a0a0; /* Darker border on hover */
+}
+
+QTextBrowser QScrollBar:vertical {
+  border: none;
+  background: #e0e0e0; /* Scrollbar track color */
+  width: 10px; /* Width of the scrollbar */
+  margin: 10px 0 10px 0; /* Top and bottom margin */
+  border-radius: 4px; /* Rounded corners for scrollbar */
+}
+
+QTextBrowser QScrollBar::handle:vertical {
+  background: #a5d6a7; /* Color of the scrollbar handle */
+  min-height: 20px; /* Minimum handle size */
+  border-radius: 4px; /* Rounded corners for handle */
+}
+
+QTextBrowser QScrollBar::handle:vertical:hover {
+  background: #81c784; /* Scrollbar handle color when hovered */
+}
+
+QTextBrowser QScrollBar::add-line:vertical,
+QTextBrowser QScrollBar::sub-line:vertical {
+  border: none;
+  background: none; /* No arrows at the top and bottom */
+}
+
+QTextBrowser QScrollBar::add-page:vertical,
+QTextBrowser QScrollBar::sub-page:vertical {
+  background: none; /* No background for the area between handle and buttons */
+}</string>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;
+&lt;li style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt; Drag the appropriate logic gates onto the circuit board.&lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt; Enter the correct inputs to achieve the preset output.&lt;/li&gt;
+&lt;li style=&quot; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt; Test your configuration by pressing &amp;quot;GO&amp;quot;.&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
    </widget>
    <widget class="QWidget" name="level11">
     <property name="styleSheet">
@@ -3960,10 +4656,10 @@ color: rgb(255, 255, 255);</string>
     <widget class="QLabel" name="label_40">
      <property name="geometry">
       <rect>
-       <x>460</x>
+       <x>455</x>
        <y>20</y>
-       <width>111</width>
-       <height>51</height>
+       <width>85</width>
+       <height>41</height>
       </rect>
      </property>
      <property name="font">
@@ -3979,7 +4675,7 @@ color: rgb(255, 255, 255);</string>
       <enum>QFrame::Raised</enum>
      </property>
      <property name="text">
-      <string>Level Eleven</string>
+      <string>Level 5</string>
      </property>
      <property name="textFormat">
       <enum>Qt::MarkdownText</enum>
@@ -4171,7 +4867,7 @@ color: rgb(255, 255, 255);</string>
       <string notr="true">background-image: url(:/icons/background4.jpg);</string>
      </property>
      <property name="text">
-      <string>Go Back To Level 10 </string>
+      <string>Go Back To Level 4</string>
      </property>
     </widget>
     <widget class="Line" name="line_115">
@@ -4210,6 +4906,73 @@ color: rgb(255, 255, 255);</string>
      </property>
      <property name="orientation">
       <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser_11">
+     <property name="geometry">
+      <rect>
+       <x>910</x>
+       <y>30</y>
+       <width>341</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTextBrowser {
+  background-color: #f5f5f5; /* Light grey background */
+  color: #333333; /* Dark grey text */
+  border: 1px solid #cccccc; /* Light grey border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px; /* Spacing between text and border */
+  font-family: 'Segoe UI'; /* Modern font */
+  font-size: 12pt; /* Font size */
+}
+
+QTextBrowser::hover {
+  border-color: #a0a0a0; /* Darker border on hover */
+}
+
+QTextBrowser QScrollBar:vertical {
+  border: none;
+  background: #e0e0e0; /* Scrollbar track color */
+  width: 10px; /* Width of the scrollbar */
+  margin: 10px 0 10px 0; /* Top and bottom margin */
+  border-radius: 4px; /* Rounded corners for scrollbar */
+}
+
+QTextBrowser QScrollBar::handle:vertical {
+  background: #a5d6a7; /* Color of the scrollbar handle */
+  min-height: 20px; /* Minimum handle size */
+  border-radius: 4px; /* Rounded corners for handle */
+}
+
+QTextBrowser QScrollBar::handle:vertical:hover {
+  background: #81c784; /* Scrollbar handle color when hovered */
+}
+
+QTextBrowser QScrollBar::add-line:vertical,
+QTextBrowser QScrollBar::sub-line:vertical {
+  border: none;
+  background: none; /* No arrows at the top and bottom */
+}
+
+QTextBrowser QScrollBar::add-page:vertical,
+QTextBrowser QScrollBar::sub-page:vertical {
+  background: none; /* No background for the area between handle and buttons */
+}</string>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;
+&lt;li style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt; Drag the appropriate logic gates onto the circuit board.&lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt; Enter the correct inputs to achieve the preset output.&lt;/li&gt;
+&lt;li style=&quot; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt; Test your configuration by pressing &amp;quot;GO&amp;quot;.&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
    </widget>
@@ -4290,10 +5053,10 @@ color: rgb(255, 255, 255);</string>
     <widget class="QLabel" name="label_41">
      <property name="geometry">
       <rect>
-       <x>390</x>
-       <y>10</y>
-       <width>111</width>
-       <height>51</height>
+       <x>455</x>
+       <y>20</y>
+       <width>85</width>
+       <height>41</height>
       </rect>
      </property>
      <property name="font">
@@ -4309,7 +5072,7 @@ color: rgb(255, 255, 255);</string>
       <enum>QFrame::Sunken</enum>
      </property>
      <property name="text">
-      <string>Level Twelve</string>
+      <string>Level 6</string>
      </property>
      <property name="textFormat">
       <enum>Qt::MarkdownText</enum>
@@ -4346,7 +5109,7 @@ color: rgb(255, 255, 255);</string>
       <string notr="true">background-image: url(:/icons/background4.jpg);</string>
      </property>
      <property name="text">
-      <string>Go Back To Level 11</string>
+      <string>Go Back To Level 5</string>
      </property>
     </widget>
     <widget class="CustomLineEdit" name="level12Input2">
@@ -5095,6 +5858,73 @@ color: rgb(255, 255, 255);</string>
      </property>
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser_12">
+     <property name="geometry">
+      <rect>
+       <x>910</x>
+       <y>30</y>
+       <width>341</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTextBrowser {
+  background-color: #f5f5f5; /* Light grey background */
+  color: #333333; /* Dark grey text */
+  border: 1px solid #cccccc; /* Light grey border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px; /* Spacing between text and border */
+  font-family: 'Segoe UI'; /* Modern font */
+  font-size: 12pt; /* Font size */
+}
+
+QTextBrowser::hover {
+  border-color: #a0a0a0; /* Darker border on hover */
+}
+
+QTextBrowser QScrollBar:vertical {
+  border: none;
+  background: #e0e0e0; /* Scrollbar track color */
+  width: 10px; /* Width of the scrollbar */
+  margin: 10px 0 10px 0; /* Top and bottom margin */
+  border-radius: 4px; /* Rounded corners for scrollbar */
+}
+
+QTextBrowser QScrollBar::handle:vertical {
+  background: #a5d6a7; /* Color of the scrollbar handle */
+  min-height: 20px; /* Minimum handle size */
+  border-radius: 4px; /* Rounded corners for handle */
+}
+
+QTextBrowser QScrollBar::handle:vertical:hover {
+  background: #81c784; /* Scrollbar handle color when hovered */
+}
+
+QTextBrowser QScrollBar::add-line:vertical,
+QTextBrowser QScrollBar::sub-line:vertical {
+  border: none;
+  background: none; /* No arrows at the top and bottom */
+}
+
+QTextBrowser QScrollBar::add-page:vertical,
+QTextBrowser QScrollBar::sub-page:vertical {
+  background: none; /* No background for the area between handle and buttons */
+}</string>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;
+&lt;li style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt; Drag the appropriate logic gates onto the circuit board.&lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt; Enter the correct inputs to achieve the preset output.&lt;/li&gt;
+&lt;li style=&quot; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt; Test your configuration by pressing &amp;quot;GO&amp;quot;.&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
    </widget>
