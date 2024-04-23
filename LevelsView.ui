@@ -147,9 +147,12 @@
     <number>2</number>
    </property>
    <property name="currentIndex">
-    <number>8</number>
+    <number>0</number>
    </property>
    <widget class="QWidget" name="level1">
+    <property name="styleSheet">
+     <string notr="true">color: white;</string>
+    </property>
     <widget class="QLabel" name="label_2">
      <property name="geometry">
       <rect>
@@ -407,6 +410,9 @@ color: rgb(255, 255, 255);</string>
        <bold>true</bold>
       </font>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: white;</string>
+     </property>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
      </property>
@@ -575,6 +581,9 @@ color: rgb(255, 255, 255);</string>
     </widget>
    </widget>
    <widget class="QWidget" name="level3">
+    <property name="styleSheet">
+     <string notr="true">color: white;</string>
+    </property>
     <widget class="QLabel" name="label_7">
      <property name="geometry">
       <rect>
@@ -789,6 +798,9 @@ color: rgb(255, 255, 255);</string>
     </widget>
    </widget>
    <widget class="QWidget" name="level4">
+    <property name="styleSheet">
+     <string notr="true">color: white;</string>
+    </property>
     <widget class="CustomLineEdit" name="levelFourInput1">
      <property name="geometry">
       <rect>
@@ -1003,6 +1015,9 @@ color: rgb(255, 255, 255);</string>
     </widget>
    </widget>
    <widget class="QWidget" name="level5">
+    <property name="styleSheet">
+     <string notr="true">color: white;</string>
+    </property>
     <widget class="QPushButton" name="skipButton_5">
      <property name="geometry">
       <rect>
@@ -1236,6 +1251,9 @@ color: rgb(255, 255, 255);</string>
     </widget>
    </widget>
    <widget class="QWidget" name="level6">
+    <property name="styleSheet">
+     <string notr="true">color: white;</string>
+    </property>
     <widget class="QPushButton" name="goButtonLevelSix">
      <property name="geometry">
       <rect>
@@ -1496,6 +1514,9 @@ color: rgb(255, 255, 255);</string>
     <zorder>line_20</zorder>
    </widget>
    <widget class="QWidget" name="level7">
+    <property name="styleSheet">
+     <string notr="true">color: white;</string>
+    </property>
     <widget class="Custom_GraphicsView" name="gateOneLevel7">
      <property name="geometry">
       <rect>
@@ -1815,6 +1836,9 @@ color: rgb(255, 255, 255);</string>
     </widget>
    </widget>
    <widget class="QWidget" name="level8">
+    <property name="styleSheet">
+     <string notr="true">color: white;</string>
+    </property>
     <widget class="Custom_GraphicsView" name="gateOneLevel8">
      <property name="geometry">
       <rect>
@@ -2239,6 +2263,9 @@ color: rgb(255, 255, 255);</string>
     </widget>
    </widget>
    <widget class="QWidget" name="level9">
+    <property name="styleSheet">
+     <string notr="true">color: white;</string>
+    </property>
     <widget class="QPushButton" name="skipButton_9">
      <property name="geometry">
       <rect>
@@ -2777,6 +2804,9 @@ color: rgb(255, 255, 255);</string>
     </widget>
    </widget>
    <widget class="QWidget" name="level10">
+    <property name="styleSheet">
+     <string notr="true">color: white;</string>
+    </property>
     <widget class="QPushButton" name="goButtonLevelTen">
      <property name="geometry">
       <rect>
@@ -3533,6 +3563,9 @@ color: rgb(255, 255, 255);</string>
     </widget>
    </widget>
    <widget class="QWidget" name="level11">
+    <property name="styleSheet">
+     <string notr="true">color: white;</string>
+    </property>
     <widget class="QLabel" name="label_21">
      <property name="geometry">
       <rect>
