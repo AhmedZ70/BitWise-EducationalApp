@@ -150,7 +150,7 @@
     <number>3</number>
    </property>
    <property name="currentIndex">
-    <number>9</number>
+    <number>10</number>
    </property>
    <widget class="QWidget" name="level1">
     <property name="styleSheet">
@@ -4788,25 +4788,6 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <enum>Qt::Vertical</enum>
      </property>
     </widget>
-    <widget class="Line" name="line_71">
-     <property name="geometry">
-      <rect>
-       <x>470</x>
-       <y>170</y>
-       <width>20</width>
-       <height>241</height>
-      </rect>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
-     </property>
-     <property name="lineWidth">
-      <number>2</number>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Vertical</enum>
-     </property>
-    </widget>
     <widget class="Custom_GraphicsView" name="gateFourLevel11">
      <property name="geometry">
       <rect>
@@ -5247,6 +5228,22 @@ li.checked::marker { content: &quot;\2612&quot;; }
 &lt;li style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt; Drag the appropriate logic gates onto the circuit board.&lt;/span&gt;&lt;/li&gt;
 &lt;li style=&quot; color:#000000;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt; Enter the correct inputs to achieve the preset output.&lt;/li&gt;
 &lt;li style=&quot; color:#000000;&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt; Test your configuration by pressing &amp;quot;GO&amp;quot;.&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="Line" name="line_58">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>168</y>
+       <width>3</width>
+       <height>198</height>
+      </rect>
+     </property>
+     <property name="lineWidth">
+      <number>2</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
      </property>
     </widget>
    </widget>
