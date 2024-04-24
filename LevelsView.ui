@@ -143,11 +143,14 @@
    <property name="styleSheet">
     <string notr="true">background-image: url(:/icons/GridBackgroundImage.png);</string>
    </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
    <property name="lineWidth">
     <number>3</number>
    </property>
    <property name="currentIndex">
-    <number>6</number>
+    <number>9</number>
    </property>
    <widget class="QWidget" name="level1">
     <property name="styleSheet">
@@ -2173,7 +2176,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
-      <number>3</number>
+      <number>2</number>
      </property>
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
@@ -2365,7 +2368,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="geometry">
       <rect>
        <x>490</x>
-       <y>144</y>
+       <y>143</y>
        <width>140</width>
        <height>140</height>
       </rect>
@@ -2381,9 +2384,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="geometry">
       <rect>
        <x>390</x>
-       <y>235</y>
+       <y>232</y>
        <width>3</width>
-       <height>104</height>
+       <height>108</height>
       </rect>
      </property>
      <property name="frameShadow">
@@ -2400,8 +2403,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="geometry">
       <rect>
        <x>390</x>
-       <y>232</y>
-       <width>122</width>
+       <y>230</y>
+       <width>128</width>
        <height>3</height>
       </rect>
      </property>
@@ -2409,7 +2412,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
-      <number>3</number>
+      <number>2</number>
      </property>
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
@@ -2420,7 +2423,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <rect>
        <x>260</x>
        <y>183</y>
-       <width>251</width>
+       <width>256</width>
        <height>16</height>
       </rect>
      </property>
@@ -2428,7 +2431,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
-      <number>3</number>
+      <number>2</number>
      </property>
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
@@ -2438,7 +2441,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="geometry">
       <rect>
        <x>607</x>
-       <y>202</y>
+       <y>201</y>
        <width>101</width>
        <height>20</height>
       </rect>
@@ -2447,7 +2450,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <enum>QFrame::Sunken</enum>
      </property>
      <property name="lineWidth">
-      <number>3</number>
+      <number>2</number>
      </property>
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
@@ -2562,7 +2565,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="geometry">
       <rect>
        <x>300</x>
-       <y>143</y>
+       <y>144</y>
        <width>71</width>
        <height>16</height>
       </rect>
@@ -2830,7 +2833,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="geometry">
       <rect>
        <x>300</x>
-       <y>283</y>
+       <y>284</y>
        <width>71</width>
        <height>16</height>
       </rect>
@@ -2922,7 +2925,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="geometry">
       <rect>
        <x>370</x>
-       <y>191</y>
+       <y>193</y>
        <width>71</width>
        <height>16</height>
       </rect>
@@ -2941,7 +2944,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="geometry">
       <rect>
        <x>370</x>
-       <y>234</y>
+       <y>235</y>
        <width>71</width>
        <height>16</height>
       </rect>
@@ -3235,7 +3238,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="geometry">
       <rect>
        <x>360</x>
-       <y>197</y>
+       <y>199</y>
        <width>71</width>
        <height>16</height>
       </rect>
@@ -3257,7 +3260,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="geometry">
       <rect>
        <x>120</x>
-       <y>127</y>
+       <y>129</y>
        <width>71</width>
        <height>16</height>
       </rect>
@@ -3375,7 +3378,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="geometry">
       <rect>
        <x>290</x>
-       <y>149</y>
+       <y>150</y>
        <width>71</width>
        <height>16</height>
       </rect>
@@ -3394,7 +3397,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="geometry">
       <rect>
        <x>162</x>
-       <y>267</y>
+       <y>269</y>
        <width>31</width>
        <height>16</height>
       </rect>
@@ -3432,7 +3435,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="geometry">
       <rect>
        <x>360</x>
-       <y>240</y>
+       <y>241</y>
        <width>71</width>
        <height>16</height>
       </rect>
@@ -3546,7 +3549,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="geometry">
       <rect>
        <x>179</x>
-       <y>170</y>
+       <y>171</y>
        <width>12</width>
        <height>16</height>
       </rect>
@@ -3584,7 +3587,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="geometry">
       <rect>
        <x>121</x>
-       <y>310</y>
+       <y>311</y>
        <width>71</width>
        <height>16</height>
       </rect>
@@ -3603,7 +3606,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="geometry">
       <rect>
        <x>530</x>
-       <y>225</y>
+       <y>226</y>
        <width>125</width>
        <height>3</height>
       </rect>
@@ -3699,11 +3702,14 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <widget class="QPushButton" name="goButtonLevelTen">
      <property name="geometry">
       <rect>
-       <x>360</x>
-       <y>550</y>
+       <x>820</x>
+       <y>350</y>
        <width>101</width>
        <height>51</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
      </property>
      <property name="text">
       <string>GO</string>
@@ -3957,7 +3963,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="geometry">
       <rect>
        <x>300</x>
-       <y>200</y>
+       <y>199</y>
        <width>91</width>
        <height>20</height>
       </rect>
@@ -4027,7 +4033,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="geometry">
       <rect>
        <x>297</x>
-       <y>449</y>
+       <y>450</y>
        <width>133</width>
        <height>20</height>
       </rect>
@@ -4046,8 +4052,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="geometry">
       <rect>
        <x>529</x>
-       <y>430</y>
-       <width>71</width>
+       <y>429</y>
+       <width>69</width>
        <height>20</height>
       </rect>
      </property>
@@ -4065,7 +4071,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="geometry">
       <rect>
        <x>694</x>
-       <y>184</y>
+       <y>182</y>
        <width>140</width>
        <height>140</height>
       </rect>
@@ -4081,7 +4087,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="geometry">
       <rect>
        <x>597</x>
-       <y>263</y>
+       <y>262</y>
        <width>121</width>
        <height>20</height>
       </rect>
@@ -4113,56 +4119,6 @@ li.checked::marker { content: &quot;\2612&quot;; }
      </property>
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
-     </property>
-    </widget>
-    <widget class="Line" name="line_58">
-     <property name="geometry">
-      <rect>
-       <x>599</x>
-       <y>310</y>
-       <width>3</width>
-       <height>61</height>
-      </rect>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>16777215</width>
-       <height>61</height>
-      </size>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
-     </property>
-     <property name="lineWidth">
-      <number>2</number>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Vertical</enum>
-     </property>
-    </widget>
-    <widget class="Line" name="line_59">
-     <property name="geometry">
-      <rect>
-       <x>590</x>
-       <y>272</y>
-       <width>20</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>16777215</width>
-       <height>61</height>
-      </size>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
-     </property>
-     <property name="lineWidth">
-      <number>2</number>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Vertical</enum>
      </property>
     </widget>
     <widget class="QLabel" name="label_20">
@@ -4200,7 +4156,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="geometry">
       <rect>
        <x>110</x>
-       <y>178</y>
+       <y>180</y>
        <width>91</width>
        <height>16</height>
       </rect>
@@ -4238,7 +4194,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="geometry">
       <rect>
        <x>110</x>
-       <y>298</y>
+       <y>300</y>
        <width>101</width>
        <height>16</height>
       </rect>
@@ -4257,7 +4213,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="geometry">
       <rect>
        <x>110</x>
-       <y>341</y>
+       <y>342</y>
        <width>101</width>
        <height>16</height>
       </rect>
@@ -4295,7 +4251,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="geometry">
       <rect>
        <x>330</x>
-       <y>410</y>
+       <y>408</y>
        <width>103</width>
        <height>20</height>
       </rect>
@@ -4314,7 +4270,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="geometry">
       <rect>
        <x>590</x>
-       <y>218</y>
+       <y>219</y>
        <width>131</width>
        <height>20</height>
       </rect>
@@ -4333,8 +4289,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="geometry">
       <rect>
        <x>390</x>
-       <y>202</y>
-       <width>112</width>
+       <y>201</y>
+       <width>108</width>
        <height>16</height>
       </rect>
      </property>
@@ -4353,7 +4309,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <rect>
        <x>390</x>
        <y>242</y>
-       <width>112</width>
+       <width>108</width>
        <height>16</height>
       </rect>
      </property>
@@ -4374,63 +4330,6 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <y>398</y>
        <width>91</width>
        <height>20</height>
-      </rect>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
-     </property>
-     <property name="lineWidth">
-      <number>2</number>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-    </widget>
-    <widget class="Line" name="line_57">
-     <property name="geometry">
-      <rect>
-       <x>590</x>
-       <y>370</y>
-       <width>21</width>
-       <height>71</height>
-      </rect>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
-     </property>
-     <property name="lineWidth">
-      <number>2</number>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Vertical</enum>
-     </property>
-    </widget>
-    <widget class="Line" name="line_56">
-     <property name="geometry">
-      <rect>
-       <x>380</x>
-       <y>250</y>
-       <width>20</width>
-       <height>83</height>
-      </rect>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
-     </property>
-     <property name="lineWidth">
-      <number>2</number>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Vertical</enum>
-     </property>
-    </widget>
-    <widget class="Line" name="line_139">
-     <property name="geometry">
-      <rect>
-       <x>310</x>
-       <y>320</y>
-       <width>81</width>
-       <height>16</height>
       </rect>
      </property>
      <property name="frameShadow">
@@ -4528,6 +4427,54 @@ li.checked::marker { content: &quot;\2612&quot;; }
 &lt;li style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt; Drag the appropriate logic gates onto the circuit board.&lt;/span&gt;&lt;/li&gt;
 &lt;li style=&quot; color:#000000;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt; Enter the correct inputs to achieve the preset output.&lt;/li&gt;
 &lt;li style=&quot; color:#000000;&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt; Test your configuration by pressing &amp;quot;GO&amp;quot;.&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="Line" name="line_74">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>328</y>
+       <width>80</width>
+       <height>3</height>
+      </rect>
+     </property>
+     <property name="lineWidth">
+      <number>2</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="line_57">
+     <property name="geometry">
+      <rect>
+       <x>595</x>
+       <y>270</y>
+       <width>3</width>
+       <height>168</height>
+      </rect>
+     </property>
+     <property name="lineWidth">
+      <number>2</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="line_56">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>250</y>
+       <width>3</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="lineWidth">
+      <number>2</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
      </property>
     </widget>
    </widget>
