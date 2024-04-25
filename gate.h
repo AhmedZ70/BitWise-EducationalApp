@@ -31,24 +31,31 @@ private:
 
 public:
     /// @brief Constructor for binary gate types (AND, OR, etc.).
+    /// @param function for the logic of that gate.
     Gate(function<bool(bool, bool)> func);
 
     /// @brief Constructor for unary gate types (NOT).
+    /// @param function for the logic of the gate.
     Gate(function<bool(bool)> func);
 
     /// @brief Default constructor.
     Gate();
 
     /// @brief Sets inputs for binary gates.
+    /// @param firstValue the input value for the gate.
+    /// @param the secod input value for the gate.
     void setInput(bool firstValue, bool secondValue);
 
     /// @brief Sets input for unary gates.
+    /// @param value the input value for the gate.
     void setInput(bool value);
 
     /// @brief Computes the output of the gate based on its inputs and function.
+    /// @return the computed output, true(1) or false(0).
     bool computeOutput();
 
     /// @brief Retrieves the current output of the gate.
+    /// @return the current output of the gate.
     bool getOutput();
 };
 

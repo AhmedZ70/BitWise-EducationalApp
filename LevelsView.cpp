@@ -1,7 +1,6 @@
 #include "LevelsView.h"
 #include "ui_LevelsView.h"
 #include <QMessageBox>
-#include <iostream>
 #include <vector>
 #include "Trainingdialog.h"
 
@@ -462,35 +461,49 @@ void LevelsView::on_stackedWidget_currentChanged(int index)
     case 1:
         image = ":/icons/orGate.png";
         text = "This is an OR gate. The OR gate takes in 2 or 3 inputs and computes a single ouput.\n"
-               "In order for the OR gate to calculate to TRUE, at least one inputs must be TRUE.\n"
-               "The truth table for the AND gate illustrates this and is shown below";
+               "In order for the OR gate to calculate to True, at least one inputs must be True.\n"
+               "The truth table for the OR gate illustrates this and is shown below";
 
         dialog->setTruthTable("OR");
         break;
     case 2:
         image = ":/icons/nandGate.png";
         text = "This is an NAND gate. The NAND gate takes in 2 or 3 inputs and computes a single ouput.\n"
-               "The NAND gate will function similar to an AND gate, except it will negate its value before outputting it.\n"
-               "Negating the output will simply flip the value: if it was originally True, it will be false, and if it was\n"
+               "The NAND gate will function similar to an AND gate, except it will negate its value before outputting it. "
+               "Negating the output will simply flip the value: if it was originally True, it will be false, and if it was"
                "originally false, it will be true. The truth table for the NAND gate illustrates this and is shown below.";
+         dialog->setTruthTable("NAND");
         break;
     case 3:
         image = ":/icons/norGate.png";
-        text = "This is a NOR Gate.The NOR gate takes in 2 or 3 inputs and computes a single ouput.\n"
+        text = "This is a NOR gate.The NOR gate takes in 2 or 3 inputs and computes a single ouput.\n"
                "The NOR gate will function similar to an OR gate, except it will negate its value before outputting it.\n"
                "Negating the output will simply flip the value: if it was originally True, it will be false, and if it was\n"
-               "originally false, it will be true. The truth table for the OR gate illustrates this and is shown below.";;
+               "originally false, it will be true. The truth table for the NOR gate illustrates this and is shown below.";
+         dialog->setTruthTable("NOR");
         break;
 
     case 4:
         image = ":/icons/xorGate.png";
-        text = "This is a XorGate";
+        text = "This is a XOR Gate. The XOR gate takes in 2 or 3 inputs and compuets a single output.\n"
+                "The XOR Gate functions a little differently than the previous gates you have learned about,as"
+                "it will only compute to an output of True, if only one of its inputs is True."
+                " So in order to get an output of true for a XOR gate, both the inputs must be different."
+                " The truth table for the XOR gate illustrates this and is shown below.";
+         dialog->setTruthTable("XOR");
         break;
     case 5:
+        dialog->setTruthTable("NOT");
         image = ":/icons/notGate.png";
-        text = "This is a notGate";
+        text = "This is a NOT gate. The NOT gate is different than the other gates you have seen so far,"
+               "as it only takes a single input and computes a single output. The NOT gate will simply "
+               "negate, or flip, the input it is given. If the input is True(1), the output will be False(0),"
+               "and if the input is False(0), the output will be True(1).";
         break;
+
+
     }
+
 
     dialog->setupImageAndText(image,text);
     dialog->exec();

@@ -14,10 +14,10 @@ class LevelFive: public CircuitLevel {
 
 private:
     /// @brief first input of the user
-    bool inputA;
+    bool firstBit;
 
     /// @brief second input of the user
-    bool inputB;
+    bool secondBit;
 
 public:
     /// @brief Constructor that initializes the bits to false and sets the preset gate

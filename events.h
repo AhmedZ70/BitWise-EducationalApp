@@ -42,9 +42,11 @@ public:
     explicit Custom_Label(QWidget *widget= nullptr);
 
     /// @brief Sets the name of the gate.
+    /// @param The name of the gate to set
     void setGateName(const QString &name);
 
-    /// @brief Returns the name of the gate.
+    /// @brief Get the name of the gate.
+    /// @return the name of the gate.
     QString getGateName() const;
 private:
     /// @brief Helper method to start a drag operation.

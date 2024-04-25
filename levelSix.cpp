@@ -1,5 +1,4 @@
 #include "levelSix.h"
-#include <iostream>
 
 /**
  * @author Joseph Corbeil, Johnny Song, Ezekiel Jaramillo, Ahmed Zahran, Raj Reddy, Joel Ronca
@@ -7,16 +6,16 @@
  * @name levelSix cpp file for assignment9
  * This cpp file contains the the implementation of the methods outlines in the levelSix h file.
 */
-LevelSix::LevelSix() : inputA(false), inputB(false){}
+LevelSix::LevelSix() : firstBit(false), secondBit(false){}
 
 void LevelSix::setInput(std:: vector<bool> inputs) {
-    inputA = inputs.at(0);
-    inputB = inputs.at(1);
+    firstBit = inputs.at(0);
+    secondBit = inputs.at(1);
 }
 
 void LevelSix::computeOutput() {
     Gate userGate = setGate(userGateSelected);
-    userGate.setInput(inputA, inputB);
+    userGate.setInput(firstBit, secondBit);
     bool firstResult = userGate.computeOutput();
     Gate notGate = setGate("NOT");
     notGate.setInput(firstResult);

@@ -28,7 +28,7 @@ public:
     ~TrainingDialog();
 
     /// @brief Sets up the dialog with an image and descriptive text for the logic gate.
-    void setupImageAndText(const QString &imagePath, const QString &text);
+    void setupImageAndText( QString image, QString text);
 
     /// @brief Configures the dialog to display the truth table for a specific logic gate.
     void setTruthTable(std::string gate);

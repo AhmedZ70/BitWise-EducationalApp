@@ -35,6 +35,8 @@ private:
     b2Body* playButtonBody;
     b2Body* helpButtonBody;
     b2Body* quitButtonBody;
+    QLabel *movingGameTitle;
+    b2Body *gameTitleBody;
     QMap<QString, QString> helpTexts; // Stores help texts for actions
     QDialog *helpDialog;
     QComboBox *helpOptions;

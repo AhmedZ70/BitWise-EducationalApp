@@ -21,6 +21,7 @@
  * for circuit simulation based on user interactions in a digital circuit simulation game.
  */
 GameModel::GameModel(QObject *parent) : QObject(parent), currentLevel(0){
+
     // Push all premade levels
     levels.push_back(std::make_unique<LevelOne>());
     levels.push_back(std::make_unique<LevelTwo>());
@@ -54,12 +55,12 @@ void GameModel::checkUserGate(string gate)
     emit correctGate(gateCorrect);
 }
 
-void GameModel::setGateDropped(const std::vector<std::string>& gateTypese){
-    if (hasEmptyString(gateTypese)){
+void GameModel::setGateDropped(const std::vector<std::string>& gateTypes){
+    if (hasEmptyString(gateTypes)){
         throw std::invalid_argument("One or more gate types are empty.");
     }
     else {
-         levels[currentLevel]->setGateTypes(gateTypese);
+         levels[currentLevel]->setGateTypes(gateTypes);
     }
 
 }

@@ -16,7 +16,7 @@ Gate::Gate(function<bool(bool)> func)
 Gate::Gate(){
 
 }
-// Set inputs for the gate
+// Set inputs for binary gates.
 void Gate::setInput(bool firstValue, bool secondValue) {
     if (!isNotGate) {
         firstInput = firstValue;
@@ -29,6 +29,7 @@ void Gate::setInput(bool firstValue, bool secondValue) {
     }
 }
 
+//Set input for unary gate.
 void Gate::setInput(bool firstValue)
 {
     firstInput = firstValue;

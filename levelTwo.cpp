@@ -6,21 +6,21 @@
  * @name levelTwo cpp file for assignment9
  * This cpp file contains the the implementation of the methods outlines in the levelTwo h file.
 */
-LevelTwo::LevelTwo() : inputA(false), inputB(false)
+LevelTwo::LevelTwo() : firstBit(false), secondBit(false)
 {
     expectedGate = "OR";
 }
 
 void LevelTwo::setInput(std:: vector<bool> inputs) {
     // Sets user inputs
-    inputA = inputs.at(0);
-    inputB = inputs.at(1);
+    firstBit = inputs.at(0);
+    secondBit = inputs.at(1);
 }
 
 void LevelTwo::computeOutput() {
     // Sets gate and gets inputs from user
     Gate orGate = setGate("OR");
-    orGate.setInput(inputA, inputB);
+    orGate.setInput(firstBit, secondBit);
 
     // Computes circuit output and sets circuit model result
     result = orGate.computeOutput();

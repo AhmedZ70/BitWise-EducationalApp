@@ -1,6 +1,5 @@
 #include "circuitLevel.h"
 #include <functional>
-#include <iostream>
 
 /**
  * @author Joseph Corbeil, Johnny Song, Ezekiel Jaramillo, Ahmed Zahran, Raj Reddy, Joel Ronca
@@ -57,7 +56,6 @@ Gate CircuitLevel::setGate(string gateType)
 
 bool CircuitLevel::correctUserGate(string givenGate)
 {
-    cout << expectedGate << endl;
     return givenGate == expectedGate;
 
 }

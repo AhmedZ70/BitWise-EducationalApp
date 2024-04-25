@@ -50,9 +50,9 @@ TrainingDialog::~TrainingDialog() {
     delete ui;
 }
 
-void TrainingDialog::setupImageAndText(const QString& imagePath, const QString& text) {
-    QPixmap pixmap(imagePath);
-    ui->gate->setPixmap(pixmap.scaled(200, 200, Qt::KeepAspectRatio)); // Ensure the image fits
+void TrainingDialog::setupImageAndText(QString image,  QString text) {
+    QPixmap gateImage(image);
+    ui->gate->setPixmap(gateImage.scaled(200, 200, Qt::KeepAspectRatio));
     ui->gateDescription->setText(text);
 
 
@@ -138,5 +138,10 @@ void TrainingDialog:: setTruthTable(std::string gate)
         ui->truthTable->setItem(3, 1, new QTableWidgetItem("1"));
         ui->truthTable->setItem(3, 2, new QTableWidgetItem("0"));
 
+    }
+
+    else if(gate == "NOT")
+    {
+        ui->truthTable->hide();
     }
 }

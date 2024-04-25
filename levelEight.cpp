@@ -19,19 +19,19 @@ void LevelEight::setInput(std:: vector<bool> inputs) {
 
 void LevelEight::computeOutput() {
     // Create gate objects for the gates on the circuit
-    Gate gate1 = setGate(userGateSelected1);
-    Gate gate2 = setGate(userGateSelected2);
-    Gate gate3 = setGate(userGateSelected3);
+    Gate firstGate = setGate(userGateSelected1);
+    Gate secondGate = setGate(userGateSelected2);
+    Gate thirdGate = setGate(userGateSelected3);
 
     // Sets gate and gets inputs from user while calculating outputs of the gates
-    gate1.setInput(firstBit, secondBit);
-    bool firstResult = gate1.computeOutput();
+    firstGate.setInput(firstBit, secondBit);
+    bool firstResult = firstGate.computeOutput();
 
-    gate2.setInput(thirdBit, fourthBit);
-    bool secondResult = gate2.computeOutput();
+    secondGate.setInput(thirdBit, fourthBit);
+    bool secondResult = secondGate.computeOutput();
 
-    gate3.setInput(firstResult, secondResult);
-    bool finalResult = gate3.computeOutput();
+    thirdGate.setInput(firstResult, secondResult);
+    bool finalResult = thirdGate.computeOutput();
 
     // Final output of the circuit
     result = finalResult;

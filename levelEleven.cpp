@@ -21,28 +21,28 @@ void LevelEleven::setInput(std:: vector<bool> inputs) {
 
 void LevelEleven::computeOutput() {
     // Create gate objects for the gates on the circuit
-    Gate gate1 = setGate(userGateSelected1);
-    Gate gate2 = setGate(userGateSelected2);
-    Gate gate3 = setGate(userGateSelected3);
-    Gate gate4 = setGate(userGateSelected4);
-    Gate gate5 = setGate(userGateSelected5);
+    Gate firstGate = setGate(userGateSelected1);
+    Gate secondGate = setGate(userGateSelected2);
+    Gate thirdGate = setGate(userGateSelected3);
+    Gate fourthGate = setGate(userGateSelected4);
+    Gate fifthGate = setGate(userGateSelected5);
 
     // Sets gate and gets inputs from user while calculating outputs of the gates
-    gate1.setInput(firstBit, secondBit);
-    bool firstResult = gate1.computeOutput();
+    firstGate.setInput(firstBit, secondBit);
+    bool firstResult = firstGate.computeOutput();
 
-    gate2.setInput(thirdBit, fourthBit);
-    bool secondResult = gate2.computeOutput();
+    secondGate.setInput(thirdBit, fourthBit);
+    bool secondResult = secondGate.computeOutput();
 
-    gate3.setInput(fifthBit, sixthBit);
-    bool thirdResult = gate3.computeOutput();
+    thirdGate.setInput(fifthBit, sixthBit);
+    bool thirdResult = thirdGate.computeOutput();
 
-    gate4.setInput(secondResult, firstResult);
-    bool output1 = gate4.computeOutput();
+    fourthGate.setInput(secondResult, firstResult);
+    bool output1 = fourthGate.computeOutput();
 
     // Using the bool to check the double output, checks if circuit is correct
-    gate5.setInput(thirdResult, secondResult);
-    bool output2 = gate5.computeOutput();
+    fifthGate.setInput(thirdResult, secondResult);
+    bool output2 = fifthGate.computeOutput();
     if (output1 & !output2){
         success = true;
     }

@@ -16,9 +16,7 @@
 
 // Assuming PIXELS_PER_METER is defined as 100
 const float PIXELS_PER_METER = 100.0f;
-const float MAX_DISPLACEMENT = 2.0f; // Max displacement in pixels
-QLabel *movingLabel;
-b2Body *labelBody;
+const float MAX_DISPLACEMENT = 2.0f;
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow), levelsUi(new LevelsView()), world(new b2World(b2Vec2(0.0f, 0.0f))) {
@@ -32,7 +30,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(levelsUi, SIGNAL(homeClicked()), this, SLOT(moveHome()));
     connect(ui->quitButton, &QPushButton::clicked, this, &QCoreApplication::quit, Qt::QueuedConnection);
     connect(ui->stackedWidget, &QStackedWidget::currentChanged, this, &MainWindow::onStackedWidgetChange);
-    connect(ui->helpButton, &QPushButton::clicked, this, &MainWindow::showHelpDialog);  // Connect helpButton click to the new dialog
+    connect(ui->helpButton, &QPushButton::clicked, this, &MainWindow::showHelpDialog);
 
     createButtonBody(ui->playButton, playButtonBody, ui->playButton->width(), ui->playButton->height());
     createButtonBody(ui->helpButton, helpButtonBody, ui->helpButton->width(), ui->helpButton->height());
@@ -42,8 +40,8 @@ MainWindow::MainWindow(QWidget *parent)
     ui->helpButton->installEventFilter(this);
     ui->quitButton->installEventFilter(this);
 
-    initializeHelpTexts(); // Initialize help texts after setup
-    setupHelpDialog();      // Set up the help dialog components
+    initializeHelpTexts();
+    setupHelpDialog();
 
     // Store initial positions
     originalXPlay = ui->playButton->x();
@@ -53,12 +51,12 @@ MainWindow::MainWindow(QWidget *parent)
     QPixmap gameTitle(":/icons/BitWiseTitle.png");
     QSize scaledSize = gameTitle.size() * 0.8;
     gameTitle= gameTitle.scaled(scaledSize, Qt::KeepAspectRatio, Qt::SmoothTransformation);
-    movingLabel = new QLabel(this);
-    movingLabel->setPixmap(gameTitle);
-    movingLabel->setFixedSize(gameTitle.size());// Ensure 'this' is the parent
-    movingLabel->setGeometry(10, 175, 200, 50); // Initial position and size
-    movingLabel->raise();  // Raise the QLabel to make sure it is on top
-    createLabelBody(movingLabel, labelBody);
+    movingGameTitle = new QLabel(this);
+    movingGameTitle->setPixmap(gameTitle);
+    movingGameTitle->setFixedSize(gameTitle.size());
+    movingGameTitle->setGeometry(10, 175, 200, 50);
+    movingGameTitle->raise();
+    createLabelBody(movingGameTitle, gameTitleBody);
 }
 
 MainWindow::~MainWindow()
@@ -77,13 +75,13 @@ void MainWindow::updatePhysics() {
     updateButtonPosition(ui->helpButton, helpButtonBody, originalXHelp);
     updateButtonPosition(ui->quitButton, quitButtonBody, originalXQuit);
 
-    b2Vec2 pos = labelBody->GetPosition();
+    b2Vec2 pos = gameTitleBody->GetPosition();
     int newX = static_cast<int>(pos.x * PIXELS_PER_METER);
     if (newX > this->width()) {  // Check if the label moves off-screen
-        labelBody->SetTransform(b2Vec2(-movingLabel->width() / PIXELS_PER_METER, pos.y), 0);
+        gameTitleBody->SetTransform(b2Vec2(-movingGameTitle->width() / PIXELS_PER_METER, pos.y), 0);
     }
     else {
-        movingLabel->move(newX, movingLabel->y());
+        movingGameTitle->move(newX, movingGameTitle->y());
     }
 }
 
@@ -92,16 +90,16 @@ void MainWindow::updateButtonPosition(QPushButton *button, b2Body *body, int ori
     int newX = static_cast<int>(pos.x * PIXELS_PER_METER);
     button->move(newX, button->y());
 
-    const float hysteresis = 0.1f;  // Adjust this value based on testing
+    const float hysteresis = 0.1f;
 
 
     if (newX > originalX + MAX_DISPLACEMENT + hysteresis) {
-        if (body->GetLinearVelocity().x > 0) {  // Only reverse if currently moving right
-            body->SetLinearVelocity(b2Vec2(-std::abs(body->GetLinearVelocity().x), 0)); // Reverse direction
+        if (body->GetLinearVelocity().x > 0) {
+            body->SetLinearVelocity(b2Vec2(-std::abs(body->GetLinearVelocity().x), 0));
         }
     } else if (newX < originalX - MAX_DISPLACEMENT - hysteresis) {
-        if (body->GetLinearVelocity().x < 0) {  // Only reverse if currently moving left
-            body->SetLinearVelocity(b2Vec2(std::abs(body->GetLinearVelocity().x), 0)); // Reverse direction
+        if (body->GetLinearVelocity().x < 0) {
+            body->SetLinearVelocity(b2Vec2(std::abs(body->GetLinearVelocity().x), 0));
         }
     }
 }
@@ -135,9 +133,9 @@ bool MainWindow::eventFilter(QObject *obj, QEvent *event) {
     else if (button == ui->quitButton) body = quitButtonBody;
 
     if (body && event->type() == QEvent::HoverEnter) {
-        body->SetLinearVelocity(b2Vec2(0.75f, 0)); // Start moving right
+        body->SetLinearVelocity(b2Vec2(0.75f, 0));
     } else if (body && event->type() == QEvent::HoverLeave) {
-        body->SetLinearVelocity(b2Vec2(0, 0)); // Stop moving
+        body->SetLinearVelocity(b2Vec2(0, 0));
         body->SetTransform(b2Vec2(button->x() / PIXELS_PER_METER, button->y() / PIXELS_PER_METER), body->GetAngle());
     }
 
@@ -170,7 +168,8 @@ void MainWindow::initializeHelpTexts()
     helpTexts["XOR Gates"] = "The XOR gate (exclusive OR) is a digital logic gate that outputs true only when its inputs are different.";
     helpTexts["Bits"] = "A bit (binary digit) is the basic unit of information in computing and digital communications. A bit can have only one of two values: 0 or 1, often corresponding to the electrical values of off or on, respectively.";
     helpTexts["Binary Operations"] = "Binary operations involve arithmetic on binary numbers, which are composed of bits. The most common binary operations are addition, subtraction, and multiplication. Binary operations are fundamental in the functioning of digital electronics, such as processors and logic gates.";
-    helpTexts["Binary Numbers"] = "Binary numbers are represented using only two symbols: 0 and 1. Each digit in a binary number is called a bit. For example, the binary number '1010' represents the decimal number 10, with each position representing a power of two, starting from the rightmost digit.";
+    helpTexts["Binary Numbers"] = "Binary numbers are represented using only two symbols: 0 and 1. Each digit in a binary number is called a bit. For example, the binary number '1010' represents the decimal number 10, with each position representing a power of two, starting from the rightmost digit."
+                                  " Bits are also often treated as boolean values, with 0 representing false and 1 representing true. This is fundamental to understanding how logic gates work, as they compute boolean logic operations by treating bits as boolean values. ";
 }
 
 
@@ -178,7 +177,7 @@ void MainWindow::initializeHelpTexts()
 void MainWindow::setupHelpDialog() {
     helpDialog = new QDialog(this);
     helpDialog->setWindowTitle("Help Information");
-    helpDialog->resize(400, 200); // Set the desired width and height
+    helpDialog->resize(400, 200);
 
     QVBoxLayout *layout = new QVBoxLayout(helpDialog);
     helpOptions = new QComboBox(helpDialog);
@@ -193,7 +192,7 @@ void MainWindow::setupHelpDialog() {
     connect(helpOptions, SIGNAL(currentIndexChanged(int)), this, SLOT(updateHelpContent()));
     connect(backButton, &QPushButton::clicked, helpDialog, &QDialog::hide);
 
-    // Populate the combo box
+
     foreach (const QString &key, helpTexts.keys()) {
         helpOptions->addItem(key, helpTexts[key]);
     }
@@ -212,7 +211,7 @@ void MainWindow::updateHelpContent() {
 
 void MainWindow::createLabelBody(QLabel *label, b2Body*& body) {
     b2BodyDef bodyDef;
-    bodyDef.type = b2_kinematicBody;  // Using kinematic body for constant velocity
+    bodyDef.type = b2_kinematicBody;
     float initialX = label->x() / PIXELS_PER_METER;
     float initialY = label->y() / PIXELS_PER_METER;
     bodyDef.position.Set(initialX, initialY);
@@ -226,22 +225,21 @@ void MainWindow::createLabelBody(QLabel *label, b2Body*& body) {
     body->CreateFixture(&fixtureDef);
 
     // Set initial velocity to move across the screen
-    body->SetLinearVelocity(b2Vec2(2.0f, 0)); // Adjust speed as needed
+    body->SetLinearVelocity(b2Vec2(2.0f, 0));
 }
 
 void MainWindow::onStackedWidgetChange(int index) {
     if (index == 0) {
-        movingLabel->show();
-        // Restart movement if needed
-        if (labelBody) {
-            labelBody->SetLinearVelocity(b2Vec2(2.0f, 0)); // Adjust speed as needed
+        movingGameTitle->show();
+        if (gameTitleBody) {
+            gameTitleBody->SetLinearVelocity(b2Vec2(2.0f, 0));
         }
     }
 
     else {
-        movingLabel->hide();
-        if (labelBody) {
-            labelBody->SetLinearVelocity(b2Vec2(0, 0));
+        movingGameTitle->hide();
+        if (gameTitleBody) {
+            gameTitleBody->SetLinearVelocity(b2Vec2(0, 0));
         }
     }
 }
