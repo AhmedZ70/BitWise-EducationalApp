@@ -59,6 +59,7 @@ SOURCES += \
     Trainingdialog.cpp \
     circuitLevel.cpp \
     customlineedit.cpp \
+    electricity.cpp \
     events.cpp \
     gameModel.cpp \
     gate.cpp \
@@ -129,6 +130,7 @@ HEADERS += \
     Trainingdialog.h \
     circuitLevel.h \
     customlineedit.h \
+    electricity.h \
     events.h \
     gameModel.h \
     gate.h \

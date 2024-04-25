@@ -5,6 +5,7 @@
 #include <QLabel>
 #include <QMessageBox>
 #include <QVBoxLayout>
+#include "electricity.h"
 
 /**
  * @author Joseph Corbeil, Johnny Song, Ezekiel Jaramillo, Ahmed Zahran, Raj Reddy, Joel Ronca
@@ -57,6 +58,12 @@ MainWindow::MainWindow(QWidget *parent)
     movingGameTitle->setGeometry(10, 175, 200, 50);
     movingGameTitle->raise();
     createLabelBody(movingGameTitle, gameTitleBody);
+
+    electricity = new ElectricityEffect(this);
+    int lightningHeight = this->height() / 6;
+    electricity ->setGeometry(0, 0, this->width(), lightningHeight);
+    electricity ->raise();
+    electricity ->show();
 }
 
 MainWindow::~MainWindow()
@@ -65,6 +72,7 @@ MainWindow::~MainWindow()
     delete world;
     delete ui;
     delete levelsUi;
+    delete electricity;
 }
 
 
@@ -231,15 +239,19 @@ void MainWindow::createLabelBody(QLabel *label, b2Body*& body) {
 void MainWindow::onStackedWidgetChange(int index) {
     if (index == 0) {
         movingGameTitle->show();
+        electricity->show();
         if (gameTitleBody) {
             gameTitleBody->SetLinearVelocity(b2Vec2(2.0f, 0));
+
         }
     }
 
     else {
         movingGameTitle->hide();
+        electricity->hide();
         if (gameTitleBody) {
             gameTitleBody->SetLinearVelocity(b2Vec2(0, 0));
+
         }
     }
 }

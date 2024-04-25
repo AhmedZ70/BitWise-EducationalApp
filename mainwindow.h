@@ -11,6 +11,7 @@
 #include <QLabel>           // To display text or image
 #include <QVBoxLayout>      // Layout manager for vertical box layout
 #include "LevelsView.h"     // Custom header presumably for level management
+#include "electricity.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -55,6 +56,7 @@ private:
     QDialog *helpDialog;           // Dialog for displaying help content
     QComboBox *helpOptions;        // Combobox to select help topics
     QLabel *helpContent;           // Label to display help content
+    ElectricityEffect* electricity;
     float originalXPlay, originalXHelp, originalXQuit; // Original X positions for buttons
 
     /// @brief Creates a physics body for a button with given dimensions.
