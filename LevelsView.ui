@@ -150,7 +150,7 @@
     <number>2</number>
    </property>
    <property name="currentIndex">
-    <number>5</number>
+    <number>11</number>
    </property>
    <widget class="QWidget" name="level1">
     <property name="styleSheet">
@@ -451,7 +451,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <rect>
        <x>310</x>
        <y>20</y>
-       <width>131</width>
+       <width>141</width>
        <height>41</height>
       </rect>
      </property>
@@ -1923,7 +1923,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <enum>QFrame::Raised</enum>
      </property>
      <property name="text">
-      <string>Lesson SIX: Masterig the NOT gate</string>
+      <string>Lesson SIX: Mastering the NOT gate</string>
      </property>
      <property name="textFormat">
       <enum>Qt::MarkdownText</enum>
