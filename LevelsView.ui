@@ -150,7 +150,7 @@
     <number>2</number>
    </property>
    <property name="currentIndex">
-    <number>6</number>
+    <number>5</number>
    </property>
    <widget class="QWidget" name="level1">
     <property name="styleSheet">
@@ -992,7 +992,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="geometry">
       <rect>
        <x>231</x>
-       <y>211</y>
+       <y>212</y>
        <width>78</width>
        <height>16</height>
       </rect>
@@ -1011,7 +1011,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="geometry">
       <rect>
        <x>230</x>
-       <y>168</y>
+       <y>170</y>
        <width>78</width>
        <height>16</height>
       </rect>
@@ -1620,7 +1620,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="geometry">
       <rect>
        <x>230</x>
-       <y>168</y>
+       <y>170</y>
        <width>78</width>
        <height>16</height>
       </rect>
@@ -1639,7 +1639,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="geometry">
       <rect>
        <x>231</x>
-       <y>211</y>
+       <y>212</y>
        <width>78</width>
        <height>16</height>
       </rect>
@@ -1933,7 +1933,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="geometry">
       <rect>
        <x>220</x>
-       <y>168</y>
+       <y>170</y>
        <width>78</width>
        <height>16</height>
       </rect>
@@ -1952,7 +1952,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="geometry">
       <rect>
        <x>221</x>
-       <y>211</y>
+       <y>212</y>
        <width>78</width>
        <height>16</height>
       </rect>
@@ -2544,7 +2544,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="geometry">
       <rect>
        <x>130</x>
-       <y>121</y>
+       <y>123</y>
        <width>78</width>
        <height>16</height>
       </rect>
@@ -2729,7 +2729,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="geometry">
       <rect>
        <x>131</x>
-       <y>164</y>
+       <y>165</y>
        <width>78</width>
        <height>16</height>
       </rect>
@@ -2812,7 +2812,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="geometry">
       <rect>
        <x>130</x>
-       <y>261</y>
+       <y>263</y>
        <width>78</width>
        <height>16</height>
       </rect>
@@ -2850,7 +2850,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="geometry">
       <rect>
        <x>131</x>
-       <y>304</y>
+       <y>305</y>
        <width>78</width>
        <height>16</height>
       </rect>
