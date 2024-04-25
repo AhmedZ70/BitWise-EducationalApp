@@ -150,7 +150,7 @@
     <number>2</number>
    </property>
    <property name="currentIndex">
-    <number>0</number>
+    <number>6</number>
    </property>
    <widget class="QWidget" name="level1">
     <property name="styleSheet">
@@ -272,7 +272,7 @@ color: black;</string>
      <property name="geometry">
       <rect>
        <x>290</x>
-       <y>168</y>
+       <y>170</y>
        <width>78</width>
        <height>16</height>
       </rect>
@@ -291,7 +291,7 @@ color: black;</string>
      <property name="geometry">
       <rect>
        <x>291</x>
-       <y>211</y>
+       <y>212</y>
        <width>78</width>
        <height>16</height>
       </rect>
@@ -660,7 +660,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="geometry">
       <rect>
        <x>211</x>
-       <y>211</y>
+       <y>212</y>
        <width>78</width>
        <height>16</height>
       </rect>
@@ -679,7 +679,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="geometry">
       <rect>
        <x>210</x>
-       <y>168</y>
+       <y>170</y>
        <width>78</width>
        <height>16</height>
       </rect>
@@ -1307,7 +1307,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="geometry">
       <rect>
        <x>240</x>
-       <y>168</y>
+       <y>170</y>
        <width>78</width>
        <height>16</height>
       </rect>
@@ -1326,7 +1326,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="geometry">
       <rect>
        <x>241</x>
-       <y>211</y>
+       <y>212</y>
        <width>78</width>
        <height>16</height>
       </rect>
@@ -2130,7 +2130,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="geometry">
       <rect>
        <x>90</x>
-       <y>160</y>
+       <y>162</y>
        <width>78</width>
        <height>16</height>
       </rect>
@@ -2315,7 +2315,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="geometry">
       <rect>
        <x>91</x>
-       <y>203</y>
+       <y>204</y>
        <width>78</width>
        <height>16</height>
       </rect>
