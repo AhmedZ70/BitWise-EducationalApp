@@ -150,7 +150,7 @@
     <number>2</number>
    </property>
    <property name="currentIndex">
-    <number>10</number>
+    <number>5</number>
    </property>
    <widget class="QWidget" name="level1">
     <property name="styleSheet">
@@ -568,7 +568,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <rect>
        <x>455</x>
        <y>20</y>
-       <width>251</width>
+       <width>331</width>
        <height>41</height>
       </rect>
      </property>
@@ -929,7 +929,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <rect>
        <x>455</x>
        <y>20</y>
-       <width>321</width>
+       <width>421</width>
        <height>41</height>
       </rect>
      </property>
@@ -1244,7 +1244,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <rect>
        <x>455</x>
        <y>20</y>
-       <width>301</width>
+       <width>391</width>
        <height>41</height>
       </rect>
      </property>
@@ -1497,7 +1497,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <rect>
        <x>455</x>
        <y>20</y>
-       <width>291</width>
+       <width>381</width>
        <height>41</height>
       </rect>
      </property>
@@ -1905,7 +1905,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <rect>
        <x>455</x>
        <y>20</y>
-       <width>271</width>
+       <width>361</width>
        <height>41</height>
       </rect>
      </property>
