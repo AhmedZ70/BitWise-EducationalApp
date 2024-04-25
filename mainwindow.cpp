@@ -3,7 +3,8 @@
 #include <QDebug>
 #include "Trainingdialog.h"
 #include <QLabel>
-#include <QMessageBox>  // Include for QMessageBox
+#include <QMessageBox>
+#include <QVBoxLayout>
 
 /**
  * @author Joseph Corbeil, Johnny Song, Ezekiel Jaramillo, Ahmed Zahran, Raj Reddy, Joel Ronca
@@ -144,9 +145,7 @@ bool MainWindow::eventFilter(QObject *obj, QEvent *event) {
 }
 
 void MainWindow::on_playButton_clicked() {
-    qDebug() << "Current index before change:" << ui->stackedWidget->currentIndex();
     ui->stackedWidget->setCurrentIndex(ui->stackedWidget->indexOf(levelsUi));
-    qDebug() << "Current index after change:" << ui->stackedWidget->currentIndex();
     TrainingDialog *dialog = new TrainingDialog();
     QString trainingDialog = "This is an AND gate. The AND gate takes in 2 or 3 inputs and computes a single ouput.\n"
                              "In order for the AND gate to calculate to TRUE, all inputs must be TRUE.\n"

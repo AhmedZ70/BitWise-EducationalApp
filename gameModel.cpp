@@ -12,7 +12,6 @@
 #include "levelEleven.h"
 #include "levelTwelve.h"
 #include <algorithm>
-#include <iostream>
 
 /**
  * @author Joseph Corbeil, Johnny Song, Ezekiel Jaramillo, Ahmed Zahran, Raj Reddy, Joel Ronca
@@ -51,8 +50,6 @@ void GameModel:: onInputReceived(std::vector<bool>inputs)
 
 void GameModel::checkUserGate(string gate)
 {
-    cout << gate << endl;
-    cout << currentLevel << endl;
     bool gateCorrect = levels[currentLevel]->correctUserGate(gate);
     emit correctGate(gateCorrect);
 }

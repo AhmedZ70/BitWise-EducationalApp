@@ -72,9 +72,6 @@ public:
     QString lastDroppedGateName() const;
 
 signals:
-    /// @brief Signals that a gate has been dropped (placed).
-    void itemdrop();
-
     /// @brief Signals that a gate is being dragged.
     void gateDragged();
 protected:
@@ -92,9 +89,6 @@ protected:
 
     /// @brief Adds a pixmap to the view.
     void addPixmap(const QPixmap &pixmap);
-
-    /// @brief Debugging helper method.
-    void mydebuglines();
 
     /// @brief Handles paint events.
     void paintEvent(QPaintEvent *event) override;

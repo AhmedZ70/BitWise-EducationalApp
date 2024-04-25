@@ -13,7 +13,6 @@ events::events() {}
 /// @brief Constructor for Custom_GraphicsView, initializes drag-and-drop and connects signals.
 Custom_GraphicsView::Custom_GraphicsView(QWidget *widget) : QGraphicsView(widget) {
     setAcceptDrops(true);
-    connect(this, &Custom_GraphicsView::itemdrop, this, &Custom_GraphicsView::mydebuglines);
 }
 
 /// @brief Returns the name of the last dropped gate, if available.
@@ -38,14 +37,6 @@ void Custom_GraphicsView::dragMoveEvent(QDragMoveEvent *event){
     event->acceptProposedAction();
 }
 
-/// @brief Debug function that logs the last gate dropped.
-void Custom_GraphicsView::mydebuglines(){
-    QString lastGate = lastDroppedGateName();
-    if (!lastGate.isEmpty()) {
-        qDebug() << "Last dropped gate was:" << lastGate;
-    }
-}
-
 /// @brief Handles drop events to manage dropped items, including images and associated metadata.
 void Custom_GraphicsView::dropEvent(QDropEvent *event) {
     if (event->mimeData()->hasFormat("image/png")) {
@@ -66,7 +57,6 @@ void Custom_GraphicsView::dropEvent(QDropEvent *event) {
         }
     }
     event->acceptProposedAction();
-    emit itemdrop();
     emit gateDragged();
 }
 

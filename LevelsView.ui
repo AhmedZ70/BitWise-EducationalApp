@@ -150,7 +150,7 @@
     <number>2</number>
    </property>
    <property name="currentIndex">
-    <number>11</number>
+    <number>10</number>
    </property>
    <widget class="QWidget" name="level1">
     <property name="styleSheet">
@@ -4970,7 +4970,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <enum>Qt::Horizontal</enum>
      </property>
     </widget>
-    <widget class="QPushButton" name="backToLevel1_12">
+    <widget class="QPushButton" name="backToLevel1_10">
      <property name="geometry">
       <rect>
        <x>250</x>

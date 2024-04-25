@@ -89,7 +89,6 @@ private slots:
     void on_backToLevel1_9_clicked();
     void on_backToLevel1_10_clicked();
     void on_backToLevel1_11_clicked();
-    void on_backToLevel1_12_clicked();
 
     /// @brief Slot triggered when the current page of the stacked widget changes.
     void on_stackedWidget_currentChanged(int arg1);

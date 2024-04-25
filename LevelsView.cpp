@@ -307,10 +307,6 @@ void LevelsView::on_backToLevel1_9_clicked(){
     ui->stackedWidget->setCurrentIndex(8);
 }
 void LevelsView::on_backToLevel1_10_clicked(){
-    ui->stackedWidget->setCurrentIndex(8);
-}
-
-void LevelsView::on_backToLevel1_12_clicked(){
     ui->stackedWidget->setCurrentIndex(9);
 }
 
@@ -333,10 +329,33 @@ void LevelsView::goClickedTrainingLevel(int level) {
 }
 
 void LevelsView::onResultReceived(bool successful) {
-    //QString lastGate = ui->graphicsView->lastDroppedGateName();
+
     if (successful) {
+        if (ui->stackedWidget->currentIndex() == 11){
+            QMessageBox msgBox;
+            msgBox.setWindowTitle("All Levels Completed!");
+            msgBox.setText("Congratulations on completing all the levels! Each circuit can be solved in multiple ways.");
+            msgBox.setInformativeText("Would you like to return to the home screen or restart the first level to explore alternative strategies?");
+            msgBox.setIcon(QMessageBox::Information);
+
+            QPushButton *restartButton = msgBox.addButton("Back to Level One", QMessageBox::ActionRole);
+            QPushButton *homeButton = msgBox.addButton("Go to Home", QMessageBox::AcceptRole);
+            msgBox.addButton(QMessageBox::Cancel);
+
+            msgBox.exec();
+
+            if (msgBox.clickedButton() == homeButton) {
+                emit homeClicked();
+                ui->stackedWidget->setCurrentIndex(0);
+            } else if (msgBox.clickedButton() == restartButton) {
+                ui->stackedWidget->setCurrentIndex(6);
+            }
+        }
+
+        else{
             QMessageBox::information(this, "Success", "Good job, on to the next level");
             ui->stackedWidget->setCurrentIndex(ui->stackedWidget->currentIndex() + 1);
+        }
 
     } else {
         QMessageBox::critical(this, "Level Failed", "Try again");
@@ -367,10 +386,6 @@ std::vector<bool> LevelsView::getUserInputs(int level) {
         inputs.push_back(ui->levelFiveInput1->text() == "1");
         inputs.push_back(ui->levelFiveInput2->text() == "1");
         break;
-    // case 6:
-    //     inputs.push_back(ui->levelSixInput1->text() == "1");
-    //     inputs.push_back(ui->levelSixInput2->text() == "1");
-    //     break;
     default:
         inputs = {false, false};
         break;
@@ -401,34 +416,34 @@ void LevelsView::processLevelInputs(const std::vector<Custom_GraphicsView*>& gat
 
 
 
-
-QString LevelsView::getLastDroppedGate(int level)
-{
+QString LevelsView::getLastDroppedGate(int level) {
     QString lastGate;
-    switch(level){
+    switch(level) {
     case 1:
         lastGate = ui->gateOneLevel1->lastDroppedGateName();
-        return lastGate;
+        break;
     case 2:
         lastGate = ui->gateOneLevel2->lastDroppedGateName();
-        return lastGate;
+        break;
     case 3:
         lastGate = ui->gateOneLevel3->lastDroppedGateName();
-        return lastGate;
+        break;
     case 4:
         lastGate = ui->gateOneLevel4->lastDroppedGateName();
-        return lastGate;
-
+        break;
     case 5:
         lastGate = ui->gateOneLevel5->lastDroppedGateName();
-        return lastGate;
-
+        break;
     case 6:
         lastGate = ui->gateOneLevel6->lastDroppedGateName();
-        return lastGate;
+        break;
+    default:
+        lastGate = "";
+        break;
     }
-
+    return lastGate;
 }
+
 
 void LevelsView:: onCorrectGateReceived(bool correct)
 {

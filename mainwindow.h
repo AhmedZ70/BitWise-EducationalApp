@@ -47,6 +47,7 @@ private:
     void initializeHelpTexts();  // Initializes help text descriptions
     void setupHelpDialog();  // Setup the help dialog components
 
+
 private slots:
     void updatePhysics();
     void on_playButton_clicked();
