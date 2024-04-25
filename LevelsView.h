@@ -76,6 +76,7 @@ private slots:
     void on_skipButton_9_clicked();
     void on_skipButton_10_clicked();
     void on_skipButton_11_clicked();
+    void on_skipTrainingButton_clicked();
 
     //Back to level handlers
     void on_backToLevel1_clicked();
@@ -93,7 +94,7 @@ private slots:
     /// @brief Slot triggered when the current page of the stacked widget changes.
     void on_stackedWidget_currentChanged(int arg1);
 
-    void on_skipTrainingButton_clicked();
+
 
 private:
     // Pointer to the user interface setup.
