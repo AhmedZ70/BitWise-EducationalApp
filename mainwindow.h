@@ -56,7 +56,7 @@ private:
     QDialog *helpDialog;           // Dialog for displaying help content
     QComboBox *helpOptions;        // Combobox to select help topics
     QLabel *helpContent;           // Label to display help content
-    ElectricityEffect* electricity;
+    Electricity* electricity;
     float originalXPlay, originalXHelp, originalXQuit; // Original X positions for buttons
 
     /// @brief Creates a physics body for a button with given dimensions.

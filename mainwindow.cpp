@@ -59,7 +59,7 @@ MainWindow::MainWindow(QWidget *parent)
     movingGameTitle->raise();
     createLabelBody(movingGameTitle, gameTitleBody);
 
-    electricity = new ElectricityEffect(this);
+    electricity = new Electricity(this);
     int lightningHeight = this->height() / 6;
     electricity ->setGeometry(0, 0, this->width(), lightningHeight);
     electricity ->raise();

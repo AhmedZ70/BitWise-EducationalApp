@@ -6,17 +6,44 @@
 #include <QTimer>
 #include <QRandomGenerator>
 
-class ElectricityEffect : public QWidget {
+/**
+ * @author Joseph Corbeil, Johnny Song, Ezekiel Jaramillo, Ahmed Zahran, Raj Reddy, Joel Ronca
+ * @date April. 22, 2024
+ * @name electricty h file for assignment9
+ * @brief This class inherits from QWidget and will display a small line of electricity across
+ * the main menu of the game utilizing the paint method in Qt.
+ */
+
+class Electricity : public QWidget {
     Q_OBJECT
 
 public:
-    explicit ElectricityEffect(QWidget* parent = nullptr);
+
+    //Constructor
+    explicit Electricity(QWidget* parent = nullptr);
 
 protected:
+
+    /** @brief paint event handler
+     */
     void paintEvent(QPaintEvent* event) override;
 
 private:
-    void drawElectricity(QPainter& painter, QPoint start, QPoint end, int depth);
+
+    /**
+     * @brief This method will recursively draw random lines along
+     * the line to give the appearance of electricity.
+     * @param painter paint object
+     * @param start starting point to draw
+     * @param end ending point to draw
+     * @param depth variable used to control recurion
+     */
+    void drawElectricity(QPainter& painter, QPoint startingPoint, QPoint endingPoint, int depth);
+
+    /**
+     * @brief Connected to a Timer that will update the line every time it goes off. This will
+     * update the electricity line to give a movement affect.
+     */
     void updateElectricity();
 };
 

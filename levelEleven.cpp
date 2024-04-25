@@ -43,12 +43,17 @@ void LevelEleven::computeOutput() {
     // Using the bool to check the double output, checks if circuit is correct
     fifthGate.setInput(thirdResult, secondResult);
     bool output2 = fifthGate.computeOutput();
-    if (output1 & !output2){
+    if (output1 & !output2)
+    {
         success = true;
     }
-
-    // Final output of the circuit
+    else
+    {
+        success = false;
+    }
     result = success;
+
+
  }
 
 void LevelEleven::setGateTypes(const std::vector<std::string>& gateTypes){

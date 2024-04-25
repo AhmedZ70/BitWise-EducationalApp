@@ -1,0 +1,36 @@
+Listed below are the changes that we have made since our previous submission on
+April 23rd, 2024.
+
+Comments and Styling:
+    - Each file was checked and corrected for any styling mistakes, such undescriptive varaible names
+      and methods, as well as adding more comments were needed and ensuring comments in cpp files
+      followed the correct styling as well.
+
+
+UI and Bug Fixes:
+    - There was a small bug in level 5, causing it to incorrectly tell the user they had solved the
+      circuit. This was not found till after the first submission and has now been fixed.
+    - Minor UI changes were made when it comes to ensuring the preset circuit and user dragged gates
+      lined up correctly. Further changes were made to make the lines transitioning from circuit to
+      gate more smoother and visually appealing.
+
+
+
+Pop Window:
+    - Updated final pop window after completion of all levels to give user more options on starting over
+      or returning to main window. Updated message to let user know they had gone through all levels.
+
+    - Updated all training pop up windows to display correct information about each gate, as well as fixed any
+      grammatical errors they possessed.
+
+Main Menu:
+    - Updated the help menu to provide the user more information on gates, bits, and bitwise logic. Fixed any
+      grammatical errors found.
+
+    - We had tried to implment an electricity effect in the main menu to make it more visually dynamic, but were
+      not able to get it working properly by the last submission. We were able to get this correctly implemented
+      after the submision and have added the neccessary class to display this in the main menu.
+
+
+Repo Cleanup:
+    - Removed old images that are no longer being used from the repo.
